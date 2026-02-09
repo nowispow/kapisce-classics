@@ -1,0 +1,133 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import PostHead from '@/components/PostHead.astro'
+import NovelCollection from '@/components/NovelCollection.astro'
+import SpeedReader from '@/components/SpeedReader.svelte'
+import Layout from '@/layouts/Layout.astro'
+import { getAdjacentChapters, getAllChapters, getNovelById } from '@/lib/novel-utils'
+import { parseAuthors } from '@/lib/data-utils'
+import { formatDate, readingTime, calculateWordCountFromHtml } from '@/lib/utils'
+import { Icon } from 'astro-icon/components'
+import { render } from 'astro:content'
+import { Button } from '@/components/ui/button'
+
+export async function getStaticPaths() {
+  const chapters = await getAllChapters()
+  return chapters.map((chapter) => ({
+    params: { id: chapter.id },
+    props: chapter,
+  }))
+}
+
+const chapter = Astro.props
+const { Content } = await render(chapter)
+const authors = await parseAuthors(chapter.data.authors ?? [])
+const novel = await getNovelById(chapter.data.novel)
+
+const navigation = await getAdjacentChapters(chapter.id, chapter.data.novel)
+const wordCount = calculateWordCountFromHtml(chapter.body)
+const postReadingTime = readingTime(wordCount)
+---
+
+<Layout>
+  <PostHead slot="head" post={chapter} />
+
+  <section
+    class="grid grid-cols-[minmax(0px,1fr)_min(calc(var(--breakpoint-md)-2rem),100%)_minmax(0px,1fr)] gap-y-6"
+  >
+    <div class="col-start-2">
+      <Breadcrumbs
+        items={[
+          { href: '/novels', label: 'Library', icon: 'lucide:library-big' },
+          { href: `/novels/${chapter.data.novel}`, label: novel?.data.title || chapter.data.novel, icon: 'lucide:book-open' },
+          { href: `/chapters/${chapter.id}`, label: chapter.data.title, icon: 'lucide:file-text' },
+        ]}
+      />
+    </div>
+
+    <section class="col-start-2 flex flex-col gap-y-6 text-center">
+      <div class="flex flex-col">
+        <h1
+          class="mb-2 scroll-mt-31 text-3xl leading-tight font-medium sm:text-4xl"
+          id="post-title"
+        >
+          {chapter.data.title}
+        </h1>
+
+        <div
+          class="text-muted-foreground divide-border mb-4 flex flex-col items-center justify-center divide-y text-xs sm:flex-row sm:flex-wrap sm:divide-x sm:divide-y-0 sm:text-sm"
+        >
+          {
+            authors.length > 0 && (
+              <div class="flex w-full items-center justify-center gap-x-2 py-2 sm:w-fit sm:px-2 sm:py-0 first:sm:pl-0 last:sm:pr-0">
+                {authors.map((author) => (
+                  <div class="flex items-center gap-x-1.5">
+                    {author.isRegistered ? (
+                      <a
+                        href={`/authors/${author.id}`}
+                        class="text-foreground hover:underline"
+                      >
+                        <span>{author.name}</span>
+                      </a>
+                    ) : (
+                      <span>{author.name}</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )
+          }
+
+          <div
+            class="flex w-full items-center justify-center gap-2 py-2 sm:w-fit sm:px-2 sm:py-0 first:sm:pl-0 last:sm:pr-0"
+          >
+            <span>{formatDate(chapter.data.date)}</span>
+          </div>
+
+          <div
+            class="flex w-full items-center justify-center gap-2 py-2 sm:w-fit sm:px-2 sm:py-0 first:sm:pl-0 last:sm:pr-0"
+          >
+            <span>{postReadingTime}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article class="prose col-start-2 max-w-none">
+      <SpeedReader client:load text={chapter.body} />
+      <Content />
+
+      <NovelCollection novelId={chapter.data.novel} />
+    </article>
+
+    <nav class="col-start-2 flex justify-between gap-4 py-8 border-t mt-8">
+        {navigation.older ? (
+            <a href={`/chapters/${navigation.older.id}`} class="flex flex-col gap-1 group max-w-[45%]">
+                <span class="text-xs text-muted-foreground group-hover:text-foreground">Previous</span>
+                <span class="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">← {navigation.older.data.title}</span>
+            </a>
+        ) : <div />}
+
+        {navigation.newer ? (
+            <a href={`/chapters/${navigation.newer.id}`} class="flex flex-col gap-1 items-end text-right group max-w-[45%]">
+                <span class="text-xs text-muted-foreground group-hover:text-foreground">Next</span>
+                <span class="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{navigation.newer.data.title} →</span>
+            </a>
+        ) : <div />}
+    </nav>
+  </section>
+
+  <Button
+    variant="outline"
+    size="icon"
+    className="group fixed right-8 bottom-8 z-50 hidden"
+    id="scroll-to-top"
+    title="Scroll to top"
+    aria-label="Scroll to top"
+  >
+    <Icon
+      name="lucide:arrow-up"
+      class="mx-auto size-4 transition-all group-hover:-translate-y-0.5"
+    />
+  </Button>
+</Layout>

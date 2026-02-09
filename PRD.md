@@ -38,8 +38,9 @@ We will utilize Python scripts (run via `pixi` in `Documents`) to transform raw 
 1. **Scrape**: Fetch from Project Gutenberg or similar.
 2. **Translate**: Convert HTML to clean Markdown.
 3. **Fragment**: Split large book files into chapter-sized blocks.
-4. **SEO Optimization**: Transform chapters into the standard `src/content/blog/` collection to leverage the theme's SEO and layout features.
-5. **Attribution**: Auto-generate frontmatter linking chapters to the Novel and Author.
+4. **SEO Optimization**: Transform chapters into the standard `src/content/blog/` collection.
+5. **Illustration Loop**: 10 chapters/day using Nano Banana in a highly detailed Renaissance style. Includes character consistency checks and a centralized `characters.md`.
+6. **Attribution**: Auto-generate frontmatter linking chapters to the Novel and Author.
 
 ## 7. Development Progress
 - [x] Initial PRD and Architecture setup.
