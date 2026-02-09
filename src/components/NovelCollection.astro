@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 
 interface Props {
   novelId: string;
@@ -7,9 +7,9 @@ interface Props {
 
 const { novelId } = Astro.props;
 
-const chapters = await getCollection('blog', ({ data }) => {
-  return data.novel === novelId && !data.draft;
-});
+const chapters = (await getCollection('chapters', (entry) => {
+  return entry.data.novel === novelId && !entry.data.draft;
+})) as CollectionEntry<'chapters'>[];
 
 // Sort by chapter_number
 const sortedChapters = chapters.sort((a, b) => {
@@ -26,7 +26,7 @@ const sortedChapters = chapters.sort((a, b) => {
   <nav class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     {sortedChapters.map((chapter) => (
       <a 
-        href={`/blog/${chapter.id}`}
+        href={`/chapters/${chapter.id}`}
         class="flex items-center p-3 rounded-lg border bg-card hover:bg-accent transition-colors group"
       >
         <div class="flex-1">

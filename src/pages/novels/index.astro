@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import Link from '@/components/Link.astro';
+
+const novels = await getCollection('novels');
+---
+
+<Layout title="Library">
+  <section class="grid grid-cols-[minmax(0px,1fr)_min(calc(var(--breakpoint-md)-2rem),100%)_minmax(0px,1fr)] gap-y-6 py-12">
+    <div class="col-start-2">
+      <Breadcrumbs
+        items={[
+          { href: '/novels', label: 'Library', icon: 'lucide:library-big' },
+        ]}
+      />
+      
+      <div class="mt-8">
+        <h1 class="text-4xl font-bold mb-8">Kapisce Library</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {novels.map(novel => (
+            <div class="border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card">
+              <h2 class="text-2xl font-bold mb-2">
+                <Link href={`/novels/${novel.id}`} underline={false}>
+                  {novel.data.title}
+                </Link>
+              </h2>
+              <p class="text-muted-foreground mb-4 line-clamp-3">
+                {novel.data.description}
+              </p>
+              <Link href={`/novels/${novel.id}`} class="text-primary font-medium">
+                Browse Chapters →
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
