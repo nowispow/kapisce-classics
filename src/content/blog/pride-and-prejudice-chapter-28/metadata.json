@@ -1,0 +1,329 @@
+{
+  "runId": "e0858ff0-95c5-4515-8b7e-3e30aa6c612c",
+  "status": "ok",
+  "summary": "completed",
+  "result": {
+    "payloads": [
+      {
+        "text": "```json\n{\n  \"title\": \"Pride and Prejudice: Chapter 28\",\n  \"author\": \"Jane Austen\",\n  \"description\": \"Life at Hunsford Parsonage settles into a predictable routine of domestic management and Lady Catherine’s interference, until the arrival of Mr. Darcy and Colonel Fitzwilliam at Rosings reawakens the social and psychological tensions of the previous winter.\",\n  \"historical_context\": \"The chapter highlights the role of the 'younger son' of the nobility through Colonel Fitzwilliam. Lacking an inheritance, such men were forced into professions like the military. It also explores the 'manorial' rights of the era, where a landowner like Lady Catherine acted as a de facto judge and moral arbiter for the surrounding village, regardless of her actual legal standing.\",\n  \"summary\": \"After Sir William Lucas departs, Elizabeth observes Charlotte's clever domestic strategy of occupying a less desirable room to keep Mr. Collins in his study. Lady Catherine continues her intrusive 'magistrate' work in the parish and hosts the party at Rosings twice a week. Elizabeth finds refuge in a sheltered grove on the park's edge. The arrival of Mr. Darcy and his cousin, Colonel Fitzwilliam, brings new excitement. During their visit to the Parsonage, Elizabeth tests Darcy by mentioning Jane’s presence in London, catching a glimpse of confusion in his normally composed features.\",\n  \"tags\": [\n    \"classic-literature\",\n    \"domestic-management\",\n    \"social-hierarchy\",\n    \"the-younger-son\",\n    \"character-testing\",\n    \"paternalism\",\n    \"rivalry\"\n  ],\n  \"analysis\": {\n    \"key_argument_1\": \"Charlotte’s Architectural Strategy: Charlotte’s choice of the 'backwards' room for the ladies to sit in is a masterful instance of passive domestic resistance. By ceding the more pleasant 'front' room to Mr. Collins, she ensures her own psychological space and minimizes the time spent in his company.\",\n    \"key_argument_2\": \"The Magistrate of Morality: Lady Catherine’s habit of 'scolding' her tenants into 'harmony and plenty' exposes the absolute arrogance of the Regency upper class. She views her wealth as a mandate to micromanage the private lives and conflicts of those beneath her, assuming a role of moral perfection.\",\n    \"key_argument_3\": \"The Grove as a Secular Sanctuary: Elizabeth’s preference for the 'nice sheltered path' in the park represents her need for an intellectual and spiritual border between herself and the performative life at Rosings. It is the only place where she is 'beyond the reach of Lady Catherine’s curiosity.'\",\n    \"key_argument_4\": \"Colonel Fitzwilliam as a Foil: The introduction of Fitzwilliam provides a sharp contrast to Darcy. His easy 'readiness and ease' as a well-bred man highlights Darcy’s continued social failure and reserve, providing Elizabeth with a more traditional model of a gentleman to compare against her primary adversary.\",\n    \"key_argument_5\": \"Darcy’s Guarded Composure: Darcy’s arrival and his immediate, silent visit to the Parsonage suggest that his 'powerful feeling' from the previous autumn has not subsided. His 'usual reserve' is now a defensive armor against the influence Elizabeth has over his heart.\",\n    \"key_argument_6\": \"The Trap of Inquiry: Elizabeth’s mention of Jane being in London is a tactical strike. She uses a simple social question to probe for guilt, interpreting Darcy’s 'confusion' as a confirmation of his hand in Bingley’s departure, thereby fueling her prejudice with perceived evidence.\",\n    \"key_argument_7\": \"Collins’s External Validation: Collins’s obsession with being the first to know of Darcy’s arrival underscores his total lack of an internal life. His identity is entirely constructed through his proximity to 'the great,' and he views Darcy as a secondary source of the prestige he craves.\",\n    \"key_argument_8\": \"Charlotte’s Insight into Darcy: Charlotte’s observation that Darcy would 'never have come so soon' to see her highlights her superior understanding of social subtext. She recognizes that Elizabeth is the true magnet for the Rosings party, a fact that Elizabeth herself still attempts to deny.\"\n  },\n  \"memorable_quotes\": [\n    {\n      \"quote\": \"Mr. Collins would undoubtedly have been much less in his own apartment had they sat in one equally lively.\",\n      \"explanation\": \"A sharp narrator’s insight into Charlotte’s pragmatic domestic management, choosing physical discomfort to ensure her own peace of mind.\"\n    },\n    {\n      \"quote\": \"She was a most active magistrate in her own parish... whenever any of the cottagers were disposed to be quarrelsome... she sallied forth into the village to settle their differences.\",\n      \"explanation\": \"Illustrates Lady Catherine’s overbearing sense of authority and her belief that her rank entitles her to govern the personal lives of the poor.\"\n    },\n    {\n      \"quote\": \"I may thank you, Eliza, for this piece of civility. Mr. Darcy would never have come so soon to wait upon me.\",\n      \"explanation\": \"Charlotte’s astute recognition of the real motive behind Darcy’s visit, marking her as a character who sees the romantic subtext Elizabeth misses.\"\n    },\n    {\n      \"quote\": \"Colonel Fitzwilliam... was about thirty, not handsome, but in person and address most truly the gentleman.\",\n      \"explanation\": \"The defining description of Fitzwilliam, establishing him as a man whose quality of character and manners far outshine his physical appearance.\"\n    },\n    {\n      \"quote\": \"My eldest sister has been in town these three months. Have you never happened to see her there?\",\n      \"explanation\": \"Elizabeth’s pointed question, designed to weaponize Jane’s suffering against Darcy’s conscience.\"\n    },\n    {\n      \"quote\": \"He looked a little confused as he answered that he had never been so fortunate as to meet Miss Bennet.\",\n      \"explanation\": \"The first crack in Darcy’s formal mask, interpreted by Elizabeth as a sign of guilt regarding the separation of Bingley and Jane.\"\n    },\n    {\n      \"quote\": \"Elizabeth merely courtesied to him, without saying a word.\",\n      \"explanation\": \"Reflects the deep-seated 'Prejudice' of the title; Elizabeth uses silence as a social weapon to maintain her distance and signal her disapproval.\"\n    }\n  ],\n  \"image_prompts\": [\n    {\n      \"topic\": \"The Backwards Room\",\n      \"placement\": \"Chapter Header\",\n      \"prompt_text\": \"Highly detailed Renaissance-style painting in the style of Vermeer. Charlotte and Elizabeth are seated in a modest, rear-facing room. Soft, natural light filters through a window that looks out onto a kitchen garden. The composition is quiet and domestic, focusing on the textures of the silk and the wooden floor, emphasizing Charlotte's clever self-isolation.\"\n    },\n    {\n      \"topic\": \"Lady Catherine as Magistrate\",\n      \"placement\": \"In-line with parish description\",\n      \"prompt_text\": \"Highly detailed Renaissance-style scene. Lady Catherine stands in the center of a village lane, one finger raised in a scolding gesture toward a group of humble cottagers who are bowing deeply. She is dressed in rich, heavy velvets. The background shows the thatched roofs of Hunsford, rendered with high detail, capturing her domineering presence.\"\n    },\n    {\n      \"topic\": \"The Grove Walk\",\n      \"placement\": \"In-line with description of the grove\",\n      \"prompt_text\": \"Highly detailed Renaissance-style landscape in the style of Titian. Elizabeth Bennet is walking along a sheltered, wooded path on the edge of a grand park. Dappled sunlight creates a mosaic of light and shadow on her face and gown. The lush greenery and towering trees create a sense of sanctuary and private thought.\"\n    },\n    {\n      \"topic\": \"The Arrival of the Carriage\",\n      \"placement\": \"Center of Chapter\",\n      \"prompt_text\": \"Highly detailed Renaissance-style painting. A grand, dark carriage turns into the gates of Rosings. Mr. Collins is shown standing by the lane, performing a ridiculously deep, sycophantic bow. The lighting is dramatic and theatrical, focusing on the power of the approaching vehicle and the smallness of the man greeting it.\"\n    },\n    {\n      \"topic\": \"The Three Gentlemen\",\n      \"placement\": \"In-line with their entrance\",\n      \"prompt_text\": \"Highly detailed Renaissance-style interior scene. Colonel Fitzwilliam, Mr. Darcy, and Mr. Collins are shown entering the Parsonage parlor. Fitzwilliam is at the front with an open, pleasant expression. Darcy follows in the shadows, his face a mask of 'reserve.' The room is filled with the textures of Regency rugs and fine wood, with the lighting creating sharp Chiaroscuro.\"\n    },\n    {\n      \"topic\": \"The Question on Jane\",\n      \"placement\": \"In-line with Elizabeth's question\",\n      \"prompt_text\": \"Highly detailed Renaissance-style diptych. On one side, Elizabeth Bennet looks up with a sharp, interrogating expression. On the other, Mr. Darcy’s face is shown in a moment of 'confusion,' his eyes averted. The lighting is intense and focused on the intellectual duel occurring between them in the quiet room.\"\n    },\n    {\n      \"topic\": \"The Rosings Invitation\",\n      \"placement\": \"Closing Graphic\",\n      \"prompt_text\": \"Highly detailed Renaissance-style allegorical painting. A formal dinner invitation sits on a silver tray, illuminated by a single candle. In the background, the grand silhouette of Rosings Park looms like a fortress. Around the tray are scattered playing cards and a clerical hat, symbolizing the repetitive and stifling social rituals of the Hunsford visit.\"\n    }\n  ]\n}\n```",
+        "mediaUrl": null
+      }
+    ],
+    "meta": {
+      "durationMs": 16687,
+      "agentMeta": {
+        "sessionId": "18e7d203-fb18-4885-bb47-99c297aba46e",
+        "provider": "litellm",
+        "model": "gemini/gemini-3-flash-preview",
+        "usage": {
+          "input": 7869,
+          "output": 6807,
+          "cacheRead": 314588,
+          "cacheWrite": 0,
+          "total": 329264
+        }
+      },
+      "aborted": false,
+      "systemPromptReport": {
+        "source": "run",
+        "generatedAt": 1770742563378,
+        "sessionId": "18e7d203-fb18-4885-bb47-99c297aba46e",
+        "sessionKey": "agent:main:main",
+        "provider": "litellm",
+        "model": "gemini/gemini-3-flash-preview",
+        "workspaceDir": "/home/yatit/.openclaw/workspace",
+        "bootstrapMaxChars": 20000,
+        "sandbox": {
+          "mode": "off",
+          "sandboxed": false
+        },
+        "systemPrompt": {
+          "chars": 27637,
+          "projectContextChars": 12455,
+          "nonProjectContextChars": 15182
+        },
+        "injectedWorkspaceFiles": [
+          {
+            "name": "AGENTS.md",
+            "path": "/home/yatit/.openclaw/workspace/AGENTS.md",
+            "missing": false,
+            "rawChars": 7804,
+            "injectedChars": 7804,
+            "truncated": false
+          },
+          {
+            "name": "SOUL.md",
+            "path": "/home/yatit/.openclaw/workspace/SOUL.md",
+            "missing": false,
+            "rawChars": 1359,
+            "injectedChars": 1359,
+            "truncated": false
+          },
+          {
+            "name": "TOOLS.md",
+            "path": "/home/yatit/.openclaw/workspace/TOOLS.md",
+            "missing": false,
+            "rawChars": 706,
+            "injectedChars": 706,
+            "truncated": false
+          },
+          {
+            "name": "IDENTITY.md",
+            "path": "/home/yatit/.openclaw/workspace/IDENTITY.md",
+            "missing": false,
+            "rawChars": 584,
+            "injectedChars": 584,
+            "truncated": false
+          },
+          {
+            "name": "USER.md",
+            "path": "/home/yatit/.openclaw/workspace/USER.md",
+            "missing": false,
+            "rawChars": 504,
+            "injectedChars": 504,
+            "truncated": false
+          },
+          {
+            "name": "HEARTBEAT.md",
+            "path": "/home/yatit/.openclaw/workspace/HEARTBEAT.md",
+            "missing": false,
+            "rawChars": 167,
+            "injectedChars": 167,
+            "truncated": false
+          },
+          {
+            "name": "BOOTSTRAP.md",
+            "path": "/home/yatit/.openclaw/workspace/BOOTSTRAP.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 67,
+            "truncated": false
+          },
+          {
+            "name": "MEMORY.md",
+            "path": "/home/yatit/.openclaw/workspace/MEMORY.md",
+            "missing": false,
+            "rawChars": 926,
+            "injectedChars": 926,
+            "truncated": false
+          }
+        ],
+        "skills": {
+          "promptChars": 6589,
+          "entries": [
+            {
+              "name": "clawhub",
+              "blockChars": 458
+            },
+            {
+              "name": "coding-agent",
+              "blockChars": 305
+            },
+            {
+              "name": "github",
+              "blockChars": 324
+            },
+            {
+              "name": "healthcheck",
+              "blockChars": 517
+            },
+            {
+              "name": "himalaya",
+              "blockChars": 409
+            },
+            {
+              "name": "mcporter",
+              "blockChars": 356
+            },
+            {
+              "name": "obsidian",
+              "blockChars": 271
+            },
+            {
+              "name": "session-logs",
+              "blockChars": 279
+            },
+            {
+              "name": "skill-creator",
+              "blockChars": 322
+            },
+            {
+              "name": "video-frames",
+              "blockChars": 255
+            },
+            {
+              "name": "wacli",
+              "blockChars": 303
+            },
+            {
+              "name": "weather",
+              "blockChars": 246
+            },
+            {
+              "name": "book-structure-architect",
+              "blockChars": 325
+            },
+            {
+              "name": "devops",
+              "blockChars": 410
+            },
+            {
+              "name": "kapisce-stack",
+              "blockChars": 384
+            },
+            {
+              "name": "literary-analyst",
+              "blockChars": 345
+            },
+            {
+              "name": "literary-orchestrator",
+              "blockChars": 316
+            },
+            {
+              "name": "literature-reviewer",
+              "blockChars": 344
+            }
+          ]
+        },
+        "tools": {
+          "listChars": 1926,
+          "schemaChars": 14698,
+          "entries": [
+            {
+              "name": "read",
+              "summaryChars": 298,
+              "schemaChars": 392,
+              "propertiesCount": 4
+            },
+            {
+              "name": "edit",
+              "summaryChars": 129,
+              "schemaChars": 591,
+              "propertiesCount": 6
+            },
+            {
+              "name": "write",
+              "summaryChars": 127,
+              "schemaChars": 313,
+              "propertiesCount": 3
+            },
+            {
+              "name": "exec",
+              "summaryChars": 181,
+              "schemaChars": 1037,
+              "propertiesCount": 12
+            },
+            {
+              "name": "process",
+              "summaryChars": 85,
+              "schemaChars": 844,
+              "propertiesCount": 11
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1251,
+              "schemaChars": 1869,
+              "propertiesCount": 28
+            },
+            {
+              "name": "canvas",
+              "summaryChars": 106,
+              "schemaChars": 661,
+              "propertiesCount": 18
+            },
+            {
+              "name": "nodes",
+              "summaryChars": 101,
+              "schemaChars": 1479,
+              "propertiesCount": 33
+            },
+            {
+              "name": "cron",
+              "summaryChars": 2444,
+              "schemaChars": 581,
+              "propertiesCount": 13
+            },
+            {
+              "name": "message",
+              "summaryChars": 110,
+              "schemaChars": 3921,
+              "propertiesCount": 84
+            },
+            {
+              "name": "tts",
+              "summaryChars": 129,
+              "schemaChars": 223,
+              "propertiesCount": 2
+            },
+            {
+              "name": "gateway",
+              "summaryChars": 225,
+              "schemaChars": 465,
+              "propertiesCount": 11
+            },
+            {
+              "name": "agents_list",
+              "summaryChars": 72,
+              "schemaChars": 33,
+              "propertiesCount": 0
+            },
+            {
+              "name": "sessions_list",
+              "summaryChars": 54,
+              "schemaChars": 176,
+              "propertiesCount": 4
+            },
+            {
+              "name": "sessions_history",
+              "summaryChars": 36,
+              "schemaChars": 149,
+              "propertiesCount": 3
+            },
+            {
+              "name": "sessions_send",
+              "summaryChars": 84,
+              "schemaChars": 203,
+              "propertiesCount": 5
+            },
+            {
+              "name": "sessions_spawn",
+              "summaryChars": 107,
+              "schemaChars": 312,
+              "propertiesCount": 8
+            },
+            {
+              "name": "session_status",
+              "summaryChars": 207,
+              "schemaChars": 89,
+              "propertiesCount": 2
+            },
+            {
+              "name": "web_search",
+              "summaryChars": 175,
+              "schemaChars": 733,
+              "propertiesCount": 6
+            },
+            {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 360,
+              "propertiesCount": 3
+            },
+            {
+              "name": "memory_search",
+              "summaryChars": 235,
+              "schemaChars": 139,
+              "propertiesCount": 3
+            },
+            {
+              "name": "memory_get",
+              "summaryChars": 151,
+              "schemaChars": 128,
+              "propertiesCount": 3
+            }
+          ]
+        }
+      }
+    }
+  }
+}

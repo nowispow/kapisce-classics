@@ -1,7 +1,27 @@
 # Characters: Pride and Prejudice
 
-## Established Personas
-*Characters will be populated here as the Illustration Pipeline processes each chapter.*
+## Main Characters
+
+*   **Elizabeth (Lizzy) Bennet**: The novel's intelligent and spirited protagonist. Possessing a "quickness of observation" and a sharp wit, she is the second eldest Bennet sister. Her initial "prejudice" against Mr. Darcy is rooted in wounded pride after he dismisses her as merely "tolerable" at the Meryton ball. She values genuine character and intellectual substance over social rank and performative accomplishments. Her fierce loyalty is shown when she walks three miles through mud to care for her sister Jane at Netherfield.
+*   **Mr. Fitzwilliam Darcy**: A wealthy gentleman with an income of £10,000 a year and the master of Pemberley. Initially perceived by Meryton society as "proud," "disagreeable," and "above his company," he is socially reserved and hyper-critical of provincial manners. However, he undergoes a reluctant transformation, becoming "bewitched" by Elizabeth's "fine eyes" and "easy playfulness." He struggles internally to reconcile his growing attraction with the "inferiority of her connections."
+*   **Mr. Bennet**: The patriarch of the Bennet family, characterized by "sarcastic humour, reserve, and caprice." He maintains a detached, ironic distance from his wife's frantic matchmaking schemes, preferring the sanctuary of his library. He shares an intellectual bond with Elizabeth, favoring her "quickness" over the "silly and ignorant" behavior of his younger daughters.
+*   **Mrs. Bennet**: A woman of "mean understanding, little information, and uncertain temper." Her singular, obsessive goal is to get her five daughters married to men of fortune. She is volatile and socially unrefined, often causing "mortification" to Elizabeth and Jane through her loud boasting and manipulative tactics—such as sending Jane to Netherfield on horseback in a storm to ensure she stays overnight.
+*   **Jane Bennet**: The eldest Bennet sister, renowned for her serene beauty and "unaffected" manners. She possesses a uniquely "candid" nature, genuinely seeing only the good in others and refusing to believe ill of anyone. Her immediate and sincere connection with Mr. Bingley serves as the primary romantic driver in the novel's opening chapters.
+*   **Mr. Charles Bingley**: A wealthy, "unaffected," and "gentlemanlike" man who rents Netherfield Park. He is characterized by "happy manners" and a "ductility of temper" that makes him easily liked, but also easily influenced by his more dominant friend, Mr. Darcy. His attraction to Jane is immediate, open, and enthusiastic.
+*   **Charlotte Lucas**: Elizabeth’s intimate friend and intellectual peer. She holds a profoundly pragmatic and unsentimental view of marriage, famously stating that "happiness in marriage is entirely a matter of chance." For Charlotte, marriage is a social and economic necessity, and she believes a woman must actively "fix" a husband to secure her future.
+
+## Supporting Characters
+
+*   **Mary Bennet**: The middle sister, described as "pedantic" and "striving for accomplishments." She spends her time reading "great books" and making "extracts," but lacks the wit to engage meaningfully in the family's dialogue. Her moralizing is often ill-timed and serves as a humorous contrast to Elizabeth's natural intelligence.
+*   **Catherine (Kitty) Bennet**: The fourth sister, who is largely a follower of Lydia. She is characterized as having a "vacant" mind and is frequently scolded for her "ill-timed" coughing and obsession with the militia officers in Meryton.
+*   **Lydia Bennet**: The youngest sister, characterized by "high animal spirits" and a bold, unrestrained confidence. Despite being the youngest, she is the "tallest" and most forward, leading the family's obsession with the "red coats" of the militia regiment.
+*   **Miss Caroline Bingley**: Mr. Bingley’s "proud and conceited" sister. She is elitist and deeply exclusionary, viewing the Bennets' "low connections" in trade with disdain. She is particularly jealous of Darcy’s interest in Elizabeth and uses "paltry devices" and "cunning" to attempt to secure his attention for herself.
+*   **Mrs. Hurst (Louisa Bingley)**: Bingley's eldest sister, who shares Caroline's elitist views and "proud" demeanor. She assists Caroline in mocking the Bennets' lack of fashion and social decorum.
+*   **Mr. Hurst**: Louisa Bingley's husband, an indolent man who lives for "eating, drinking, and playing cards." He is intellectually vacuous and socially indifferent, famously expressing surprise that Elizabeth would prefer reading to playing cards.
+*   **Sir William Lucas**: A neighbor to the Bennets who rose from "trade" to the honor of "knighthood." He is obsessively "courteous" and "civil," constantly validating his social status through performative gallantry and references to his time at St. James's.
+*   **Lady Lucas**: Sir William's wife and a "good kind of woman," she is Mrs. Bennet's primary rival in the local marriage market as they both attempt to find wealthy matches for their daughters.
+*   **Mrs. Long**: A local neighbor whom Mrs. Bennet views as a "selfish, hypocritical woman" because she represents competition for Mr. Bingley’s initial attention and introduction.
+*   **Colonel Forster**: The commander of the militia regiment in Meryton (mentioned as a focal point for Kitty and Lydia's social ambitions).
 
 ---
-*Next Step: Illustration agent to generate detailed Renaissance-style personas and initial 10 chapters of scenes.*
+*Updated: Feb 10, 2026, based on analysis of Chapters 1-10.*
