@@ -34,13 +34,15 @@ We need to design components for a premium reading experience:
 3. **Reader View**: `/blog/pride-and-prejudice-chapter-1` (SEO-optimized post with immersive/speed-read toggles).
 
 ## 5. Content Pipeline (ETL)
-We will utilize Python scripts (run via `pixi` in `Documents`) to transform raw HTML/MD classics:
-1. **Scrape**: Fetch from Project Gutenberg or similar.
-2. **Translate**: Convert HTML to clean Markdown.
-3. **Fragment**: Split large book files into chapter-sized blocks.
-4. **SEO Optimization**: Transform chapters into the standard `src/content/blog/` collection.
-5. **Illustration Loop**: 10 chapters/day using Nano Banana in a highly detailed Renaissance style. Includes character consistency checks and a centralized `characters.md`.
-6. **Attribution**: Auto-generate frontmatter linking chapters to the Novel and Author.
+We prioritize high-fidelity markdown sources (Pandoc-converted) over raw text to preserve the author's original intent and formatting.
+
+**Pipeline Steps:**
+1. **Source Discovery**: Search `~/Documents/Kapisce/authors/` for the high-fidelity `.md` version of the book (e.g., `31100.md` for *Sense and Sensibility*). Avoid raw Gutenberg `.txt` if a structured `.md` exists.
+2. **Fragmentation**: Use the centralized `fragmenter.py` (in `Documents/Kapisce/etl-pipelines`) to split the novel into chapters.
+    - **Constraint**: Respect original chapter headers (e.g., `## []{#Chapter_I}`). Do not arbitrarily combine chapters unless creating semantic "Parts" for extremely long chapters (>4,000 words).
+3. **Sanitization**: Run the `text-cleaner` skill (Pixi-managed) to transform Pandoc artifacts into MDX components (`<DropCap />`, `<PageMarker />`).
+4. **Metadata Generation**: Orchestrate `literary-analyst` and `literature-reviewer` sub-agents to generate 7-entry analysis, quotes, and image prompts.
+5. **Integration**: Save finalized MDX and JSON metadata to `src/content/chapters/`.
 
 ## 7. Development Progress
 - [x] Initial PRD and Architecture setup.
