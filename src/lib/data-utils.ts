@@ -8,6 +8,10 @@ export type AnyCollectionEntry =
   | CollectionEntry<'authors'>
   | CollectionEntry<'projects'>;
 
+export type EntryWithMetadata = 
+  | CollectionEntry<'blog'>
+  | CollectionEntry<'chapters'>;
+
 export async function getAllAuthors(): Promise<CollectionEntry<'authors'>[]> {
   return await getCollection('authors')
 }
