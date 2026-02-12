@@ -20,13 +20,20 @@ interface Props {
 
 const { entry } = Astro.props
 
-const formattedDate = 'date' in entry.data ? formatDate(entry.data.date) : ''
+// Type guards or safe access for different schemas
+const data = entry.data as any;
+const title = data.title || data.name || entry.id
+const description = data.description || ''
+const date = data.date || data.startDate || null
+const formattedDate = date ? formatDate(date) : ''
+const image = data.image || data.cover || null
+const tags = data.tags || []
+
+const authorIds: string[] = data.authors ? data.authors : data.author ? [data.author] : []
+const authors = await parseAuthors(authorIds)
+
 const readTime = await getCombinedReadingTime(entry.id)
-
-const entryAuthors = 'authors' in entry.data ? (entry.data.authors ?? []) : 'author' in entry.data ? [entry.data.author] : []
-const authors = await parseAuthors(entryAuthors)
-
-const subpostCount = !isSubpost(entry.id) ? await getSubpostCount(entry.id) : 0
+const subpostCount = entry.collection === 'blog' && !isSubpost(entry.id) ? await getSubpostCount(entry.id) : 0
 ---
 
 <div
@@ -37,22 +44,22 @@ const subpostCount = !isSubpost(entry.id) ? await getSubpostCount(entry.id) : 0
     class="flex flex-col gap-4 sm:flex-row"
   >
     {
-      'image' in entry.data && entry.data.image && (
+      image && (
         <div class="w-full sm:max-w-3xs sm:shrink-0">
           <Image
-            src={entry.data.image}
-            alt={entry.data.title}
+            src={image}
+            alt={title}
             width={1200}
             height={630}
-            class="object-cover"
+            class="object-cover rounded-lg"
           />
         </div>
       )
     }
 
     <div class="grow">
-      <h3 class="mb-1 text-lg font-medium">{entry.data.title}</h3>
-      <p class="text-muted-foreground mb-2 text-sm">{entry.data.description}</p>
+      <h3 class="mb-1 text-lg font-medium">{title}</h3>
+      <p class="text-muted-foreground mb-2 text-sm">{description}</p>
 
       <div
         class="text-muted-foreground mb-2 flex flex-wrap items-center gap-x-2 text-xs"
@@ -97,9 +104,9 @@ const subpostCount = !isSubpost(entry.id) ? await getSubpostCount(entry.id) : 0
       </div>
 
       {
-        'tags' in entry.data && entry.data.tags && (
+        tags && tags.length > 0 && (
           <div class="flex flex-wrap gap-2">
-            {entry.data.tags.map((tag) => (
+            {tags.map((tag: string) => (
               <Badge variant="muted" className="flex items-center gap-x-1">
                 <Icon name="lucide:hash" class="size-3" />
                 {tag}
