@@ -49,7 +49,7 @@ We will utilize Python scripts (run via `pixi` in `Documents`) to transform raw 
 5. **Illustration Loop**: 10 chapters/day using Nano Banana in a highly detailed Renaissance style. Includes character consistency checks and a centralized `characters.md`.
 6. **Attribution**: Auto-generate frontmatter linking chapters to the Novel and Author.
 
-## 8. Collection Management Standards
+## 6. Collection Management Standards
 To maintain type safety when adding new collections:
 1.  **Define in `config.ts`**: Add the collection to `export const collections`.
 2.  **Export Type Alias**: Add an exported type like `export type NewCollectionEntry = CollectionEntry<'new_collection'>`.
