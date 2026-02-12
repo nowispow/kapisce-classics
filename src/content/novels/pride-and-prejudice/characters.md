@@ -1,3 +1,9 @@
+---
+title: "The Characters of Pride and Prejudice"
+description: "A list of main and supporting characters that contribute to the novel's exploration of social class and love."
+author: "jane-austen"
+---
+
 # Characters: Pride and Prejudice
 
 ## Main Characters
@@ -22,6 +28,3 @@
 *   **Georgiana Darcy**: Darcy's younger sister, shy and talented, whose near-scandal with Wickham provides critical context for Darcy's character and his protectiveness.
 *   **Miss Caroline Bingley**: Bingley's "proud and conceited" sister who unsuccessfully attempts to secure Darcy's attention while sabotaging Elizabeth.
 *   **Colonel Fitzwilliam**: Darcy's cousin, a "gentlemanlike" man who inadvertently provides Elizabeth with the information that Darcy separated Bingley and Jane.
-
----
-*Updated: Feb 11, 2026, fully synthesized across Chapters 1-59.*
