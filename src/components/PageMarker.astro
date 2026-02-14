@@ -1,0 +1,17 @@
+---
+interface Props {
+  id?: string
+}
+
+const { id = '' } = Astro.props as Props
+---
+
+<span id={id || undefined} class="page-marker" aria-hidden="true"></span>
+
+<style>
+  .page-marker {
+    display: inline;
+    font-size: 0;
+    line-height: 0;
+  }
+</style>

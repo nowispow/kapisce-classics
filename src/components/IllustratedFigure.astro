@@ -1,0 +1,44 @@
+---
+interface Props {
+  src?: string
+  caption?: string
+}
+
+const { src = '', caption = '' } = Astro.props as Props
+const hasSrc = src.trim().length > 0
+---
+
+<figure class="illustrated-figure">
+  {
+    hasSrc ? (
+      <img src={src} alt={caption || 'Illustration'} loading="lazy" decoding="async" />
+    ) : (
+      <div class="illustrated-placeholder">[Image unavailable]</div>
+    )
+  }
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<style>
+  .illustrated-figure {
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+
+  .illustrated-figure img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .illustrated-figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .illustrated-placeholder {
+    color: hsl(var(--muted-foreground));
+    font-size: 0.875rem;
+  }
+</style>

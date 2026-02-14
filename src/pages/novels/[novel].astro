@@ -7,8 +7,11 @@ import { getNovelById } from '@/lib/novel-utils';
 
 export async function getStaticPaths() {
   const novels = (await getCollection('novels')) as CollectionEntry<'novels'>[];
-  
-  return novels.map(novel => ({
+
+  // Only top-level entries map to this single-segment route.
+  const topLevelNovels = novels.filter((novel) => !novel.id.includes('/'));
+
+  return topLevelNovels.map(novel => ({
     params: { novel: novel.id },
     props: { novelId: novel.id }
   }));
