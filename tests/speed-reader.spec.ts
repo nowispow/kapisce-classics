@@ -1,46 +1,100 @@
 import { test, expect } from '@playwright/test';
 
-test('speed reader appears and functions correctly', async ({ page }) => {
-  // We'll assume the page is running locally on port 4321
-  await page.goto('/blog/pride-and-prejudice-chapter-1');
+test('speed reader renders centered pivot letter and core controls work', async ({ page }) => {
+  await page.goto('/test/speed-reader');
 
-  // Check if SpeedReader is visible
   const speedReader = page.locator('.speed-reader');
   await expect(speedReader).toBeVisible();
 
-  // Check initial state
-  const wordDisplay = speedReader.locator('.text-4xl');
+  const wordDisplay = speedReader.locator('.rsvp-word');
   await expect(wordDisplay).toBeVisible();
-  
-  // Play button should exist
+
+  const pivotLetter = wordDisplay.locator('.rsvp-pivot');
+  const leftPart = wordDisplay.locator('.rsvp-left');
+  const rightPart = wordDisplay.locator('.rsvp-right');
+  await expect(pivotLetter).toBeVisible();
+
+  const fullWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+  const reconstructed =
+    (await leftPart.innerText()) +
+    (await pivotLetter.innerText()) +
+    (await rightPart.innerText());
+  expect(reconstructed).toBe(fullWord);
+
+  const wordBox = await wordDisplay.boundingBox();
+  const pivotBox = await pivotLetter.boundingBox();
+  expect(wordBox).not.toBeNull();
+  expect(pivotBox).not.toBeNull();
+  if (wordBox && pivotBox) {
+    const wordCenter = wordBox.x + wordBox.width / 2;
+    const pivotCenter = pivotBox.x + pivotBox.width / 2;
+    expect(Math.abs(pivotCenter - wordCenter)).toBeLessThan(2.5);
+  }
+
   const playButton = speedReader.locator('button[aria-label="Play"]');
   await expect(playButton).toBeVisible();
 
-  // WPM selector should have correct default and options
   const wpmSelect = speedReader.locator('select');
   await expect(wpmSelect).toHaveValue('300');
-  
-  // Check if we can change WPM
-  await wpmSelect.selectOption('600');
-  await expect(wpmSelect).toHaveValue('600');
 
-  // Start playing
   await playButton.click();
-  
-  // Wait a bit to see if word changes (RSVP)
-  const initialWord = await wordDisplay.innerText();
-  await page.waitForTimeout(500); // At 600 WPM, words change every 100ms
-  const newWord = await wordDisplay.innerText();
-  
-  expect(newWord).not.toBe(initialWord);
+  const initialWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+  await expect
+    .poll(async () => (await wordDisplay.getAttribute('aria-label')) ?? '', {
+      timeout: 2000,
+    })
+    .not.toBe(initialWord);
 
-  // Reset button should reset to first word
   const resetButton = speedReader.locator('button:has-text("Reset")');
   await resetButton.click();
-  
-  // After reset, it should be back to the first word or initial state
-  // (In our case it resets to the first word of the text)
-  const afterResetWord = await wordDisplay.innerText();
-  // Note: first word of P&P Ch 1 is usually "It"
-  expect(afterResetWord).toBe('It');
+  const afterResetWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+  expect(afterResetWord).toBe('alpha');
+});
+
+test('speed reader applies longer delays after punctuation', async ({ page }) => {
+  await page.goto('/test/speed-reader');
+
+  const speedReader = page.locator('.speed-reader');
+  await expect(speedReader).toBeVisible();
+
+  const wordDisplay = speedReader.locator('.rsvp-word');
+  await expect(wordDisplay).toBeVisible();
+
+  await speedReader.locator('select').selectOption('150');
+  await speedReader.locator('button[aria-label="Play"]').click();
+
+  let previousWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+  let previousTs = Date.now();
+  const deltasByWord: Record<string, number> = {};
+  const timeoutAt = Date.now() + 20_000;
+
+  while (Date.now() < timeoutAt) {
+    await page.waitForTimeout(10);
+    const currentWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+    if (currentWord === previousWord) continue;
+
+    const now = Date.now();
+    deltasByWord[previousWord] = now - previousTs;
+    previousWord = currentWord;
+    previousTs = now;
+
+    const hasRequiredSamples =
+      deltasByWord['gamma'] !== undefined &&
+      deltasByWord['delta,'] !== undefined &&
+      deltasByWord['eta'] !== undefined &&
+      deltasByWord['theta.'] !== undefined;
+    if (hasRequiredSamples) break;
+  }
+
+  const gammaDelta = deltasByWord['gamma'];
+  const deltaPause = deltasByWord['delta,'];
+  const etaTheta = deltasByWord['eta'];
+  const thetaPause = deltasByWord['theta.'];
+  expect(gammaDelta).toBeDefined();
+  expect(deltaPause).toBeDefined();
+  expect(etaTheta).toBeDefined();
+  expect(thetaPause).toBeDefined();
+
+  expect(deltaPause!).toBeGreaterThan(gammaDelta! + 80);
+  expect(thetaPause!).toBeGreaterThan(etaTheta! + 140);
 });

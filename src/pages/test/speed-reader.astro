@@ -1,0 +1,19 @@
+---
+import SpeedReaderComponent from '@/components/SpeedReader.svelte'
+
+const sampleText =
+  'alpha beta gamma delta, epsilon zeta eta theta. iota kappa lambda—mu nu xi: omicron pi rho; sigma tau'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Speed Reader Test</title>
+  </head>
+  <body>
+    <main style="max-width: 960px; margin: 2rem auto; padding: 1rem;">
+      <SpeedReaderComponent client:load text={sampleText} />
+    </main>
+  </body>
+</html>

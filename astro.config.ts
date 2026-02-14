@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
+import svelte from '@astrojs/svelte'
 import icon from 'astro-icon'
 
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
@@ -21,7 +22,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   site: 'https://astro-erudite.vercel.app',
-  integrations: [mdx(), react(), sitemap(), icon()],
+  integrations: [mdx(), react(), svelte(), sitemap(), icon()],
   vite: {
     plugins: [tailwindcss()],
   },
