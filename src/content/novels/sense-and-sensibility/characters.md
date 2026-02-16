@@ -1,4 +1,10 @@
-# Sense and Sensibility: Character List
+---
+title: "The Characters of Sense and Sensibility"
+description: "A list of main and supporting characters that shape the novel's themes of reason, emotion, and social expectation."
+author: "jane-austen"
+---
+
+# Characters: Sense and Sensibility
 
 ## Main Characters
 - **Elinor Dashwood**: The eldest daughter of Mr. and Mrs. Henry Dashwood. She represents "sense" (reason and restraint) in the novel.
