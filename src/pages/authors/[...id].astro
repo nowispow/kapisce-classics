@@ -4,7 +4,7 @@ import BlogCard from '@/components/BlogCard.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import PageHead from '@/components/PageHead.astro'
 import Layout from '@/layouts/Layout.astro'
-import { getAllAuthors, getPostsByAuthor } from '@/lib/data-utils'
+import { getAllAuthors, getNovelsByAuthor } from '@/lib/data-utils'
 
 export async function getStaticPaths() {
   const authors = await getAllAuthors()
@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 }
 
 const { author } = Astro.props
-const authorPosts = await getPostsByAuthor(author.id)
+const authorNovels = await getNovelsByAuthor(author.id)
 ---
 
 <Layout class="max-w-3xl">
@@ -36,21 +36,19 @@ const authorPosts = await getPostsByAuthor(author.id)
     <AuthorCard author={author} />
   </section>
   <section class="flex flex-col gap-y-4">
-    <h2 class="text-2xl font-medium">Posts by {author.data.name}</h2>
+    <h2 class="text-2xl font-medium">Novels by {author.data.name}</h2>
     {
-      authorPosts.length > 0 ? (
+      authorNovels.length > 0 ? (
         <ul class="flex flex-col gap-4">
-          {authorPosts
-            .filter((post) => !post.data.draft)
-            .map((post) => (
+          {authorNovels.map((novel) => (
               <li>
-                <BlogCard entry={post} />
+                <BlogCard entry={novel} />
               </li>
             ))}
         </ul>
       ) : (
         <p class="text-muted-foreground">
-          No posts available from this author.
+          No novels available from this author.
         </p>
       )
     }
