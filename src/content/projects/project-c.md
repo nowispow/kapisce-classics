@@ -1,8 +1,8 @@
 ---
-name: 'Project C'
-description: 'This is an example project description! You should replace this with a description of your own project.'
-tags: ['Framework A', 'Library B', 'Tool C', 'Resource D']
+name: 'Kapisce'
+description: 'Kapisce is a reimagining of classical literature, with a modern twist.'
+tags: ['Svelte', 'Astro', 'Tailwind']
 image: '../../../public/static/1200x630.png'
-link: 'https://example.com'
-startDate: '2024-03-01'
+link: 'https://kapisce.com'
+startDate: '2026-01-14'
 ---

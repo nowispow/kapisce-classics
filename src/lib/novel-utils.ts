@@ -1,8 +1,28 @@
 import { getCollection } from 'astro:content';
 import type { NovelEntry, ChapterEntry } from '@/content/config';
 
+export function isNovelSubpost(novelId: string): boolean {
+  return novelId.includes('/');
+}
+
+export function getNovelParentId(subpostId: string): string {
+  return subpostId.split('/')[0];
+}
+
 export async function getAllNovels(): Promise<NovelEntry[]> {
   return await getCollection('novels');
+}
+
+export async function getTopLevelNovels(): Promise<NovelEntry[]> {
+  const novels = await getAllNovels();
+  return novels.filter((novel) => !isNovelSubpost(novel.id));
+}
+
+export async function getNovelSubposts(parentId: string): Promise<NovelEntry[]> {
+  const novels = await getAllNovels();
+  return novels.filter(
+    (novel) => isNovelSubpost(novel.id) && getNovelParentId(novel.id) === parentId,
+  );
 }
 
 export async function getAllChapters(): Promise<ChapterEntry[]> {

@@ -1,0 +1,20 @@
+---
+interface Props {
+  letter?: string
+  src?: string
+}
+
+const { letter = '' } = Astro.props as Props
+---
+
+<span class="drop-cap" aria-hidden="true">{letter}</span>
+
+<style>
+  .drop-cap {
+    float: left;
+    margin: 0.1em 0.12em 0 0;
+    font-size: 2.5em;
+    line-height: 0.9;
+    font-weight: 700;
+  }
+</style>

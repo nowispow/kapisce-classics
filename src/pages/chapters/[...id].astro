@@ -3,6 +3,9 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import PostHead from '@/components/PostHead.astro'
 import NovelCollection from '@/components/NovelCollection.astro'
 import SpeedReader from '@/components/SpeedReader.svelte'
+import DropCap from '@/components/DropCap.astro'
+import PageMarker from '@/components/PageMarker.astro'
+import IllustratedFigure from '@/components/IllustratedFigure.astro'
 import Layout from '@/layouts/Layout.astro'
 import { getAdjacentChapters, getAllChapters, getNovelById } from '@/lib/novel-utils'
 import { parseAuthors } from '@/lib/data-utils'
@@ -95,7 +98,7 @@ const postReadingTime = readingTime(wordCount)
 
     <article class="prose col-start-2 max-w-none">
       <SpeedReader client:load text={chapter.body} />
-      <Content />
+      <Content components={{ DropCap, PageMarker, IllustratedFigure }} />
 
       <NovelCollection novelId={chapter.data.novel} />
     </article>

@@ -11,3 +11,7 @@ pnpm-debug.log*
 .idea/
 teaser.pptx
 ~$teaser.pptx
+test-results/
+# pixi environments
+.pixi/*
+!.pixi/config.toml
