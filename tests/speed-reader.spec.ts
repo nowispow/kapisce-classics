@@ -1,46 +1,124 @@
 import { test, expect } from '@playwright/test';
 
-test('speed reader appears and functions correctly', async ({ page }) => {
-  // We'll assume the page is running locally on port 4321
-  await page.goto('/blog/pride-and-prejudice-chapter-1');
+test('speed reader renders centered word and core controls work', async ({ page }) => {
+  await page.goto('/test/speed-reader');
 
-  // Check if SpeedReader is visible
   const speedReader = page.locator('.speed-reader');
   await expect(speedReader).toBeVisible();
 
-  // Check initial state
-  const wordDisplay = speedReader.locator('.text-4xl');
+  const wordDisplay = speedReader.locator('.rsvp-word');
   await expect(wordDisplay).toBeVisible();
-  
-  // Play button should exist
+
+  const fullWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+  const visibleText = (await wordDisplay.innerText()).trim();
+  expect(visibleText).toBe(fullWord);
+
+  const wordBox = await wordDisplay.boundingBox();
+  expect(wordBox).not.toBeNull();
+  if (wordBox) {
+    const textCenterX = await wordDisplay.evaluate((el) => {
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const rects = range.getClientRects();
+      if (!rects.length) return null;
+      const first = rects[0];
+      return first.left + first.width / 2;
+    });
+
+    expect(textCenterX).not.toBeNull();
+    if (textCenterX !== null) {
+      const wordCenterX = wordBox.x + wordBox.width / 2;
+      expect(Math.abs(textCenterX - wordCenterX)).toBeLessThan(6);
+    }
+  }
+
   const playButton = speedReader.locator('button[aria-label="Play"]');
   await expect(playButton).toBeVisible();
 
-  // WPM selector should have correct default and options
   const wpmSelect = speedReader.locator('select');
   await expect(wpmSelect).toHaveValue('300');
-  
-  // Check if we can change WPM
-  await wpmSelect.selectOption('600');
-  await expect(wpmSelect).toHaveValue('600');
 
-  // Start playing
   await playButton.click();
-  
-  // Wait a bit to see if word changes (RSVP)
-  const initialWord = await wordDisplay.innerText();
-  await page.waitForTimeout(500); // At 600 WPM, words change every 100ms
-  const newWord = await wordDisplay.innerText();
-  
-  expect(newWord).not.toBe(initialWord);
+  const initialWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+  await expect
+    .poll(async () => (await wordDisplay.getAttribute('aria-label')) ?? '', {
+      timeout: 2000,
+    })
+    .not.toBe(initialWord);
 
-  // Reset button should reset to first word
   const resetButton = speedReader.locator('button:has-text("Reset")');
   await resetButton.click();
-  
-  // After reset, it should be back to the first word or initial state
-  // (In our case it resets to the first word of the text)
-  const afterResetWord = await wordDisplay.innerText();
-  // Note: first word of P&P Ch 1 is usually "It"
-  expect(afterResetWord).toBe('It');
+  const afterResetWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+  expect(afterResetWord).toBe('alpha');
+});
+
+test('speed reader applies one-word extra pause after sentence punctuation', async ({ page }) => {
+  await page.goto('/test/speed-reader');
+
+  const speedReader = page.locator('.speed-reader');
+  await expect(speedReader).toBeVisible();
+
+  const wordDisplay = speedReader.locator('.rsvp-word');
+  await expect(wordDisplay).toBeVisible();
+
+  await speedReader.locator('select').selectOption('150');
+  await speedReader.locator('button[aria-label="Play"]').click();
+
+  let previousWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+  let previousTs = Date.now();
+  const deltasByWord: Record<string, number> = {};
+  const timeoutAt = Date.now() + 20_000;
+
+  while (Date.now() < timeoutAt) {
+    await page.waitForTimeout(10);
+    const currentWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
+    if (currentWord === previousWord) continue;
+
+    const now = Date.now();
+    deltasByWord[previousWord] = now - previousTs;
+    previousWord = currentWord;
+    previousTs = now;
+
+    const hasRequiredSamples =
+      deltasByWord['gamma'] !== undefined &&
+      deltasByWord['delta,'] !== undefined &&
+      deltasByWord['eta'] !== undefined &&
+      deltasByWord['theta.'] !== undefined &&
+      deltasByWord['rho;'] !== undefined &&
+      deltasByWord['sigma!'] !== undefined &&
+      deltasByWord['tau?'] !== undefined &&
+      deltasByWord['![]'] !== undefined;
+    if (hasRequiredSamples) break;
+  }
+
+  const gammaDelta = deltasByWord['gamma'];
+  const deltaPause = deltasByWord['delta,'];
+  const etaTheta = deltasByWord['eta'];
+  const thetaPause = deltasByWord['theta.'];
+  const piRho = deltasByWord['pi'];
+  const rhoPause = deltasByWord['rho;'];
+  const sigmaPause = deltasByWord['sigma!'];
+  const tauPause = deltasByWord['tau?'];
+  const markdownToken = deltasByWord['![]'];
+  expect(gammaDelta).toBeDefined();
+  expect(deltaPause).toBeDefined();
+  expect(etaTheta).toBeDefined();
+  expect(thetaPause).toBeDefined();
+  expect(piRho).toBeDefined();
+  expect(rhoPause).toBeDefined();
+  expect(sigmaPause).toBeDefined();
+  expect(tauPause).toBeDefined();
+  expect(markdownToken).toBeDefined();
+
+  // At 150 WPM, one word is ~400ms. Punctuation should add ~400ms.
+  expect(deltaPause!).toBeGreaterThan(gammaDelta! + 250);
+  expect(thetaPause!).toBeGreaterThan(etaTheta! + 250);
+  expect(rhoPause!).toBeGreaterThan(piRho! + 250);
+
+  // Sentence endings should pause too.
+  expect(sigmaPause!).toBeGreaterThan(piRho! + 250);
+  expect(tauPause!).toBeGreaterThan(piRho! + 250);
+
+  // Markdown image shortcut token should not trigger punctuation pause.
+  expect(markdownToken!).toBeLessThan(tauPause! - 150);
 });

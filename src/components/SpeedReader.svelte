@@ -1,5 +1,5 @@
 <script>
-  import { onMount, onDestroy } from 'svelte';
+  import { onDestroy } from 'svelte';
 
   export let text = '';
 
@@ -9,53 +9,127 @@
   let currentIndex = 0;
   let isPlaying = false;
   let wpm = 300;
-  let interval;
+  let rafId;
+  let lastFrameTs = 0;
+  let elapsedMs = 0;
+  let currentDelayMs = 0;
 
   const wpmOptions = [150, 300, 600, 900];
+  const punctuationPauseChars = new Set([',', ';', ':', '.', '!', '?']);
+  const trailingClosers = new Set(['"', "'", '”', '’', ')', ']', '}']);
+  const EXTRA_WORD_PAUSE_EQUIVALENT = 1;
 
   function togglePlay() {
-    isPlaying = !isPlaying;
-    if (!isPlaying) {
-      clearInterval(interval);
+    if (isPlaying) {
+      isPlaying = false;
+      stopRafLoop();
+      return;
     }
+
+    if (words.length === 0) return;
+    isPlaying = true;
+    currentDelayMs = getWordDelay(words[currentIndex] || '');
+    startRafLoop();
   }
 
-  function startTimer() {
-    clearInterval(interval);
-    if (!isPlaying) return;
+  function getWordDelay(word) {
     const msPerWord = 60000 / wpm;
-    interval = setInterval(() => {
-      if (currentIndex < words.length - 1) {
-        currentIndex++;
-      } else {
+    const hasPauseMark = hasPausePunctuation(word);
+    const extraWords = hasPauseMark ? EXTRA_WORD_PAUSE_EQUIVALENT : 0;
+    return msPerWord * (1 + extraWords);
+  }
+
+  function hasPausePunctuation(word) {
+    if (!word) return false;
+
+    // Treat em dash as a pause trigger even when not trailing.
+    if (word.includes('—')) return true;
+
+    for (let i = word.length - 1; i >= 0; i--) {
+      const char = word[i];
+      if (trailingClosers.has(char)) continue;
+      return punctuationPauseChars.has(char);
+    }
+
+    return false;
+  }
+
+  function frame(ts) {
+    if (!isPlaying) return;
+
+    if (lastFrameTs === 0) {
+      lastFrameTs = ts;
+      rafId = requestAnimationFrame(frame);
+      return;
+    }
+
+    elapsedMs += ts - lastFrameTs;
+    lastFrameTs = ts;
+
+    while (isPlaying && elapsedMs >= currentDelayMs) {
+      elapsedMs -= currentDelayMs;
+
+      if (currentIndex >= words.length - 1) {
         isPlaying = false;
-        clearInterval(interval);
+        stopRafLoop();
+        return;
       }
-    }, msPerWord);
+
+      currentIndex++;
+      currentDelayMs = getWordDelay(words[currentIndex] || '');
+    }
+
+    rafId = requestAnimationFrame(frame);
+  }
+
+  function startRafLoop() {
+    stopRafLoop();
+    lastFrameTs = 0;
+    rafId = requestAnimationFrame(frame);
+  }
+
+  function stopRafLoop() {
+    if (rafId !== undefined) {
+      cancelAnimationFrame(rafId);
+      rafId = undefined;
+    }
   }
 
   function reset() {
     currentIndex = 0;
     isPlaying = false;
-    clearInterval(interval);
+    elapsedMs = 0;
+    lastFrameTs = 0;
+    stopRafLoop();
   }
 
-  $: if (isPlaying && words.length > 0) {
-    startTimer();
+  $: currentWord = words[currentIndex] || '';
+
+  // Apply new cadence immediately if WPM changes while playing.
+  $: if (isPlaying) {
+    wpm;
+    currentDelayMs = getWordDelay(currentWord);
+  }
+
+  // Keep index stable if text changes and now has fewer words.
+  $: if (currentIndex > words.length - 1) {
+    currentIndex = Math.max(words.length - 1, 0);
   }
 
   onDestroy(() => {
-    if (interval) {
-      clearInterval(interval);
-    }
+    stopRafLoop();
   });
 </script>
 
 <div class="speed-reader my-8 p-6 border rounded-lg bg-card text-card-foreground shadow-sm">
   <div class="text-center mb-6 h-16 flex items-center justify-center">
-    <span class="text-4xl font-bold tracking-tight">
-      {words[currentIndex] || 'Ready?'}
-    </span>
+    {#if currentWord}
+      <div class="rsvp-word text-4xl font-bold tracking-tight" aria-label={currentWord}>
+        {currentWord}
+      </div>
+    {:else}
+      <span class="text-4xl font-bold tracking-tight">Ready?</span>
+    {/if}
   </div>
 
   <div class="flex flex-col gap-4">
@@ -95,10 +169,19 @@
         style="width: {(currentIndex / (words.length - 1 || 1)) * 100}%"
       ></div>
     </div>
-    
+
     <div class="flex justify-between text-xs text-muted-foreground">
       <span>Word {currentIndex + 1} of {words.length}</span>
       <span>{Math.round((currentIndex / (words.length - 1 || 1)) * 100)}%</span>
     </div>
   </div>
 </div>
+
+<style>
+  .rsvp-word {
+    text-align: center;
+    width: 100%;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0;
+  }
+</style>

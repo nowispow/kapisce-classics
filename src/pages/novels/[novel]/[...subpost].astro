@@ -1,0 +1,62 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import Layout from '@/layouts/Layout.astro';
+import { getNovelById } from '@/lib/novel-utils';
+
+export async function getStaticPaths() {
+  const novels = (await getCollection('novels')) as CollectionEntry<'novels'>[];
+  const subposts = novels.filter((novel) => novel.id.includes('/'));
+
+  return subposts.map((subpost) => {
+    const [novel, ...rest] = subpost.id.split('/');
+    return {
+      params: {
+        novel,
+        subpost: rest.join('/'),
+      },
+      props: {
+        novelId: novel,
+        subpostId: subpost.id,
+      },
+    };
+  });
+}
+
+const { novelId, subpostId } = Astro.props;
+const novel = await getNovelById(novelId);
+const subpost = await getNovelById(subpostId);
+
+if (!subpost) {
+  throw new Error(`Novel sub-post not found: ${subpostId}`);
+}
+
+const { Content } = await render(subpost);
+---
+
+<Layout title={subpost.data.title}>
+  <section class="grid grid-cols-[minmax(0px,1fr)_min(calc(var(--breakpoint-md)-2rem),100%)_minmax(0px,1fr)] gap-y-6 py-12">
+    <div class="col-start-2">
+      <Breadcrumbs
+        items={[
+          { href: '/novels', label: 'Library', icon: 'lucide:library-big' },
+          {
+            href: `/novels/${novelId}`,
+            label: novel?.data.title || novelId,
+            icon: 'lucide:book-open',
+          },
+          {
+            href: `/novels/${subpostId}`,
+            label: subpost.data.title,
+            icon: 'lucide:file-text',
+          },
+        ]}
+      />
+
+      <article class="prose prose-neutral dark:prose-invert mt-8 max-w-none">
+        <p class="text-muted-foreground !mt-0">{subpost.data.description}</p>
+        <Content />
+      </article>
+    </div>
+  </section>
+</Layout>

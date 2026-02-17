@@ -9,5 +9,9 @@ pnpm-debug.log*
 .env.production
 .DS_Store
 .idea/
+test-results/
+# pixi environments
+.pixi/*
+!.pixi/config.toml
 src/content/chapters/metadata/
 

@@ -36,19 +36,9 @@ We need to design components for a premium reading experience:
 ## 5. Content Pipeline (ETL)
 We prioritize high-fidelity markdown sources (Pandoc-converted) over raw text to preserve the author's original intent and formatting.
 
-**Pipeline Steps:**
-1. **Source Discovery**: Search `~/Documents/Kapisce/authors/` for the high-fidelity `.md` version of the book (e.g., `31100.md` for *Sense and Sensibility*). Avoid raw Gutenberg `.txt` if a structured `.md` exists.
-2. **Fragmentation**: Use the centralized `fragmenter.py` (in `Documents/Kapisce/etl-pipelines`) to split the novel into chapters.
-    - **Constraint**: Respect original chapter headers (e.g., `## []{#Chapter_I}`). Do not arbitrarily combine chapters unless creating semantic "Parts" for extremely long chapters (>4,000 words).
-3. **Sanitization**: Run the `text-cleaner` skill (Pixi-managed) to transform Pandoc artifacts into MDX components (`<DropCap />`, `<PageMarker />`).
-4. **Metadata Generation**: Orchestrate `literary-analyst` and `literature-reviewer` sub-agents to generate 7-entry analysis, quotes, and image prompts.
-5. **Integration**: Save finalized MDX and JSON metadata to `src/content/chapters/`.
-
-## 7. Development Progress
-- [x] Initial PRD and Architecture setup.
-- [x] Jane Austen author metadata created.
-- [x] ETL Pipeline repository initialized (`/Documents/Kapisce/etl-pipelines`).
-- [x] Baseline fragmentation script drafted (`fragmenter.py`).
-- [ ] Run fragmentation on *Pride and Prejudice* (1342.md).
-- [ ] Implement Svelte Speed Reader component.
-- [ ] Integrate Capacitor for mobile testing.
+## 6. Collection Management Standards
+To maintain type safety when adding new collections:
+1.  **Define in `config.ts`**: Add the collection to `export const collections`.
+2.  **Export Type Alias**: Add an exported type like `export type NewCollectionEntry = CollectionEntry<'new_collection'>`.
+3.  **Update Global Unions**: Add the new type to `AnyCollectionEntry` (for all entries) and `ArticleEntry` (if it follows the title/description pattern) in `src/lib/data-utils.ts`.
+4.  **Component Property Access**: When using shared components (e.g., `BlogCard`), use type guards or casting (`(entry.data as any)`) if the schemas vary significantly, or ensure the new collection adheres to the `ArticleEntry` interface.
