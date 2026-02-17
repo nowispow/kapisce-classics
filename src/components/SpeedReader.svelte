@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount, onDestroy } from 'svelte';
 
   export let text = '';
 
@@ -15,15 +15,14 @@
 
   function togglePlay() {
     isPlaying = !isPlaying;
-    if (isPlaying) {
-      startTimer();
-    } else {
+    if (!isPlaying) {
       clearInterval(interval);
     }
   }
 
   function startTimer() {
     clearInterval(interval);
+    if (!isPlaying) return;
     const msPerWord = 60000 / wpm;
     interval = setInterval(() => {
       if (currentIndex < words.length - 1) {
@@ -41,12 +40,14 @@
     clearInterval(interval);
   }
 
-  $: if (isPlaying) {
+  $: if (isPlaying && words.length > 0) {
     startTimer();
   }
 
-  onMount(() => {
-    return () => clearInterval(interval);
+  onDestroy(() => {
+    if (interval) {
+      clearInterval(interval);
+    }
   });
 </script>
 

@@ -1,31 +1,32 @@
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import type { NovelEntry, ChapterEntry } from '@/content/config';
 
-export async function getAllNovels(): Promise<CollectionEntry<'novels'>[]> {
+export async function getAllNovels(): Promise<NovelEntry[]> {
   return await getCollection('novels');
 }
 
-export async function getAllChapters(): Promise<CollectionEntry<'chapters'>[]> {
+export async function getAllChapters(): Promise<ChapterEntry[]> {
   const chapters = await getCollection('chapters');
   return chapters
     .filter((chapter) => !chapter.data.draft)
     .sort((a, b) => a.data.chapter_number - b.data.chapter_number);
 }
 
-export async function getChaptersByNovel(novelId: string): Promise<CollectionEntry<'chapters'>[]> {
+export async function getChaptersByNovel(novelId: string): Promise<ChapterEntry[]> {
   const chapters = await getCollection('chapters');
   return chapters
     .filter((chapter) => !chapter.data.draft && chapter.data.novel === novelId)
     .sort((a, b) => a.data.chapter_number - b.data.chapter_number);
 }
 
-export async function getNovelById(novelId: string): Promise<CollectionEntry<'novels'> | null> {
-  const novels = await getCollection('novels');
+export async function getNovelById(novelId: string): Promise<NovelEntry | null> {
+  const novels = await getAllNovels();
   return novels.find((novel) => novel.id === novelId) || null;
 }
 
 export async function getAdjacentChapters(currentId: string, novelId: string): Promise<{
-  newer: CollectionEntry<'chapters'> | null
-  older: CollectionEntry<'chapters'> | null
+  newer: ChapterEntry | null
+  older: ChapterEntry | null
 }> {
   const chapters = await getChaptersByNovel(novelId);
   const currentIndex = chapters.findIndex((chapter) => chapter.id === currentId);

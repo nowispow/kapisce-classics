@@ -1,21 +1,33 @@
 ---
 import { SITE } from '@/consts'
-import { isSubpost } from '@/lib/data-utils'
-import type { CollectionEntry } from 'astro:content'
+import { isSubpost, type AnyCollectionEntry } from '@/lib/data-utils'
 
 interface Props {
-  post: CollectionEntry<'blog'>
+  post: AnyCollectionEntry
 }
 
 const { post } = Astro.props
 
-const title = post.data.title || SITE.title
-const description = post.data.description || SITE.description
-const image = new URL('/static/1200x630.png', Astro.site)
-const author =
-  post.data.authors && post.data.authors.length > 0
-    ? post.data.authors.join(', ')
-    : SITE.author
+const data = post.data as any
+const title = data.title || data.name || SITE.title
+const description = data.description || SITE.description
+
+let imageUrl = '/static/1200x630.png'
+if (data.image) {
+  if (typeof data.image === 'string') {
+    imageUrl = data.image
+  } else if (data.image.src) {
+    imageUrl = data.image.src
+  }
+} else if (data.cover) {
+  imageUrl = data.cover
+}
+
+const image = imageUrl.startsWith('http') ? new URL(imageUrl) : new URL(imageUrl, SITE.href)
+
+const authorIds = data.authors ? data.authors : data.author ? [data.author] : []
+const author = authorIds.length > 0 ? authorIds.join(', ') : SITE.author
+const tags = data.tags || []
 ---
 
 <title>{`${title} | ${SITE.title}`}</title>
@@ -29,9 +41,7 @@ const author =
 <meta property="og:description" content={description} />
 <meta
   property="og:image"
-  content={post?.data?.image?.src
-    ? `${SITE.href}${post.data.image.src}`
-    : image}
+  content={image}
 />
 <meta property="og:image:alt" content={title} />
 <meta property="og:type" content="website" />
@@ -44,17 +54,15 @@ const author =
 <meta name="twitter:description" content={description} />
 <meta
   property="twitter:image"
-  content={post?.data?.image?.src
-    ? `${SITE.href}${post.data.image.src}`
-    : image}
+  content={image}
 />
 <meta name="twitter:image:alt" content={title} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content={author} />
 
 {
-  post?.data.tags &&
-    post.data.tags.map((tag: string) => {
+  tags &&
+    tags.map((tag: string) => {
       return <meta property="article:tag" content={tag} />
     })
 }

@@ -1,6 +1,21 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content'
 import { readingTime, calculateWordCountFromHtml } from '@/lib/utils'
 
+export type AnyCollectionEntry = 
+  | CollectionEntry<'blog'>
+  | CollectionEntry<'chapters'>
+  | CollectionEntry<'novels'>
+  | CollectionEntry<'authors'>
+  | CollectionEntry<'projects'>;
+
+/**
+ * Type for entries that have a common "Article" structure (title, description).
+ */
+export type ArticleEntry = 
+  | CollectionEntry<'blog'>
+  | CollectionEntry<'chapters'>
+  | CollectionEntry<'novels'>;
+
 export async function getAllAuthors(): Promise<CollectionEntry<'authors'>[]> {
   return await getCollection('authors')
 }
@@ -32,10 +47,16 @@ export async function getAllProjects(): Promise<CollectionEntry<'projects'>[]> {
 
 export async function getAllTags(): Promise<Map<string, number>> {
   const posts = await getAllPosts()
-  return posts.reduce((acc, post) => {
-    post.data.tags?.forEach((tag) => {
-      acc.set(tag, (acc.get(tag) || 0) + 1)
-    })
+  const chapters = await getCollection('chapters')
+  
+  const allEntries = [...posts, ...chapters]
+  
+  return allEntries.reduce((acc, post) => {
+    if ('tags' in post.data && post.data.tags) {
+      post.data.tags.forEach((tag) => {
+        acc.set(tag, (acc.get(tag) || 0) + 1)
+      })
+    }
     return acc
   }, new Map<string, number>())
 }
@@ -221,12 +242,17 @@ export async function getSubpostCount(parentId: string): Promise<number> {
 }
 
 export async function getCombinedReadingTime(postId: string): Promise<string> {
-  const post = await getPostById(postId)
+  const blogPosts = await getAllPostsAndSubposts()
+  const chapters = await getCollection('chapters')
+  const novels = await getCollection('novels')
+  
+  const post = [...blogPosts, ...chapters, ...novels].find(p => p.id === postId)
+  
   if (!post) return readingTime(0)
 
   let totalWords = calculateWordCountFromHtml(post.body)
 
-  if (!isSubpost(postId)) {
+  if (post.collection === 'blog' && !isSubpost(postId)) {
     const subposts = await getSubpostsForParent(postId)
     for (const subpost of subposts) {
       totalWords += calculateWordCountFromHtml(subpost.body)
@@ -237,7 +263,12 @@ export async function getCombinedReadingTime(postId: string): Promise<string> {
 }
 
 export async function getPostReadingTime(postId: string): Promise<string> {
-  const post = await getPostById(postId)
+  const blogPosts = await getAllPostsAndSubposts()
+  const chapters = await getCollection('chapters')
+  const novels = await getCollection('novels')
+  
+  const post = [...blogPosts, ...chapters, ...novels].find(p => p.id === postId)
+  
   if (!post) return readingTime(0)
 
   const wordCount = calculateWordCountFromHtml(post.body)

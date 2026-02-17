@@ -1,4 +1,12 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, z, type CollectionEntry } from 'astro:content';
+
+export type AuthorEntry = CollectionEntry<'authors'>;
+export type NovelEntry = CollectionEntry<'novels'>;
+export type ChapterEntry = CollectionEntry<'chapters'>;
+export type BlogEntry = CollectionEntry<'blog'>;
+export type ProjectEntry = CollectionEntry<'projects'>;
+
+export type KapisceEntry = AuthorEntry | NovelEntry | ChapterEntry | BlogEntry | ProjectEntry;
 
 const authors = defineCollection({
   type: 'content',
@@ -51,6 +59,20 @@ const blog = defineCollection({
     tags: z.array(z.string()).optional(),
     authors: z.array(z.string()).optional(),
     draft: z.boolean().default(false),
+    order: z.number().optional(),
+  }),
+});
+
+const projects = defineCollection({
+  type: 'content',
+  schema: ({ image }) => z.object({
+    name: z.string(),
+    description: z.string(),
+    tags: z.array(z.string()),
+    image: image(),
+    link: z.string().url(),
+    startDate: z.coerce.date().optional(),
+    endDate: z.coerce.date().optional(),
   }),
 });
 
@@ -59,4 +81,5 @@ export const collections = {
   'novels': novels,
   'chapters': chapters,
   'blog': blog,
+  'projects': projects,
 };
