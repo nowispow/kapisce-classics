@@ -9,5 +9,5 @@ pnpm-debug.log*
 .env.production
 .DS_Store
 .idea/
-teaser.pptx
-~$teaser.pptx
+src/content/chapters/metadata/
+
