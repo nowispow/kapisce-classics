@@ -3,8 +3,10 @@
 
   export let text = '';
 
+  let sourceText = '';
   let words = [];
-  $: words = text.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean);
+  $: sourceText = typeof text === 'string' ? text : String(text ?? '');
+  $: words = sourceText.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean);
 
   let currentIndex = 0;
   let isPlaying = false;
