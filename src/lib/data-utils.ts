@@ -127,6 +127,13 @@ export async function getPostsByAuthor(
   return posts.filter((post) => post.data.authors?.includes(authorId))
 }
 
+export async function getNovelsByAuthor(
+  authorId: string,
+): Promise<CollectionEntry<'novels'>[]> {
+  const novels = await getCollection('novels')
+  return novels.filter((novel) => novel.data.author === authorId)
+}
+
 export async function getPostsByTag(
   tag: string,
 ): Promise<CollectionEntry<'blog'>[]> {

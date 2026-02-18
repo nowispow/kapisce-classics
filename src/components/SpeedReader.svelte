@@ -3,122 +3,140 @@
 
   export let text = '';
 
+  let sourceText = '';
   let words = [];
-  $: words = text.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean);
+  $: sourceText = typeof text === 'string' ? text : String(text ?? '');
+  $: words = sourceText.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean);
 
   let currentIndex = 0;
   let isPlaying = false;
   let wpm = 300;
-  let timerId;
+  let currentWord = '';
+  let rafId;
+  let lastFrameTs = 0;
+  let elapsedMs = 0;
+  let currentDelayMs = 0;
 
   const wpmOptions = [150, 300, 600, 900];
-  const punctuationPauseMultipliers = {
-    ',': 1.3,
-    ';': 1.6,
-    ':': 1.6,
-    '—': 1.8,
-    '.': 2
-  };
+  const punctuationPauseChars = new Set([',', ';', ':', '.', '!', '?']);
   const trailingClosers = new Set(['"', "'", '”', '’', ')', ']', '}']);
+  const EXTRA_WORD_PAUSE_EQUIVALENT = 1;
 
   function togglePlay() {
     if (isPlaying) {
       isPlaying = false;
-      clearTimeout(timerId);
+      stopRafLoop();
       return;
     }
 
     if (words.length === 0) return;
     isPlaying = true;
-    scheduleNextWord();
+    currentDelayMs = getWordDelay(words[currentIndex] || '');
+    startRafLoop();
   }
 
   function getWordDelay(word) {
     const msPerWord = 60000 / wpm;
-    let pauseMultiplier = 1;
+    const hasPauseMark = hasPausePunctuation(word);
+    const extraWords = hasPauseMark ? EXTRA_WORD_PAUSE_EQUIVALENT : 0;
+    return msPerWord * (1 + extraWords);
+  }
 
-    if (word.includes('—')) {
-      pauseMultiplier = Math.max(pauseMultiplier, punctuationPauseMultipliers['—']);
-    }
+  function hasPausePunctuation(word) {
+    if (!word) return false;
+
+    // Treat em dash as a pause trigger even when not trailing.
+    if (word.includes('—')) return true;
 
     for (let i = word.length - 1; i >= 0; i--) {
       const char = word[i];
       if (trailingClosers.has(char)) continue;
-      pauseMultiplier = Math.max(pauseMultiplier, punctuationPauseMultipliers[char] ?? 1);
-      break;
+      return punctuationPauseChars.has(char);
     }
 
-    return msPerWord * pauseMultiplier;
+    return false;
   }
 
-  function scheduleNextWord() {
-    clearTimeout(timerId);
+  function getPivotIndex(word) {
+    if (!word) return 0;
+    return Math.floor((word.length - 1) / 2);
+  }
+
+  function frame(ts) {
     if (!isPlaying) return;
-    if (currentIndex >= words.length - 1) {
-      isPlaying = false;
+
+    if (lastFrameTs === 0) {
+      lastFrameTs = ts;
+      rafId = requestAnimationFrame(frame);
       return;
     }
 
-    const currentWord = words[currentIndex] || '';
-    timerId = setTimeout(() => {
+    elapsedMs += ts - lastFrameTs;
+    lastFrameTs = ts;
+
+    while (isPlaying && elapsedMs >= currentDelayMs) {
+      elapsedMs -= currentDelayMs;
+
+      if (currentIndex >= words.length - 1) {
+        isPlaying = false;
+        stopRafLoop();
+        return;
+      }
+
       currentIndex++;
-      scheduleNextWord();
-    }, getWordDelay(currentWord));
+      currentDelayMs = getWordDelay(words[currentIndex] || '');
+    }
+
+    rafId = requestAnimationFrame(frame);
+  }
+
+  function startRafLoop() {
+    stopRafLoop();
+    lastFrameTs = 0;
+    rafId = requestAnimationFrame(frame);
+  }
+
+  function stopRafLoop() {
+    if (rafId !== undefined) {
+      cancelAnimationFrame(rafId);
+      rafId = undefined;
+    }
   }
 
   function reset() {
     currentIndex = 0;
     isPlaying = false;
-    clearTimeout(timerId);
-  }
-
-  function getWordParts(word) {
-    if (!word) return { left: '', pivot: '', right: '' };
-    const letterOnly = word.replace(/[^A-Za-z]/g, '');
-    if (!letterOnly) return { left: '', pivot: word, right: '' };
-
-    const pivotLetterIndex = Math.floor((letterOnly.length - 1) / 2);
-    let letterCursor = 0;
-    let pivotIndexInWord = 0;
-    for (let i = 0; i < word.length; i++) {
-      if (/[A-Za-z]/.test(word[i])) {
-        if (letterCursor === pivotLetterIndex) {
-          pivotIndexInWord = i;
-          break;
-        }
-        letterCursor++;
-      }
-    }
-
-    return {
-      left: word.slice(0, pivotIndexInWord),
-      pivot: word[pivotIndexInWord],
-      right: word.slice(pivotIndexInWord + 1)
-    };
+    elapsedMs = 0;
+    lastFrameTs = 0;
+    stopRafLoop();
   }
 
   $: currentWord = words[currentIndex] || '';
-  $: currentWordParts = getWordParts(currentWord);
 
-  // Apply a new cadence immediately if WPM changes while playing.
+  // Apply new cadence immediately if WPM changes while playing.
   $: if (isPlaying) {
     wpm;
-    scheduleNextWord();
+    currentDelayMs = getWordDelay(currentWord);
+  }
+
+  // Keep index stable if text changes and now has fewer words.
+  $: if (currentIndex > words.length - 1) {
+    currentIndex = Math.max(words.length - 1, 0);
   }
 
   onDestroy(() => {
-    clearTimeout(timerId);
+    stopRafLoop();
   });
 </script>
 
 <div class="speed-reader my-8 p-6 border rounded-lg bg-card text-card-foreground shadow-sm">
   <div class="text-center mb-6 h-16 flex items-center justify-center">
     {#if currentWord}
-      <div class="rsvp-word text-4xl font-bold tracking-tight" aria-label={currentWord}>
-        <span class="rsvp-left">{currentWordParts.left}</span>
-        <span class="rsvp-pivot">{currentWordParts.pivot}</span>
-        <span class="rsvp-right">{currentWordParts.right}</span>
-      </div>
+      <div class="rsvp-word text-4xl font-bold tracking-tight" aria-label={currentWord}
+        ><span>{currentWord.slice(0, getPivotIndex(currentWord))}</span><span class="rsvp-pivot"
+          >{currentWord.charAt(getPivotIndex(currentWord))}</span
+        ><span>{currentWord.slice(getPivotIndex(currentWord) + 1)}</span></div
+      >
     {:else}
       <span class="text-4xl font-bold tracking-tight">Ready?</span>
     {/if}
@@ -161,7 +179,7 @@
         style="width: {(currentIndex / (words.length - 1 || 1)) * 100}%"
       ></div>
     </div>
-    
+
     <div class="flex justify-between text-xs text-muted-foreground">
       <span>Word {currentIndex + 1} of {words.length}</span>
       <span>{Math.round((currentIndex / (words.length - 1 || 1)) * 100)}%</span>
@@ -171,35 +189,13 @@
 
 <style>
   .rsvp-word {
-    position: relative;
+    text-align: center;
     width: 100%;
-    height: 1.2em;
     font-variant-ligatures: none;
     font-feature-settings: "liga" 0;
   }
 
-  .rsvp-left,
-  .rsvp-right,
   .rsvp-pivot {
-    position: absolute;
-    top: 50%;
-    line-height: 1;
-  }
-
-  .rsvp-left {
-    right: 50%;
-    transform: translateY(-50%);
-    text-align: right;
-  }
-
-  .rsvp-pivot {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: hsl(var(--primary));
-  }
-
-  .rsvp-right {
-    left: 50%;
-    transform: translateY(-50%);
+    color: #dc2626;
   }
 </style>
