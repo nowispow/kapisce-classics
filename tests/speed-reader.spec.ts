@@ -21,8 +21,13 @@ test('speed reader renders centered word and core controls work', async ({ page 
       range.selectNodeContents(el);
       const rects = range.getClientRects();
       if (!rects.length) return null;
-      const first = rects[0];
-      return first.left + first.width / 2;
+      let left = Number.POSITIVE_INFINITY;
+      let right = Number.NEGATIVE_INFINITY;
+      for (const rect of Array.from(rects)) {
+        if (rect.left < left) left = rect.left;
+        if (rect.right > right) right = rect.right;
+      }
+      return left + (right - left) / 2;
     });
 
     expect(textCenterX).not.toBeNull();

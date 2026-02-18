@@ -11,6 +11,7 @@
   let currentIndex = 0;
   let isPlaying = false;
   let wpm = 300;
+  let currentWord = '';
   let rafId;
   let lastFrameTs = 0;
   let elapsedMs = 0;
@@ -54,6 +55,11 @@
     }
 
     return false;
+  }
+
+  function getPivotIndex(word) {
+    if (!word) return 0;
+    return Math.floor((word.length - 1) / 2);
   }
 
   function frame(ts) {
@@ -126,9 +132,11 @@
 <div class="speed-reader my-8 p-6 border rounded-lg bg-card text-card-foreground shadow-sm">
   <div class="text-center mb-6 h-16 flex items-center justify-center">
     {#if currentWord}
-      <div class="rsvp-word text-4xl font-bold tracking-tight" aria-label={currentWord}>
-        {currentWord}
-      </div>
+      <div class="rsvp-word text-4xl font-bold tracking-tight" aria-label={currentWord}
+        ><span>{currentWord.slice(0, getPivotIndex(currentWord))}</span><span class="rsvp-pivot"
+          >{currentWord.charAt(getPivotIndex(currentWord))}</span
+        ><span>{currentWord.slice(getPivotIndex(currentWord) + 1)}</span></div
+      >
     {:else}
       <span class="text-4xl font-bold tracking-tight">Ready?</span>
     {/if}
@@ -185,5 +193,9 @@
     width: 100%;
     font-variant-ligatures: none;
     font-feature-settings: "liga" 0;
+  }
+
+  .rsvp-pivot {
+    color: #dc2626;
   }
 </style>
