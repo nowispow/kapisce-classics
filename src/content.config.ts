@@ -1,5 +1,5 @@
 import { glob } from 'astro/loaders'
-import { defineCollection, z } from 'astro:content'
+import { defineCollection, z, type CollectionEntry } from 'astro:content'
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
@@ -13,6 +13,7 @@ const blog = defineCollection({
       tags: z.array(z.string()).optional(),
       authors: z.array(z.string()).optional(),
       draft: z.boolean().optional(),
+      novel: z.string().optional(),
     }),
 })
 
@@ -46,4 +47,33 @@ const projects = defineCollection({
     }),
 })
 
-export const collections = { blog, authors, projects }
+const chapters = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/chapters' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      date: z.coerce.date(),
+      authors: z.array(z.string()),
+      novel: z.string(), // Reference to novel ID
+      chapter_number: z.number(),
+      image: image().optional(),
+      tags: z.array(z.string()).optional(),
+      draft: z.boolean().default(false),
+    }),
+})
+
+const novels = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/novels' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    author: z.string(), // Reference to author ID
+    cover: z.string().optional(),
+  }),
+})
+
+export const collections = { blog, authors, projects, chapters, novels }
+
+export type NovelEntry = CollectionEntry<'novels'>
+export type ChapterEntry = CollectionEntry<'chapters'>
