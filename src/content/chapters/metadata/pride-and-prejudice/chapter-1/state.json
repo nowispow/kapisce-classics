@@ -1,0 +1,14 @@
+{
+  "novel": "pride-and-prejudice",
+  "chapter": "chapter-1",
+  "steps": {
+    "analysis": "done",
+    "images": "done",
+    "enhancement": "done"
+  },
+  "image_progress": {
+    "completed": 7,
+    "total": 7,
+    "variants_per_scene": 2
+  }
+}
