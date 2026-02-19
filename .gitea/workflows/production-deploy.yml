@@ -1,0 +1,46 @@
+name: Production Deployment
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, production]
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Astro Project
+        run: npm run build
+
+      - name: Stop Existing Production Container
+        run: docker stop kapisce-production || true
+
+      - name: Remove Existing Production Container
+        run: docker rm kapisce-production || true
+
+      - name: Deploy Production via Nginx Docker
+        run: |
+          docker run -d \
+            --name kapisce-production \
+            --restart=always \
+            -v $(pwd)/dist:/usr/share/nginx/html:ro \
+            -p 21001:80 \
+            nginx:alpine
+
+      - name: Verify Deployment
+        run: |
+          echo "Production deployed at http://$(hostname -I | awk '{print $1}'):21001"
+          sleep 5
+          curl -f http://localhost:21001 || echo "Warning: Site may not be accessible yet"
