@@ -40,7 +40,7 @@ jobs:
             -p 20001:80 \
             nginx:alpine
 
-      - name: Comment PR with Preview URL
+      - name: Log Preview URL
         run: |
           echo "Preview deployed at http://$(hostname -I | awk '{print $1}'):20001"
 
