@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: [self-hosted, production]
+    runs-on: [production]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
