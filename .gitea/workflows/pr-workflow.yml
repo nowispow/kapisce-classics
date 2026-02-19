@@ -1,0 +1,55 @@
+name: PR Preview & Cleanup
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  preview:
+    if: github.event.action != 'closed'
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Astro Project
+        run: npm run build
+
+      - name: Stop Existing Preview Container
+        run: docker stop kapisce-preview-pr-${{ github.event.number }} || true
+
+      - name: Remove Existing Preview Container
+        run: docker rm kapisce-preview-pr-${{ github.event.number }} || true
+
+      - name: Deploy Preview via Nginx Docker
+        run: |
+          docker run -d \
+            --name kapisce-preview-pr-${{ github.event.number }} \
+            -v $(pwd)/dist:/usr/share/nginx/html:ro \
+            -p 20001:80 \
+            nginx:alpine
+
+      - name: Comment PR with Preview URL
+        run: |
+          echo "Preview deployed at http://$(hostname -I | awk '{print $1}'):20001"
+
+  cleanup:
+    if: github.event.action == 'closed'
+    runs-on: self-hosted
+    steps:
+      - name: Stop Preview Container
+        run: docker stop kapisce-preview-pr-${{ github.event.number }} || true
+
+      - name: Remove Preview Container
+        run: docker rm kapisce-preview-pr-${{ github.event.number }} || true
