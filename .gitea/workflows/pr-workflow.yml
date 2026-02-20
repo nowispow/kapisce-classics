@@ -46,7 +46,7 @@ jobs:
             --restart always \
             nginx:alpine
           
-          echo "Preview live at: http://gitea-local:$PREVIEW_PORT"
+          echo "Preview live at: http://$(hostname -I | awk '{print $1}'):$PREVIEW_PORT"
 
   cleanup:
     if: github.event.action == 'closed'
