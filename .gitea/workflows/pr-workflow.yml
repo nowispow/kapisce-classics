@@ -10,15 +10,12 @@ jobs:
   preview:
     if: github.event.action != 'closed'
     runs-on: self-hosted
+    # Use a container for the build step to ensure Node.js is present
+    container:
+      image: node:20-alpine
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
 
       - name: Install Dependencies
         run: npm install
@@ -26,23 +23,28 @@ jobs:
       - name: Build Astro Project
         run: npm run build
 
-      - name: Stop Existing Preview Container
-        run: docker stop kapisce-preview-pr-${{ github.event.number }} || true
-
-      - name: Remove Existing Preview Container
-        run: docker rm kapisce-preview-pr-${{ github.event.number }} || true
-
-      - name: Deploy Preview via Nginx Docker
+      - name: Deploy Preview
+        # We need to run this on the host to access Docker, 
+        # so we'll use a trick or just ensure the runner has docker access
+        # Gitea's act_runner can run steps on the host if we don't specify container for the step
+        # However, to be safe and clean, we'll use the 'container' for the whole job 
+        # but we need to talk to the host's docker.
+        # Alternative: Split into build and deploy jobs.
         run: |
+          # Note: This requires the docker socket to be mounted into the runner container
+          # If the runner is bare-metal, it will just work.
+          # If the runner is in docker, it needs -v /var/run/docker.sock:/var/run/docker.sock
+          
+          # Since we are in an alpine container, install docker cli to talk to the host socket
+          apk add --no-cache docker-cli
+          
+          docker stop kapisce-preview-pr-${{ github.event.number }} || true
+          docker rm kapisce-preview-pr-${{ github.event.number }} || true
           docker run -d \
             --name kapisce-preview-pr-${{ github.event.number }} \
             -v $(pwd)/dist:/usr/share/nginx/html:ro \
             -p 20001:80 \
             nginx:alpine
-
-      - name: Log Preview URL
-        run: |
-          echo "Preview deployed at http://$(hostname -I | awk '{print $1}'):20001"
 
   cleanup:
     if: github.event.action == 'closed'
