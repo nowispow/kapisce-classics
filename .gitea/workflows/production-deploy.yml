@@ -1,4 +1,4 @@
-name: Production Deployment
+name: Production Build and Sync
 
 on:
   push:
@@ -6,17 +6,14 @@ on:
       - 'v*'
 
 jobs:
-  deploy:
-    runs-on: [production]
+  build_and_sync:
+    runs-on: self-hosted
+    # We use a container to ensure Node.js is available regardless of the host environment
+    container:
+      image: node:20-alpine
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
 
       - name: Install Dependencies
         run: npm install
@@ -24,23 +21,25 @@ jobs:
       - name: Build Astro Project
         run: npm run build
 
-      - name: Stop Existing Production Container
-        run: docker stop kapisce-production || true
-
-      - name: Remove Existing Production Container
-        run: docker rm kapisce-production || true
-
-      - name: Deploy Production via Nginx Docker
+      - name: Sync to Static Repo
+        # We mount the SSH key from the host instead of using secrets
         run: |
-          docker run -d \
-            --name kapisce-production \
-            --restart=always \
-            -v $(pwd)/dist:/usr/share/nginx/html:ro \
-            -p 21001:80 \
-            nginx:alpine
+          # Install git and openssh in the alpine container
+          apk add --no-cache git openssh-client
 
-      - name: Verify Deployment
-        run: |
-          echo "Production deployed at http://$(hostname -I | awk '{print $1}'):21001"
-          sleep 5
-          curl -f http://localhost:21001 || echo "Warning: Site may not be accessible yet"
+          # Setup SSH to use the mounted host key
+          mkdir -p ~/.ssh
+          cp /host_ssh/id_rsa ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa git.kapisce.com >> ~/.ssh/known_hosts
+
+          # Push dist folder to Repo B (kapisce-static)
+          cd dist
+          git init
+          git config user.name "Kapisce Bot"
+          git config user.email "bot@kapisce.com"
+          git remote add origin git@git.kapisce.com:selipso/kapisce-static.git
+          git checkout -b main
+          git add .
+          git commit -m "Deploying build for tag ${{ github.ref_name }}"
+          git push origin main --force
