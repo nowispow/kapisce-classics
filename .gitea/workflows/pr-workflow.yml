@@ -39,7 +39,7 @@ jobs:
           docker run -d \
             --name kapisce-preview-pr-${{ github.event.number }} \
             -v $(pwd)/dist:/usr/share/nginx/html:ro \
-            -p 20001:80 \
+            -p 19999:80 \
             nginx:alpine
 
   cleanup:
