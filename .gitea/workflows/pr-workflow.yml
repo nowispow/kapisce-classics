@@ -34,13 +34,13 @@ jobs:
           # Note: This requires the docker socket to be mounted into the runner container
           # If the runner is bare-metal, it will just work.
           # If the runner is in docker, it needs -v /var/run/docker.sock:/var/run/docker.sock
-          
+
           # Since we are in an alpine container, install docker cli to talk to the host socket
           apk add --no-cache docker-cli
-          
-          docker stop kapisce-preview-pr-${{ github.event.number }} || true
-          docker rm kapisce-preview-pr-${{ github.event.number }} || true
-          docker run -d \
+
+          sudo docker stop kapisce-preview-pr-${{ github.event.number }} || true
+          sudo docker rm kapisce-preview-pr-${{ github.event.number }} || true
+          sudo docker run -d \
             --name kapisce-preview-pr-${{ github.event.number }} \
             -v $(pwd)/dist:/usr/share/nginx/html:ro \
             -p 20001:80 \
