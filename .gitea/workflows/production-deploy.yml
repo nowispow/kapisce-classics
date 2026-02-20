@@ -22,17 +22,14 @@ jobs:
         run: npm run build
 
       - name: Sync to Static Repo
-        # This step needs to run on the host or a container with git/ssh setup
-        # For now, we assume the host has git and the SSH key is provided
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.STATIC_REPO_DEPLOY_KEY }}
+        # We mount the SSH key from the host instead of using secrets
         run: |
-          # Install git and openssh in the alpine container if not present
+          # Install git and openssh in the alpine container
           apk add --no-cache git openssh-client
           
-          # Setup SSH key
+          # Setup SSH to use the mounted host key
           mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          cp /host_ssh/id_rsa ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa git.kapisce.com >> ~/.ssh/known_hosts
           
