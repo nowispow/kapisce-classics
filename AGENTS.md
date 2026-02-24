@@ -23,7 +23,9 @@ Primary prompt for orchestrator:
 You are the Chapter Metadata Orchestrator. Coordinate specialist agents to produce compliant metadata.
 Enforce: 7 analysis paragraphs (2-3 sentences), 7 image prompts with alt text, and 7 memorable quotes in Callout format.
 Use canonical fields: analysis_entries, image_prompt_entries, quote_entries.
-All entries must include insertion anchors and insertion_method in {replace, append, wrap}.
+Require `enhanced_title` as an SEO-friendly, movie-style chapter label in a few words.
+Require `description` as a concise 3-sentence chapter summary for SEO snippets.
+All entries must include insertion anchors and insertion_method in {replace, append}.
 Do not ship if validation fails.
 ```
 
@@ -41,12 +43,16 @@ Input chapter text: {{chapter_path}}
 Output metadata path: {{metadata_path}}
 Requirements:
 - 7-7-7 minimum pattern
+- include enhanced_title (3-6 words, concise, evocative, SEO-friendly)
+- include description as exactly 3 sentences (brief, searchable, chapter-specific)
 - analysis paragraphs are 2-3 sentences each
 - analysis labels use [1]...[7]
 - image prompts are consistent Renaissance oil painting style
+- each image_prompt_entries item has at least two variations (a/b) with distinct output assets
 - each image prompt includes alt_text
-- each memorable quote includes Callout-ready MDX
-- each item includes anchor_text_end_of_sentence and insertion_method
+- each memorable quote includes Callout-ready MDX without explanation text
+- quote anchors use anchor_text + insertion_method=replace
+- analysis/image anchors use anchor_text_end_of_sentence + insertion_method=append
 - output arrays are analysis_entries, image_prompt_entries, quote_entries
 Return valid JSON only.
 ```
@@ -62,6 +68,8 @@ Scripts:
 - `scripts/metadata/validate_schema.py`
 - `scripts/metadata/validate_777.py`
 - `scripts/metadata/validate_sentence_counts.py`
+- `scripts/metadata/validate_description_summary.py`
+- `scripts/metadata/validate_image_variations.py`
 - `scripts/metadata/validate_callout_blocks.py`
 - `scripts/metadata/validate_anchors.py`
 - `scripts/metadata/validate_insertion_methods.py`
@@ -123,8 +131,7 @@ Scripts:
 
 Method semantics:
 - `append`: insert block immediately after the sentence containing `anchor_text_end_of_sentence`.
-- `wrap`: wrap the matched sentence in a generated container (for quotes, usually `Callout`).
-- `replace`: replace an already-generated legacy block associated with the same anchor.
+- `replace`: replace the matched quote anchor text (`anchor_text`) with quote Callout MDX.
 
 Example command:
 ```bash
@@ -148,6 +155,7 @@ python scripts/metadata/apply_insertions.py \
 Do not publish enhanced chapter output unless all are true:
 1. 7 analysis entries, 7 image prompts, 7 memorable quotes.
 2. Analysis entries each have 2-3 sentences.
-3. Every image prompt has `alt_text`.
-4. Every quote has valid Callout MDX payload.
-5. Every insertion target resolves to a unique sentence anchor.
+3. Description is present and exactly 3 sentences.
+4. Every image prompt has `alt_text` and at least two variations.
+5. Every quote has valid Callout MDX payload with no explanation line.
+6. Every insertion target resolves to a unique anchor phrase.
