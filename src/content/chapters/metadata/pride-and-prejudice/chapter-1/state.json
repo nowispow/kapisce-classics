@@ -1,0 +1,28 @@
+{
+  "novel": "pride-and-prejudice",
+  "chapter": "chapter-1",
+  "pipeline_version": "3.0",
+  "steps": {
+    "analysis": "done",
+    "validation": "pending",
+    "images": "done",
+    "enhancement": "done",
+    "review": "pending"
+  },
+  "image_progress": {
+    "completed": 7,
+    "total": 7,
+    "variants_per_scene": 2,
+    "last_scene_completed": 0
+  },
+  "metadata_validation": {
+    "passed": false,
+    "last_checked": null,
+    "errors": []
+  },
+  "output_files": {
+    "metadata": "metadata.json",
+    "enhanced_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-1-enhanced.mdx"
+  },
+  "last_updated": "2026-02-25T08:21:06Z"
+}

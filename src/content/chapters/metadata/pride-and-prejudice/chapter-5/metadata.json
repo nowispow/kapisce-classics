@@ -1,0 +1,428 @@
+{
+  "schema_version": "2.1.0",
+  "title": "Pride and Prejudice - Chapter V",
+  "enhanced_title": "The Right to be Proud",
+  "author": "Jane Austen",
+  "description": "The Bennets and Lucases meet to dissect the events of the Meryton assembly, focusing on the contrasting reputations of Bingley and Darcy. Charlotte Lucas defends Darcy's right to be proud given his status, while Elizabeth remains stung by his personal slight. Mary Bennet provides a philosophical distinction between pride and vanity, anchoring the chapter's thematic exploration of character.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-5",
+    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-5.mdx",
+    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-5/metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count_min": 7,
+    "image_prompt_count_min": 7,
+    "memorable_quote_count_min": 7,
+    "image_variations_per_prompt_min": 2,
+    "description_sentence_count": 3,
+    "analysis_sentence_range": [3, 4],
+    "analysis_label_format": "[n]",
+    "image_style_lock": "Renaissance oil painting",
+    "quote_rendering": "Callout component",
+    "insertion_methods_by_section": {
+      "analysis_entries": ["append"],
+      "image_prompt_entries": ["append"],
+      "quote_entries": ["replace"]
+    }
+  },
+  "field_aliases": {
+    "analysis_entries": "analysis",
+    "image_prompt_entries": "image_prompts",
+    "quote_entries": "memorable_quotes"
+  },
+  "quote_callout_spec": {
+    "import_statement": "import Callout from '@/components/Callout.astro'",
+    "component": "Callout",
+    "default_title": "Memorable Quote",
+    "body_template": "<QUOTE>",
+    "insertion_method": "replace",
+    "anchor_field": "anchor_text"
+  },
+  "agentic_generation": {
+    "pattern": "orchestrator",
+    "orchestrator": "chapter-metadata-orchestrator",
+    "sub_agents": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "handoff_order": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent-on-failure",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "scripts": [
+      "scripts/metadata/generate_metadata.py",
+      "scripts/metadata/validate_schema.py",
+      "scripts/metadata/validate_777.py",
+      "scripts/metadata/validate_image_variations.py",
+      "scripts/metadata/validate_anchors.py",
+      "scripts/metadata/review_failed_items.py",
+      "scripts/metadata/validate_callout_blocks.py",
+      "scripts/metadata/render_image_jobs.py",
+      "scripts/metadata/apply_insertions.py"
+    ]
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis-1",
+      "label": "[1]",
+      "section_focus": "Sir William's social transition",
+      "paragraph": "Sir William Lucas's transition from a tradesman to a knight illustrates the fluidity of social status in Meryton. His acquisition of a title has given him a 'disgust' for his former business and a newfound sense of personal importance. Despite this elevation, he maintains an inoffensive and friendly nature that stands in stark contrast to Darcy’s coldness.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "occupy himself solely in being civil to all the world.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "note"
+    },
+    {
+      "id": "analysis-2",
+      "label": "[2]",
+      "section_focus": "Charlotte as a pragmatic foil",
+      "paragraph": "Charlotte Lucas is introduced as Elizabeth’s intimate friend and a sensible, intelligent woman of twenty-seven. Her pragmatism allows her to view Darcy’s pride with more objectivity than the Bennets can muster. She represents a grounded social perspective that contrasts with Elizabeth’s more spirited and emotional reactions.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "Elizabeth’s intimate friend.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "tip"
+    },
+    {
+      "id": "analysis-3",
+      "label": "[3]",
+      "section_focus": "The ritual of ball dissection",
+      "paragraph": "The meeting between the Bennets and Lucases to discuss the ball is described as an 'absolutely necessary' social requirement. This ritual allows the families to compare their 'overhearings' and reinforce their collective social standing. It highlights how the community processes and codifies social experiences through gossip and shared judgment.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "meet to talk over a ball was absolutely necessary;",
+        "insertion_method": "append"
+      },
+      "callout_variant": "important"
+    },
+    {
+      "id": "analysis-4",
+      "label": "[4]",
+      "section_focus": "Bingley's public declaration",
+      "paragraph": "Mr. Bingley's immediate and public declaration of Jane's beauty to Mr. Robinson serves to cement her status as the neighborhood's premier 'sweet girl.' This unambiguous admiration is exactly what Mrs. Bennet desires for her daughters' social advancement. It creates a baseline of romantic hope that will drive the plot forward for the next several chapters.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "there cannot be two opinions on that point.’",
+        "insertion_method": "append"
+      },
+      "callout_variant": "definition"
+    },
+    {
+      "id": "analysis-5",
+      "label": "[5]",
+      "section_focus": "The justification of pride",
+      "paragraph": "Charlotte’s argument that Darcy has a 'right to be proud' given his family and fortune introduces a common Regency sentiment. She suggests that high social status naturally warrants a high opinion of oneself. This perspective challenges Elizabeth’s view that pride is inherently a character failing, regardless of social standing.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "he has a _right_ to be proud.”",
+        "insertion_method": "append"
+      },
+      "callout_variant": "explanation"
+    },
+    {
+      "id": "analysis-6",
+      "label": "[6]",
+      "section_focus": "The mortification of Elizabeth's pride",
+      "paragraph": "Elizabeth’s admission that she could forgive Darcy’s pride if it had not 'mortified' her own is a key moment of self-reflection. It reveals that her prejudice against him is rooted in personal injury rather than objective character analysis. This vulnerability makes her character more relatable while also establishing her primary character flaw.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "if he had not mortified _mine_.”",
+        "insertion_method": "append"
+      },
+      "callout_variant": "important"
+    },
+    {
+      "id": "analysis-7",
+      "label": "[7]",
+      "section_focus": "Mary's moral distinction",
+      "paragraph": "Mary Bennet’s philosophical breakdown of pride and vanity serves as the thematic anchor for the novel's title. She distinguishes between one's opinion of oneself (pride) and what one wants others to think (vanity). Her observation, while somewhat pedantic, provides a necessary framework for evaluating the characters' actions.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "vanity to what we would have others think of us.”",
+        "insertion_method": "append"
+      },
+      "callout_variant": "summary"
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-1",
+      "label": "[1]",
+      "scene_title": "Lucas Lodge",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Sir William Lucas standing proudly in front of Lucas Lodge.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a proud man in late middle age (Sir William Lucas) standing before a fine manor house (Lucas Lodge). He has a friendly and civil expression, gesturing toward his estate. Lush English countryside background, warm afternoon light.",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Sir William Lucas in a moment of quiet pride, reflecting on his knighthood. The architecture of Lucas Lodge is detailed and grand. Soft, classical lighting.",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "occupy himself solely in being civil to all the world.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-2",
+      "label": "[2]",
+      "scene_title": "Charlotte and Elizabeth",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Charlotte Lucas and Elizabeth Bennet walking and talking in a garden.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, two young women walking together through a formal garden. Charlotte (27) looks sensible and composed, while Elizabeth (20) is more animated and expressive. Their dresses are fine but practical. Dappled sunlight through trees.",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, a close-up of Charlotte and Elizabeth's faces in conversation. Charlotte's expression reflects her pragmatic outlook, contrasted with Elizabeth's lively eyes. Rich green background.",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "Elizabeth’s intimate friend.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-3",
+      "label": "[3]",
+      "scene_title": "The Post-Ball Meeting",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of the Bennet and Lucas families gathered in the Longbourn drawing room.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a crowded and lively interior scene. The Bennet and Lucas sisters are huddled together, whispering and laughing. Mrs. Bennet and Lady Lucas are engaged in serious gossip. Detailed Regency furniture and decor.",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the 'necessary' meeting to talk over the ball. The lighting highlights the different groups of women sharing news. A sense of domestic ritual and community.",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "meet to talk over a ball was absolutely necessary;",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-4",
+      "label": "[4]",
+      "scene_title": "Bingley's Praise overheard",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Mr. Bingley talking to Mr. Robinson at the assembly ball.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Mr. Bingley and Mr. Robinson standing near the edge of a ballroom. Bingley's face is lit with genuine admiration as he speaks. The atmosphere is bustling and festive. Warm, vibrant colors.",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the moment Bingley declares Jane the prettiest in the room. His unreserved and lively nature is captured in his posture. Background figures are elegantly rendered.",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "there cannot be two opinions on that point.’",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-5",
+      "label": "[5]",
+      "scene_title": "Defending Darcy's Pride",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Charlotte Lucas making her point about Darcy's pride.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Charlotte Lucas speaking with conviction to a group of friends. She looks composed and intellectual. Elizabeth is listening with a skeptical and slightly hurt expression. Intimate candlelight.",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, focusing on the dynamic between Charlotte's calm defense and Elizabeth's emotional injury. The setting is the Bennet drawing room, with rich fabrics and shadows.",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "he has a _right_ to be proud.”",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-6",
+      "label": "[6]",
+      "scene_title": "Mary's Reflection",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Mary Bennet looking serious and philosophical.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a solitary portrait of Mary Bennet with a book in her hand. She has a serious, slightly pedantic expression as she reflects on her reading. The lighting is scholarly and dramatic.",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Mary Bennet 'piquing herself' on the solidity of her reflections. She looks away from the gossip of her sisters, lost in thought. Muted, classical tones.",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "vanity to what we would have others think of us.”",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-7",
+      "label": "[7]",
+      "scene_title": "The Young Lucas's Dream",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of a young boy talking excitedly about wine and hounds.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a young boy (Lucas) gesturing animatedly while his sisters and the Bennets look on. He is imagining the life of a rich and proud man. The scene is full of life and youthful energy.",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Mrs. Bennet scolding the young boy for his dreams of drinking wine. A humorous domestic moment with expressive faces and a cozy atmosphere.",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "take away your bottle directly.”",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-1",
+      "label": "[1]",
+      "quote": "Unshackled by business, occupy himself solely in being civil to all the world.",
+      "speaker": "Narrator",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  Unshackled by business, occupy himself solely in being civil to all the world.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "unshackled by\nbusiness, occupy himself solely in being civil to all the world.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-2",
+      "label": "[2]",
+      "quote": "Oh, the eldest Miss Bennet, beyond a doubt: there cannot be two opinions on that point.",
+      "speaker": "Mr. Bingley",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "tip",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"tip\">\\n  Oh, the eldest Miss Bennet, beyond a doubt: there cannot be two opinions on that point.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "‘Oh, the eldest Miss Bennet,\nbeyond a doubt: there cannot be two opinions on that point.’",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-3",
+      "label": "[3]",
+      "quote": "Poor Eliza! to be only just tolerable.",
+      "speaker": "Charlotte Lucas",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "summary",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"summary\">\\n  Poor Eliza! to be only just tolerable.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Poor Eliza! to be only just _tolerable_.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-4",
+      "label": "[4]",
+      "quote": "I believe, ma’am, I may safely promise you never to dance with him.",
+      "speaker": "Elizabeth Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "important",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"important\">\\n  I believe, ma’am, I may safely promise you never to dance with him.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“I believe, ma’am, I may safely promise you _never_ to dance with him.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-5",
+      "label": "[5]",
+      "quote": "If I may so express it, he has a right to be proud.",
+      "speaker": "Charlotte Lucas",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  If I may so express it, he has a right to be proud.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "If I may so express it, he has a _right_\nto be proud.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-6",
+      "label": "[6]",
+      "quote": "I could easily forgive his pride, if he had not mortified mine.",
+      "speaker": "Elizabeth Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "important",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"important\">\\n  I could easily forgive his pride, if he had not mortified mine.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“and I could easily forgive _his_ pride, if he had not mortified _mine_.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-7",
+      "label": "[7]",
+      "quote": "Pride relates more to our opinion of ourselves; vanity to what we would have others think of us.",
+      "speaker": "Mary Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "tip",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"tip\">\\n  Pride relates more to our opinion of ourselves; vanity to what we would have others think of us.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Pride relates more to our opinion of\nourselves; vanity to what we would have others think of us.”",
+        "insertion_method": "replace"
+      }
+    }
+  ],
+  "summary": "Chapter V metadata covers the post-ball discussion at Longbourn, introducing Charlotte Lucas and the philosophical debate over Mr. Darcy's pride. It features 7 analysis points, 7 memorable quotes, and 14 Renaissance-style image prompts anchored for deterministic placement."
+}
