@@ -1,0 +1,428 @@
+{
+  "schema_version": "2.1.0",
+  "title": "Pride and Prejudice - Chapter IV",
+  "enhanced_title": "The Sisters' Confidence",
+  "author": "Jane Austen",
+  "description": "Jane and Elizabeth reflect on the Meryton assembly in private, revealing their contrasting perspectives on social character. The chapter provides critical background on the Bingley family's wealth and explores the complex friendship between Bingley and Darcy. While Bingley is captivated by the evening, Darcy remains fastidiously critical of their new neighbors.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-4",
+    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-4.mdx",
+    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-4/metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count_min": 7,
+    "image_prompt_count_min": 7,
+    "memorable_quote_count_min": 7,
+    "image_variations_per_prompt_min": 2,
+    "description_sentence_count": 3,
+    "analysis_sentence_range": [3, 4],
+    "analysis_label_format": "[n]",
+    "image_style_lock": "Renaissance oil painting",
+    "quote_rendering": "Callout component",
+    "insertion_methods_by_section": {
+      "analysis_entries": ["append"],
+      "image_prompt_entries": ["append"],
+      "quote_entries": ["replace"]
+    }
+  },
+  "field_aliases": {
+    "analysis_entries": "analysis",
+    "image_prompt_entries": "image_prompts",
+    "quote_entries": "memorable_quotes"
+  },
+  "quote_callout_spec": {
+    "import_statement": "import Callout from '@/components/Callout.astro'",
+    "component": "Callout",
+    "default_title": "Memorable Quote",
+    "body_template": "<QUOTE>",
+    "insertion_method": "replace",
+    "anchor_field": "anchor_text"
+  },
+  "agentic_generation": {
+    "pattern": "orchestrator",
+    "orchestrator": "chapter-metadata-orchestrator",
+    "sub_agents": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "handoff_order": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent-on-failure",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "scripts": [
+      "scripts/metadata/generate_metadata.py",
+      "scripts/metadata/validate_schema.py",
+      "scripts/metadata/validate_777.py",
+      "scripts/metadata/validate_image_variations.py",
+      "scripts/metadata/validate_anchors.py",
+      "scripts/metadata/review_failed_items.py",
+      "scripts/metadata/validate_callout_blocks.py",
+      "scripts/metadata/render_image_jobs.py",
+      "scripts/metadata/apply_insertions.py"
+    ]
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis-1",
+      "label": "[1]",
+      "section_focus": "Jane's unyielding candour",
+      "paragraph": "Jane’s reluctance to speak ill of anyone, even after a cold reception, highlights her uniquely gentle disposition. She possesses a natural tendency to find the good in every character while overlooking their obvious flaws. This quality makes her both admirable to Elizabeth and vulnerable to social manipulation.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "I never heard you speak ill of a human being in my life.”",
+        "insertion_method": "append"
+      },
+      "callout_variant": "note"
+    },
+    {
+      "id": "analysis-2",
+      "label": "[2]",
+      "section_focus": "Elizabeth's analytical skepticism",
+      "paragraph": "Elizabeth serves as the pragmatic counterpoint to Jane’s idealism, using her quick observation to dissect social behavior. She recognizes the pride and conceit of the Bingley sisters where Jane only sees pleasing manners. Her judgment is sharpened by her lack of personal investment in the Bingley party's approval.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "very little disposed to approve them.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "tip"
+    },
+    {
+      "id": "analysis-3",
+      "label": "[3]",
+      "section_focus": "The origins of Bingley wealth",
+      "paragraph": "The Bingley fortune’s origin in trade is a significant detail that influences their social standing and internal anxieties. The sisters are more concerned with their association with people of rank than the recent history of their family’s success. This dynamic illustrates the fluid but still rigid class boundaries of Regency England.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "fortune and their own had been acquired by trade.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "important"
+    },
+    {
+      "id": "analysis-4",
+      "label": "[4]",
+      "section_focus": "Bingley's lack of permanence",
+      "paragraph": "Mr. Bingley's decision to rent Netherfield House rather than buy an estate reflects the 'easiness' of his temper. He is satisfied with the immediate situation and feels no pressing need to establish a permanent landed legacy. This ductility makes him a perfect companion for the more decisive and demanding Darcy.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "purchase an estate, but did not live to do it.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "definition"
+    },
+    {
+      "id": "analysis-5",
+      "label": "[5]",
+      "section_focus": "The Darcy-Bingley paradox",
+      "paragraph": "The friendship between Darcy and Bingley is built on a steady mutual regard despite their opposing temperaments. Darcy respects Bingley's openness, while Bingley relies heavily on Darcy's superior understanding and judgment. Their bond shows that intellectual compatibility can often override differences in social behavior.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "a great opposition of character.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "explanation"
+    },
+    {
+      "id": "analysis-6",
+      "label": "[6]",
+      "section_focus": "Haughty vs Unaffected manners",
+      "paragraph": "The contrast in their social success is directly tied to their willingness to be pleased by their surroundings. Bingley finds everyone delightful and is sure of being liked, whereas Darcy finds everyone lacking and continually gives offense. This difference sets the stage for their contrasting roles in the Meryton social circle.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "Darcy was continually giving offence.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "important"
+    },
+    {
+      "id": "analysis-7",
+      "label": "[7]",
+      "section_focus": "The 'Sweet Girl' designation",
+      "paragraph": "The Bingley sisters' approval of Jane as a 'sweet girl' provides Bingley with the social authorization to pursue his interest. This label is a superficial endorsement that lacks the depth of true character understanding. It highlights how social groups use narrow categorizations to manage their internal and external associations.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "think of her as he chose.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "summary"
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-1",
+      "label": "[1]",
+      "scene_title": "The Sisters' Private Talk",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Jane and Elizabeth Bennet whispering together in a moonlit bedroom.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, an intimate evening scene of two young women (Jane and Elizabeth) in their shared bedroom. Jane is looking hopeful and animated, while Elizabeth listens with a thoughtful, slightly skeptical smile. Soft candlelight and fine nightclothes.",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the sisters sitting on the edge of a bed, their faces close together in confidence. The lighting focuses on Jane's radiant expression as she praises Mr. Bingley. Deep, rich textures on the bedding.",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "expressed to her sister how very much she admired him.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-2",
+      "label": "[2]",
+      "scene_title": "The Bingley Sisters in Town",
+      "style": "Renaissance oil painting",
+      "alt_text": "A grand Renaissance-style portrait of the Bingley sisters in expensive London fashion.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, two fashionable women (Miss Bingley and Mrs. Hurst) dressed in high Regency style with fine silks and intricate jewelry. They have proud, conceited expressions and noble postures. A grand, formal background.",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, focusing on the sophisticated and haughty gaze of the Bingley sisters. Their clothing reflects immense wealth acquired from trade, rendered with precise detail. Chiaroscuro lighting.",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "therefore, in every respect entitled to think well of themselves and meanly of others.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-3",
+      "label": "[3]",
+      "scene_title": "Netherfield House Inspection",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Mr. Bingley inspecting the grand hall of Netherfield House.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Mr. Bingley standing in the center of a large, sunlit manor room with high ceilings and classical architecture. He looks pleased and easy-tempered, gesturing toward the walls. Architectural detail and sense of space.",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Bingley and the owner of Netherfield discussing terms. Bingley's face reflects his quick decision-making and pleasant disposition. Warm, inviting interior tones.",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "principal rooms, satisfied with what the owner said in its praise, and took it immediately.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-4",
+      "label": "[4]",
+      "scene_title": "The Intellectual Bond",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Darcy and Bingley conversing in a library.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Mr. Darcy and Mr. Bingley engaged in a serious conversation in a dark, wood-paneled library. Darcy is speaking with a reserved, clever expression, while Bingley listens with an open, trusting face. Mastery of shadow and light.",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the contrast between Darcy's tall, haughty frame and Bingley's more relaxed posture. Books and globes in the background symbolize their intellectual status. Muted, classical colors.",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "understanding, Darcy was the superior. Bingley was by no means deficient; but Darcy was clever.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-5",
+      "label": "[5]",
+      "scene_title": "Comparing the Assembly",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Darcy and Bingley reflecting on the ball, with Darcy looking disgusted.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Darcy and Bingley standing together at the edge of a ballroom. Bingley is looking out at the dancers with a smile, while Darcy is turned away, looking at his companion with a critical and fastidious expression. Vibrant reds vs cool blues.",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, focusing on Darcy's face reflecting his lack of interest in the Meryton crowd. He looks bored and slightly disgusted by the 'lack of fashion' around him. Deep shadows.",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "from none received either attention or pleasure.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-6",
+      "label": "[6]",
+      "scene_title": "The Smiling Miss Bennet",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style portrait of Jane Bennet smiling, with Darcy's critical gaze in the background.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a radiant portrait of Jane Bennet (the eldest) with a sweet and frequent smile. In the background, Darcy is visible, watching her with a cool and judging look. The lighting on Jane is bright and angelic.",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Jane Bennet's face in close-up, reflecting the 'too much' smiling Darcy criticizes. Her beauty is classical and soft, contrasted with the sharp, intellectual environment.",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "Miss Bennet he acknowledged to be pretty; but she smiled too much.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-7",
+      "label": "[7]",
+      "scene_title": "The Sweet Girl Designation",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of the Bingley sisters talking about Jane Bennet.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Miss Bingley and Mrs. Hurst whispering to each other, with a patronizing air of approval. They are 'establishing' Jane as a sweet girl through their dialogue. Ornate Regency interior, formal and cold.",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the sisters in a moment of social judgment. Their faces are elegant but uninviting. The composition emphasizes their power as gatekeepers of social status.",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "Miss Bennet was therefore established as a sweet girl;",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-1",
+      "label": "[1]",
+      "quote": "He is just what a young man ought to be—sensible, good-humoured, lively; and I never saw such happy manners! so much ease, with such perfect good breeding!",
+      "speaker": "Jane Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  He is just what a young man ought to be—sensible, good-humoured, lively; and I never saw such happy manners! so much ease, with such perfect good breeding!\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“He is just what a young-man ought to be,” said she, “sensible,\ngood-humoured, lively; and I never saw such happy manners! so much ease,\nwith such perfect good breeding!”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-2",
+      "label": "[2]",
+      "quote": "Compliments always take you by surprise, and me never. What could be more natural than his asking you again?",
+      "speaker": "Elizabeth Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "tip",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"tip\">\\n  Compliments always take you by surprise, and me never. What could be more natural than his asking you again?\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Compliments always take _you_ by surprise, and _me_ never. What\ncould be more natural than his asking you again?",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-3",
+      "label": "[3]",
+      "quote": "Affectation of candour is common enough; one meets with it everywhere. But to be candid without ostentation or design—to take the good of everybody’s character and make it still better—belongs to you alone.",
+      "speaker": "Elizabeth Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "important",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"important\">\\n  Affectation of candour is common enough; one meets with it everywhere. But to be candid without ostentation or design—to take the good of everybody’s character and make it still better—belongs to you alone.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Affectation of candour is common enough; one meets with it\neverywhere. But to be candid without ostentation or design,--to take the\ngood of everybody’s character and make it still better, and say nothing\nof the bad,--belongs to you alone.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-4",
+      "label": "[4]",
+      "quote": "They were, in fact, very fine ladies; not deficient in good-humour when they were pleased, nor in the power of being agreeable where they chose it; but proud and conceited.",
+      "speaker": "Narrator",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "summary",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"summary\">\\n  They were, in fact, very fine ladies; not deficient in good-humour when they were pleased, nor in the power of being agreeable where they chose it; but proud and conceited.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "They were, in fact, very fine\nladies; not deficient in good-humour when they were pleased, nor in the\npower of being agreeable where they chose it; but proud and conceited.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-5",
+      "label": "[5]",
+      "quote": "In understanding, Darcy was the superior. Bingley was by no means deficient; but Darcy was clever.",
+      "speaker": "Narrator",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "important",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"important\">\\n  In understanding, Darcy was the superior. Bingley was by no means deficient; but Darcy was clever.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "In understanding, Darcy was the\nsuperior. Bingley was by no means deficient; but Darcy was clever.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-6",
+      "label": "[6]",
+      "quote": "Bingley was sure of being liked wherever he appeared; Darcy was continually giving offence.",
+      "speaker": "Narrator",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  Bingley was sure of being liked wherever he appeared; Darcy was continually giving offence.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Bingley\nwas sure of being liked wherever he appeared; Darcy was continually\ngiving offence.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-7",
+      "label": "[7]",
+      "quote": "Miss Bennet he acknowledged to be pretty; but she smiled too much.",
+      "speaker": "Mr. Darcy",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "tip",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"tip\">\\n  Miss Bennet he acknowledged to be pretty; but she smiled too much.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Miss Bennet he acknowledged to be pretty; but she smiled too\nmuch.",
+        "insertion_method": "replace"
+      }
+    }
+  ],
+  "summary": "Chapter IV metadata explores the deepening contrast between Jane and Elizabeth's social views and provides background on the Bingley-Darcy friendship. It features 7 analysis points, 7 memorable quotes, and 14 Renaissance-style image prompts anchored for deterministic placement."
+}

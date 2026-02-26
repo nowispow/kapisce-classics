@@ -1,17 +1,13 @@
 <script>
-  import { onDestroy } from 'svelte';
 
-  export let text = '';
+  let { text = '' } = $props();
 
-  let sourceText = '';
-  let words = [];
-  $: sourceText = typeof text === 'string' ? text : String(text ?? '');
-  $: words = sourceText.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean);
+  let sourceText = $derived(typeof text === 'string' ? text : String(text ?? ''));
+  let words = $derived(sourceText.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean));
 
-  let currentIndex = 0;
-  let isPlaying = false;
-  let wpm = 300;
-  let currentWord = '';
+  let currentIndex = $state(0);
+  let isPlaying = $state(false);
+  let wpm = $state(300);
   let rafId;
   let lastFrameTs = 0;
   let elapsedMs = 0;
@@ -111,21 +107,27 @@
     stopRafLoop();
   }
 
-  $: currentWord = words[currentIndex] || '';
+  let currentWord = $derived(words[currentIndex] || '');
 
   // Apply new cadence immediately if WPM changes while playing.
-  $: if (isPlaying) {
-    wpm;
-    currentDelayMs = getWordDelay(currentWord);
-  }
+  $effect(() => {
+    if (isPlaying) {
+      wpm;
+      currentDelayMs = getWordDelay(currentWord);
+    }
+  });
 
   // Keep index stable if text changes and now has fewer words.
-  $: if (currentIndex > words.length - 1) {
-    currentIndex = Math.max(words.length - 1, 0);
-  }
+  $effect(() => {
+    if (currentIndex > words.length - 1) {
+      currentIndex = Math.max(words.length - 1, 0);
+    }
+  });
 
-  onDestroy(() => {
-    stopRafLoop();
+  $effect(() => {
+    return () => {
+      stopRafLoop();
+    };
   });
 </script>
 
