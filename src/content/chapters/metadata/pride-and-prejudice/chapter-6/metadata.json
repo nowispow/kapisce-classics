@@ -1,0 +1,321 @@
+{
+  "schema_version": "2.0",
+  "title": "Pride and Prejudice",
+  "enhanced_title": "The Subtle Art of Observation",
+  "author": "Jane Austen",
+  "description": "Chapter 6 explores the growing social entanglements between the Longbourn and Netherfield circles. Charlotte Lucas offers a pragmatic and cynical view of marriage, while Mr. Darcy finds himself unexpectedly captivated by Elizabeth's intelligence and 'fine eyes.'",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-6",
+    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-6/metadata.json",
+    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-6.mdx"
+  },
+  "pattern_requirements": "7-7-7",
+  "field_aliases": {
+    "analysis": "analysis_entries",
+    "images": "image_prompt_entries",
+    "quotes": "quote_entries"
+  },
+  "quote_callout_spec": "MDX <Callout> component",
+  "agentic_generation": "literary-analyst",
+  "analysis_entries": [
+    {
+      "id": "analysis-1",
+      "label": "[1]",
+      "anchor": {
+        "anchor_text_end_of_sentence": "She mentioned this to her friend, Miss Lucas.",
+        "insertion_method": "append"
+      },
+      "paragraph": "The social dance between the Bennets and the Bingleys begins in earnest. While Jane is warmly received, Elizabeth remains skeptical of the Bingley sisters' supercilious nature, highlighting the divide between genuine affection and social posturing."
+    },
+    {
+      "id": "analysis-2",
+      "label": "[2]",
+      "anchor": {
+        "anchor_text_end_of_sentence": "Bingley likes your sister undoubtedly; but he may never do more than like her, if she does not help him on.",
+        "insertion_method": "append"
+      },
+      "paragraph": "Charlotte's advice to Elizabeth reveals a starkly different view of marriage. She argues that a woman must show more affection than she feels to secure a husband, prioritizing social security over romantic character study."
+    },
+    {
+      "id": "analysis-3",
+      "label": "[3]",
+      "anchor": {
+        "anchor_text_end_of_sentence": "But if a woman is partial to a man, and does not endeavor to conceal it, he must find it out.",
+        "insertion_method": "append"
+      },
+      "paragraph": "Elizabeth's confidence in Jane's guarded nature suggests that her feelings might remain hidden from Bingley. This introduces the risk of misunderstanding that Charlotte warns against, setting the stage for future complications."
+    },
+    {
+      "id": "analysis-4",
+      "label": "[4]",
+      "anchor": {
+        "anchor_text_end_of_sentence": "it is better to know as little as possible of the defects of the person with whom you are to pass your life.",
+        "insertion_method": "append"
+      },
+      "paragraph": "Charlotte's cynical (or perhaps realistic) take on marital happiness suggests that knowing a partner's character beforehand is no guarantee of felicity. This contrasts sharply with Elizabeth's more idealistic and intellectual approach to love."
+    },
+    {
+      "id": "analysis-5",
+      "label": "[5]",
+      "anchor": {
+        "anchor_text_end_of_sentence": "to her he was only the man who made himself agreeable nowhere, and who had not thought her handsome enough to dance with.",
+        "insertion_method": "append"
+      },
+      "paragraph": "Initially dismissive of Elizabeth, Mr. Darcy finds himself unexpectedly drawn to her 'fine eyes' and the 'play of wit' in her countenance. This shift marks the beginning of his complex attraction to her, despite his prejudices."
+    },
+    {
+      "id": "analysis-6",
+      "label": "[6]",
+      "anchor": {
+        "anchor_text_end_of_sentence": "Mr. Darcy, with grave propriety, requested to be allowed the honour of her hand, but in vain.",
+        "insertion_method": "append"
+      },
+      "paragraph": "Sir William's attempts to bring Darcy and Elizabeth together through dance highlight the constant social pressure of the Meryton circle. Darcy's refusal to dance, and Elizabeth's witty rejection of the offer, further define their early dynamic."
+    },
+    {
+      "id": "analysis-7",
+      "label": "[7]",
+      "anchor": {
+        "anchor_text_end_of_sentence": "and as his composure convinced her that all was safe, her wit flowed along.",
+        "insertion_method": "append"
+      },
+      "paragraph": "The arrival of the militia in Meryton, and the younger Bennet sisters' obsession with the officers, introduces a layer of frivolous social distraction that contrasts with the more serious romantic developments between the elder sisters and their suitors."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-1",
+      "label": "scene-1",
+      "style": "Renaissance oil painting",
+      "prompt": "A formal Renaissance drawing room scene where the Bennet ladies sit with the Bingley sisters. Rich velvet fabrics, elaborate lace collars, and stiff but polite postures.",
+      "alt_text": "The Bennet and Bingley ladies in a formal drawing room",
+      "variations": [
+        {
+          "id": "1a",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "id": "1b",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "The ladies of Longbourn soon waited on those of Netherfield.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-2",
+      "label": "scene-2",
+      "style": "Renaissance oil painting",
+      "prompt": "Two young women in flowing Renaissance-style gowns walking through a lush estate garden. Deep shadows, dappled sunlight filtering through ancient oaks, and intense expressions during their debate.",
+      "alt_text": "Elizabeth and Charlotte walking in the garden",
+      "variations": [
+        {
+          "id": "2a",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "id": "2b",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "She mentioned this to her friend, Miss Lucas.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-3",
+      "label": "scene-3",
+      "style": "Renaissance oil painting",
+      "prompt": "A crowded party scene focused on Jane and Bingley in a quiet corner. Soft candlelight, warm amber tones, and a sense of intimate connection amidst a sea of blurred guests.",
+      "alt_text": "Jane and Bingley conversing at a party",
+      "variations": [
+        {
+          "id": "3a",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "id": "3b",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "When she is secure of him, there will be leisure for falling in love as much as she chooses.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-4",
+      "label": "scene-4",
+      "style": "Renaissance oil painting",
+      "prompt": "A close-up portrait of Darcy watching Elizabeth from a distance. Chiaroscuro lighting highlighting his stern but intrigued expression, with Elizabeth blurred in the background.",
+      "alt_text": "Mr. Darcy observing Elizabeth",
+      "variations": [
+        {
+          "id": "4a",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "id": "4b",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "Elizabeth was far from suspecting that she was herself becoming an object of some interest in the eyes of his friend.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-5",
+      "label": "scene-5",
+      "style": "Renaissance oil painting",
+      "prompt": "A portrait-style image focusing on Elizabeth's face and eyes. A mix of wit and intelligence in her gaze, framed by rich Renaissance-era curls and jewelry.",
+      "alt_text": "Portrait of Elizabeth Bennet",
+      "variations": [
+        {
+          "id": "5a",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "id": "5b",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "to her he was only the man who made himself agreeable nowhere, and who had not thought her handsome enough to dance with.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-6",
+      "label": "scene-6",
+      "style": "Renaissance oil painting",
+      "prompt": "Sir William Lucas gesturing toward Elizabeth in a grand hall. Opulent surroundings, golden tapestries, and Darcy standing stiffly nearby.",
+      "alt_text": "Sir William Lucas and Elizabeth with Mr. Darcy",
+      "variations": [
+        {
+          "id": "6a",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "id": "6b",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "Mr. Darcy, with grave propriety, requested to be allowed the honour of her hand, but in vain.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-7",
+      "label": "scene-7",
+      "style": "Renaissance oil painting",
+      "prompt": "A distant view of red-coated soldiers marching into a picturesque village square. High contrast, bustling townspeople, and the younger sisters watching with excitement from a balcony.",
+      "alt_text": "The Meryton Militia arrival",
+      "variations": [
+        {
+          "id": "7a",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "id": "7b",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "and as his composure convinced her that all was safe, her wit flowed along.",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-1",
+      "speaker": "Charlotte Lucas",
+      "callout": {
+        "mdx": "<Callout variant=\"note\">\n\"It may, perhaps, be pleasant,\" replied Charlotte, \"to be able to impose on the public in such a case; but it is sometimes a disadvantage to be so very guarded.\"\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "\u201cIt may, perhaps, be pleasant,\u201d replied Charlotte, \u201cto be able to impose on the public in such a case; but it is sometimes a disadvantage to be so very guarded.",
+        "insertion_method": "replace"
+      },
+      "quote": "It may, perhaps, be pleasant,\" replied Charlotte, \"to be able to impose on the public in such a case; but it is sometimes a disadvantage to be so very guarded."
+    },
+    {
+      "id": "quote-2",
+      "speaker": "Charlotte Lucas",
+      "callout": {
+        "mdx": "<Callout variant=\"note\">\n\"Bingley likes your sister undoubtedly; but he may never do more than like her, if she does not help him on.\"\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Bingley likes your sister undoubtedly; but he\nmay never do more than like her, if she does not help him on.\u201d",
+        "insertion_method": "replace"
+      },
+      "quote": "Bingley likes your sister undoubtedly; but he may never do more than like her, if she does not help him on."
+    },
+    {
+      "id": "quote-3",
+      "speaker": "Charlotte Lucas",
+      "callout": {
+        "mdx": "<Callout variant=\"note\">\n\"Happiness in marriage is entirely a matter of chance.\"\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Happiness in marriage is entirely a matter of chance.",
+        "insertion_method": "replace"
+      },
+      "quote": "Happiness in marriage is entirely a matter of chance."
+    },
+    {
+      "id": "quote-4",
+      "speaker": "Charlotte Lucas",
+      "callout": {
+        "mdx": "<Callout variant=\"note\">\n\"If the dispositions of the parties are ever so well known to each other, or ever so similar beforehand, it does not advance their felicity in the least.\"\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "If the dispositions of the parties are ever so well known to each other, or ever so similar beforehand, it does not advance their felicity in the least.",
+        "insertion_method": "replace"
+      },
+      "quote": "If the dispositions of the parties are ever so well known to each other, or ever so similar beforehand, it does not advance their felicity in the least."
+    },
+    {
+      "id": "quote-5",
+      "speaker": "Elizabeth Bennet",
+      "callout": {
+        "mdx": "<Callout variant=\"note\">\n\"You make me laugh, Charlotte; but it is not sound. You know it is not sound, and that you would never act in this way yourself.\"\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "\u201cYou make me laugh, Charlotte; but it is not sound. You know it is not sound, and that you would never act in this way yourself.\u201d",
+        "insertion_method": "replace"
+      },
+      "quote": "You make me laugh, Charlotte; but it is not sound. You know it is not sound, and that you would never act in this way yourself."
+    },
+    {
+      "id": "quote-6",
+      "speaker": "Miss Bingley",
+      "callout": {
+        "mdx": "<Callout variant=\"note\">\n\"I am all astonishment. How long has she been such a favourite?--and pray, when am I to wish you joy?\"\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "\u201cMiss Elizabeth Bennet!\u201d repeated Miss Bingley. \u201cI am all astonishment. How long has she been such a favourite? and pray when am I to wish you joy?\u201d",
+        "insertion_method": "replace"
+      },
+      "quote": "I am all astonishment. How long has she been such a favourite?--and pray, when am I to wish you joy?"
+    },
+    {
+      "id": "quote-7",
+      "speaker": "Mr. Darcy",
+      "callout": {
+        "mdx": "<Callout variant=\"note\">\n\"A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony, in a moment.\"\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "\u201cThat is exactly the question which I expected you to ask. A lady\u2019s imagination is very rapid; it jumps from admiration to love, from love to matrimony, in a moment. I knew you would be wishing me joy.\u201d",
+        "insertion_method": "replace"
+      },
+      "quote": "A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony, in a moment."
+    }
+  ]
+}

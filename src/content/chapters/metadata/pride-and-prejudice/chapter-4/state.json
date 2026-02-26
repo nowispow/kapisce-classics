@@ -6,10 +6,12 @@
     "analysis_metadata_generation": "done",
     "reviewer_metadata_verification": "done",
     "analysis_metadata_enhancement": "done",
-    "reviewer_metadata_quality_assurance": "pending",
+    "reviewer_metadata_quality_assurance": "done",
     "image_generation": "done",
     "metadata_content_insertion": "done",
-    "holistic_quality_assurance": "pending"
+    "holistic_quality_assurance": "done",
+    "translation_initialization": "pending",
+    "translation_batch_processing": "pending"
   },
   "image_progress": {
     "completed": 14,
@@ -24,7 +26,40 @@
   },
   "output_files": {
     "metadata": "metadata.json",
-    "enhanced_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-4-enhanced.mdx"
+    "enhanced_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-4-enhanced.mdx",
+    "translations": {}
   },
-  "last_updated": "2026-02-26T01:12:33Z"
+  "last_updated": "2026-02-26T19:45:59Z",
+  "translation": {
+    "ready_after_step": "holistic_quality_assurance",
+    "ready": true,
+    "status": "ready",
+    "source_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-4-enhanced.mdx",
+    "target_languages": [
+      "ar",
+      "bn",
+      "de",
+      "es",
+      "fa",
+      "fr",
+      "ha",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "pt",
+      "ru",
+      "sw",
+      "th",
+      "tr",
+      "vi",
+      "zh-TW"
+    ],
+    "active_language": null,
+    "batch_size_chars": 2800,
+    "languages": {},
+    "last_synced": "2026-02-26T19:45:59Z"
+  }
 }
