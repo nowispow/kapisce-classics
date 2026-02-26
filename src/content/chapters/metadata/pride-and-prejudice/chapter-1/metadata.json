@@ -197,7 +197,7 @@
         }
       ],
       "anchor": {
-        "anchor_text_end_of_sentence": "You want to tell me, and I have no objection to hearing it.",
+        "anchor_text_end_of_sentence": "“_You_ want to tell me, and I have no objection to hearing it.”",
         "insertion_method": "append"
       }
     },
@@ -344,7 +344,7 @@
         "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  You want to tell me, and I have no objection to hearing it.\\n</Callout>"
       },
       "anchor": {
-        "anchor_text": "You want to tell me, and I have no objection to hearing it.",
+        "anchor_text": "“_You_ want to tell me, and I have no objection to hearing it.”",
         "insertion_method": "replace"
       }
     },
@@ -389,7 +389,7 @@
         "mdx": "<Callout title=\"Memorable Quote\" variant=\"explanation\">\\n  Indeed you must go, for it will be impossible for us to visit him, if you do not.\\n</Callout>"
       },
       "anchor": {
-        "anchor_text": "Indeed you must go, for it will be impossible for us to visit him, if you do not.",
+        "anchor_text": "Indeed you must go, for it will be impossible for _us_ to visit him, if you do not.",
         "insertion_method": "replace"
       }
     },
@@ -404,7 +404,7 @@
         "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  They are all silly and ignorant like other girls; but Lizzy has something more of quickness than her sisters.\\n</Callout>"
       },
       "anchor": {
-        "anchor_text": "They are all silly and ignorant like other girls; but Lizzy has something more of quickness than her sisters.",
+        "anchor_text": "But you are always giving _her_ the preference.”\n\n“They have none of them much to recommend them,”",
         "insertion_method": "replace"
       }
     },

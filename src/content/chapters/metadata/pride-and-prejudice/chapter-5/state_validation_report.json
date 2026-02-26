@@ -1,0 +1,72 @@
+{
+  "status": "fail",
+  "metadata_dir": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/metadata/pride-and-prejudice/chapter-5",
+  "metadata_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/metadata/pride-and-prejudice/chapter-5/metadata.json",
+  "state_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/metadata/pride-and-prejudice/chapter-5/state.json",
+  "source_markdown_file": "/home/yatit/.openclaw/workspace/src/content/chapters/pride-and-prejudice-chapter-5.md",
+  "enhanced_mdx_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-5-enhanced.mdx",
+  "issue_count": 10,
+  "issues": [
+    {
+      "item_id": "state",
+      "field": "steps.analysis",
+      "reason": "Expected state.steps.analysis='done'.",
+      "suggested_fix": "Complete pipeline phase 'analysis' and update state."
+    },
+    {
+      "item_id": "state",
+      "field": "steps.validation",
+      "reason": "Expected state.steps.validation='done'.",
+      "suggested_fix": "Complete pipeline phase 'validation' and update state."
+    },
+    {
+      "item_id": "state",
+      "field": "steps.images",
+      "reason": "Expected state.steps.images='done'.",
+      "suggested_fix": "Complete pipeline phase 'images' and update state."
+    },
+    {
+      "item_id": "state",
+      "field": "steps.enhancement",
+      "reason": "Expected state.steps.enhancement='done'.",
+      "suggested_fix": "Complete pipeline phase 'enhancement' and update state."
+    },
+    {
+      "item_id": "state",
+      "field": "steps.review",
+      "reason": "state.steps.review should be pending or done.",
+      "suggested_fix": "Set review to pending before review or done after successful review."
+    },
+    {
+      "item_id": "image-6",
+      "field": "asset_file",
+      "reason": "Expected image asset not found: scene-6b.png.",
+      "suggested_fix": "Generate missing image variation before final chapter validation."
+    },
+    {
+      "item_id": "image-7",
+      "field": "asset_file",
+      "reason": "Expected image asset not found: scene-7a.png.",
+      "suggested_fix": "Generate missing image variation before final chapter validation."
+    },
+    {
+      "item_id": "image-7",
+      "field": "asset_file",
+      "reason": "Expected image asset not found: scene-7b.png.",
+      "suggested_fix": "Generate missing image variation before final chapter validation."
+    },
+    {
+      "item_id": "metadata_dir",
+      "field": "png_assets",
+      "reason": "Metadata directory has fewer PNG files than expected metadata variations.",
+      "suggested_fix": "Regenerate missing chapter image assets in metadata folder."
+    },
+    {
+      "item_id": "chapter",
+      "field": "source_markdown_file",
+      "reason": "Source markdown file not found: /home/yatit/.openclaw/workspace/src/content/chapters/pride-and-prejudice-chapter-5.md.",
+      "suggested_fix": "Provide an existing pre-enhancement markdown source file."
+    }
+  ],
+  "last_checked": "2026-02-26T01:26:03Z"
+}
