@@ -8,7 +8,7 @@
     "novel": "pride-and-prejudice",
     "chapter": "chapter-6",
     "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-6/metadata.json",
-    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-6.mdx"
+    "source_text_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-6.mdx"
   },
   "pattern_requirements": "7-7-7",
   "field_aliases": {

@@ -1,0 +1,18 @@
+{
+  "status": "fail",
+  "metadata_dir": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/metadata/pride-and-prejudice/chapter-9",
+  "metadata_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/metadata/pride-and-prejudice/chapter-9/metadata.json",
+  "state_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/metadata/pride-and-prejudice/chapter-9/state.json",
+  "source_markdown_file": null,
+  "enhanced_mdx_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-9-enhanced.mdx",
+  "issue_count": 1,
+  "issues": [
+    {
+      "item_id": "chapter",
+      "field": "source_markdown_path",
+      "reason": "Unable to resolve source markdown path.",
+      "suggested_fix": "Pass --source-markdown or set metadata.source.source_text_file."
+    }
+  ],
+  "last_checked": "2026-02-27T01:04:00Z"
+}

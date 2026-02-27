@@ -1,7 +1,19 @@
 {
   "novel": "pride-and-prejudice",
-  "chapter": "chapter-6",
+  "chapter": "chapter-7",
   "pipeline_version": "4.1",
+  "last_updated": "2026-02-27T00:58:14Z",
+  "metadata_validation": {
+    "passed": true,
+    "last_checked": "2026-02-27T00:21:44Z",
+    "errors": []
+  },
+  "image_progress": {
+    "total_scenes": 7,
+    "variants_per_scene": 2,
+    "completed": 14,
+    "last_scene_completed": 7
+  },
   "steps": {
     "analysis_metadata_enhancement": "done",
     "reviewer_metadata_verification": "done",
@@ -16,27 +28,16 @@
     "translation_initialization": "pending",
     "translation_batch_processing": "pending"
   },
-  "image_progress": {
-    "completed": 0,
-    "total_scenes": 7,
-    "variants_per_scene": 2,
-    "last_scene_completed": 0
-  },
-  "metadata_validation": {
-    "passed": true,
-    "last_checked": null,
-    "errors": []
-  },
   "output_files": {
     "metadata": "metadata.json",
-    "enhanced_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-6-enhanced.mdx",
+    "enhanced_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-7-enhanced.mdx",
     "translations": {}
   },
   "translation": {
-    "ready_after_step": "holistic_quality_assurance",
     "ready": false,
+    "ready_after_step": "holistic_quality_assurance",
     "status": "blocked",
-    "source_mdx": null,
+    "source_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-7-enhanced.mdx",
     "target_languages": [
       "ar",
       "bn",
@@ -183,8 +184,7 @@
         "chunks_completed": 0
       }
     },
-    "last_synced": "2026-02-27T00:58:13Z"
+    "last_synced": "2026-02-27T00:58:14Z"
   },
-  "last_updated": "2026-02-27T01:05:59Z",
-  "source_markdown": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-6-enhanced.mdx"
+  "source_markdown": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-7-enhanced.mdx"
 }

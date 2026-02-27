@@ -1,0 +1,294 @@
+{
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-7",
+    "title": "CHAPTER VII",
+    "source_text_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-7.mdx"
+  },
+  "analysis_entries": [
+    {
+      "id": "pp-ch7-analysis-1",
+      "label": "1",
+      "paragraph": "The financial insecurity of the Bennet family is established through the concept of 'entailment.' Because Mr. Bennet has no sons, his estate will pass to a distant male relative, leaving his daughters dependent on their small maternal inheritance or marriage. This structural vulnerability drives the urgency of Mrs. Bennet's matchmaking.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "had left her four thousand pounds.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-analysis-2",
+      "label": "2",
+      "paragraph": "The arrival of the militia regiment introduces a new layer of social distraction. For the younger Bennet sisters, Catherine and Lydia, the officers represent excitement and romance, contrasting with the more intellectual or pragmatic concerns of their older sisters.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "remain the whole winter, and Meryton",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-analysis-3",
+      "label": "3",
+      "paragraph": "Mr. Bennet's dry humor and critical view of his younger daughters highlight the intellectual divide within the family. His blunt assessment of them as 'silly' reflects his detached and somewhat cynical parental style.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "but I am now convinced.\u201d",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-analysis-4",
+      "label": "4",
+      "paragraph": "Mrs. Bennet's scheme to send Jane to Netherfield on horseback, knowing it would rain, demonstrates her manipulative approach to matchmaking. She prioritizes the opportunity for Jane to stay overnight near Mr. Bingley over her daughter's physical health.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "and then you must stay all night.\u201d",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-analysis-5",
+      "label": "5",
+      "paragraph": "Jane's illness is the direct result of her mother's calculation. The irony of the 'felicity of her contrivance' being Jane's suffering illustrates the moral compromise Mrs. Bennet is willing to make for social advancement.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "felicity of her contrivance.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-analysis-6",
+      "label": "6",
+      "paragraph": "Elizabeth's decision to walk three miles through the mud to see her sister showcases her independence and deep sisterly affection. It also sets up a class-based conflict, as her 'dirty stockings' become a point of silent contempt for the Bingley sisters.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "glowing with the warmth of exercise.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-analysis-7",
+      "label": "7",
+      "paragraph": "Mr. Darcy's internal conflict is further developed here. While he finds Elizabeth's appearance 'incredible' and socially improper, he is simultaneously drawn to the 'brilliancy' her exercise has given her. This 'division' marks a key step in his growing attraction.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "thinking only of his breakfast.",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "pp-ch7-image-1",
+      "alt_text": "Renaissance oil painting of a modest English estate at Longbourn",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a modest English country estate house at Longbourn, morning light, soft atmospheric depth, 4:3 aspect ratio.",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the landscape of a small village in Meryton, rolling green hills and a distant milliner's shop, 4:3 aspect ratio.",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "four thousand pounds.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-image-2",
+      "alt_text": "Renaissance oil painting of Catherine and Lydia walking to Meryton",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, two young women in high-waisted empire gowns walking toward a village, excited expressions, soft brushwork, 4:3 aspect ratio.",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, a crowded village street in Meryton with soldiers in red coats, a lively scene, 4:3 aspect ratio.",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "contrived to learn some from their aunt.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-image-3",
+      "alt_text": "Renaissance oil painting of Mr. Bennet observing his daughters",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a scholarly man in a library looking skeptical at two young women, dramatic chiaroscuro, 4:3 aspect ratio.",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Mr. Bennet sitting coolly in his study, a look of dry amusement on his face, 4:3 aspect ratio.",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "but I am now convinced.\u201d",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-image-4",
+      "alt_text": "Renaissance oil painting of Jane Bennet on horseback in the rain",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a young woman in a riding habit on a horse, dark storm clouds and falling rain, moody atmosphere, 4:3 aspect ratio.",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Jane Bennet riding away from Longbourn as the first drops of rain fall, 4:3 aspect ratio.",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "many cheerful prognostics of a bad day.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-image-5",
+      "alt_text": "Renaissance oil painting of Elizabeth Bennet walking through fields",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a young woman with a determined expression walking across a muddy field, muddy hem of her dress, 4:3 aspect ratio.",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Elizabeth jumping over a stile in the countryside, exercise-flushed face, 4:3 aspect ratio.",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "resolution.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-image-6",
+      "alt_text": "Renaissance oil painting of Elizabeth arriving at Netherfield",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a young woman with a glowing face and muddy stockings entering a grand breakfast room, 4:3 aspect ratio.",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the interior of Netherfield's breakfast parlour, elegant ladies looking surprised at a muddy visitor, 4:3 aspect ratio.",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "glowing with the warmth of exercise.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "pp-ch7-image-7",
+      "alt_text": "Renaissance oil painting of Jane and Elizabeth at Netherfield",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, two sisters in a bedroom, one lying in bed looking feverish, the other sitting by her side with concern, 4:3 aspect ratio.",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the apothecary examining Jane in a beautifully lit room, Elizabeth watching intently, 4:3 aspect ratio.",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "Elizabeth silently attended her.",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "pp-ch7-quote-1",
+      "quote": "\u201cFrom all that I can collect by your manner of talking, you must be two of the silliest girls in the country. I have suspected it some time, but I am now convinced.\u201d",
+      "callout": {
+        "title": "Mr. Bennet's Judgment"
+      },
+      "anchor": {
+        "anchor_text": "\u201cFrom all that I can collect by your manner of talking, you must be two of the silliest girls in the country. I have suspected it some time, but I am now convinced.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "pp-ch7-quote-2",
+      "quote": "\u201cIf my children are silly, I must hope to be always sensible of it.\u201d",
+      "callout": {
+        "title": "Paternal Honesty"
+      },
+      "anchor": {
+        "anchor_text": "\u201cIf my children are silly, I must hope to be always sensible of it.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "pp-ch7-quote-3",
+      "quote": "\u201cNo, my dear, you had better go on horseback, because it seems likely to rain; and then you must stay all night.\u201d",
+      "callout": {
+        "title": "Mrs. Bennet's Scheme"
+      },
+      "anchor": {
+        "anchor_text": "\u201cNo, my dear, you had better go on horseback, because it seems likely to rain; and then you must stay all night.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "pp-ch7-quote-4",
+      "quote": "\u201cif your daughter should have a dangerous fit of illness--if she should die--it would be a comfort to know that it was all in pursuit of Mr. Bingley, and under your orders.\u201d",
+      "callout": {
+        "title": "Sarcastic Consolation"
+      },
+      "anchor": {
+        "anchor_text": "\u201cif your daughter should have a dangerous fit of illness--if she should die--it would be a comfort to know that it was all in pursuit of Mr. Bingley, and under your orders.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "pp-ch7-quote-5",
+      "quote": "\u201cHow can you be so silly,\u201d cried her mother, \u201cas to think of such a thing, in all this dirt! You will not be fit to be seen when you get there.\u201d",
+      "callout": {
+        "title": "Social Propriety"
+      },
+      "anchor": {
+        "anchor_text": "\u201cHow can you be so silly,\u201d cried her mother, \u201cas to think of such a thing, in all this dirt! You will not be fit to be seen when you get there.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "pp-ch7-quote-6",
+      "quote": "\u201cI shall be very fit to see Jane--which is all I want.\u201d",
+      "callout": {
+        "title": "Elizabeth's Priority"
+      },
+      "anchor": {
+        "anchor_text": "\u201cI shall be very fit to see Jane--which is all I want.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "pp-ch7-quote-7",
+      "quote": "\u201cevery impulse of feeling should be guided by reason; and, in my opinion, exertion should always be in proportion to what is required.\u201d",
+      "callout": {
+        "title": "Mary's Moralizing"
+      },
+      "anchor": {
+        "anchor_text": "\u201cevery impulse of feeling should be guided by reason; and, in my opinion, exertion should always be in proportion to what is required.\u201d",
+        "insertion_method": "replace"
+      }
+    }
+  ]
+}
