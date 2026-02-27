@@ -37,10 +37,11 @@
       "bn": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/bn/pride-and-prejudice-chapter-3.mdx",
       "es": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/es/pride-and-prejudice-chapter-3.mdx",
       "hi": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/hi/pride-and-prejudice-chapter-3.mdx",
-      "ja": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ja/pride-and-prejudice-chapter-3.mdx"
+      "ja": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ja/pride-and-prejudice-chapter-3.mdx",
+      "pt": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pt/pride-and-prejudice-chapter-3.mdx"
     }
   },
-  "last_updated": "2026-02-27T01:56:48Z",
+  "last_updated": "2026-02-27T02:05:22Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
@@ -68,7 +69,7 @@
       "vi",
       "zh-TW"
     ],
-    "active_language": "pt",
+    "active_language": "th",
     "batch_size_chars": 2800,
     "languages": {
       "ar": {
@@ -162,13 +163,13 @@
         "chunks_completed": 0
       },
       "pt": {
-        "status": "in-progress",
+        "status": "done",
         "progress": 0,
         "chunks_total": 5,
-        "chunks_completed": 3,
+        "chunks_completed": 5,
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pt/pride-and-prejudice-chapter-3.mdx",
         "last_error": null,
-        "last_updated": "2026-02-27T01:56:48Z"
+        "last_updated": "2026-02-27T02:05:18Z"
       },
       "ru": {
         "status": "pending",
@@ -183,10 +184,13 @@
         "chunks_completed": 0
       },
       "th": {
-        "status": "pending",
+        "status": "in-progress",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 0,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/th/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T02:05:22Z"
       },
       "tr": {
         "status": "pending",
@@ -207,6 +211,6 @@
         "chunks_completed": 0
       }
     },
-    "last_synced": "2026-02-27T01:56:48Z"
+    "last_synced": "2026-02-27T02:05:22Z"
   }
 }
