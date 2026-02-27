@@ -1,42 +1,40 @@
 {
-  "novel": "pride-and-prejudice",
   "chapter": "chapter-9",
+  "novel": "pride-and-prejudice",
   "pipeline_version": "4.1",
-  "last_updated": "2026-02-27T00:58:14Z",
-  "metadata_validation": {
-    "passed": true,
-    "last_checked": "2026-02-27T00:24:29Z",
-    "errors": []
-  },
-  "image_progress": {
-    "total": 7,
-    "variants_per_scene": 2,
-    "completed": 14,
-    "last_scene_completed": 7
-  },
-  "steps": {
-    "analysis_metadata_enhancement": "done",
-    "reviewer_metadata_verification": "done",
-    "reviewer_metadata_quality_assurance": "done",
-    "image_generation": "done",
-    "metadata_insertion": "done",
-    "holistic_qa": "pending",
-    "translation": "pending",
-    "analysis_metadata_generation": "done",
-    "metadata_content_insertion": "done",
-    "holistic_quality_assurance": "pending",
-    "translation_initialization": "pending",
-    "translation_batch_processing": "pending"
-  },
+  "last_updated": "2026-02-27T07:56:24Z",
+  "source_markdown": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-9.mdx",
   "output_files": {
     "metadata": "metadata.json",
     "enhanced_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-9-enhanced.mdx",
     "translations": {}
   },
+  "steps": {
+    "analysis_metadata_generation": "done",
+    "analysis_metadata_enhancement": "pending",
+    "reviewer_metadata_quality_assurance": "done",
+    "reviewer_metadata_verification": "pending",
+    "image_generation": "done",
+    "metadata_content_insertion": "done",
+    "holistic_quality_assurance": "pending",
+    "translation_initialization": "pending",
+    "translation_batch_processing": "pending"
+  },
+  "metadata_validation": {
+    "passed": true,
+    "last_checked": "2026-02-27T07:56:24.832720+00:00",
+    "errors": []
+  },
+  "image_progress": {
+    "total_scenes": 7,
+    "variants_per_scene": 2,
+    "completed": 14,
+    "last_scene_completed": 7
+  },
   "translation": {
+    "status": "blocked",
     "ready": false,
     "ready_after_step": "holistic_quality_assurance",
-    "status": "blocked",
     "source_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-9-enhanced.mdx",
     "target_languages": [
       "ar",
@@ -62,129 +60,7 @@
     ],
     "active_language": null,
     "batch_size_chars": 2800,
-    "languages": {
-      "ar": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "bn": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "de": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "es": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "fa": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "fr": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ha": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "hi": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "id": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "it": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ja": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ko": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ms": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "pt": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ru": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "sw": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "th": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "tr": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "vi": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "zh-TW": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      }
-    },
-    "last_synced": "2026-02-27T00:58:14Z"
-  },
-  "source_markdown": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-9-enhanced.mdx"
+    "last_synced": "2026-02-27T07:56:24Z",
+    "languages": {}
+  }
 }

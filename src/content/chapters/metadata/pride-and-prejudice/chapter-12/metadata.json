@@ -1,0 +1,379 @@
+{
+  "schema_version": "2.1.0",
+  "title": "Pride and Prejudice - Chapter XII",
+  "author": "Jane Austen",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-12",
+    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-12.mdx",
+    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-12/metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count_min": 7,
+    "analysis_label_format": "[n]",
+    "analysis_sentence_range": [2, 3],
+    "description_sentence_count": 3,
+    "image_style_lock": "Renaissance oil painting",
+    "image_variations_per_prompt_min": 2,
+    "insertion_methods_by_section": {
+      "analysis_entries": ["append"],
+      "image_prompt_entries": ["append"],
+      "quote_entries": ["replace"]
+    },
+    "memorable_quote_count_min": 7,
+    "quote_rendering": "Callout component"
+  },
+  "field_aliases": {
+    "analysis_entries": "analysis",
+    "image_prompt_entries": "image_prompts",
+    "quote_entries": "memorable_quotes"
+  },
+  "agentic_generation": {
+    "orchestrator": "chapter-metadata-orchestrator",
+    "sub_agents": ["metadata-composer-agent", "python-validation-agent"],
+    "handoff_order": ["metadata-composer-agent", "python-validation-agent", "deterministic-insertion-agent"],
+    "pattern": "orchestrator",
+    "scripts": [
+      "scripts/metadata/generate_metadata.py",
+      "scripts/metadata/validate_schema.py",
+      "scripts/metadata/validate_777.py",
+      "scripts/metadata/validate_image_variations.py",
+      "scripts/metadata/validate_anchors.py",
+      "scripts/metadata/review_failed_items.py",
+      "scripts/metadata/validate_callout_blocks.py",
+      "scripts/metadata/render_image_jobs.py",
+      "scripts/metadata/apply_insertions.py"
+    ]
+  },
+  "enhanced_title": "The Departure from Netherfield",
+  "description": "Chapter 12 concludes Jane and Elizabeth's stay at Netherfield, highlighting the social and emotional dynamics of their departure. While Mrs. Bennet begrudges their early return, Mr. Darcy finds relief in the separation, having become uncomfortably attracted to Elizabeth. The sisters' return to Longbourn restores the family circle but also brings them back to the varied and often frivolous preoccupations of their younger siblings.",
+  "summary": "Chapter XII metadata follows a strict 7-7-7 contract with superscript-labeled analysis, Renaissance-consistent image prompts with two prompt variations per scene, and callout-ready memorable quotes anchored for deterministic replacement.",
+  "analysis_entries": [
+    {
+      "id": "analysis-1",
+      "label": "[1]",
+      "display_label_mdx": "<sup>[1]</sup>",
+      "section_focus": "Maternal Manipulation",
+      "paragraph": "Mrs. Bennet's refusal to send the carriage reveals her blatant disregard for her daughters' wishes in favor of social strategy. By calculating for a longer stay, she hopes to force more time between Jane and Bingley, regardless of Jane's health or Elizabeth's discomfort. This reinforces the theme of marriage as a tactical family endeavor rather than a personal choice.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "which would exactly finish Jane’s week, could not bring herself to receive them with pleasure before.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-2",
+      "label": "[2]",
+      "display_label_mdx": "<sup>[2]</sup>",
+      "section_focus": "Elizabeth's Social Integrity",
+      "paragraph": "Elizabeth's resolution to leave despite her mother's pressure stems from a desire to avoid being perceived as an intruder. She possesses a keen sense of social propriety that her mother lacks, understanding that an overstayed welcome diminishes their standing. Her insistence on borrowing Bingley's carriage shows her willingness to take decisive action to maintain family dignity.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "she urged Jane to borrow Mr. Bingley’s carriage immediately, and at length it was settled",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-3",
+      "label": "[3]",
+      "display_label_mdx": "<sup>[3]</sup>",
+      "section_focus": "Caroline's Jealous Inconsistency",
+      "paragraph": "Miss Bingley's immediate regret after proposing a delay reveals the shallow nature of her civility. Her jealousy of Elizabeth's intellect and Darcy's attention far outweighs any genuine affection she might feel for Jane. Austen highlights how social niceties are often used as a veil for deeply ungenerous personal motives.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "for her jealousy and dislike of one sister much exceeded her affection for the other.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-4",
+      "label": "[4]",
+      "display_label_mdx": "<sup>[4]</sup>",
+      "section_focus": "Darcy's Self-Correction",
+      "paragraph": "Darcy's relief at the sisters' departure is a defensive reaction to his growing attraction to Elizabeth. He recognizes the 'danger' of her influence and consciously adopts a cold, uncommunicative stance to suppress any signs of admiration. This internal battle between his burgeoning feelings and his social pride defines his character's struggle at this stage.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "steady to his purpose, he scarcely spoke ten words to her through the whole of Saturday",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-5",
+      "label": "[5]",
+      "display_label_mdx": "<sup>[5]</sup>",
+      "section_focus": "The Performance of Parting",
+      "paragraph": "The parting scene at Netherfield is a masterclass in performative civility, with Miss Bingley's sudden warmth toward Elizabeth signaling her relief at the separation. Elizabeth's 'lively spirits' upon leaving suggest her triumph in maintaining her integrity in a hostile social environment. The physical separation restores the social boundaries that had become dangerously blurred during the stay.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "Elizabeth took leave of the whole party in the liveliest spirits.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-6",
+      "label": "[6]",
+      "display_label_mdx": "<sup>[6]</sup>",
+      "section_focus": "The Restoration of the Household",
+      "paragraph": "The Bennets' return to Longbourn highlights the diverse and often conflicting temperaments within the household. While the father finds genuine pleasure in his daughters' return, the mother's reception is cold and focused on lost social opportunity. This domestic scene illustrates the lack of cohesive family purpose that Elizabeth must constantly navigate.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "had lost much of its animation, and almost all its sense, by the absence of Jane and Elizabeth.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-7",
+      "label": "[7]",
+      "display_label_mdx": "<sup>[7]</sup>",
+      "section_focus": "The Younger Sisters' World",
+      "paragraph": "Mary's 'threadbare morality' and the younger sisters' focus on military gossip represent the intellectual and social vacuity Elizabeth and Jane must rejoin. The contrast between the high-stakes wit of Netherfield and the trivial news of Meryton underscores the sisters' isolation. Austen uses these domestic details to ground the novel's larger social themes in the mundane realities of country life.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "it had actually been hinted that Colonel Forster was going to be married.",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-1",
+      "label": "[1]",
+      "scene_title": "A Mother's Calculation",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Mrs. Bennet reading a letter with a calculating expression.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "could not bring herself to receive them with pleasure before.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-1-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mrs. Bennet seated at a writing desk, her expression scheming as she reads a letter; shadows and light emphasize the tension of her social ambitions. Rich, dark wood and vibrant fabric textures."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-1-var-2.png",
+          "prompt_text": "Renaissance oil painting focusing on Mrs. Bennet's face in profile, lit by a single candle, reflecting her internal calculation; the background is a muted Regency parlor. A study in maternal ambition and social manipulation."
+        }
+      ]
+    },
+    {
+      "id": "image-2",
+      "label": "[2]",
+      "scene_title": "The Request to Depart",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Elizabeth and Jane speaking with Mr. Bingley about their departure.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "and at length it was settled that their original design of leaving Netherfield that morning should be mentioned, and the request made.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-2-var-1.png",
+          "prompt_text": "Renaissance oil painting of Elizabeth and Jane in fine muslin gowns addressing a concerned Mr. Bingley in a grand drawing-room. Soft, natural light from a window and a sense of polite social negotiation."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-2-var-2.png",
+          "prompt_text": "Renaissance oil painting of the sisters' departure request; the focus is on the group's varied expressions of concern and resolve; rich tapestries and polished floors add depth to the Regency setting."
+        }
+      ]
+    },
+    {
+      "id": "image-3",
+      "label": "[3]",
+      "scene_title": "Darcy's Resolve",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Mr. Darcy reading a book, pointedly ignoring Elizabeth.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "he adhered most conscientiously to his book, and would not even look at her.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-3-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mr. Darcy in a dark frock coat, sitting by a fireplace with a large book; Elizabeth is visible in the background, ignored. Intense chiaroscuro and a mood of rigid internal discipline."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-3-var-2.png",
+          "prompt_text": "Renaissance oil painting focusing on Darcy's profile as he reads, his posture unyielding; the soft glow of the fire highlights his stern features and the textured pages of his book."
+        }
+      ]
+    },
+    {
+      "id": "image-4",
+      "label": "[4]",
+      "scene_title": "The Separation at Netherfield",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of the Bennet sisters taking their leave of the Netherfield party.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "the separation, so agreeable to almost all, took place.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-4-var-1.png",
+          "prompt_text": "Renaissance oil painting of the final parting at the grand entrance of Netherfield; Miss Bingley shakes Elizabeth's hand with forced civility; a carriage waits in the soft morning light. A sense of relief and transition."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-4-var-2.png",
+          "prompt_text": "Renaissance oil painting of the Bennet sisters stepping into a carriage; the manor house looms behind them; the figures of the Netherfield party are visible on the steps. Classical composition and atmospheric depth."
+        }
+      ]
+    },
+    {
+      "id": "image-5",
+      "label": "[5]",
+      "scene_title": "A Cold Welcome Home",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of the Bennet family's return to Longbourn.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "They were not welcomed home very cordially by their mother.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-5-var-1.png",
+          "prompt_text": "Renaissance oil painting of the Bennet drawing-room at Longbourn; Mrs. Bennet stands with an expression of disappointment; the sisters look weary but resolute. Warm, domestic tones and detailed period furniture."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-5-var-2.png",
+          "prompt_text": "Renaissance oil painting of the family's reunion; Mr. Bennet's quiet pleasure is visible in his eyes, while his wife's face is clouded with annoyance. A study in domestic discord and character contrast."
+        }
+      ]
+    },
+    {
+      "id": "image-6",
+      "label": "[6]",
+      "scene_title": "Mary's Studious Morality",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Mary Bennet deep in study with books and papers.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "They found Mary, as usual, deep in the study of thorough bass and human nature",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-6-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mary Bennet at a desk piled high with books and sheet music; her expression is one of solemn, pedantic focus. Fine detail of quills, inkwells, and the textured pages of her notes."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-6-var-2.png",
+          "prompt_text": "Renaissance oil painting of a young woman lost in her own intellectual world; soft light from a nearby lamp illuminates her face and the cluttered room behind her. A study in scholarly isolation."
+        }
+      ]
+    },
+    {
+      "id": "image-7",
+      "label": "[7]",
+      "scene_title": "Military News in Meryton",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Catherine and Lydia excitedly sharing gossip.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "Catherine and Lydia had information for them of a different sort.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-7-var-1.png",
+          "prompt_text": "Renaissance oil painting of the two youngest Bennet sisters whispering animatedly together; their faces are full of youthful excitement and gossip. Bright colors, lively gestures, and an atmosphere of frivolous exuberance."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-7-var-2.png",
+          "prompt_text": "Renaissance oil painting focusing on Lydia and Catherine's expressive reactions to local news; a background of a bustling Regency parlor. A capture of the trivial preoccupations of country life."
+        }
+      ]
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-1",
+      "label": "[1]",
+      "speaker": "Narrator",
+      "quote": "“Mrs. Bennet, who had calculated on her daughters remaining at Netherfield till the following Tuesday... could not bring herself to receive them with pleasure before.”",
+      "callout": { "title": "Memorable Quote" },
+      "anchor": {
+        "anchor_text": "Mrs. Bennet, who had calculated on her daughters remaining at Netherfield till the following Tuesday, which would exactly finish Jane’s week, could not bring herself to receive them with pleasure before.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-2",
+      "label": "[2]",
+      "speaker": "Narrator",
+      "quote": "“Against staying longer, however, Elizabeth was positively resolved--nor did she much expect it would be asked.”",
+      "callout": { "title": "Memorable Quote" },
+      "anchor": {
+        "anchor_text": "Against staying longer, however, Elizabeth was positively resolved--nor did she much expect it would be asked;",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-3",
+      "label": "[3]",
+      "speaker": "Narrator",
+      "quote": "“Miss Bingley was then sorry that she had proposed the delay; for her jealousy and dislike of one sister much exceeded her affection for the other.”",
+      "callout": { "title": "Memorable Quote" },
+      "anchor": {
+        "anchor_text": "Miss Bingley was then sorry that she had proposed the delay; for her jealousy and dislike of one sister much exceeded her affection for the other.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-4",
+      "label": "[4]",
+      "speaker": "Narrator",
+      "quote": "“To Mr. Darcy it was welcome intelligence: Elizabeth had been at Netherfield long enough. She attracted him more than he liked.”",
+      "callout": { "title": "Memorable Quote" },
+      "anchor": {
+        "anchor_text": "To Mr. Darcy it was welcome intelligence: Elizabeth had been at Netherfield long enough. She attracted him more than he liked;",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-5",
+      "label": "[5]",
+      "speaker": "Narrator",
+      "quote": "“He wisely resolved to be particularly careful that no sign of admiration should _now_ escape him--nothing that could elevate her with the hope of influencing his felicity.”",
+      "callout": { "title": "Memorable Quote" },
+      "anchor": {
+        "anchor_text": "He wisely resolved to be particularly careful that no sign of admiration should _now_ escape him--nothing that could elevate her with the hope of influencing his felicity;",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-6",
+      "label": "[6]",
+      "speaker": "Narrator",
+      "quote": "“Mrs. Bennet wondered at their coming, and thought them very wrong to give so much trouble, and was sure Jane would have caught cold again.”",
+      "callout": { "title": "Memorable Quote" },
+      "anchor": {
+        "anchor_text": "Mrs. Bennet wondered at their coming, and thought them very wrong to give so much trouble, and was sure Jane would have caught cold again.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-7",
+      "label": "[7]",
+      "speaker": "Narrator",
+      "quote": "“The evening conversation, when they were all assembled, had lost much of its animation, and almost all its sense, by the absence of Jane and Elizabeth.”",
+      "callout": { "title": "Memorable Quote" },
+      "anchor": {
+        "anchor_text": "The evening conversation, when they were all assembled, had lost much of its animation, and almost all its sense, by the absence of Jane and Elizabeth.",
+        "insertion_method": "replace"
+      }
+    }
+  ]
+}

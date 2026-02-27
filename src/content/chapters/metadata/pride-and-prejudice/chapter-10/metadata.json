@@ -1,187 +1,375 @@
 {
-  "novel": "pride-and-prejudice",
-  "chapter": 10,
-  "enhanced_title": "Letters, Loo, and a Reel Refused",
-  "description": "Darcy's growing fascination with Elizabeth becomes evident as they engage in intellectual sparring over the nature of humility and friendship. Miss Bingley's jealousy reaches a fever pitch, leading her to mock Elizabeth's connections in a desperate bid to distract Darcy.",
+  "schema_version": "2.1.0",
+  "title": "Pride and Prejudice - Chapter I",
+  "enhanced_title": "The Subtle Combat of Netherfield",
+  "author": "Jane Austen",
+  "description": "The evening at Netherfield becomes an intellectual arena as Elizabeth observes the calculated flattery of Miss Bingley and the analytical detachment of Mr. Darcy. Through sharp debates on letter-writing, the nature of humility, and the influence of friendship, the characters reveal their deepest temperamental differences. Elizabeth's independent spirit shines as she navigates social traps, ultimately preferring her own company to the performative politeness of the drawing room.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-10",
+    "source_text_file": "pride-and-prejudice-chapter-10.mdx",
+    "metadata_file": "metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count_min": 7,
+    "image_prompt_count_min": 7,
+    "memorable_quote_count_min": 7,
+    "image_variations_per_prompt_min": 2,
+    "description_sentence_count": 3,
+    "analysis_sentence_range": [
+      2,
+      3
+    ],
+    "analysis_label_format": "[n]",
+    "image_style_lock": "Renaissance oil painting",
+    "quote_rendering": "Callout component",
+    "insertion_methods_by_section": {
+      "analysis_entries": [
+        "append"
+      ],
+      "image_prompt_entries": [
+        "append"
+      ],
+      "quote_entries": [
+        "replace"
+      ]
+    }
+  },
+  "field_aliases": {
+    "analysis_entries": "analysis",
+    "image_prompt_entries": "image_prompts",
+    "quote_entries": "memorable_quotes"
+  },
+  "agentic_generation": {
+    "pattern": "orchestrator",
+    "orchestrator": "chapter-metadata-orchestrator",
+    "sub_agents": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent",
+      "image-direction-agent",
+      "deterministic-insertion-agent",
+      "chapter-translation-agent"
+    ],
+    "handoff_order": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent-on-failure",
+      "image-direction-agent",
+      "deterministic-insertion-agent",
+      "chapter-translation-agent-after-holistic-qa"
+    ],
+    "scripts": [
+      "scripts/metadata/generate_metadata.py",
+      "scripts/metadata/validate_schema.py",
+      "scripts/metadata/validate_777.py",
+      "scripts/metadata/validate_image_variations.py",
+      "scripts/metadata/validate_anchors.py",
+      "scripts/metadata/review_failed_items.py",
+      "scripts/metadata/validate_callout_blocks.py",
+      "scripts/metadata/render_image_jobs.py",
+      "scripts/metadata/apply_insertions.py",
+      "skills/translation/scripts/batch_translate.py"
+    ]
+  },
   "analysis_entries": [
     {
-      "anchor": "repeatedly calling off his attention by messages to his sister.",
-      "method": "append",
-      "note": "Miss Bingley's constant interruptions of Darcy's letter-writing highlight her performative intimacy with his family and her desperate need for his attention, which he receives with 'perfect unconcern.'"
+      "label": "[1]",
+      "paragraph": "Elizabeth's role as a silent observer highlights the performative nature of Miss Bingley's affection for Darcy. By watching the 'curious dialogue' regarding the handwriting and length of Darcy's letter, Elizabeth identifies the transparency of social climbing. Austen uses this detachment to establish Elizabeth as a critic of the very society she is currently inhabiting.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "was exactly in unison with her opinion of each.",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "Nothing is more deceitful,\u201d said Darcy, \u201cthan the appearance of humility.",
-      "method": "append",
-      "note": "Darcy's cynical view of humility as a form of 'indirect boast' reveals his disdain for social pretension and his preference for blunt, intellectual honesty, even at the expense of his friend Bingley."
+      "label": "[2]",
+      "paragraph": "The discussion of writing speed and style serves as a metaphor for the gentlemen's differing temperaments. Darcy's studied precision and Bingley's careless rapidity reflect their broader approaches to social and moral obligations. Elizabeth's interjection regarding Bingley's humility allows Darcy to pivot the conversation toward a deeper psychological critique.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "My style of writing is very different from yours.",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "To yield without conviction is no compliment to the understanding of either.",
-      "method": "append",
-      "note": "This statement encapsulates Darcy's rigid moral and intellectual framework: he values conviction above social harmony, a trait that makes him both formidable and, to Elizabeth, initially insufferable."
+      "label": "[3]",
+      "paragraph": "Darcy's definition of the 'indirect boast' provides a sharp analysis of how people leverage their own flaws to seem more interesting. He argues that Bingley's pride in his own 'carelessness of execution' is actually a vanity in disguise. This moment highlights Darcy's relentless intellectualism and his refusal to accept social platitudes at face value.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "can be of no real advantage to yourself or anyone else?",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "perceive that he was rather offended, and therefore checked her laugh.",
-      "method": "append",
-      "note": "Elizabeth's decision to check her laugh at Darcy's expense shows a growing, perhaps unconscious, respect for his feelings, marking a subtle shift in their dynamic from purely adversarial to one of cautious observation."
+      "label": "[4]",
+      "paragraph": "The debate over yielding to a friend's persuasion reveals a fundamental philosophical divide between Darcy and Elizabeth. While Darcy values intellectual conviction above all, Elizabeth argues for the merit of yielding to affection and social harmony. This exchange foreshadows their future conflicts regarding the balance of logic and feeling in human relationships.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "without waiting to be argued into it?",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "bewitched by any woman as he was by her.",
-      "method": "append",
-      "note": "The word 'bewitched' is significant in Austen's vocabulary; it suggests an attraction that Darcy cannot logically explain or control, particularly given his strong feelings about the 'inferiority' of her connections."
+      "label": "[5]",
+      "paragraph": "As Miss Bingley plays the piano, Darcy's frequent glances at Elizabeth signal a shift from critical observation to genuine fascination. Elizabeth's inability to believe she is an object of admiration underscores the depth of her own prejudice against him. She interprets his attention as search for fault, creating a dramatic irony that drives the chapter's tension.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "She liked him too little to care for his approbation.",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "planning his happiness in such an alliance.",
-      "method": "append",
-      "note": "Miss Bingley's mocking of a potential marriage between Darcy and Elizabeth is a classic case of dramatic irony: her attempts to make the idea ridiculous only serve to fix it more firmly in Darcy's (and the reader's) mind."
+      "label": "[6]",
+      "paragraph": "Elizabeth's refusal to dance a reel is a masterful stroke of social subversion. By acknowledging Darcy's expected 'pleasure of despising' her, she denies him the opportunity to look down on her. Her arch manner and intellectual 'cheating' of his contempt actually serve to deepen his bewitchment, proving her unique power over him.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "and now despise me if you dare.",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "Good-bye.",
-      "method": "append",
-      "note": "Elizabeth's witty exit from the walk in the shrubbery leaves the others 'grouped' in their own social artifice, while she escapes into the freedom and 'rejoicing' of her own company."
+      "label": "[7]",
+      "paragraph": "Elizabeth's final interaction in the shrubbery demonstrates her ability to turn social exclusion into personal triumph. When Miss Bingley and Mrs. Hurst crowd her off the path, Elizabeth reframes their rudeness as a 'charming group' that she would only spoil. Her gay departure signals her preference for the freedom of her own thoughts over the cramped etiquette of Netherfield.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "The picturesque would be spoilt by admitting a fourth.",
+        "insertion_method": "append"
+      }
     }
   ],
   "image_prompt_entries": [
     {
-      "anchor": "repeatedly calling off his attention by messages to his sister.",
-      "method": "append",
-      "alt_text": "Darcy writing a letter with Miss Bingley nearby.",
+      "label": "[1]",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Mr. Darcy writing at a desk while Miss Bingley leans in, with Elizabeth observing from the shadows of the drawing room.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "was exactly in unison with her opinion of each.",
+        "insertion_method": "append"
+      },
       "variations": [
         {
-          "prompt": "Renaissance oil painting. Mr. Darcy writing a letter at an ornate mahogany desk, his expression focused and stern. Miss Bingley leans over his shoulder, her expression eager and intrusive. Rich silk drapes and candlelight.",
-          "output_asset": "scene-1-var-1.png"
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of Mr. Darcy seated at a heavy oak desk, focused on writing a letter. Miss Bingley stands near him, leaning forward with an expression of forced admiration. Elizabeth is visible in the background, seated with her needlework, watching them with a subtle, knowing smile. Warm chiaroscuro lighting, rich velvet textures.",
+          "output_asset": "scene-1a.png"
         },
         {
-          "prompt": "Renaissance oil painting. A gentleman in a dark Regency coat writing with a quill. A lady in an elegant gown watches him intently, her hand resting near his desk. Deep, scholarly shadows and fine wood textures.",
-          "output_asset": "scene-1-var-2.png"
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting from a side angle showing the Netherfield drawing room. Darcy is mending his own pen while Miss Bingley flutters around him. Elizabeth sits in a high-backed chair, her eyes flicking between the two. Deep greens and golds, painterly brushstrokes, period-accurate Regency attire with Renaissance stylistic depth.",
+          "output_asset": "scene-1b.png"
         }
       ]
     },
     {
-      "anchor": "Mrs. Hurst was observing their game.",
-      "method": "append",
-      "alt_text": "Bingley and Hurst playing piquet.",
+      "label": "[2]",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Darcy, Bingley, and Elizabeth engaged in a lively debate about writing styles in a candlelit room.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "My style of writing is very different from yours.",
+        "insertion_method": "append"
+      },
       "variations": [
         {
-          "prompt": "Renaissance oil painting. Mr. Bingley and Mr. Hurst seated across a card table playing piquet. Mrs. Hurst watches them with a look of idle interest. The scene is illuminated by the warm glow of a nearby fireplace.",
-          "output_asset": "scene-2-var-1.png"
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of Mr. Bingley gesturing animatedly while sitting opposite Darcy. Elizabeth is leaning forward, her face lit by a nearby candle as she interjects a comment. The room is filled with leather-bound books and fine porcelain. Focus on the intellectual energy and the contrast between Bingley's openness and Darcy's reserve.",
+          "output_asset": "scene-2a.png"
         },
         {
-          "prompt": "Renaissance oil painting. A close-knit group of Regency gentlemen and ladies at cards. The lighting is soft and golden, highlighting the rich fabrics of their attire and the intense focus on the game.",
-          "output_asset": "scene-2-var-2.png"
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting capturing the trio in the drawing room. Darcy holds his quill poised over the paper, looking toward Elizabeth with a serious expression. Bingley looks amused. The lighting is soft and golden, highlighting the fine lace of Elizabeth's dress and the polished wood of the furniture.",
+          "output_asset": "scene-2b.png"
         }
       ]
     },
     {
-      "anchor": "Elizabeth took up some needlework",
-      "method": "append",
-      "alt_text": "Elizabeth engaged in needlework.",
+      "label": "[3]",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Darcy delivering a lecture on humility to a slightly confused Bingley.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "can be of no real advantage to yourself or anyone else?",
+        "insertion_method": "append"
+      },
       "variations": [
         {
-          "prompt": "Renaissance oil painting. Elizabeth Bennet sitting in a comfortable armchair, her head bowed as she works on a delicate piece of needlework. Her expression is thoughtful and observant of the room around her.",
-          "output_asset": "scene-3-var-1.png"
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting focusing on Darcy's face, showing his intensity and analytical gaze as he speaks. Bingley is in the mid-ground, looking slightly defensive but mostly surprised. Elizabeth is partially visible, her expression thoughtful. Strong directional light, emphasizing the gravity of the conversation.",
+          "output_asset": "scene-3a.png"
         },
         {
-          "prompt": "Renaissance oil painting. A young woman in a simple Regency dress sewing by candlelight. Her face shows a mixture of concentration and clever amusement. Fine details of lace and thread.",
-          "output_asset": "scene-3-var-2.png"
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the men by the hearth. Darcy stands tall, gesturing toward Bingley to illustrate his point about vanity. The firelight creates dramatic shadows. Elizabeth watches from the periphery, her figure framed by a heavy silk curtain. Rich color palette of deep reds and umbers.",
+          "output_asset": "scene-3b.png"
         }
       ]
     },
     {
-      "anchor": "seated herself.",
-      "method": "append",
-      "alt_text": "Miss Bingley at the pianoforte.",
+      "label": "[4]",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Elizabeth and Darcy in a focused argument about the influence of friendship.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "without waiting to be argued into it?",
+        "insertion_method": "append"
+      },
       "variations": [
         {
-          "prompt": "Renaissance oil painting. Miss Bingley seated at an ornate pianoforte, her fingers moving gracefully over the keys. She is playing for the room, her posture stiff and elegant. Classical music room setting.",
-          "output_asset": "scene-4-var-1.png"
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of Elizabeth standing near the pianoforte, facing Darcy who remains seated. They are locked in a gaze of intellectual combat. Bingley stands between them, looking like he wants to diffuse the tension. The atmosphere is one of high-stakes social philosophy. Fine details on the piano's wood grain.",
+          "output_asset": "scene-4a.png"
         },
         {
-          "prompt": "Renaissance oil painting. A lady in a high-waisted gown performing on a musical instrument. The lighting captures the sheen of the instrument's wood and the elegance of her performance.",
-          "output_asset": "scene-4-var-2.png"
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the drawing room with Elizabeth and Darcy in the foreground. Their faces show the heat of the argument. Elizabeth's hands are clasped, Darcy's chin is tilted up. The background is blurred with the other guests at piquet. Saturated colors, emotional depth, classical composition.",
+          "output_asset": "scene-4b.png"
         }
       ]
     },
     {
-      "anchor": "despise me if you dare.",
-      "method": "append",
-      "alt_text": "Elizabeth refusing Darcy's dance.",
+      "label": "[5]",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Miss Bingley at the piano while Darcy's eyes are fixed on Elizabeth.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "She liked him too little to care for his approbation.",
+        "insertion_method": "append"
+      },
       "variations": [
         {
-          "prompt": "Renaissance oil painting. Elizabeth Bennet standing near a music instrument, looking at Mr. Darcy with a look of clever defiance and archness. Darcy looks surprised and intrigued. The atmosphere is charged with wit.",
-          "output_asset": "scene-5-var-1.png"
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of Miss Bingley seated at the pianoforte, her fingers on the keys. In the background, Darcy is standing, but his gaze is directed entirely toward Elizabeth, who is looking through music books. The lighting is low and intimate, focusing on Darcy's intense expression and Elizabeth's unawareness.",
+          "output_asset": "scene-5a.png"
         },
         {
-          "prompt": "Renaissance oil painting. A spirited young woman in a drawing room laughingly refusing a gentleman's request. Her eyes are bright and mocking. The man looks on with a mixture of surprise and gallantry.",
-          "output_asset": "scene-5-var-2.png"
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting capturing the musical interlude. Miss Bingley and Mrs. Hurst are singing together. The viewer's eye is drawn to Darcy, who is positioned in the center, watching Elizabeth with an expression of budding admiration. Soft, painterly edges and a romantic, shadowed atmosphere.",
+          "output_asset": "scene-5b.png"
         }
       ]
     },
     {
-      "anchor": "walking together in the shrubbery",
-      "method": "append",
-      "alt_text": "Darcy and Miss Bingley in the shrubbery.",
+      "label": "[6]",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Darcy approaching Elizabeth to invite her to dance.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "and now despise me if you dare.",
+        "insertion_method": "append"
+      },
       "variations": [
         {
-          "prompt": "Renaissance oil painting. Mr. Darcy and Miss Bingley walking through a lush, green shrubbery. Miss Bingley is gesturing mockingly while Darcy walks beside her, his expression unreadable. Soft, filtered sunlight.",
-          "output_asset": "scene-6-var-1.png"
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of Mr. Darcy stepping toward Elizabeth, his hand slightly extended. Elizabeth is smiling archly, looking up at him with defiance in her eyes. The room is bustling with the sounds of a 'lively Scotch air.' The light catches the gold thread in the ladies' dresses. High contrast, dynamic movement.",
+          "output_asset": "scene-6a.png"
         },
         {
-          "prompt": "Renaissance oil painting. A gentleman and lady walking on a gravel path between manicured hedges. The lady is speaking with animated, sharp features. Classical garden setting.",
-          "output_asset": "scene-6-var-2.png"
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the moment Darcy asks about the reel. Elizabeth is seated, and Darcy is leaning over her. Their proximity creates a sense of tension. The background characters are suggested with loose, atmospheric brushwork. Focus on the 'sweetness and archness' of Elizabeth's expression.",
+          "output_asset": "scene-6b.png"
         }
       ]
     },
     {
-      "anchor": "The picturesque would be spoilt by admitting a fourth.",
-      "method": "append",
-      "alt_text": "Elizabeth running off from the walk.",
+      "label": "[7]",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Elizabeth leaving the trio in the shrubbery.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "The picturesque would be spoilt by admitting a fourth.",
+        "insertion_method": "append"
+      },
       "variations": [
         {
-          "prompt": "Renaissance oil painting. Elizabeth Bennet running gaily off a gravel path into a wider avenue, her hair catching the light. She looks back with a laugh at a trio of people left behind. Picturesque English garden.",
-          "output_asset": "scene-7-var-1.png"
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of a garden path. Miss Bingley and Mrs. Hurst are linked on Darcy's arms, forming a tight trio. Elizabeth is walking away from them toward the viewer, her face bright with laughter and relief. The garden is lush with Renaissance-style foliage and dappled sunlight. Beautiful perspective.",
+          "output_asset": "scene-7a.png"
         },
         {
-          "prompt": "Renaissance oil painting. A young woman in motion, her dress billowing slightly as she runs away from a formal social grouping. The background is a beautiful, painterly park with tall trees.",
-          "output_asset": "scene-7-var-2.png"
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the shrubbery at Netherfield. The 'charming group' of three stands together on a narrow path. Elizabeth is a small, energetic figure running off into the distance of the avenue. The composition emphasizes her freedom and their static social confinement. Rich, earthy garden tones.",
+          "output_asset": "scene-7b.png"
         }
       ]
     }
   ],
   "quote_entries": [
     {
-      "anchor": "Nothing is more deceitful,\u201d said Darcy, \u201cthan the appearance of humility.",
-      "method": "replace",
-      "callout": "<Callout variant=\"quote\" title=\"Darcy on Humility\">\u201cNothing is more deceitful,\u201d said Darcy, \u201cthan the appearance of humility. It is often only carelessness of opinion, and sometimes an indirect boast.\u201d</Callout>"
+      "label": "[1]",
+      "quote": "The perpetual commendations of the lady either on his hand-writing, or on the evenness of his lines, or on the length of his letter, with the perfect unconcern with which her praises were received, formed a curious dialogue.",
+      "speaker": "Narrator",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "The perpetual commendations of the lady either on his hand-writing, or on the evenness of his lines, or on the length of his letter, with the perfect unconcern with which her praises were received, formed a curious dialogue, and was exactly in unison with her opinion of each.",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "To yield without conviction is no compliment to the understanding of either.",
-      "method": "replace",
-      "callout": "<Callout variant=\"quote\" title=\"Yielding and Conviction\">\u201cTo yield without conviction is no compliment to the understanding of either.\u201d</Callout>"
+      "label": "[2]",
+      "quote": "Nothing is more deceitful than the appearance of humility. It is often only carelessness of opinion, and sometimes an indirect boast.",
+      "speaker": "Mr. Darcy",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cNothing is more deceitful,\u201d said Darcy, \u201cthan the appearance of humility. It is often only carelessness of opinion, and sometimes an indirect boast.\u201d",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "Darcy must speak for himself.",
-      "method": "replace",
-      "callout": "<Callout variant=\"quote\" title=\"Darcy\u2019s Voice\">\u201cUpon my word, I cannot exactly explain the matter\u2014Darcy must speak for himself.\u201d</Callout>"
+      "label": "[3]",
+      "quote": "The power of doing anything with quickness is always much prized by the possessor, and often without any attention to the imperfection of the performance.",
+      "speaker": "Mr. Darcy",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "The power of doing anything with quickness is always much prized by the possessor, and often without any attention to the imperfection of the performance.",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "I am not particularly speaking of such a case as you have supposed",
-      "method": "replace",
-      "callout": "<Callout variant=\"quote\" title=\"Elizabeth\u2019s Distinction\">\u201cI am not particularly speaking of such a case as you have supposed about Mr. Bingley. We may as well wait, perhaps, till the circumstance occurs.\u201d</Callout>"
+      "label": "[4]",
+      "quote": "To yield without conviction is no compliment to the understanding of either.",
+      "speaker": "Mr. Darcy",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cTo yield without conviction is no compliment to the understanding of either.\u201d",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "despise me if you dare.",
-      "method": "replace",
-      "callout": "<Callout variant=\"quote\" title=\"A Bold Refusal\">\u201cI have, therefore, made up my mind to tell you that I do not want to dance a reel at all; and now despise me if you dare.\u201d</Callout>"
+      "label": "[5]",
+      "quote": "I have, therefore, made up my mind to tell you that I do not want to dance a reel at all; and now despise me if you dare.",
+      "speaker": "Elizabeth Bennet",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "I have, therefore, made up my mind to tell you that I do not want to dance a reel at all; and now despise me if you dare.",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "Indeed I do not dare.",
-      "method": "replace",
-      "callout": "<Callout variant=\"quote\" title=\"Darcy\u2019s Admission\">\u201cIndeed I do not dare.\u201d</Callout>"
+      "label": "[6]",
+      "quote": "Darcy had never been so bewitched by any woman as he was by her. He really believed that, were it not for the inferiority of her connections, he should be in some danger.",
+      "speaker": "Narrator",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "Darcy had never been so bewitched by any woman as he was by her. He really believed that, were it not for the inferiority of her connections, he should be in some danger.",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "The picturesque would be spoilt by admitting a fourth.",
-      "method": "replace",
-      "callout": "<Callout variant=\"quote\" title=\"The Picturesque Trio\">\u201cNo, no; stay where you are. You are charmingly grouped, and appear to uncommon advantage. The picturesque would be spoilt by admitting a fourth. Good-bye.\u201d</Callout>"
+      "label": "[7]",
+      "quote": "You are charmingly grouped, and appear to uncommon advantage. The picturesque would be spoilt by admitting a fourth.",
+      "speaker": "Elizabeth Bennet",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "The picturesque would be spoilt by admitting a",
+        "insertion_method": "replace"
+      }
     }
   ]
 }

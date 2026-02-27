@@ -16,7 +16,7 @@
     "metadata_content_insertion": "done",
     "holistic_quality_assurance": "done",
     "translation_initialization": "done",
-    "translation_batch_processing": "in-progress"
+    "translation_batch_processing": "done"
   },
   "image_progress": {
     "completed": 7,
@@ -38,14 +38,28 @@
       "es": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/es/pride-and-prejudice-chapter-3.mdx",
       "hi": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/hi/pride-and-prejudice-chapter-3.mdx",
       "ja": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ja/pride-and-prejudice-chapter-3.mdx",
-      "pt": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pt/pride-and-prejudice-chapter-3.mdx"
+      "pt": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pt/pride-and-prejudice-chapter-3.mdx",
+      "de": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/de/pride-and-prejudice-chapter-3.mdx",
+      "fa": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/fa/pride-and-prejudice-chapter-3.mdx",
+      "fr": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/fr/pride-and-prejudice-chapter-3.mdx",
+      "ha": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ha/pride-and-prejudice-chapter-3.mdx",
+      "id": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/id/pride-and-prejudice-chapter-3.mdx",
+      "it": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/it/pride-and-prejudice-chapter-3.mdx",
+      "ko": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ko/pride-and-prejudice-chapter-3.mdx",
+      "ms": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ms/pride-and-prejudice-chapter-3.mdx",
+      "ru": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ru/pride-and-prejudice-chapter-3.mdx",
+      "sw": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/sw/pride-and-prejudice-chapter-3.mdx",
+      "th": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/th/pride-and-prejudice-chapter-3.mdx",
+      "tr": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/tr/pride-and-prejudice-chapter-3.mdx",
+      "vi": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/vi/pride-and-prejudice-chapter-3.mdx",
+      "zh-TW": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/zh-TW/pride-and-prejudice-chapter-3.mdx"
     }
   },
-  "last_updated": "2026-02-27T02:05:22Z",
+  "last_updated": "2026-02-27T17:42:02Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
-    "status": "in-progress",
+    "status": "done",
     "source_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-3-enhanced.mdx",
     "target_languages": [
       "ar",
@@ -69,7 +83,7 @@
       "vi",
       "zh-TW"
     ],
-    "active_language": "th",
+    "active_language": null,
     "batch_size_chars": 2800,
     "languages": {
       "ar": {
@@ -78,7 +92,7 @@
         "chunks_total": 5,
         "chunks_completed": 5,
         "last_error": null,
-        "last_updated": "2026-02-27T00:27:22Z"
+        "last_updated": "2026-02-27T15:19:24Z"
       },
       "bn": {
         "status": "done",
@@ -86,7 +100,7 @@
         "chunks_total": 5,
         "chunks_completed": 5,
         "last_error": null,
-        "last_updated": "2026-02-27T00:42:34Z"
+        "last_updated": "2026-02-27T15:26:28Z"
       },
       "es": {
         "status": "done",
@@ -94,15 +108,15 @@
         "chunks_total": 5,
         "chunks_completed": 5,
         "last_error": null,
-        "last_updated": "2026-02-27T00:54:51Z"
+        "last_updated": "2026-02-27T15:40:32Z"
       },
       "fa": {
-        "status": "in-progress",
+        "status": "done",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/fa/pride-and-prejudice-chapter-3.mdx",
         "chunks_total": 5,
-        "chunks_completed": 1,
+        "chunks_completed": 5,
         "last_error": null,
-        "last_updated": "2026-02-27T00:58:19Z"
+        "last_updated": "2026-02-27T15:48:25Z"
       },
       "hi": {
         "status": "done",
@@ -110,7 +124,7 @@
         "chunks_total": 5,
         "chunks_completed": 5,
         "last_error": null,
-        "last_updated": "2026-02-27T01:20:27Z"
+        "last_updated": "2026-02-27T16:11:25Z"
       },
       "ja": {
         "status": "done",
@@ -118,49 +132,70 @@
         "chunks_total": 5,
         "chunks_completed": 5,
         "last_error": null,
-        "last_updated": "2026-02-27T01:42:32Z"
+        "last_updated": "2026-02-27T16:32:35Z"
       },
       "de": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/de/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T15:33:45Z"
       },
       "fr": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/fr/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T15:55:49Z"
       },
       "ha": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ha/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T16:04:27Z"
       },
       "id": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/id/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T16:18:18Z"
       },
       "it": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/it/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T16:25:28Z"
       },
       "ko": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ko/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T16:40:35Z"
       },
       "ms": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ms/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T16:47:53Z"
       },
       "pt": {
         "status": "done",
@@ -169,48 +204,63 @@
         "chunks_completed": 5,
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pt/pride-and-prejudice-chapter-3.mdx",
         "last_error": null,
-        "last_updated": "2026-02-27T02:05:18Z"
+        "last_updated": "2026-02-27T16:54:51Z"
       },
       "ru": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "sw": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "th": {
-        "status": "in-progress",
+        "status": "done",
         "progress": 0,
         "chunks_total": 5,
-        "chunks_completed": 0,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ru/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T17:02:32Z"
+      },
+      "sw": {
+        "status": "done",
+        "progress": 0,
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/sw/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T17:11:36Z"
+      },
+      "th": {
+        "status": "done",
+        "progress": 0,
+        "chunks_total": 5,
+        "chunks_completed": 5,
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/th/pride-and-prejudice-chapter-3.mdx",
         "last_error": null,
-        "last_updated": "2026-02-27T02:05:22Z"
+        "last_updated": "2026-02-27T17:19:55Z"
       },
       "tr": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/tr/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T17:27:27Z"
       },
       "vi": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/vi/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T17:35:15Z"
       },
       "zh-TW": {
-        "status": "pending",
+        "status": "done",
         "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
+        "chunks_total": 5,
+        "chunks_completed": 5,
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/zh-TW/pride-and-prejudice-chapter-3.mdx",
+        "last_error": null,
+        "last_updated": "2026-02-27T17:42:02Z"
       }
     },
-    "last_synced": "2026-02-27T02:05:22Z"
+    "last_synced": "2026-02-27T17:42:02Z"
   }
 }

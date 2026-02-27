@@ -1,0 +1,409 @@
+{
+  "schema_version": "2.1.0",
+  "title": "Pride and Prejudice - Chapter XIII",
+  "author": "Jane Austen",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-13",
+    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-13.mdx",
+    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-13/metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count_min": 7,
+    "analysis_label_format": "[n]",
+    "analysis_sentence_range": [
+      2,
+      3
+    ],
+    "description_sentence_count": 3,
+    "image_style_lock": "Renaissance oil painting",
+    "image_variations_per_prompt_min": 2,
+    "insertion_methods_by_section": {
+      "analysis_entries": [
+        "append"
+      ],
+      "image_prompt_entries": [
+        "append"
+      ],
+      "quote_entries": [
+        "replace"
+      ]
+    },
+    "memorable_quote_count_min": 7,
+    "quote_rendering": "Callout component"
+  },
+  "field_aliases": {
+    "analysis_entries": "analysis",
+    "image_prompt_entries": "image_prompts",
+    "quote_entries": "memorable_quotes"
+  },
+  "agentic_generation": {
+    "orchestrator": "chapter-metadata-orchestrator",
+    "sub_agents": [
+      "metadata-composer-agent",
+      "python-validation-agent"
+    ],
+    "handoff_order": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "deterministic-insertion-agent"
+    ],
+    "pattern": "orchestrator",
+    "scripts": [
+      "scripts/metadata/generate_metadata.py",
+      "scripts/metadata/validate_schema.py",
+      "scripts/metadata/validate_777.py",
+      "scripts/metadata/validate_image_variations.py",
+      "scripts/metadata/validate_anchors.py",
+      "scripts/metadata/review_failed_items.py",
+      "scripts/metadata/validate_callout_blocks.py",
+      "scripts/metadata/render_image_jobs.py",
+      "scripts/metadata/apply_insertions.py"
+    ]
+  },
+  "enhanced_title": "The Arrival of Mr. Collins",
+  "description": "The introduction of Mr. Collins, the heir to Longbourn, brings a unique blend of pompomus servility and self-importance to the Bennet household. His letter of reconciliation, laden with deference to Lady Catherine de Bourgh, sets the stage for his formal and awkward interactions with his cousins. The chapter masterfully explores themes of inheritance, social hierarchy, and the absurdity of religious and social performance.",
+  "summary": "Chapter XIII metadata follows a strict 7-7-7 contract with superscript-labeled analysis, Renaissance-consistent image prompts with two prompt variations per scene, and callout-ready memorable quotes anchored for deterministic replacement.",
+  "analysis_entries": [
+    {
+      "id": "analysis-1",
+      "label": "[1]",
+      "display_label_mdx": "<sup>[1]</sup>",
+      "section_focus": "The Entail's Inequity",
+      "paragraph": "Mr. Bennet's blunt announcement of Mr. Collins's arrival forces the family to confront the reality of the entail. Mrs. Bennet's irrational hatred of the legal arrangement highlights her lack of systemic understanding, viewing it as a personal cruelty rather than a common patriarchal structure. Her emotional reaction serves as a foil to Mr. Bennet's detached, almost amused irony regarding their future displacement.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "in favour of a man whom nobody cared anything about.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-2",
+      "label": "[2]",
+      "display_label_mdx": "<sup>[2]</sup>",
+      "section_focus": "Collins's Rhetorical Servility",
+      "paragraph": "Mr. Collins's letter is a masterpiece of sycophancy, where every expression of goodwill is tied to his association with Lady Catherine de Bourgh. His claim to promote 'the blessing of peace' is undercut by his constant reminders of his status as the heir, creating a tone of condescending atonement. This rhetorical style perfectly captures the 'mixture of servility and self-importance' that Mr. Bennet so eagerly anticipates.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "not lead you to reject the offered olive branch.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-3",
+      "label": "[3]",
+      "display_label_mdx": "<sup>[3]</sup>",
+      "section_focus": "Elizabeth's Sharp Perception",
+      "paragraph": "Elizabeth's immediate identification of Collins as an 'oddity' demonstrates her superior judgment and wit. While Jane searches for credit in his intentions and Mary analyzes his composition, Elizabeth pierces through the formal language to find the underlying pomposity. Her skepticism marks her as the primary lens through which the reader is meant to view Collins's absurdity.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "There is something very pompous in his style.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-4",
+      "label": "[4]",
+      "display_label_mdx": "<sup>[4]</sup>",
+      "section_focus": "The Physicality of Formality",
+      "paragraph": "The physical description of Mr. Collins as a 'tall, heavy-looking young man' with 'grave and stately' air reinforces his lack of natural social grace. His formal manners are not an expression of genuine respect but a rigid adherence to a self-constructed persona of clerical dignity. Austen uses his heavy presence to contrast with the lighter, more agile wit of the Bennet sisters.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "His air was grave and stately, and his manners were very formal.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-5",
+      "label": "[5]",
+      "display_label_mdx": "<sup>[5]</sup>",
+      "section_focus": "Calculated Gallantry",
+      "paragraph": "Collins's immediate compliments on the beauty of the daughters and his prediction of their marriage are revealed as part of his 'prepared' admiration. This gallantry is not spontaneous but a tactical move in his plan to make 'amends' for the entail. The daughters' discomfort highlights the transactional nature of his praise, which lacks any true appreciation of their individuality.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "doubt her seeing them all in due time well disposed of in marriage.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-6",
+      "label": "[6]",
+      "display_label_mdx": "<sup>[6]</sup>",
+      "section_focus": "The Appraisal of Longbourn",
+      "paragraph": "Collins's detailed examination and praise of the house and furniture betray his mindset as the future owner. His commendations are double-edged, as they remind Mrs. Bennet that everything he admires will eventually be his. This creates a subtle but persistent tension in the domestic space, as the guest acts more like a landlord in training.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "for the mortifying supposition of his viewing it all as his own future property.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-7",
+      "label": "[7]",
+      "display_label_mdx": "<sup>[7]</sup>",
+      "section_focus": "The Comedy of Apology",
+      "paragraph": "The chapter's conclusion with Collins's fifteen-minute apology for a perceived slight about the cook illustrates the absurdity of his social performance. His inability to read the room and his relentless verbal output turn social interaction into a form of endurance for the Bennets. This persistent apologizing serves as a final, defining trait of his overbearing and tiresome character.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "but he continued to apologize for about a quarter of an hour.",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-1",
+      "label": "[1]",
+      "scene_title": "Reading the Letter",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of the Bennet family listening as Mr. Bennet reads Mr. Collins's letter.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "as he folded up the letter.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-1-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mr. Bennet holding a parchment letter in a sunlit breakfast room; his daughters and wife gather around with varied expressions of curiosity and disdain. Chiaroscuro lighting, rich fabric textures of Regency morning dress."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-1-var-2.png",
+          "prompt_text": "Renaissance oil painting focusing on Elizabeth Bennet's skeptical expression as she listens to her father read; the background shows the rest of the family in soft focus. Emphasis on the character's internal reaction and the warm, domestic atmosphere."
+        }
+      ]
+    },
+    {
+      "id": "image-2",
+      "label": "[2]",
+      "scene_title": "The Arrival of Mr. Collins",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of the formal arrival of Mr. Collins at Longbourn.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "and was received with great politeness by the whole family.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-2-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mr. Collins, a tall, heavy-looking man in black clerical attire, bowing deeply in the hall of Longbourn. The Bennet family stands in a formal receiving line; the light catches the polish of the floor and the intricate patterns of the rugs."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-2-var-2.png",
+          "prompt_text": "Renaissance oil painting of the threshold of Longbourn as Mr. Collins enters; his stately but awkward posture contrasts with the natural elegance of the Bennet sisters. Dramatic shadows and a sense of formal intrusion."
+        }
+      ]
+    },
+    {
+      "id": "image-3",
+      "label": "[3]",
+      "scene_title": "The Dinner Party",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of the Bennet family and Mr. Collins at the dinner table.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "He was interrupted by a summons to dinner; and the girls smiled on each other.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-3-var-1.png",
+          "prompt_text": "Renaissance oil painting of a formal Regency dinner table laden with silver and porcelain; Mr. Collins sits at the head, gesturing grandly as he speaks. The Bennet sisters exchange meaningful, amused glances in the soft candlelight."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-3-var-2.png",
+          "prompt_text": "Renaissance oil painting focusing on the contrast between Mr. Collins's pompous expression and Mrs. Bennet's forced politeness during dinner. Rich colors of the food and the warm glow of the room."
+        }
+      ]
+    },
+    {
+      "id": "image-4",
+      "label": "[4]",
+      "scene_title": "Appraising the Estate",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Mr. Collins examining the furniture and decor of Longbourn.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "all its furniture, were examined and praised;",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-4-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mr. Collins touching the wood of a fine cabinet with a proprietary air; Mrs. Bennet watches him from the shadows with a look of suppressed agony. Deep, atmospheric lighting and attention to the material details of the home."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-4-var-2.png",
+          "prompt_text": "Renaissance oil painting of a man surveying a grand hall as if calculating its value; the architecture of Longbourn is highlighted with classical perspective. A study in ownership and social tension."
+        }
+      ]
+    },
+    {
+      "id": "image-5",
+      "label": "[5]",
+      "scene_title": "The Infinite Apology",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Mr. Collins apologizing relentlessly to a weary Mrs. Bennet.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "but he continued to apologize for about a quarter of an hour.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-5-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mr. Collins leaning toward Mrs. Bennet with an expression of excessive contrition; Mrs. Bennet looks visibly exhausted, her fan held limp in her hand. The lighting is dim, suggesting the passage of time."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-5-var-2.png",
+          "prompt_text": "Renaissance oil painting focusing on the hands of Mr. Collins as he gestures in apology, and the weary, turned-away face of his hostess. A capture of social fatigue and overbearing formality."
+        }
+      ]
+    },
+    {
+      "id": "image-6",
+      "label": "[6]",
+      "scene_title": "Lady Catherine's Shadow",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting symbolizing the influence of Lady Catherine de Bourgh over Mr. Collins.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "and his kind intention of christening, marrying, and burying his parishioners whenever it were required.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-6-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mr. Collins in his study, with a large portrait of a stern, noble woman (Lady Catherine) looming on the wall behind him. He writes with a quill, surrounded by symbols of his clerical office. Moody, reverent lighting."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-6-var-2.png",
+          "prompt_text": "Renaissance oil painting showing a man's humble posture before a large, unseen presence, suggested by the regal furniture and a crest on the wall. An allegory of patronage and subservience."
+        }
+      ]
+    },
+    {
+      "id": "image-7",
+      "label": "[7]",
+      "scene_title": "Mary's Critical Review",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Mary Bennet analyzing the letter's composition.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "yet I think it is well expressed.",
+        "insertion_method": "append"
+      },
+      "variations": [
+        {
+          "variation_id": "a",
+          "output_asset": "scene-7-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mary Bennet looking over her father's shoulder at the letter, her face reflecting a pedantic intensity. Books are scattered on the table before her, and the light is cold and intellectual."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-7-var-2.png",
+          "prompt_text": "Renaissance oil painting focusing on Mary's hands holding the letter up to the light as she studies its prose. A study in scholarly detachment amidst family drama."
+        }
+      ]
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-1",
+      "label": "[1]",
+      "speaker": "Mr. Bennet",
+      "quote": "\u201cIt is from my cousin, Mr. Collins, who, when I am dead, may turn you all out of this house as soon as he pleases.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cIt is from my cousin, Mr. Collins, who, when I am dead, may turn you all out of this house as soon as he pleases.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-2",
+      "label": "[2]",
+      "speaker": "Mr. Collins",
+      "quote": "\u201cI flatter myself that my present overtures of good-will are highly commendable, and that the circumstance of my being next in the entail of Longbourn estate will be kindly overlooked on your side.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cI flatter myself that my present overtures of good-will are highly commendable, and that the circumstance of my being next in the entail of Longbourn estate will be kindly overlooked on your side, and not lead you to reject the offered olive branch.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-3",
+      "label": "[3]",
+      "speaker": "Elizabeth Bennet",
+      "quote": "\u201cHe must be an oddity, I think. I cannot make him out. There is something very pompous in his style.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "There is something very pompous in his style.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-4",
+      "label": "[4]",
+      "speaker": "Mr. Bennet",
+      "quote": "\u201cNo, my dear; I think not. I have great hopes of finding him quite the reverse. There is a mixture of servility and self-importance in his letter which promises well.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cNo, my dear; I think not. I have great hopes of finding him quite the reverse. There is a mixture of servility and self-importance in his letter which promises well. I am impatient to see him.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-5",
+      "label": "[5]",
+      "speaker": "Mary Bennet",
+      "quote": "\u201cThe idea of the olive branch perhaps is not wholly new, yet I think it is well expressed.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cIn point of composition,\u201d said Mary, \u201chis letter does not seem defective. The idea of the olive branch perhaps is not wholly new, yet I think it is well expressed.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-6",
+      "label": "[6]",
+      "speaker": "Mr. Collins",
+      "quote": "\u201cI am very sensible, madam, of the hardship to my fair cousins, and could say much on the subject, but that I am cautious of appearing forward and precipitate.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cI am very sensible, madam, of the hardship to my fair cousins, and could say much on the subject, but that I am cautious of appearing forward and precipitate. But I can assure the young ladies that I come prepared to admire them.\u201d",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-7",
+      "label": "[7]",
+      "speaker": "Mr. Collins",
+      "quote": "\u201cHe begged pardon for having displeased her. In a softened tone she declared herself not at all offended; but he continued to apologize for about a quarter of an hour.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "He begged pardon for having displeased her. In a softened tone she declared herself not at all offended; but he continued to apologize for about a quarter of an hour.",
+        "insertion_method": "replace"
+      }
+    }
+  ]
+}

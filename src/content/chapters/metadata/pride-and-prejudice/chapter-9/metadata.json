@@ -1,145 +1,410 @@
 {
-  "novel": "pride-and-prejudice",
-  "chapter": 9,
-  "enhanced_title": "Studiers of Character and Food for Love",
-  "description": "Mrs. Bennet visits Netherfield, much to Elizabeth's chagrin. A lively debate on poetry, the country, and 'intricate characters' ensues, while Lydia's demand for a ball sets the stage for future festivities.",
+  "schema_version": "2.1.0",
+  "title": "Pride and Prejudice - Chapter IX",
+  "author": "Jane Austen",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-9",
+    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-9.mdx",
+    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-9/metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count_min": 7,
+    "analysis_label_format": "[n]",
+    "analysis_sentence_range": [
+      2,
+      3
+    ],
+    "description_sentence_count": 3,
+    "image_prompt_count_min": 7,
+    "image_style_lock": "Renaissance oil painting",
+    "image_variations_per_prompt_min": 2,
+    "insertion_methods_by_section": {
+      "analysis_entries": [
+        "append"
+      ],
+      "image_prompt_entries": [
+        "append"
+      ],
+      "quote_entries": [
+        "replace"
+      ]
+    },
+    "memorable_quote_count_min": 7,
+    "quote_rendering": "Callout component"
+  },
+  "field_aliases": {
+    "analysis_entries": "analysis",
+    "image_prompt_entries": "image_prompts",
+    "quote_entries": "memorable_quotes"
+  },
+  "agentic_generation": {
+    "orchestrator": "chapter-metadata-orchestrator",
+    "sub_agents": [
+      "metadata-composer-agent",
+      "python-validation-agent"
+    ],
+    "handoff_order": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "deterministic-insertion-agent"
+    ],
+    "pattern": "orchestrator",
+    "scripts": [
+      "scripts/metadata/generate_metadata.py",
+      "scripts/metadata/validate_schema.py",
+      "scripts/metadata/validate_777.py",
+      "scripts/metadata/validate_image_variations.py",
+      "scripts/metadata/validate_anchors.py",
+      "scripts/metadata/review_failed_items.py",
+      "scripts/metadata/validate_callout_blocks.py",
+      "scripts/metadata/render_image_jobs.py",
+      "scripts/metadata/apply_insertions.py"
+    ]
+  },
+  "enhanced_title": "Maternal Ambition and Social Friction at Netherfield",
+  "description": "Chapter 9 sees Mrs. Bennet descend upon Netherfield, where her transparent attempts to keep Jane near Mr. Bingley create significant social awkwardness for Elizabeth. The chapter highlights the sharp contrast between Mrs. Bennet's unrefined country manners and the polished, often judgmental, atmosphere of the Netherfield party. Through spirited debates on character, poetry, and social breeding, the intellectual and social gaps between the families are laid bare, further complicating Elizabeth's position in this elevated circle.",
+  "summary": "Chapter IX metadata follows a strict 7-7-7 contract with superscript-labeled analysis, Renaissance-consistent image prompts with two prompt variations per scene, and callout-ready memorable quotes anchored for deterministic replacement.",
   "analysis_entries": [
     {
-      "anchor": "note was immediately despatched, and its contents as quickly complied with.",
-      "method": "append",
-      "note": "The speed with which the note is dispatched and the visit arranged underscores the proximity and social expectations of the neighborhood, while also hinting at Mrs. Bennet's eagerness to keep Jane at Netherfield."
+      "id": "analysis-1",
+      "label": "[1]",
+      "display_label_mdx": "<sup>[1]</sup>",
+      "section_focus": "Maternal Machinations",
+      "paragraph": "Mrs. Bennet's visit to Netherfield reveals her manipulative nature regarding Jane's illness. She deliberately obstructs Jane's return home, prioritizing the proximity to Mr. Bingley over her daughter's immediate comfort. This calculation highlights the desperate social stakes Mrs. Bennet associates with a potential match at Netherfield.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "Mrs. Bennet, accompanied by her two youngest girls, reached Netherfield soon after the family breakfast.",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "profuse in her acknowledgments.",
-      "method": "append",
-      "note": "Mrs. Bennet's profuse gratitude often borders on servility when dealing with those of higher status, like Bingley, which serves to highlight her lack of social poise compared to her daughter Elizabeth."
+      "id": "analysis-2",
+      "label": "[2]",
+      "display_label_mdx": "<sup>[2]</sup>",
+      "section_focus": "Elizabeth's Awareness",
+      "paragraph": "Throughout the visit, Elizabeth acts as a buffer between her mother's social indelicacy and the Netherfield party. She frequently blushes for Mrs. Bennet's lack of decorum and attempts to redirect the conversation. This role underscores Elizabeth's acute awareness of social standing and her desire to protect her family's reputation.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "\u201cIndeed, mamma, you are mistaken,\u201d said Elizabeth, blushing for her mother.",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "understand you perfectly.",
-      "method": "append",
-      "note": "Elizabeth's claim to understand Bingley 'perfectly' signals the start of a genuine friendship based on mutual openness and wit, contrasting with the layered deceits often found in Regency social interactions."
+      "id": "analysis-3",
+      "label": "[3]",
+      "display_label_mdx": "<sup>[3]</sup>",
+      "section_focus": "Country vs Town Debate",
+      "paragraph": "The debate regarding the merits of country versus town life serves as a vehicle for character contrast. Mrs. Bennet's defensive and literal-minded responses to Darcy's observations reveal her intellectual limitations. Darcy's preference for 'intricate characters' and variety further distances him from the simpler social circle of Longbourn.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "\u201cThe country,\u201d said Darcy, \u201ccan in general supply but few subjects for such a study. In a country neighbourhood you move in a very confined and unvarying society.\u201d",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "wild manner that you are suffered to do at home.",
-      "method": "append",
-      "note": "Mrs. Bennet’s rebuke of Elizabeth’s 'wild manner' is ironic, as the mother herself is far more socially erratic, illustrating the lack of self-awareness that plagues the older Bennet generation."
+      "id": "analysis-4",
+      "label": "[4]",
+      "display_label_mdx": "<sup>[4]</sup>",
+      "section_focus": "Bingley's Disposition",
+      "paragraph": "Mr. Bingley's reaction to Mrs. Bennet's absurdities is characterized by genuine civility and patience. Unlike his sister or Mr. Darcy, he makes a sincere effort to maintain a pleasant atmosphere. His willingness to accommodate the Bennets, even under duress, solidifies his role as a foil to Darcy's austerity.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "Nothing but concern for Elizabeth could enable Bingley to keep his countenance.",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "turned silently away.",
-      "method": "append",
-      "note": "Darcy's silent withdrawal from Mrs. Bennet's argument is his primary defense against social inferiority; he chooses not to engage with those he deems beneath him, which Elizabeth interprets as intolerable pride."
+      "id": "analysis-5",
+      "label": "[5]",
+      "display_label_mdx": "<sup>[5]</sup>",
+      "section_focus": "Lydia's Spirits",
+      "paragraph": "The introduction of Lydia's demands for a ball illustrates the lack of discipline in the younger Bennet sisters. Her 'high animal spirits' and 'natural self-consequence' are presented as results of her mother's indulgence. This foreshadows the later social risks Lydia's unrestrained behavior will pose to the family.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "Lydia was a stout, well-grown girl of fifteen, with a fine complexion and good-humoured countenance",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "poetry as the _food_ of love",
-      "method": "append",
-      "note": "The debate on poetry as the 'food of love' allows Austen to explore the intellectual compatibility between Elizabeth and Darcy, as they spar using metaphors that reveal their differing temperaments."
+      "id": "analysis-6",
+      "label": "[6]",
+      "display_label_mdx": "<sup>[6]</sup>",
+      "section_focus": "Poetry as Food of Love",
+      "paragraph": "The witty exchange between Elizabeth and Darcy regarding poetry and love provides a glimpse of their intellectual compatibility. Elizabeth's cynical view of sonnets 'starving' a slight inclination contrasts with Darcy's more traditional, yet guarded, perspective. Their banter remains the only high-level intellectual engagement in the room.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "\u201cI have been used to consider poetry as the food of love,\u201d said Darcy.",
+        "insertion_method": "append"
+      }
     },
     {
-      "anchor": "insist on their giving one also.",
-      "method": "append",
-      "note": "Lydia's insistence on the ball introduces her character’s primary drive: a reckless pursuit of pleasure and social attention, which will eventually lead to the novel's central crisis."
+      "id": "analysis-7",
+      "label": "[7]",
+      "display_label_mdx": "<sup>[7]</sup>",
+      "section_focus": "Targeted Wit",
+      "paragraph": "Miss Bingley uses Mrs. Bennet's behavior as ammunition to attack Elizabeth's standing in Darcy's eyes. By mocking the 'fine eyes' of a woman with such embarrassing relations, she attempts to devalue Elizabeth. Darcy's refusal to join the censure suggests his growing, albeit reluctant, admiration is surpassing social prejudice.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "leaving her own and her relations\u2019 behaviour to the remarks of the two ladies and Mr. Darcy",
+        "insertion_method": "append"
+      }
     }
   ],
   "image_prompt_entries": [
     {
-      "anchor": "Mrs. Bennet, accompanied by her two youngest girls, reached Netherfield",
-      "method": "append",
-      "alt_text": "Mrs. Bennet arriving at Netherfield.",
+      "id": "image-1",
+      "label": "[1]",
+      "scene_title": "The Netherfield Breakfast Parlour",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of a Regency breakfast room with Mrs. Bennet and Mr. Bingley.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "attended her into the breakfast parlour.",
+        "insertion_method": "append"
+      },
       "variations": [
-        {"prompt": "Renaissance oil painting. Mrs. Bennet and her two youngest daughters, Lydia and Catherine, arriving at the grand Netherfield estate. Their carriage is in the background, and they are dressed in fine Regency silks and laces. The atmosphere is eager and bustling.", "output_asset": "scene-1-var-1.png"},
-        {"prompt": "Renaissance oil painting. A bustling arrival at a grand country estate. A woman in a large bonnet leads two excited young ladies toward a stone entrance. Sunlight and shadow create a dramatic, classical scene.", "output_asset": "scene-1-var-2.png"}
+        {
+          "variation_id": "a",
+          "output_asset": "scene-1-var-1.png",
+          "prompt_text": "Renaissance oil painting of a sun-drenched Regency breakfast parlour, Mrs. Bennet in a vibrant morning gown speaking animatedly to Mr. Bingley, Elizabeth sitting nearby with a look of quiet embarrassment, rich textures of wood and silk, warm chiaroscuro lighting."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-1-var-2.png",
+          "prompt_text": "Renaissance oil painting of a stately English breakfast room, a mother and daughters in fine muslin dresses, Mr. Bingley standing politely by a large window overlooking a gravel walk, classical composition, soft brushwork, elegant interior."
+        }
       ]
     },
     {
-      "anchor": "profuse in her acknowledgments.",
-      "method": "append",
-      "alt_text": "Mrs. Bennet thanking Mr. Bingley.",
+      "id": "image-2",
+      "label": "[2]",
+      "scene_title": "A Clashing of Social Worlds",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting showing the social tension between Mr. Darcy and Mrs. Bennet.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "Darcy, after looking at her for a moment, turned silently away.",
+        "insertion_method": "append"
+      },
       "variations": [
-        {"prompt": "Renaissance oil painting. Mrs. Bennet curtsying deeply and speaking enthusiastically to a smiling, gracious Mr. Bingley in a sunlit breakfast parlour. Elizabeth stands in the background, looking slightly pained. Rich interior detail.", "output_asset": "scene-2-var-1.png"},
-        {"prompt": "Renaissance oil painting. A scene of Regency hospitality. A lady in a vibrant gown expresses profuse thanks to a kind-faced gentleman. Polished wooden floors and large windows overlooking a garden.", "output_asset": "scene-2-var-2.png"}
+        {
+          "variation_id": "a",
+          "output_asset": "scene-2-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mr. Darcy standing tall and aloof in a country house, Mrs. Bennet looking offended while gesturing toward the window, the contrast between Darcy's dark frock coat and the ladies' lighter dresses, dramatic shadows, formal tension."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-2-var-2.png",
+          "prompt_text": "Renaissance oil painting of a social gathering in a drawing room, a stern gentleman turning away from a boisterous woman, fine details of Regency fashion, mahogany furniture, a sense of silent judgment and social friction."
+        }
       ]
     },
     {
-      "anchor": "understand you perfectly.",
-      "method": "append",
-      "alt_text": "Elizabeth and Bingley in discussion.",
+      "id": "image-3",
+      "label": "[3]",
+      "scene_title": "The Intricate Study of Character",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Elizabeth and Bingley discussing character.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "\u201cYou begin to comprehend me, do you?\u201d cried he, turning towards her.",
+        "insertion_method": "append"
+      },
       "variations": [
-        {"prompt": "Renaissance oil painting. Elizabeth Bennet and Mr. Bingley in a spirited discussion. Elizabeth looks clever and engaged, her face lit with intelligence, while Bingley looks charmed and amused. Classical composition.", "output_asset": "scene-3-var-1.png"},
-        {"prompt": "Renaissance oil painting. Two young people in Regency attire engaged in a lively conversation. The woman looks directly at the man with a witty smile. Warm, painterly lighting.", "output_asset": "scene-3-var-2.png"}
+        {
+          "variation_id": "a",
+          "output_asset": "scene-3-var-1.png",
+          "prompt_text": "Renaissance oil painting of Elizabeth Bennet and Mr. Bingley in conversation, Elizabeth's expression intelligent and lively, Bingley leaning in with interest, soft candlelit atmosphere, rich earthy tones, focus on facial expressions and character."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-3-var-2.png",
+          "prompt_text": "Renaissance oil painting of a young woman with fine eyes debating with a gentleman, a background of library shelves and heavy drapes, scholarly and refined atmosphere, deep colors, masterfully rendered fabrics."
+        }
       ]
     },
     {
-      "anchor": "blushing for her mother.",
-      "method": "append",
-      "alt_text": "Elizabeth blushing in embarrassment.",
+      "id": "image-4",
+      "label": "[4]",
+      "scene_title": "Country Society at Netherfield",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Mrs. Bennet boasting to the Netherfield group.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "I believe there are few neighbourhoods larger. I know we dine with four-and-twenty families.",
+        "insertion_method": "append"
+      },
       "variations": [
-        {"prompt": "Renaissance oil painting. Elizabeth Bennet, her cheeks flushed with embarrassment, looking down at a table while her mother speaks loudly to Mr. Darcy. Darcy looks tall, stern, and distant in the shadows.", "output_asset": "scene-4-var-1.png"},
-        {"prompt": "Renaissance oil painting. A young woman with a clever face showing a look of distress and shame. In the background, an older woman speaks with animated, unrefined gestures.", "output_asset": "scene-4-var-2.png"}
+        {
+          "variation_id": "a",
+          "output_asset": "scene-4-var-1.png",
+          "prompt_text": "Renaissance oil painting of Mrs. Bennet boasting to the Netherfield party, her face flushed with triumph, Mr. Bingley hiding a smile, Miss Bingley looking on with disdain, a capture of 19th-century social comedy, vibrant palette."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-4-var-2.png",
+          "prompt_text": "Renaissance oil painting of a Regency dinner party scene, many figures in elegant dress, a mother figure dominating the conversation, varied expressions of amusement and annoyance, classical group portrait style."
+        }
       ]
     },
     {
-      "anchor": "turned silently away.",
-      "method": "append",
-      "alt_text": "Darcy turning away in disdain.",
+      "id": "image-5",
+      "label": "[5]",
+      "scene_title": "Poetry and the Heart",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Elizabeth and Darcy debating poetry.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "\u201cI have been used to consider poetry as the food of love,\u201d said Darcy.",
+        "insertion_method": "append"
+      },
       "variations": [
-        {"prompt": "Renaissance oil painting. Mr. Darcy turning his back on a group of people with a look of silent disdain. He stands near a large window, his silhouette dark and imposing against the light of the morning.", "output_asset": "scene-5-var-1.png"},
-        {"prompt": "Renaissance oil painting. A stern gentleman in a dark coat walking away from a social gathering. His posture is rigid and haughty. The scene is filled with the rich textures of a Regency drawing room.", "output_asset": "scene-5-var-2.png"}
+        {
+          "variation_id": "a",
+          "output_asset": "scene-5-var-1.png",
+          "prompt_text": "Renaissance oil painting of Elizabeth Bennet and Mr. Darcy debating by a window, the light highlighting Elizabeth's animated features and Darcy's thoughtful gaze, a book of poetry on a nearby table, romantic but intellectual tension, sfumato edges."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-5-var-2.png",
+          "prompt_text": "Renaissance oil painting of two intellectuals in a quiet moment of debate, the man in a dark tailored coat, the woman in a simple white dress, a sense of burgeoning connection amidst disagreement, rich and deep textures."
+        }
       ]
     },
     {
-      "anchor": "directed her eye towards Mr. Darcy with a very expressive smile",
-      "method": "append",
-      "alt_text": "Elizabeth and Darcy debating poetry.",
+      "id": "image-6",
+      "label": "[6]",
+      "scene_title": "Lydia's Bold Request",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Lydia Bennet asking Mr. Bingley for a ball.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "address Mr. Bingley on the subject of the ball",
+        "insertion_method": "append"
+      },
       "variations": [
-        {"prompt": "Renaissance oil painting. Elizabeth and Darcy facing each other across a library table filled with books. They are engaged in a quiet, intense debate. The lighting is focused on their expressive faces. Dark, scholarly atmosphere.", "output_asset": "scene-6-var-1.png"},
-        {"prompt": "Renaissance oil painting. Two intellectuals of the Regency era engaged in a metaphorical duel. The woman is vibrant and spirited, the man is dark and contemplative. Books and quills are scattered on a nearby desk.", "output_asset": "scene-6-var-2.png"}
+        {
+          "variation_id": "a",
+          "output_asset": "scene-6-var-1.png",
+          "prompt_text": "Renaissance oil painting of a young, stout girl of fifteen addressing a gentleman with high spirits, her sisters whispering in the background, a scene of youthful energy and lack of restraint, bright colors, lively composition."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-6-var-2.png",
+          "prompt_text": "Renaissance oil painting of Lydia Bennet in a spirited conversation with Mr. Bingley, her mother looking on with pride, fine details of ribbons and lace, an atmosphere of unrefined country exuberance."
+        }
       ]
     },
     {
-      "anchor": "Lydia was a stout, well-grown girl of fifteen",
-      "method": "append",
-      "alt_text": "Lydia Bennet demanding a ball.",
+      "id": "image-7",
+      "label": "[7]",
+      "scene_title": "Departure from Netherfield",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of the Bennet family departing from Netherfield.",
+      "anchor": {
+        "anchor_text_end_of_sentence": "Mrs. Bennet and her daughters then departed",
+        "insertion_method": "append"
+      },
       "variations": [
-        {"prompt": "Renaissance oil painting. Lydia Bennet, a stout and lively girl with a high-animal spirit, abruptly addressing a patient Mr. Bingley about a ball. Her face is full of self-consequence and excitement.", "output_asset": "scene-7-var-1.png"},
-        {"prompt": "Renaissance oil painting. A young, exuberant girl in a simple gown speaking boldly to a group of elders. Her expression is demanding and playful. The scene is bright and energetic.", "output_asset": "scene-7-var-2.png"}
+        {
+          "variation_id": "a",
+          "output_asset": "scene-7-var-1.png",
+          "prompt_text": "Renaissance oil painting of a Regency carriage waiting outside a grand estate, Mrs. Bennet and her daughters preparing to depart, Elizabeth looking back toward the house with a complex expression, evening light, dramatic sky."
+        },
+        {
+          "variation_id": "b",
+          "output_asset": "scene-7-var-2.png",
+          "prompt_text": "Renaissance oil painting of a grand manor house at dusk, a group of ladies in cloaks entering a carriage, the master of the house bowing politely, a sense of transition and social aftermath, rich atmospheric depth."
+        }
       ]
     }
   ],
   "quote_entries": [
     {
-      "anchor": "Whatever I do is done in a hurry",
-      "method": "replace",
-      "callout": "<Callout variant=\u0022quote\u0022 title=\u0022Bingley’s Disposition\u0022>“Whatever I do is done in a hurry,” replied he; “and therefore if I should resolve to quit Netherfield, I should probably be off in five minutes.”</Callout>"
+      "id": "quote-1",
+      "label": "[1]",
+      "speaker": "Mrs. Bennet",
+      "quote": "\u201cShe is a great deal too ill to be moved. Mr. Jones says we must not think of moving her. We must trespass a little longer on your kindness.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cShe is a great deal too ill to be moved. Mr. Jones says we must not think of moving her. We must trespass a little longer on your kindness.\u201d",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "Intricate characters are the _most_ amusing.",
-      "method": "replace",
-      "callout": "<Callout variant=\u0022quote\u0022 title=\u0022The Amusing Study\u0022>“Yes; but intricate characters are the _most_ amusing. They have at least that advantage.”</Callout>"
+      "id": "quote-2",
+      "label": "[2]",
+      "speaker": "Mr. Bingley",
+      "quote": "\u201cWhatever I do is done in a hurry,\u201d replied he; \u201cand therefore if I should resolve to quit Netherfield, I should probably be off in five minutes.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cWhatever I do is done in a hurry,\u201d replied he; \u201cand therefore if I should resolve to quit Netherfield, I should probably be off in five minutes.\u201d",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "few subjects for such a study.",
-      "method": "replace",
-      "callout": "<Callout variant=\u0022quote\u0022 title=\u0022Darcy’s View of the Country\u0022>“The country,” said Darcy, “can in general supply but few subjects for such a study. In a country neighbourhood you move in a very confined and unvarying society.”</Callout>"
+      "id": "quote-3",
+      "label": "[3]",
+      "speaker": "Mr. Darcy",
+      "quote": "\u201cThe country,\u201d said Darcy, \u201ccan in general supply but few subjects for such a study. In a country neighbourhood you move in a very confined and unvarying society.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cThe country,\u201d said Darcy, \u201ccan in general supply but few subjects for such a study. In a country neighbourhood you move in a very confined and unvarying society.\u201d",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "poetry as the _food_ of love",
-      "method": "replace",
-      "callout": "<Callout variant=\u0022quote\u0022 title=\u0022The Food of Love\u0022>“I have been used to consider poetry as the _food_ of love,” said Darcy.</Callout>"
+      "id": "quote-4",
+      "label": "[4]",
+      "speaker": "Mr. Bingley",
+      "quote": "\u201cWhen I am in the country,\u201d he replied, \u201cI never wish to leave it; and when I am in town, it is pretty much the same. They have each their advantages, and I can be equally happy in either.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cWhen I am in the country,\u201d he replied, \u201cI never wish to leave it; and when I am in town, it is pretty much the same. They have each their advantages, and I can be equally happy in either.\u201d",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "one good sonnet will starve it entirely away.",
-      "method": "replace",
-      "callout": "<Callout variant=\u0022quote\u0022 title=\u0022The Efficacy of Poetry\u0022>“But if it be only a slight, thin sort of inclination, I am convinced that one good sonnet will starve it entirely away.</Callout>"
+      "id": "quote-5",
+      "label": "[5]",
+      "speaker": "Mrs. Bennet",
+      "quote": "\u201c_That_ is my idea of good breeding; and those persons who fancy themselves very important and never open their mouths quite mistake the matter.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201c_That_ is my idea of good breeding; and those persons who fancy themselves very important and never open their mouths quite mistake the matter.\u201d",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "shameful thing in the world if he did not keep it.",
-      "method": "replace",
-      "callout": "<Callout variant=\u0022quote\u0022 title=\u0022Lydia’s Bold Request\u0022>“She was very equal, therefore, to address Mr. Bingley on the subject of the ball, and abruptly reminded him of his promise; adding, that it would be the most shameful thing in the world if he did not keep it.”</Callout>"
+      "id": "quote-6",
+      "label": "[6]",
+      "speaker": "Mr. Darcy",
+      "quote": "\u201cI have been used to consider poetry as the _food_ of love,\u201d said Darcy.",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cI have been used to consider poetry as the _food_ of love,\u201d said Darcy.",
+        "insertion_method": "replace"
+      }
     },
     {
-      "anchor": "join in their censure of _her_",
-      "method": "replace",
-      "callout": "<Callout variant=\u0022quote\u0022 title=\u0022Darcy’s Quiet Resistance\u0022>“He could not be prevailed on to join in their censure of _her_, in spite of all Miss Bingley’s witticisms on _fine eyes_.”</Callout>"
+      "id": "quote-7",
+      "label": "[7]",
+      "speaker": "Mr. Bingley",
+      "quote": "\u201cI am perfectly ready, I assure you, to keep my engagement; and, when your sister is recovered, you shall, if you please, name the very day of the ball.\u201d",
+      "callout": {
+        "title": "Memorable Quote"
+      },
+      "anchor": {
+        "anchor_text": "\u201cI am perfectly ready, I assure you, to keep my engagement; and, when your sister is recovered, you shall, if you please, name the very day of the ball.\u201d",
+        "insertion_method": "replace"
+      }
     }
   ]
 }

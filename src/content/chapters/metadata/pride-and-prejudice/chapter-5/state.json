@@ -10,8 +10,8 @@
     "image_generation": "done",
     "metadata_content_insertion": "done",
     "holistic_quality_assurance": "done",
-    "translation_initialization": "pending",
-    "translation_batch_processing": "pending"
+    "translation_initialization": "done",
+    "translation_batch_processing": "in-progress"
   },
   "image_progress": {
     "completed": 14,
@@ -29,11 +29,11 @@
     "enhanced_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-5-enhanced.mdx",
     "translations": {}
   },
-  "last_updated": "2026-02-26T19:45:59Z",
+  "last_updated": "2026-02-27T19:35:38Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
-    "status": "ready",
+    "status": "in-progress",
     "source_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-5-enhanced.mdx",
     "target_languages": [
       "ar",
@@ -57,9 +57,18 @@
       "vi",
       "zh-TW"
     ],
-    "active_language": null,
+    "active_language": "ar",
     "batch_size_chars": 2800,
-    "languages": {},
-    "last_synced": "2026-02-26T19:45:59Z"
+    "languages": {
+      "ar": {
+        "status": "in-progress",
+        "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ar/pride-and-prejudice-chapter-5.mdx",
+        "chunks_total": 4,
+        "chunks_completed": 1,
+        "last_error": null,
+        "last_updated": "2026-02-27T19:35:38Z"
+      }
+    },
+    "last_synced": "2026-02-27T19:35:38Z"
   }
 }
