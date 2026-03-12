@@ -15,7 +15,7 @@ jobs:
       image: node:20-alpine
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: https://gitea.com/actions/checkout@v4
 
       - name: Install Dependencies
         run: npm install
@@ -28,24 +28,24 @@ jobs:
           # The node container needs docker-cli to talk to the host socket
           # Note: If this fails, ensure the runner mounts /usr/bin/docker or use a different build strategy
           apk add --no-cache docker-cli
-          
+
           # Logic: Port = 20000 - PR_NUMBER
           PR_NUM=${{ github.event.number }}
           PREVIEW_PORT=$((20000 - PR_NUM))
           CONTAINER_NAME="kapisce-preview-pr-$PR_NUM"
-          
+
           echo "Deploying PR #$PR_NUM to port $PREVIEW_PORT..."
-          
+
           docker stop $CONTAINER_NAME || true
           docker rm $CONTAINER_NAME || true
-          
+
           docker run -d \
             --name $CONTAINER_NAME \
             -v $(pwd)/dist:/usr/share/nginx/html:ro \
             -p $PREVIEW_PORT:80 \
             --restart always \
             nginx:alpine
-          
+
           echo "Preview live at: http://$(hostname -I | awk '{print $1}'):$PREVIEW_PORT"
 
   cleanup:
