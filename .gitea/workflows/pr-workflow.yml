@@ -38,9 +38,9 @@ jobs:
           # Since we are in an alpine container, install docker cli to talk to the host socket
           apk add --no-cache docker-cli
 
-          sudo docker stop kapisce-preview-pr-${{ github.event.number }} || true
-          sudo docker rm kapisce-preview-pr-${{ github.event.number }} || true
-          sudo docker run -d \
+          docker stop kapisce-preview-pr-${{ github.event.number }} || true
+          docker rm kapisce-preview-pr-${{ github.event.number }} || true
+          docker run -d \
             --name kapisce-preview-pr-${{ github.event.number }} \
             -v $(pwd)/dist:/usr/share/nginx/html:ro \
             -p 20001:80 \
