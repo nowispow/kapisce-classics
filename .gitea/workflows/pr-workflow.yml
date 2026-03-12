@@ -12,7 +12,7 @@ jobs:
     if: github.event.action != 'closed'
     runs-on: self-hosted
     container:
-      image: node:20-alpine
+      image: node:24-alpine
       volumes:
         - /workspace/selipso/kapisce-classics:/workspace/selipso/kapisce-classics
     steps:
@@ -59,7 +59,7 @@ jobs:
     if: github.event.action == 'closed'
     runs-on: self-hosted
     container:
-      image: node:20-alpine
+      image: node:24-alpine
       volumes:
         - /workspace/selipso/kapisce-classics:/workspace/selipso/kapisce-classics
     steps:

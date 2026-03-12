@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
     # We use a container to ensure Node.js is available regardless of the host environment
     container:
-      image: node:20-alpine
+      image: node:24-alpine
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
