@@ -11,6 +11,7 @@ jobs:
     # We use a container to ensure Node.js is available regardless of the host environment
     container:
       image: node:24-alpine
+      options: --workdir /workspace/selipso/kapisce-classics
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4

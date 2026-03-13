@@ -13,6 +13,7 @@ jobs:
     runs-on: self-hosted
     container:
       image: node:24-alpine
+      options: --workdir /workspace/selipso/kapisce-classics
       volumes:
         - /workspace/selipso/kapisce-classics:/workspace/selipso/kapisce-classics
     steps:
@@ -60,6 +61,7 @@ jobs:
     runs-on: self-hosted
     container:
       image: node:24-alpine
+      options: --workdir /workspace/selipso/kapisce-classics
       volumes:
         - /workspace/selipso/kapisce-classics:/workspace/selipso/kapisce-classics
     steps:
