@@ -15,14 +15,19 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          path: /workspace/selipso/kapisce-classics
 
       - name: Install Dependencies
+        working-directory: /workspace/selipso/kapisce-classics
         run: npm install
 
       - name: Build Astro Project
+        working-directory: /workspace/selipso/kapisce-classics
         run: npm run build
 
       - name: Sync to Static Repo
+        working-directory: /workspace/selipso/kapisce-classics
         # We mount the SSH key from the host instead of using secrets
         run: |
           # Install git and openssh in the alpine container
