@@ -31,31 +31,34 @@ jobs:
       - name: Deploy Preview
         working-directory: /workspace/selipso/kapisce-classics
         run: |
-          # The node container needs docker-cli to talk to the host socket
-          # Note: If this fails, ensure the runner mounts /usr/bin/docker or use a different build strategy
           apk add --no-cache docker-cli
 
-          # Logic: Port = 20000 - PR_NUMBER
           PR_NUM=${{ github.event.number }}
           PREVIEW_PORT=$((20000 - PR_NUM))
+          IMAGE_NAME="kapisce-preview-image-$PR_NUM"
           CONTAINER_NAME="kapisce-preview-pr-$PR_NUM"
-          HOST_DIST_PATH="/workspace/selipso/kapisce-classics/dist-pr-$PR_NUM"
 
-          # Copy build artifacts to the host-mounted directory
-          mkdir -p $HOST_DIST_PATH
-          cp -r dist/* $HOST_DIST_PATH/
+          echo "Building custom Nginx image for PR #$PR_NUM..."
+          
+          # Create a temporary Dockerfile
+          cat <<EOF > Dockerfile.preview
+          FROM nginx:alpine
+          COPY dist /usr/share/nginx/html
+          EOF
 
-          echo "Deploying PR #$PR_NUM to port $PREVIEW_PORT..."
+          # Build the image (Docker CLI sends the local dist folder to the host daemon)
+          docker build -t $IMAGE_NAME -f Dockerfile.preview .
 
+          # Clean up any existing container
           docker stop $CONTAINER_NAME || true
           docker rm $CONTAINER_NAME || true
 
+          # Run the newly built self-contained image
           docker run -d \
             --name $CONTAINER_NAME \
-            -v $HOST_DIST_PATH:/usr/share/nginx/html:ro \
             -p $PREVIEW_PORT:80 \
             --restart always \
-            nginx:alpine
+            $IMAGE_NAME
 
           echo "Preview live at: http://$(hostname -I | awk '{print $1}'):$PREVIEW_PORT"
 
@@ -64,15 +67,17 @@ jobs:
     runs-on: self-hosted
     container:
       image: node:24-alpine
+      options: --workdir /workspace/selipso/kapisce-classics
+      volumes:
+        - /workspace/selipso:/workspace/selipso
     steps:
       - name: Stop and Remove Preview Container
         run: |
           apk add --no-cache docker-cli
           PR_NUM=${{ github.event.number }}
+          IMAGE_NAME="kapisce-preview-image-$PR_NUM"
           CONTAINER_NAME="kapisce-preview-pr-$PR_NUM"
-          HOST_DIST_PATH="/workspace/selipso/kapisce-classics/dist-pr-$PR_NUM"
-
+          
           docker stop $CONTAINER_NAME || true
           docker rm $CONTAINER_NAME || true
-
-          rm -rf $HOST_DIST_PATH || true
+          docker rmi $IMAGE_NAME || true
