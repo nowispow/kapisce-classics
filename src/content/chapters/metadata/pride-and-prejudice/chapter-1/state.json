@@ -16,7 +16,7 @@
     "metadata_content_insertion": "done",
     "holistic_quality_assurance": "done",
     "translation_initialization": "done",
-    "translation_batch_processing": "done"
+    "translation_batch_processing": "in-progress"
   },
   "image_progress": {
     "completed": 7,
@@ -55,11 +55,11 @@
       "zh-TW": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/zh-TW/pride-and-prejudice-chapter-1.mdx"
     }
   },
-  "last_updated": "2026-02-27T10:13:02Z",
+  "last_updated": "2026-03-13T06:51:55Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
-    "status": "done",
+    "status": "in-progress",
     "source_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-1-enhanced.mdx",
     "target_languages": [
       "ar",
@@ -83,7 +83,7 @@
       "vi",
       "zh-TW"
     ],
-    "active_language": null,
+    "active_language": "bn",
     "batch_size_chars": 2800,
     "languages": {
       "es": {
@@ -92,7 +92,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-02-27T08:53:34Z"
+        "last_updated": "2026-03-13T06:44:57Z"
       },
       "ar": {
         "status": "done",
@@ -100,15 +100,15 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-02-27T08:39:23Z"
+        "last_updated": "2026-03-13T06:50:00Z"
       },
       "bn": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/bn/pride-and-prejudice-chapter-1.mdx",
         "chunks_total": 3,
-        "chunks_completed": 3,
+        "chunks_completed": 1,
         "last_error": null,
-        "last_updated": "2026-02-27T08:44:12Z"
+        "last_updated": "2026-03-13T06:51:55Z"
       },
       "de": {
         "status": "done",
@@ -247,6 +247,6 @@
         "last_updated": "2026-02-27T10:13:02Z"
       }
     },
-    "last_synced": "2026-02-27T10:13:02Z"
+    "last_synced": "2026-03-13T06:51:55Z"
   }
 }
