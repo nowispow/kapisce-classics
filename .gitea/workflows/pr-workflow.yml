@@ -4,54 +4,80 @@ on:
   pull_request:
     branches:
       - main
+      - development
     types: [opened, synchronize, reopened, closed]
 
 jobs:
   preview:
     if: github.event.action != 'closed'
     runs-on: self-hosted
-    # Use a container for the build step to ensure Node.js is present
     container:
-      image: node:20-alpine
+      image: node:24-alpine
+      volumes:
+        - /workspace/selipso:/workspace/selipso
+      # options: '-v /workspace/selipso/kapisce-classics/dist:/workspace/selipso/kapisce-classics/dist:rw'
     steps:
       - name: Checkout Code
         uses: https://gitea.com/actions/checkout@v4
 
       - name: Install Dependencies
         run: npm install
+        working-directory: /workspace/selipso/kapisce-classics
 
       - name: Build Astro Project
         run: npm run build
+        working-directory: /workspace/selipso/kapisce-classics
 
       - name: Deploy Preview
-        # We need to run this on the host to access Docker, 
-        # so we'll use a trick or just ensure the runner has docker access
-        # Gitea's act_runner can run steps on the host if we don't specify container for the step
-        # However, to be safe and clean, we'll use the 'container' for the whole job 
-        # but we need to talk to the host's docker.
-        # Alternative: Split into build and deploy jobs.
+        working-directory: /workspace/selipso/kapisce-classics
         run: |
-          # Note: This requires the docker socket to be mounted into the runner container
-          # If the runner is bare-metal, it will just work.
-          # If the runner is in docker, it needs -v /var/run/docker.sock:/var/run/docker.sock
-
-          # Since we are in an alpine container, install docker cli to talk to the host socket
           apk add --no-cache docker-cli
 
-          docker stop kapisce-preview-pr-${{ github.event.number }} || true
-          docker rm kapisce-preview-pr-${{ github.event.number }} || true
+          PR_NUM=${{ github.event.number }}
+          PREVIEW_PORT=$((20000 - PR_NUM))
+          IMAGE_NAME="kapisce-preview-image-$PR_NUM"
+          CONTAINER_NAME="kapisce-preview-pr-$PR_NUM"
+
+          echo "Building custom Nginx image for PR #$PR_NUM..."
+          
+          # Create a temporary Dockerfile
+          cat <<EOF > Dockerfile.preview
+          FROM nginx:alpine
+          COPY dist /usr/share/nginx/html
+          EOF
+
+          # Build the image (Docker CLI sends the local dist folder to the host daemon)
+          docker build -t $IMAGE_NAME -f Dockerfile.preview .
+
+          # Clean up any existing container
+          docker stop $CONTAINER_NAME || true
+          docker rm $CONTAINER_NAME || true
+
+          # Run the newly built self-contained image
           docker run -d \
-            --name kapisce-preview-pr-${{ github.event.number }} \
-            -v $(pwd)/dist:/usr/share/nginx/html:ro \
-            -p 20001:80 \
-            nginx:alpine
+            --name $CONTAINER_NAME \
+            -p $PREVIEW_PORT:80 \
+            --restart always \
+            $IMAGE_NAME
+
+          echo "Preview live at: http://$(hostname -I | awk '{print $1}'):$PREVIEW_PORT"
 
   cleanup:
     if: github.event.action == 'closed'
     runs-on: self-hosted
+    container:
+      image: node:24-alpine
+      options: --workdir /workspace/selipso/kapisce-classics
+      volumes:
+        - /workspace/selipso:/workspace/selipso
     steps:
-      - name: Stop Preview Container
-        run: docker stop kapisce-preview-pr-${{ github.event.number }} || true
-
-      - name: Remove Preview Container
-        run: docker rm kapisce-preview-pr-${{ github.event.number }} || true
+      - name: Stop and Remove Preview Container
+        run: |
+          apk add --no-cache docker-cli
+          PR_NUM=${{ github.event.number }}
+          IMAGE_NAME="kapisce-preview-image-$PR_NUM"
+          CONTAINER_NAME="kapisce-preview-pr-$PR_NUM"
+          
+          docker stop $CONTAINER_NAME || true
+          docker rm $CONTAINER_NAME || true
+          docker rmi $IMAGE_NAME || true

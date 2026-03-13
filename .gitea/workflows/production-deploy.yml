@@ -10,35 +10,38 @@ jobs:
     runs-on: self-hosted
     # We use a container to ensure Node.js is available regardless of the host environment
     container:
-      image: node:20-alpine
+      image: node:24-alpine
+      options: --workdir /workspace/selipso/kapisce-classics
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          path: /workspace/selipso/kapisce-classics
 
       - name: Install Dependencies
+        working-directory: /workspace/selipso/kapisce-classics
         run: npm install
 
       - name: Build Astro Project
+        working-directory: /workspace/selipso/kapisce-classics
         run: npm run build
 
       - name: Sync to Static Repo
+        working-directory: /workspace/selipso/kapisce-classics
         # We mount the SSH key from the host instead of using secrets
         run: |
           # Install git and openssh in the alpine container
           apk add --no-cache git openssh-client
 
-          # Setup SSH to use the mounted host key
-          mkdir -p ~/.ssh
-          cp /host_ssh/id_rsa ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa git.kapisce.com >> ~/.ssh/known_hosts
+          # Setup SSH to scan local gitea instance into known hosts
+          ssh-keyscan -t rsa gitea-local >> ~/.ssh/known_hosts
 
           # Push dist folder to Repo B (kapisce-static)
           cd dist
           git init
           git config user.name "Kapisce Bot"
           git config user.email "bot@kapisce.com"
-          git remote add origin git@git.kapisce.com:selipso/kapisce-static.git
+          git remote add origin git@gitea-local:selipso/kapisce-static.git
           git checkout -b main
           git add .
           git commit -m "Deploying build for tag ${{ github.ref_name }}"
