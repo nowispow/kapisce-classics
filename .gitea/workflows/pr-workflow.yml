@@ -10,25 +10,26 @@ on:
 jobs:
   preview:
     if: github.event.action != 'closed'
-    defaults:
-      run:
-        working-directory: /workspace/selipso/kapisce-classics
     runs-on: self-hosted
     container:
       image: node:24-alpine
       volumes:
-        - /workspace/selipso:/workspace/selipso:rw
+        - /workspace/selipso:/workspace/selipso
+      options: '-v /workspace/selipso/kapisce-classics/dist:/workspace/selipso/kapisce-classics/dist:rw'
     steps:
       - name: Checkout Code
         uses: https://gitea.com/actions/checkout@v4
 
       - name: Install Dependencies
         run: npm install
+        working-directory: /workspace/selipso/kapisce-classics
 
       - name: Build Astro Project
         run: npm run build
+        working-directory: /workspace/selipso/kapisce-classics
 
       - name: Deploy Preview
+        working-directory: /workspace/selipso/kapisce-classics
         run: |
           # The node container needs docker-cli to talk to the host socket
           # Note: If this fails, ensure the runner mounts /usr/bin/docker or use a different build strategy
