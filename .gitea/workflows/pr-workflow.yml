@@ -17,7 +17,7 @@ jobs:
     container:
       image: node:24-alpine
       volumes:
-        - /workspace/selipso/kapisce-classics:/workspace/selipso/kapisce-classics
+        - /workspace/selipso/kapisce-classics/dist:/workspace/selipso/kapisce-classics/dist
     steps:
       - name: Checkout Code
         uses: https://gitea.com/actions/checkout@v4
