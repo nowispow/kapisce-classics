@@ -10,28 +10,25 @@ on:
 jobs:
   preview:
     if: github.event.action != 'closed'
+    defaults:
+      run:
+        working-directory: /workspace/selipso/kapisce-classics
     runs-on: self-hosted
     container:
       image: node:24-alpine
-      options: --workdir /workspace/selipso/kapisce-classics
       volumes:
         - /workspace/selipso/kapisce-classics:/workspace/selipso/kapisce-classics
     steps:
       - name: Checkout Code
         uses: https://gitea.com/actions/checkout@v4
-        with:
-          path: /workspace/selipso/kapisce-classics
 
       - name: Install Dependencies
-        working-directory: /workspace/selipso/kapisce-classics
         run: npm install
 
       - name: Build Astro Project
-        working-directory: /workspace/selipso/kapisce-classics
         run: npm run build
 
       - name: Deploy Preview
-        working-directory: /workspace/selipso/kapisce-classics
         run: |
           # The node container needs docker-cli to talk to the host socket
           # Note: If this fails, ensure the runner mounts /usr/bin/docker or use a different build strategy
@@ -66,9 +63,6 @@ jobs:
     runs-on: self-hosted
     container:
       image: node:24-alpine
-      options: --workdir /workspace/selipso/kapisce-classics
-      volumes:
-        - /workspace/selipso/kapisce-classics:/workspace/selipso/kapisce-classics
     steps:
       - name: Stop and Remove Preview Container
         run: |
@@ -76,8 +70,8 @@ jobs:
           PR_NUM=${{ github.event.number }}
           CONTAINER_NAME="kapisce-preview-pr-$PR_NUM"
           HOST_DIST_PATH="/workspace/selipso/kapisce-classics/dist-pr-$PR_NUM"
-          
+
           docker stop $CONTAINER_NAME || true
           docker rm $CONTAINER_NAME || true
-          
+
           rm -rf $HOST_DIST_PATH || true
