@@ -55,7 +55,7 @@
       "zh-TW": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/zh-TW/pride-and-prejudice-chapter-1.mdx"
     }
   },
-  "last_updated": "2026-03-14T19:43:52Z",
+  "last_updated": "2026-03-14T20:26:31Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
@@ -100,7 +100,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-14T19:34:20Z"
+        "last_updated": "2026-03-14T20:17:08Z"
       },
       "bn": {
         "status": "done",
@@ -108,7 +108,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-14T19:43:52Z"
+        "last_updated": "2026-03-14T20:26:31Z"
       },
       "de": {
         "status": "done",
@@ -247,6 +247,6 @@
         "last_updated": "2026-03-13T18:36:06Z"
       }
     },
-    "last_synced": "2026-03-14T19:43:52Z"
+    "last_synced": "2026-03-14T20:26:31Z"
   }
 }
