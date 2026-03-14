@@ -55,7 +55,7 @@
       "fr": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/fr/pride-and-prejudice-chapter-2.mdx"
     }
   },
-  "last_updated": "2026-03-14T20:25:14Z",
+  "last_updated": "2026-03-14T21:11:59Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
@@ -100,7 +100,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-14T20:15:43Z"
+        "last_updated": "2026-03-14T21:02:30Z"
       },
       "bn": {
         "status": "done",
@@ -108,7 +108,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-14T20:25:14Z"
+        "last_updated": "2026-03-14T21:11:59Z"
       },
       "de": {
         "status": "done",
@@ -247,6 +247,6 @@
         "last_updated": "2026-03-14T12:32:16Z"
       }
     },
-    "last_synced": "2026-03-14T20:25:14Z"
+    "last_synced": "2026-03-14T21:11:59Z"
   }
 }
