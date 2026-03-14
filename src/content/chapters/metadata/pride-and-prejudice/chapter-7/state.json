@@ -2,7 +2,7 @@
   "novel": "pride-and-prejudice",
   "chapter": "chapter-7",
   "pipeline_version": "4.1",
-  "last_updated": "2026-02-27T04:38:16Z",
+  "last_updated": "2026-03-13T16:41:36Z",
   "metadata_validation": {
     "passed": true,
     "last_checked": "2026-02-27T00:21:44Z",
@@ -184,7 +184,7 @@
         "chunks_completed": 0
       }
     },
-    "last_synced": "2026-02-27T04:38:16Z"
+    "last_synced": "2026-03-13T16:41:36Z"
   },
   "source_markdown": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-7-enhanced.mdx"
 }
