@@ -24,7 +24,7 @@ export default defineConfig({
   site: 'https://astro-erudite.vercel.app',
   integrations: [mdx(), react(), svelte(), sitemap(), icon()],
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss() as any],
   },
   server: {
     port: 1234,

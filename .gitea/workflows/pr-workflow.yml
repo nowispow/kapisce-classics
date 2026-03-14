@@ -1,0 +1,83 @@
+name: PR Preview & Cleanup
+
+on:
+  pull_request:
+    branches:
+      - main
+      - development
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  preview:
+    if: github.event.action != 'closed'
+    runs-on: self-hosted
+    container:
+      image: node:24-alpine
+      volumes:
+        - /workspace/selipso:/workspace/selipso
+      # options: '-v /workspace/selipso/kapisce-classics/dist:/workspace/selipso/kapisce-classics/dist:rw'
+    steps:
+      - name: Checkout Code
+        uses: https://gitea.com/actions/checkout@v4
+
+      - name: Install Dependencies
+        run: npm install
+        working-directory: /workspace/selipso/kapisce-classics
+
+      - name: Build Astro Project
+        run: npm run build
+        working-directory: /workspace/selipso/kapisce-classics
+
+      - name: Deploy Preview
+        working-directory: /workspace/selipso/kapisce-classics
+        run: |
+          apk add --no-cache docker-cli
+
+          PR_NUM=${{ github.event.number }}
+          PREVIEW_PORT=$((20000 - PR_NUM))
+          IMAGE_NAME="kapisce-preview-image-$PR_NUM"
+          CONTAINER_NAME="kapisce-preview-pr-$PR_NUM"
+
+          echo "Building custom Nginx image for PR #$PR_NUM..."
+          
+          # Create a temporary Dockerfile
+          cat <<EOF > Dockerfile.preview
+          FROM nginx:alpine
+          COPY dist /usr/share/nginx/html
+          EOF
+
+          # Build the image (Docker CLI sends the local dist folder to the host daemon)
+          docker build -t $IMAGE_NAME -f Dockerfile.preview .
+
+          # Clean up any existing container
+          docker stop $CONTAINER_NAME || true
+          docker rm $CONTAINER_NAME || true
+
+          # Run the newly built self-contained image
+          docker run -d \
+            --name $CONTAINER_NAME \
+            -p $PREVIEW_PORT:80 \
+            --restart always \
+            $IMAGE_NAME
+
+          echo "Preview live at: http://$(hostname -I | awk '{print $1}'):$PREVIEW_PORT"
+
+  cleanup:
+    if: github.event.action == 'closed'
+    runs-on: self-hosted
+    container:
+      image: node:24-alpine
+      options: --workdir /workspace/selipso/kapisce-classics
+      volumes:
+        - /workspace/selipso:/workspace/selipso
+    steps:
+      - name: Stop and Remove Preview Container
+        run: |
+          apk add --no-cache docker-cli
+          PR_NUM=${{ github.event.number }}
+          IMAGE_NAME="kapisce-preview-image-$PR_NUM"
+          CONTAINER_NAME="kapisce-preview-pr-$PR_NUM"
+          
+          docker stop $CONTAINER_NAME || true
+          docker rm $CONTAINER_NAME || true
+          docker rmi $IMAGE_NAME || true
