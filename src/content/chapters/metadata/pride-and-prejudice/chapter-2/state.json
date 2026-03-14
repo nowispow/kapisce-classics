@@ -16,7 +16,7 @@
     "metadata_content_insertion": "done",
     "holistic_quality_assurance": "done",
     "translation_initialization": "done",
-    "translation_batch_processing": "done"
+    "translation_batch_processing": "in-progress"
   },
   "image_progress": {
     "completed": 14,
@@ -55,11 +55,11 @@
       "fr": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/fr/pride-and-prejudice-chapter-2.mdx"
     }
   },
-  "last_updated": "2026-03-14T12:32:16Z",
+  "last_updated": "2026-03-14T19:12:40Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
-    "status": "done",
+    "status": "in-progress",
     "source_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-2-enhanced.mdx",
     "target_languages": [
       "ar",
@@ -95,12 +95,12 @@
         "last_updated": "2026-03-14T11:16:56Z"
       },
       "ar": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ar/pride-and-prejudice-chapter-2.mdx",
         "chunks_total": 3,
-        "chunks_completed": 3,
+        "chunks_completed": 0,
         "last_error": null,
-        "last_updated": "2026-03-14T11:03:24Z"
+        "last_updated": "2026-03-14T18:43:08Z"
       },
       "bn": {
         "status": "done",
@@ -108,7 +108,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-14T11:08:04Z"
+        "last_updated": "2026-03-14T19:12:40Z"
       },
       "de": {
         "status": "done",
@@ -148,7 +148,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-14T11:37:03Z"
+        "last_updated": "2026-03-14T19:03:18Z"
       },
       "id": {
         "status": "done",
@@ -247,6 +247,6 @@
         "last_updated": "2026-03-14T12:32:16Z"
       }
     },
-    "last_synced": "2026-03-14T12:32:16Z"
+    "last_synced": "2026-03-14T19:12:40Z"
   }
 }
