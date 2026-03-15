@@ -55,7 +55,7 @@
       "zh-TW": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/zh-TW/pride-and-prejudice-chapter-1.mdx"
     }
   },
-  "last_updated": "2026-03-14T21:10:58Z",
+  "last_updated": "2026-03-15T13:39:02Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
@@ -92,7 +92,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T16:52:02Z"
+        "last_updated": "2026-03-15T11:26:00Z"
       },
       "ar": {
         "status": "done",
@@ -100,7 +100,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-14T21:01:31Z"
+        "last_updated": "2026-03-15T11:04:09Z"
       },
       "bn": {
         "status": "done",
@@ -108,7 +108,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-14T21:10:58Z"
+        "last_updated": "2026-03-15T11:11:34Z"
       },
       "de": {
         "status": "done",
@@ -116,7 +116,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T17:12:53Z"
+        "last_updated": "2026-03-15T11:18:53Z"
       },
       "fa": {
         "status": "done",
@@ -124,7 +124,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T17:18:25Z"
+        "last_updated": "2026-03-15T11:34:58Z"
       },
       "fr": {
         "status": "done",
@@ -132,7 +132,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T17:23:36Z"
+        "last_updated": "2026-03-15T11:43:17Z"
       },
       "ha": {
         "status": "done",
@@ -140,7 +140,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T17:28:57Z"
+        "last_updated": "2026-03-15T11:55:08Z"
       },
       "hi": {
         "status": "done",
@@ -148,7 +148,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-14T19:02:12Z"
+        "last_updated": "2026-03-15T12:02:53Z"
       },
       "id": {
         "status": "done",
@@ -156,7 +156,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T17:38:37Z"
+        "last_updated": "2026-03-15T12:10:10Z"
       },
       "it": {
         "status": "done",
@@ -164,7 +164,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T17:43:43Z"
+        "last_updated": "2026-03-15T12:17:41Z"
       },
       "ja": {
         "status": "done",
@@ -172,7 +172,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T17:48:27Z"
+        "last_updated": "2026-03-15T12:25:21Z"
       },
       "ko": {
         "status": "done",
@@ -180,7 +180,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T17:53:52Z"
+        "last_updated": "2026-03-15T12:33:35Z"
       },
       "ms": {
         "status": "done",
@@ -188,7 +188,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T17:58:45Z"
+        "last_updated": "2026-03-15T12:41:05Z"
       },
       "pt": {
         "status": "done",
@@ -196,7 +196,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T18:03:30Z"
+        "last_updated": "2026-03-15T12:48:22Z"
       },
       "ru": {
         "status": "done",
@@ -204,7 +204,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T18:08:49Z"
+        "last_updated": "2026-03-15T12:56:29Z"
       },
       "sw": {
         "status": "done",
@@ -212,7 +212,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T18:14:49Z"
+        "last_updated": "2026-03-15T13:06:06Z"
       },
       "th": {
         "status": "done",
@@ -220,7 +220,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T18:20:38Z"
+        "last_updated": "2026-03-15T13:14:55Z"
       },
       "tr": {
         "status": "done",
@@ -228,7 +228,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T18:25:51Z"
+        "last_updated": "2026-03-15T13:22:49Z"
       },
       "vi": {
         "status": "done",
@@ -236,7 +236,7 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T18:31:19Z"
+        "last_updated": "2026-03-15T13:31:32Z"
       },
       "zh-TW": {
         "status": "done",
@@ -244,9 +244,9 @@
         "chunks_total": 3,
         "chunks_completed": 3,
         "last_error": null,
-        "last_updated": "2026-03-13T18:36:06Z"
+        "last_updated": "2026-03-15T13:39:02Z"
       }
     },
-    "last_synced": "2026-03-14T21:10:58Z"
+    "last_synced": "2026-03-15T13:39:02Z"
   }
 }

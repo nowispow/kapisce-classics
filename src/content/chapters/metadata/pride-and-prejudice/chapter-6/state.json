@@ -1,190 +1,28 @@
 {
-  "novel": "pride-and-prejudice",
-  "chapter": "chapter-6",
-  "pipeline_version": "4.1",
+  "novel_slug": "pride-and-prejudice",
+  "chapter_slug": "chapter-6",
+  "phase": "init",
+  "status": "on_hold",
+  "retry_count": 0,
+  "rejection_reason": null,
+  "last_updated": "2026-03-15T09:14:00Z",
+  "pipeline_version": "5.0",
   "steps": {
-    "analysis_metadata_enhancement": "done",
-    "reviewer_metadata_verification": "done",
-    "reviewer_metadata_quality_assurance": "done",
-    "image_generation": "done",
-    "metadata_insertion": "done",
+    "analysis_metadata_enhancement": "pending",
+    "analysis_metadata_generation": "pending",
     "holistic_qa": "pending",
-    "translation": "pending",
-    "analysis_metadata_generation": "done",
-    "metadata_content_insertion": "done",
     "holistic_quality_assurance": "pending",
-    "translation_initialization": "pending",
-    "translation_batch_processing": "pending"
-  },
-  "image_progress": {
-    "completed": 0,
-    "total_scenes": 7,
-    "variants_per_scene": 2,
-    "last_scene_completed": 0
-  },
-  "metadata_validation": {
-    "passed": true,
-    "last_checked": null,
-    "errors": []
-  },
-  "output_files": {
-    "metadata": "metadata.json",
-    "enhanced_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-6-enhanced.mdx",
-    "translations": {}
+    "image_generation": "pending",
+    "metadata_content_insertion": "pending",
+    "metadata_insertion": "pending",
+    "reviewer_metadata_quality_assurance": "pending",
+    "reviewer_metadata_verification": "pending",
+    "translation": "pending",
+    "translation_batch_processing": "pending",
+    "translation_initialization": "pending"
   },
   "translation": {
-    "ready_after_step": "holistic_quality_assurance",
-    "ready": false,
     "status": "blocked",
-    "source_mdx": null,
-    "target_languages": [
-      "ar",
-      "bn",
-      "de",
-      "es",
-      "fa",
-      "fr",
-      "ha",
-      "hi",
-      "id",
-      "it",
-      "ja",
-      "ko",
-      "ms",
-      "pt",
-      "ru",
-      "sw",
-      "th",
-      "tr",
-      "vi",
-      "zh-TW"
-    ],
-    "active_language": null,
-    "batch_size_chars": 2800,
-    "languages": {
-      "ar": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "bn": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "de": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "es": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "fa": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "fr": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ha": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "hi": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "id": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "it": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ja": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ko": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ms": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "pt": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "ru": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "sw": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "th": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "tr": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "vi": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      },
-      "zh-TW": {
-        "status": "pending",
-        "progress": 0,
-        "chunks_total": 0,
-        "chunks_completed": 0
-      }
-    },
-    "last_synced": "2026-03-13T16:41:36Z"
-  },
-  "last_updated": "2026-03-13T16:41:36Z",
-  "source_markdown": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-6-enhanced.mdx"
+    "ready": false
+  }
 }
