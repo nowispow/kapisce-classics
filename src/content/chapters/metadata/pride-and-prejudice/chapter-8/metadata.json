@@ -1,390 +1,239 @@
 {
-  "schema_version": "2.1.0",
-  "title": "Pride and Prejudice",
-  "enhanced_title": "Muddy Petticoats and Accomplished Women",
+  "schema_version": "1.0",
+  "title": "Pride and Prejudice: Chapter VIII",
+  "enhanced_title": "Chapter VIII: A Study in Contrasts - The Netherfield Drawing Room Drama",
   "author": "Jane Austen",
-  "description": "Elizabeth continues her vigil at Netherfield, facing the barely concealed disdain of the Bingley sisters. A spirited debate on the nature of 'accomplished women' reveals the deep intellectual and moral divide between Elizabeth, the Bingleys, and Mr. Darcy. She demonstrates her independence and character in front of everyone.",
+  "description": "Chapter VIII of Pride and Prejudice captures Elizabeth Bennet's stay at Netherfield to care for her ill sister Jane. The chapter is structured around three pivotal drawing-room conversations that reveal character through dialogue: the Bingley sisters' snide criticism of Elizabeth's muddy walk, the debate on accomplished women, and Elizabeth's parting exchange. Through sharp social observation and witty repartee, Austen exposes class prejudice, superficial femininity, and the emerging complexity of Darcy's character.",
   "source": {
-    "novel": "pride-and-prejudice",
-    "chapter": "chapter-8",
-    "source_text_file": "pride-and-prejudice-chapter-8.mdx",
-    "metadata_file": "metadata.json"
+    "novel": "Pride and Prejudice",
+    "chapter": "Chapter VIII",
+    "source_text_file": "pride-and-prejudice-chapter-08.txt",
+    "metadata_file": "pride-and-prejudice-chapter-08-metadata.json"
   },
   "pattern_requirements": {
-    "analysis_count_min": 7,
-    "image_prompt_count_min": 7,
-    "memorable_quote_count_min": 7,
-    "image_variations_per_prompt_min": 2,
-    "description_sentence_count": 3,
-    "analysis_sentence_range": [
-      2,
-      3
-    ],
-    "analysis_label_format": "[n]",
-    "image_style_lock": "Renaissance oil painting",
-    "quote_rendering": "Callout component",
-    "insertion_methods_by_section": {
-      "analysis_entries": [
-        "append"
-      ],
-      "image_prompt_entries": [
-        "append"
-      ],
-      "quote_entries": [
-        "replace"
-      ]
-    }
+    "analysis_entries_count": 7,
+    "image_prompt_entries_count": 7,
+    "quote_entries_count": 7,
+    "style_requirement": "Renaissance oil painting"
   },
   "field_aliases": {
-    "analysis_entries": "analysis",
-    "image_prompt_entries": "image_prompts",
-    "quote_entries": "memorable_quotes"
-  },
-  "quote_callout_spec": {
-    "import_statement": "import Callout from '@/components/Callout.astro'",
-    "component": "Callout",
-    "default_title": "Memorable Quote",
-    "body_template": "<QUOTE>",
-    "insertion_method": "replace",
-    "anchor_field": "anchor_text"
-  },
-  "agentic_generation": {
-    "pattern": "orchestrator",
-    "orchestrator": "chapter-metadata-orchestrator",
-    "sub_agents": [
-      "metadata-composer-agent",
-      "python-validation-agent",
-      "metadata-reviewer-agent",
-      "image-direction-agent",
-      "deterministic-insertion-agent",
-      "chapter-translation-agent"
-    ],
-    "handoff_order": [
-      "metadata-composer-agent",
-      "python-validation-agent",
-      "metadata-reviewer-agent-on-failure",
-      "image-direction-agent",
-      "deterministic-insertion-agent",
-      "chapter-translation-agent-after-holistic-qa"
-    ],
-    "scripts": [
-      "scripts/metadata/generate_metadata.py",
-      "scripts/metadata/validate_schema.py",
-      "scripts/metadata/validate_777.py",
-      "scripts/metadata/validate_image_variations.py",
-      "scripts/metadata/validate_anchors.py",
-      "scripts/metadata/review_failed_items.py",
-      "scripts/metadata/validate_callout_blocks.py",
-      "scripts/metadata/render_image_jobs.py",
-      "scripts/metadata/apply_insertions.py",
-      "skills/translation/scripts/batch_translate.py"
-    ]
+    "analysis_entries": "Literary Analysis Paragraphs",
+    "image_prompt_entries": "Scene Illustrations",
+    "quote_entries": "Notable Quotations"
   },
   "analysis_entries": [
     {
-      "label": "[1]",
-      "analysis_paragraph": "Elizabeth's 'enjoyment' of her dislike highlights her spirited, if somewhat prejudiced, character. She finds psychological comfort in her low opinion of the Bingley sisters, which contrasts with Bingley's genuine concern for Jane.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "Elizabeth to the enjoyment of all her original dislike.",
-        "insertion_method": "append"
-      },
-      "paragraph": "Elizabeth's 'enjoyment' of her dislike highlights her spirited, if somewhat prejudiced, character. She finds psychological comfort in her low opinion of the Bingley sisters, which contrasts with Bingley's genuine concern for Jane. This observation provides deep insight into the thematic core of the novel.."
+      "id": "analysis_001",
+      "paragraph": "The chapter opens with Elizabeth's isolation at Netherfield Park, immediately establishing the emotional dynamics of the house party. While Jane's illness provides the nominal reason for Elizabeth's presence, the underlying tension stems from Elizabeth's awareness that she is socially unwelcome except by Mr. Bingley. This paragraph introduces the central contrast between Bingley's genuine warmth and his sisters' superficiality, a dichotomy that will drive much of the chapter's dramatic irony.",
+      "anchor_text_end_of_sentence": "She had very little notice from any but him."
     },
     {
-      "label": "[2]",
-      "analysis_paragraph": "The Bingley sisters' critique of Elizabeth reveals more about their own social rigidity than Elizabeth's shortcomings. They define 'style' and 'taste' through a lens of class superiority, dismissing her authentic vitality as 'impertinence.'",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "mixture of pride and impertinence: she had no conversation",
-        "insertion_method": "append"
-      },
-      "paragraph": "The Bingley sisters' critique of Elizabeth reveals more about their own social rigidity than Elizabeth's shortcomings. They define 'style' and 'taste' through a lens of class superiority, dismissing her authentic vitality as 'impertinence. '."
+      "id": "analysis_002",
+      "paragraph": "Miss Bingley and Mrs. Hurst's vicious criticism of Elizabeth after she leaves the room represents one of Austen's most masterful deployments of the 'removed observer' technique. By having the sisters speak openly only when Elizabeth departs, Austen allows readers to witness the full extent of their maliciousness while maintaining Elizabeth's dignity through her ignorance of their words. The criticism of Elizabeth's muddy petticoat becomes symbolic of the sisters' preoccupation with appearances over substance.",
+      "anchor_text_end_of_sentence": "a most country-town indifference to decorum."
     },
     {
-      "label": "[3]",
-      "analysis_paragraph": "The obsession with Elizabeth\u2019s muddy petticoat serves as a powerful symbol of the divide between those who prioritize social decorum and those who prioritize family duty and physical action.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "six inches deep in mud, I am absolutely certain",
-        "insertion_method": "append"
-      },
-      "paragraph": "The obsession with Elizabeth\u2019s muddy petticoat serves as a powerful symbol of the divide between those who prioritize social decorum and those who prioritize family duty and physical action. This observation provides deep insight into the thematic core of the novel.. This observation provides deep insight into the thematic core of the novel.."
+      "id": "analysis_003",
+      "paragraph": "Darcy's first significant direct speech in this chapter reveals his complex attitude toward Elizabeth. While his agreement that he would not wish to see his sister make such an exhibition suggests conventional propriety, his subsequent remark that Elizabeth's fine eyes were 'brightened by the exercise' serves as the first crack in his stern exterior. This moment marks a pivotal turning point in their relationship—the recognition of Elizabeth's vitality beneath her unconventional behavior.",
+      "anchor_text_end_of_sentence": "they were brightened by the exercise."
     },
     {
-      "label": "[4]",
-      "analysis_paragraph": "Miss Bingley's use of the word 'independence' as an insult is central to the novel's themes. To the Bingleys, independence is 'conceited,' whereas to Elizabeth, it is a necessary part of her integrity.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "show an abominable sort of conceited independence, a most",
-        "insertion_method": "append"
-      },
-      "paragraph": "Miss Bingley's use of the word 'independence' as an insult is central to the novel's themes. To the Bingleys, independence is 'conceited,' whereas to Elizabeth, it is a necessary part of her integrity. This observation provides deep insight into the thematic core of the novel.."
+      "id": "analysis_004",
+      "paragraph": "The discussion of the Bennets' low connections exposes the class anxieties that permeate Regency society. Mrs. Hurst's barely concealed contempt for Jane's family, disguised as concern for her marriage prospects, reveals how thoroughly economic considerations have infiltrated even the language of friendship. Bingley's defense—that the Bennet uncles could not make Jane less agreeable—demonstrates his resistance to such calculations, while Darcy's measured response about marriage prospects signals his entrenched social conservatism despite his attraction to Elizabeth.",
+      "anchor_text_end_of_sentence": "“If they had uncles enough to fill _all_ Cheapside,” cried Bingley, “it\nwould not make them one jot less agreeable."
     },
     {
-      "label": "[5]",
-      "analysis_paragraph": "The 'renewal of tenderness' shown by the sisters is performed only when it is socially required, illustrating the performative nature of their empathy compared to Elizabeth\u2019s genuine devotion.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "they repaired to her room on leaving the dining-parlour",
-        "insertion_method": "append"
-      },
-      "paragraph": "The 'renewal of tenderness' shown by the sisters is performed only when it is socially required, illustrating the performative nature of their empathy compared to Elizabeth\u2019s genuine devotion. This observation provides deep insight into the thematic core of the novel.. This observation provides deep insight into the thematic core of the novel.."
+      "id": "analysis_005",
+      "paragraph": "The famous 'accomplished woman' debate forms the philosophical centerpiece of the chapter. Darcy's elaborately constructed ideal—encompassing music, singing, drawing, dancing, modern languages, graceful deportment, and extensive reading—functions both as genuine conviction and unconscious defense mechanism. By setting impossible standards, Darcy attempts to protect himself from emotional vulnerability. Elizabeth's sharp retort that she is 'no longer surprised at your knowing only six accomplished women' demonstrates her intellectual equality and quick wit in sparring with Darcy's pretensions.",
+      "anchor_text_end_of_sentence": "I rather wonder now at your knowing _any_."
     },
     {
-      "label": "[6]",
-      "analysis_paragraph": "Darcy's pride in Pemberley\u2019s library as the 'work of many generations' underscores his deep connection to his lineage and tradition, suggesting that his character is built on a foundation more substantial than the Bingleys' new wealth.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "work of many generations.",
-        "insertion_method": "append"
-      },
-      "paragraph": "Darcy's pride in Pemberley\u2019s library as the 'work of many generations' underscores his deep connection to his lineage and tradition, suggesting that his character is built on a foundation more substantial than the Bingleys' new wealth. This observation provides deep insight into the thematic core of the novel.. This observation provides deep insight into the thematic core of the novel.."
+      "id": "analysis_006",
+      "paragraph": "Miss Bingley's pointed criticism of Elizabeth to Darcy after she leaves the room reveals her growing jealousy and her attempt to poison Darcy's opinion. Her accusation that Elizabeth employs 'mean arts' to recommend herself actually describes Miss Bingley's own strategy. Darcy's response—that 'whatever bears affinity to cunning is despicable'—ironically condemns the very tactics his interlocutor employs, and the fact that he offers this reply to whom the remark was chiefly addressed confirms his awareness of Miss Bingley's motives.",
+      "anchor_text_end_of_sentence": "Whatever bears affinity to cunning is\ndespicable."
     },
     {
-      "label": "[7]",
-      "analysis_paragraph": "Darcy\u2019s addition to the list of 'accomplishments'\u2014the improvement of the mind through reading\u2014elevates the standard from mere social performance to intellectual substance, signaling his intellectual alignment with Elizabeth.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "add something more substantial in the improvement of her mind",
-        "insertion_method": "append"
-      },
-      "paragraph": "Darcy\u2019s addition to the list of 'accomplishments'\u2014the improvement of the mind through reading\u2014elevates the standard from mere social performance to intellectual substance, signaling his intellectual alignment with Elizabeth. This observation provides deep insight into the thematic core of the novel.. This observation provides deep insight into the thematic core of the novel.."
+      "id": "analysis_007",
+      "paragraph": "The chapter concludes with a devastating portrait of the Bingley sisters' hypocrisy. Despite their protestations of misery over Jane's condition, they find immediate solace in musical duets after supper, a contrast between their words and actions that perfectly encapsulates their shallow emotional lives. Meanwhile, Bingley's genuine concern manifests in practical arrangements through his housekeeper, revealing that true care expresses itself through action rather than theatrical declarations of feeling.",
+      "anchor_text_end_of_sentence": "They solaced their wretchedness,\nhowever, by duets after supper; while he could find no better relief to\nhis feelings than by giving his housekeeper directions that every\npossible attention might be paid to the sick lady and her sister."
     }
   ],
   "image_prompt_entries": [
     {
-      "label": "[1]",
+      "id": "img_001",
+      "scene_title": "Elizabeth's Arrival at Netherfield Dining Room",
       "style": "Renaissance oil painting",
-      "alt_text": "The Bingley sisters showing indifference after Elizabeth leaves.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "indifference towards Jane, when not immediately before them",
-        "insertion_method": "append"
-      },
+      "alt_text": "A young woman in simple country dress enters an elegant dining room, her posture dignified despite her awareness of being out of place among finely dressed company.",
       "variations": [
         {
-          "prompt_text": "Renaissance oil painting. The Bingley sisters, Caroline and Louisa, sitting in a lavish Regency dining room, their expressions turning from feigned concern to cold indifference as soon as Elizabeth leaves the room. Rich silk fabrics, candlelit atmosphere.",
-          "output_asset": "scene-1-var-1.png"
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of Elizabeth Bennet entering the Netherfield dining room, warm candlelight illuminating her simple dress against the opulent surroundings, subtle expressions of discomfort and dignity on her face, rich velvet curtains and silver candelabras in background, classic chiaroscuro lighting",
+          "output_asset": "elizabeth_dining_arrival.png"
         },
         {
-          "prompt_text": "Renaissance oil painting. A grand Regency dining table with two elegant women in silk gowns exchanging a knowing, cold look. Fine china and crystal glassware on the table. Warm, dramatic shadows.",
-          "output_asset": "scene-1-var-2.png"
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting portrait composition, Elizabeth Bennet in modest country attire standing at threshold of grand dining room, Mr. Bingley approaching with concern while elegantly dressed figures look on critically, dramatic lighting emphasizing social contrast",
+          "output_asset": "elizabeth_arrival_portrait.png"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "She had very little notice from any but him."
     },
     {
-      "label": "[2]",
+      "id": "img_002",
+      "scene_title": "The Sisters' Whispered Conspiracy",
       "style": "Renaissance oil painting",
-      "alt_text": "Caroline Bingley whispering to Mr. Darcy.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "mixture of pride and impertinence: she had no conversation",
-        "insertion_method": "append"
-      },
+      "alt_text": "Two elegantly dressed women whispering behind their fans, their expressions showing malice and superiority as they critique someone absent from the room.",
       "variations": [
         {
-          "prompt_text": "Renaissance oil painting. Caroline Bingley leaning toward Mr. Darcy in a drawing room, whispering spitefully about Elizabeth. Darcy looks contemplative, not entirely in agreement. Deep shadows, ornate gold-leaf frames in the background.",
-          "output_asset": "scene-2-var-1.png"
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of Miss Bingley and Mrs. Hurst in intimate conversation at Netherfield drawing room, elaborate period gowns, fans partially obscuring their faces as they lean conspiratorially together, expressions of haughty disdain, rich drapery and gilded furniture, soft diffused lighting",
+          "output_asset": "sisters_conspiracy.png"
         },
         {
-          "prompt_text": "Renaissance oil painting. A side profile of a sharp-featured Regency woman whispering into the ear of a tall, stern gentleman in a library. Dark velvet curtains and candlelight.",
-          "output_asset": "scene-2-var-2.png"
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting depicting two fashionable women gossiping, one touching the other's arm while whispering, ornate interior with Persian rugs and ornate mirrors, their postures and gestures conveying aristocratic contempt, oil paint texture with visible brushstrokes",
+          "output_asset": "sisters_whispering.png"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "a most country-town indifference to decorum."
     },
     {
-      "label": "[3]",
+      "id": "img_003",
+      "scene_title": "Darcy Observing Elizabeth's Fine Eyes",
       "style": "Renaissance oil painting",
-      "alt_text": "Elizabeth Bennet walking through the mud.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "She really looked almost wild.",
-        "insertion_method": "append"
-      },
+      "alt_text": "A stern gentleman subtly studying an unaware young woman, his expression betraying unexpectedly tender appreciation beneath his reserved demeanor.",
       "variations": [
         {
-          "prompt_text": "Renaissance oil painting. A flashback scene: Elizabeth Bennet walking briskly through the muddy English countryside, her hair windblown and her face flushed with exercise. The sky is dramatic and overcast.",
-          "output_asset": "scene-3-var-1.png"
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of Mr. Darcy in formal attire at Netherfield, his gaze directed toward Elizabeth off-canvas, expression betraying hidden admiration despite his usual stern composure, sitting among elegant company, golden light from windows illuminating his face, psychological depth in his eyes",
+          "output_asset": "darcy_observing.png"
         },
         {
-          "prompt_text": "Renaissance oil painting. A determined young woman in a simple Regency dress walking alone across a vast, wet moor. Her silhouette is strong against a stormy, painterly sky.",
-          "output_asset": "scene-3-var-2.png"
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting close-up portrait of a gentleman, dark formal coat, slightly softened expression suggesting unexpected emotion, classical composition with architectural elements suggesting grandeur, subtle smile playing at lips, masterful chiaroscuro technique",
+          "output_asset": "darcy_tender_look.png"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "they were brightened by the exercise."
     },
     {
-      "label": "[4]",
+      "id": "img_004",
+      "scene_title": "The Library and Books Discussion",
       "style": "Renaissance oil painting",
-      "alt_text": "Close-up of a muddy petticoat hem.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "six inches deep in mud, I am absolutely certain",
-        "insertion_method": "append"
-      },
+      "alt_text": "An elegant drawing room with shelves of books, where a gentleman offers volumes to an intelligent young woman while others look on with varying degrees of interest and calculation.",
       "variations": [
         {
-          "prompt_text": "Renaissance oil painting. A close-up of a Regency lady's white petticoat, stained heavily with dark mud at the hem. The contrast between the delicate lace and the earthy dirt highlights the theme of social scandal.",
-          "output_asset": "scene-4-var-1.png"
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of Netherfield library scene, Bingley offering books to Elizabeth near tall shelves, Miss Bingley observing Darcy with calculating expression, period furniture and leather-bound volumes, warm interior lighting, narrative composition showing multiple characters",
+          "output_asset": "library_discussion.png"
         },
         {
-          "prompt_text": "Renaissance oil painting. Fine white fabric splattered with brown mud. The texture of the paint captures the wetness of the dirt and the delicacy of the cotton.",
-          "output_asset": "scene-4-var-2.png"
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting of Regency drawing room with card table visible, Elizabeth examining book bindings while gentlemen converse in background, elegant room with classical proportions, soft window light, rich color palette of burgundy and cream",
+          "output_asset": "library_interaction.png"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "”\n\n“I cannot comprehend the neglect of a family library in such days as\nthese."
     },
     {
-      "label": "[5]",
+      "id": "img_005",
+      "scene_title": "The Accomplished Woman Debate",
       "style": "Renaissance oil painting",
-      "alt_text": "The Bingley sisters laughing derisively.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "laughed heartily.",
-        "insertion_method": "append"
-      },
+      "alt_text": "A group seated around a table in animated discussion, with one young woman responding sharply to a gentleman's elaborate description of female accomplishments, intellectual tension visible in the composition.",
       "variations": [
         {
-          "prompt_text": "Renaissance oil painting. Louisa Hurst and Caroline Bingley laughing derisively behind their fans, their eyes sparkling with cruel mirth as they mock Elizabeth\u2019s low-born relatives.",
-          "output_asset": "scene-5-var-1.png"
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of Regency drawing room debate scene, Elizabeth Bennet with animated expression responding to Mr. Darcy, card table present with other players, dramatic gestures and engaged postures, academic composition with classical arrangement of figures, rich period costumes",
+          "output_asset": "accomplished_debate.png"
         },
         {
-          "prompt_text": "Renaissance oil painting. Two wealthy women in high-waisted gowns sharing a private, mocking joke in an opulent drawing room. The lighting is soft but their expressions are sharp.",
-          "output_asset": "scene-5-var-2.png"
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting of drawing room conversation, young woman standing with book in hand looking directly at seated gentleman, his expression combining defensiveness and interest, other figures in background, elegant architectural interior with columns and drapery",
+          "output_asset": "debate_confrontation.png"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "I rather wonder now at your knowing _any_."
     },
     {
-      "label": "[6]",
+      "id": "img_006",
+      "scene_title": "Elizabeth's Quiet Dignity Amidst Criticism",
       "style": "Renaissance oil painting",
-      "alt_text": "The party playing cards at loo.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "found the whole party at loo",
-        "insertion_method": "append"
-      },
+      "alt_text": "A young woman reading alone, her posture serene and self-possessed despite the presence of hostile company nearby, representing inner strength against social pressure.",
       "variations": [
         {
-          "prompt_text": "Renaissance oil painting. The party gathered around a card table playing loo. Mr. Hurst looks indolent and bored, surrounded by wine and crumbs, while Bingley looks up with a kind smile as Elizabeth enters.",
-          "output_asset": "scene-6-var-1.png"
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of Elizabeth Bennet reading alone in Netherfield drawing room, peaceful expression, Miss Bingley and Mrs. Hurst visible in background with disapproving postures, warm lamplight, rich textures of books and fabrics, compositional balance showing isolation amid company",
+          "output_asset": "elizabeth_reading.png"
         },
         {
-          "prompt_text": "Renaissance oil painting. A busy Regency card game in progress. Players are focused on their hands, except for one gentleman who looks toward the door with visible pleasure. Rich colors, heavy atmosphere.",
-          "output_asset": "scene-6-var-2.png"
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting portrait study of a thoughtful young woman with book, seated in elegant room, her gaze directed downward in contemplation, other figures conversing behind her, soft lighting emphasizing her serene face, period costume detail",
+          "output_asset": "elizabeth_serene.png"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "“I deserve neither such praise nor such censure,” cried Elizabeth; “I\nam _not_ a great reader, and I have pleasure in many things.”"
     },
     {
-      "label": "[7]",
+      "id": "img_007",
+      "scene_title": "Bingley Giving Directions for Care",
       "style": "Renaissance oil painting",
-      "alt_text": "Elizabeth debating accomplishments with Darcy.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "no longer surprised at your knowing _only_ six accomplished",
-        "insertion_method": "append"
-      },
+      "alt_text": "A gentleman earnestly speaking with his housekeeper in a grand entrance hall, while in the background two elegantly dressed women appear at leisure, creating a visual contrast between genuine and performative concern.",
       "variations": [
         {
-          "prompt_text": "Renaissance oil painting. Elizabeth Bennet standing near the library table, looking skeptical and amused, while Darcy and Caroline Bingley debate the meaning of an 'accomplished woman.' The library is vast and impressive.",
-          "output_asset": "scene-7-var-1.png"
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of Mr. Bingley conferring with housekeeper in Netherfield entrance hall, concerned expression, orders being given for patient care, background showing Miss Bingley and Mrs. Hurst preparing for musical performance, compositional contrast between action and leisure, dramatic lighting",
+          "output_asset": "bingley_directions.png"
         },
         {
-          "prompt_text": "Renaissance oil painting. A spirited young woman in a drawing room engaging two wealthy individuals in an intellectual debate. She holds a small book, her expression clever and defiant.",
-          "output_asset": "scene-7-var-2.png"
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting narrative scene, gentleman in earnest conversation with housekeeper holding keys, grand stairway in background, other figures ascending toward music room with instruments, oil paint technique showing texture and depth, warm candlelight atmosphere",
+          "output_asset": "bingley_housekeeper.png"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "They solaced their wretchedness,\nhowever, by duets after supper; while he could find no better relief to\nhis feelings than by giving his housekeeper directions that every\npossible attention might be paid to the sick lady and her sister."
     }
   ],
   "quote_entries": [
     {
-      "label": "[1]",
-      "quote": "<Callout variant=\"quote\" title=\"The Internal Observer\">\u201cElizabeth was so much caught by what passed, as to leave her very little attention for her book.\u201d</Callout>",
-      "speaker": "Narrator",
-      "callout": {
-        "title": "Quote",
-        "variant": "quote",
-        "mdx": "<Callout variant=\"quote\" title=\"Quote\"><Callout variant=\"quote\" title=\"The Internal Observer\">\u201cElizabeth was so much caught by what passed, as to leave her very little attention for her book.\u201d</Callout></Callout>"
-      },
-      "anchor": {
-        "anchor_text": "Elizabeth was so much caught by what passed",
-        "insertion_method": "replace"
-      }
+      "id": "quote_001",
+      "quote": "Your picture may be very exact, Louisa, but this was all lost upon me. I thought Miss Elizabeth Bennet looked remarkably well when she came into the room this morning. Her dirty petticoat quite escaped my notice.",
+      "anchor_text": "Her dirty petticoat quite\nescaped my notice."
     },
     {
-      "label": "[2]",
-      "quote": "<Callout variant=\"quote\" title=\"The Scandal of Sincerity\">\u201cWhy must _she_ be scampering about the country, because her sister had a cold? Her hair so untidy, so blowzy!\u201d</Callout>",
-      "speaker": "Narrator",
-      "callout": {
-        "title": "Quote",
-        "variant": "quote",
-        "mdx": "<Callout variant=\"quote\" title=\"Quote\"><Callout variant=\"quote\" title=\"The Scandal of Sincerity\">\u201cWhy must _she_ be scampering about the country, because her sister had a cold? Her hair so untidy, so blowzy!\u201d</Callout></Callout>"
-      },
-      "anchor": {
-        "anchor_text": "Why must _she_ be scampering about the country",
-        "insertion_method": "replace"
-      }
+      "id": "quote_002",
+      "quote": "To walk three miles, or four miles, or five miles, or whatever it is, above her ancles in dirt, and alone, quite alone! what could she mean by it? It seems to me to show an abominable sort of conceited independence, a most country-town indifference to decorum.",
+      "anchor_text": "a most country-town indifference to decorum."
     },
     {
-      "label": "[3]",
-      "quote": "<Callout variant=\"quote\" title=\"Bingley\u2019s Kindness\">\u201cIt shows an affection for her sister that is very pleasing,\u201d said Bingley.</Callout>",
-      "speaker": "Narrator",
-      "callout": {
-        "title": "Quote",
-        "variant": "quote",
-        "mdx": "<Callout variant=\"quote\" title=\"Quote\"><Callout variant=\"quote\" title=\"Bingley\u2019s Kindness\">\u201cIt shows an affection for her sister that is very pleasing,\u201d said Bingley.</Callout></Callout>"
-      },
-      "anchor": {
-        "anchor_text": "It shows an affection for her sister that is very pleasing",
-        "insertion_method": "replace"
-      }
+      "id": "quote_003",
+      "quote": "Not at all, they were brightened by the exercise.",
+      "anchor_text": "they were brightened by the exercise."
     },
     {
-      "label": "[4]",
-      "quote": "<Callout variant=\"quote\" title=\"Darcy\u2019s Admiration\">\u201cNot at all,\u201d he replied: \u201cthey were brightened by the exercise.\u201d</Callout>",
-      "speaker": "Narrator",
-      "callout": {
-        "title": "Quote",
-        "variant": "quote",
-        "mdx": "<Callout variant=\"quote\" title=\"Quote\"><Callout variant=\"quote\" title=\"Darcy\u2019s Admiration\">\u201cNot at all,\u201d he replied: \u201cthey were brightened by the exercise.\u201d</Callout></Callout>"
-      },
-      "anchor": {
-        "anchor_text": "they were brightened by the exercise.",
-        "insertion_method": "replace"
-      }
+      "id": "quote_004",
+      "quote": "If they had uncles enough to fill all Cheapside, it would not make them one jot less agreeable.",
+      "anchor_text": "“If they had uncles enough to fill _all_ Cheapside,” cried Bingley, “it\nwould not make them one jot less agreeable."
     },
     {
-      "label": "[5]",
-      "quote": "<Callout variant=\"quote\" title=\"Elizabeth\u2019s Self-Knowledge\">\u201cI deserve neither such praise nor such censure,\u201d cried Elizabeth; \u201cI am _not_ a great reader, and I have pleasure in many things.\u201d</Callout>",
-      "speaker": "Narrator",
-      "callout": {
-        "title": "Quote",
-        "variant": "quote",
-        "mdx": "<Callout variant=\"quote\" title=\"Quote\"><Callout variant=\"quote\" title=\"Elizabeth\u2019s Self-Knowledge\">\u201cI deserve neither such praise nor such censure,\u201d cried Elizabeth; \u201cI am _not_ a great reader, and I have pleasure in many things.\u201d</Callout></Callout>"
-      },
-      "anchor": {
-        "anchor_text": "I deserve neither such praise nor such censure",
-        "insertion_method": "replace"
-      }
+      "id": "quote_005",
+      "quote": "A woman must have a thorough knowledge of music, singing, drawing, dancing, and the modern languages, to deserve the word; and, besides all this, she must possess a certain something in her air and manner of walking, the tone of her voice, her address and expressions, or the word will be but half deserved.",
+      "anchor_text": "A woman must have a thorough knowledge of music, singing, drawing,\ndancing, and the modern languages, to deserve the word; and, besides all\nthis, she must possess a certain something in her air and manner of\nwalking, the tone of her voice, her address and expressions, or the word\nwill be but half deserved."
     },
     {
-      "label": "[6]",
-      "quote": "<Callout variant=\"quote\" title=\"The High Bar of Accomplishment\">\u201cI am no longer surprised at your knowing _only_ six accomplished women. I rather wonder now at your knowing _any_.\u201d</Callout>",
-      "speaker": "Narrator",
-      "callout": {
-        "title": "Quote",
-        "variant": "quote",
-        "mdx": "<Callout variant=\"quote\" title=\"Quote\"><Callout variant=\"quote\" title=\"The High Bar of Accomplishment\">\u201cI am no longer surprised at your knowing _only_ six accomplished women. I rather wonder now at your knowing _any_.\u201d</Callout></Callout>"
-      },
-      "anchor": {
-        "anchor_text": "I rather wonder now at your knowing _any_.",
-        "insertion_method": "replace"
-      }
+      "id": "quote_006",
+      "quote": "I am no longer surprised at your knowing only six accomplished women. I rather wonder now at your knowing any.",
+      "anchor_text": "I rather wonder now at your knowing _any_."
     },
     {
-      "label": "[7]",
-      "quote": "<Callout variant=\"quote\" title=\"Darcy\u2019s Moral Compass\">\u201cUndoubtedly,\u201d replied Darcy... \u201cWhatever bears affinity to cunning is despicable.\u201d</Callout>",
-      "speaker": "Narrator",
-      "callout": {
-        "title": "Quote",
-        "variant": "quote",
-        "mdx": "<Callout variant=\"quote\" title=\"Quote\"><Callout variant=\"quote\" title=\"Darcy\u2019s Moral Compass\">\u201cUndoubtedly,\u201d replied Darcy... \u201cWhatever bears affinity to cunning is despicable.\u201d</Callout></Callout>"
-      },
-      "anchor": {
-        "anchor_text": "Whatever bears affinity to cunning is despicable.",
-        "insertion_method": "replace"
-      }
+      "id": "quote_007",
+      "quote": "Undoubtedly, there is meanness in all the arts which ladies sometimes condescend to employ for captivation. Whatever bears affinity to cunning is despicable.",
+      "anchor_text": "Whatever bears affinity to cunning is\ndespicable."
     }
-  ]
+  ],
+  "insertion_methods": {
+    "analysis_insertion": "Append to paragraph ending with anchor_text",
+    "image_insertion": "Insert after paragraph containing anchor_text",
+    "quote_insertion": "Blockquote after paragraph containing anchor_text"
+  },
+  "summary": "Chapter VIII of Pride and Prejudice masterfully uses the confined setting of Netherfield Park to explore themes of class prejudice, genuine versus performative emotion, and the nature of female accomplishment in Regency society. Through three pivotal scenes—the sisters' criticism, the accomplished woman debate, and the final contrast between genuine and theatrical concern—Austen develops the complex dynamics between Elizabeth and Darcy while exposing the shallow values of characters like Miss Bingley and Mrs. Hurst. The chapter advances the central romance through Elizabeth's spirited defense of her own intelligence and Darcy's grudging admiration, while maintaining Austen's characteristic wit and social criticism."
 }

@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: CHAPTER L",
+  "enhanced_title": "Pride And Prejudice: CHAPTER L - The Aftermath of Lydia's Elopement",
+  "author": "Jane Austen",
+  "description": "Chapter 50 of Pride and Prejudice explores Mr. Bennet's regrets over financial imprudence, the arrangements for Lydia's marriage to Wickham, and Elizabeth's growing realization of her lost opportunity with Mr. Darcy.",
+  "source": {
+    "novel": "Pride And Prejudice",
+    "chapter": "CHAPTER L",
+    "source_text_file": "pride-and-prejudice-chapter-50.txt",
+    "metadata_file": "pride-and-prejudice-metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count": 7,
+    "image_prompt_count": 7,
+    "quote_count": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "analysis_entries": "literary_analysis",
+    "image_prompt_entries": "visual_interpretations",
+    "quote_entries": "significant_quotations"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis_001",
+      "paragraph": "Mr. Bennet's regret over his failure to save money reveals his belated sense of responsibility toward his family, exposing the consequences of his cynical detachment and his wife's spendthrift nature. The narrator notes that had he saved, Lydia need not have been indebted to her uncle for whatever honour could be purchased for her. This retrospective accounting underscores how private financial negligence becomes a public moral reckoning in Austen's world.",
+      "anchor_text_end_of_sentence": "its proper place."
+    },
+    {
+      "id": "analysis_002",
+      "paragraph": "The entailment system and patriarchal expectations are examined through the Bennets' long reliance on the hope of a son, demonstrating how legal and social structures shaped family planning and financial decisions. Mrs. Bennet's certainty that a male heir would eventually arrive kept the family from ever adopting prudent habits, and by the time that hope was abandoned it was too late to begin saving. Austen quietly indicts a legal framework that made women's futures entirely contingent on the accident of birth order and gender.",
+      "anchor_text_end_of_sentence": "Bennet had no turn for economy; and her\nhusband\u2019s love of independence had alone prevented their exceeding their\nincome."
+    },
+    {
+      "id": "analysis_003",
+      "paragraph": "Mr. Bennet's transformation from active anger to passive indolence illustrates his fundamental character flaw: a preference for comfort over confrontation, even when family honour is at stake. The narrator observes that once the first transports of rage which had produced his activity in seeking her were over, he naturally returned to all his former indolence. His letter to Lydia is dispatched quickly in its execution but carries no message of paternal warmth, revealing how efficiently he can act when action costs him nothing emotionally.",
+      "anchor_text_end_of_sentence": "He begged to know further particulars of what he was\nindebted to his brother; but was too angry with Lydia to send any\nmessage to her."
+    },
+    {
+      "id": "analysis_004",
+      "paragraph": "Mrs. Bennet's vulgar delight in her daughter's marriage, despite the scandalous circumstances, showcases her complete lack of social awareness and her obsession with surface appearances over genuine virtue. Her energetic search for a suitable house for the newlyweds, conducted without knowing or considering what their income might be, perfectly encapsulates her lifelong habit of aspiration untethered from reality. The detail that she rejects Purvis Lodge because the attics are dreadful while ignoring the moral catastrophe her family has narrowly survived is one of Austen's sharpest comic strokes.",
+      "anchor_text_end_of_sentence": "the attics are dreadful."
+    },
+    {
+      "id": "analysis_005",
+      "paragraph": "Mr. Bennet's refusal to welcome Lydia and Wickham to Longbourn represents a rare moment of principled resolve, as he attempts to penalize their imprudence through social exclusion. His declaration that into one house in this neighbourhood they shall never have admittance is unusually firm for a man who typically retreats from domestic conflict into irony. Yet the firmness is ultimately eroded by Jane and Elizabeth's earnest persuasion, suggesting that even principled stands in the Bennet household are subject to the pressures of sentiment and family feeling.",
+      "anchor_text_end_of_sentence": "by receiving them at Longbourn."
+    },
+    {
+      "id": "analysis_006",
+      "paragraph": "Elizabeth's painful realization that she has lost Mr. Darcy forever marks a crucial turning point in her emotional development, as she finally recognizes his true worth and her own previous prejudice. She reflects that she was convinced she could have been happy with him precisely at the moment when it was no longer likely they should meet, a cruel irony that Austen renders with characteristic precision. The chapter thus transforms Elizabeth from a witty observer of others' follies into a figure of genuine self-reproach, deepening her as a moral and psychological subject.",
+      "anchor_text_end_of_sentence": "She was convinced that\nshe could have been happy with him, when it was no longer likely they\nshould meet."
+    },
+    {
+      "id": "analysis_007",
+      "paragraph": "The arrangement for Wickham to join the Regulars and move north symbolizes the family's desire to remove the scandal from their immediate presence while maintaining a facade of respectability. Mr. Gardiner frames the removal as an advantage to have it so far from this part of the kingdom, revealing how geography functions as a moral management tool in Regency society. The contrast between Mrs. Bennet's disappointment at losing Lydia's company and Elizabeth's private relief at not having to meet Wickham again neatly captures the novel's division between shallow social appetite and genuine moral feeling.",
+      "anchor_text_end_of_sentence": "the last object of her wishes."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "img_001",
+      "scene_title": "Mr. Bennet's Study of Regret",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Georgian gentleman sits in his book-lined study, holding a letter, his face shadowed with contemplation and regret.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a middle-aged gentleman in Georgian attire, seated at a mahogany desk in a dimly lit study surrounded by leather-bound books, holding a letter with a somber expression, window light casting dramatic shadows across his face, rich earthy tones of brown and gold",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting of a father figure in period clothing, alone in a library with dust motes in shafts of light, examining financial documents with pensive melancholy, dark wood paneling and bookshelves, classical composition with chiaroscuro lighting",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "its proper place."
+    },
+    {
+      "id": "img_002",
+      "scene_title": "The Entailment's Shadow",
+      "style": "Renaissance oil painting",
+      "alt_text": "A family gathered around a hearth, the atmosphere heavy with unspoken anxiety about inheritance and financial security.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a family in a candlelit drawing room, the father distant and contemplative, the mother animated with hope, five daughters in the background, warm golden lighting with tension in the composition, classical drapery and period furniture",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting depicting a domestic scene with a couple and their children, the architecture suggesting an estate that cannot be passed down, symbolic elements of absent male heir, dramatic lighting emphasizing the precariousness of their situation",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Bennet had no turn for economy; and her\nhusband\u2019s love of independence had alone prevented their exceeding their\nincome."
+    },
+    {
+      "id": "img_003",
+      "scene_title": "The Prodigal Daughter Excluded",
+      "style": "Renaissance oil painting",
+      "alt_text": "A stern father standing with crossed arms, refusing entry to an unseen figure, his daughters pleading at his side.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a stern Georgian father figure in a doorway, arms crossed in refusal, two young women in modest dresses pleading beside him, dramatic lighting from behind creating silhouettes, the threshold dividing interior from exterior space, emotional tension",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting showing a father in formal dress at Longbourn's entrance, expression resolute, daughters with clasped hands looking up at him, architectural details of a country house, classical composition with strong vertical lines and shadows",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "by receiving them at Longbourn."
+    },
+    {
+      "id": "img_004",
+      "scene_title": "Elizabeth's Realization",
+      "style": "Renaissance oil painting",
+      "alt_text": "A young woman in a garden, her expression transforming from pride to profound realization and sorrow.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a young woman in a garden setting, seated on a stone bench, hand to her heart, expression of dawning comprehension and regret, romantic landscape background with soft light filtering through trees, delicate muslin dress, classical pose of melancholy reflection",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting of Elizabeth Bennet alone in a pastoral landscape, looking into the distance with tearful eyes, the moment of recognizing lost love, soft sfumato technique, muted colors of blue and rose, introspective mood",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "She was convinced that\nshe could have been happy with him, when it was no longer likely they\nshould meet."
+    },
+    {
+      "id": "img_005",
+      "scene_title": "Mrs. Bennet's Triumph",
+      "style": "Renaissance oil painting",
+      "alt_text": "An excited woman presiding over a table, completely oblivious to the scandal around her, consumed by wedding preparations.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of an animated middle-aged woman at the head of a dining table, gesturing enthusiastically, lists and fabric swatches scattered before her, servants holding wedding finery, bright lighting suggesting her oblivious joy, period costume with excessive ornamentation",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting of Mrs. Bennet presiding over wedding plans, surrounded by fashion plates and fabric samples, her expression one of vulgar delight, domestic interior with mixed tones of celebration and underlying tension, dynamic composition",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "the attics are dreadful."
+    },
+    {
+      "id": "img_006",
+      "scene_title": "The Mercenary Union",
+      "style": "Renaissance oil painting",
+      "alt_text": "A shadowy scene of a hurried marriage, emphasizing the transactional nature of the arrangement rather than romance.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting depicting a clandestine marriage scene, dimly lit interior with figures exchanging money and documents, a reluctant couple in the background, the atmosphere suggesting mercenary arrangements, dark palette with gold accents, moral allegory style",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting of a business arrangement masquerading as romance, hands exchanging letters and coins, the faces of the couple showing calculation rather than love, symbolic elements of entrapment, dramatic chiaroscuro lighting",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "He begged to know further particulars of what he was\nindebted to his brother; but was too angry with Lydia to send any\nmessage to her."
+    },
+    {
+      "id": "img_007",
+      "scene_title": "Journey to the North",
+      "style": "Renaissance oil painting",
+      "alt_text": "A carriage departing on a long road stretching toward distant northern hills, symbolizing exile and new beginnings.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a carriage on a long country road leading north, rolling hills in the background, misty atmosphere suggesting distance and exile, a small figure waving from the carriage, expansive landscape with dramatic sky, symbolism of departure and uncertain future",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting showing a post chaise on a winding road heading toward northern mountains, the composition emphasizing separation from home, melancholic travelers, atmospheric perspective showing the vast distance they must travel, classical landscape tradition",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "the last object of her wishes."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_001",
+      "quote": "Mr. Bennet had very often wished, before this period of his life, that, instead of spending his whole income, he had laid by an annual sum, for the better provision of his children, and of his wife, if she survived him.",
+      "anchor_text": "Bennet had very often wished, before this period of his life, that,\ninstead of spending his whole income, he had laid by an annual sum, for\nthe better provision of his children, and of his wife, if she survived\nhim."
+    },
+    {
+      "id": "quote_002",
+      "quote": "The satisfaction of prevailing on one of the most worthless young men in Great Britain to be her husband might then have rested in its proper place.",
+      "anchor_text": "its proper place"
+    },
+    {
+      "id": "quote_003",
+      "quote": "Five daughters successively entered the world, but yet the son was to come; and Mrs. Bennet, for many years after Lydia's birth, had been certain that he would.",
+      "anchor_text": "Five daughters\nsuccessively entered the world, but yet the son was to come; and Mrs."
+    },
+    {
+      "id": "quote_004",
+      "quote": "It was a fortnight since Mrs. Bennet had been down stairs, but on this happy day she again took her seat at the head of her table, and in spirits oppressively high. No sentiment of shame gave a damp to her triumph.",
+      "anchor_text": "No sentiment of shame"
+    },
+    {
+      "id": "quote_005",
+      "quote": "Into one house in this neighbourhood they shall never have admittance. I will not encourage the imprudence of either, by receiving them at Longbourn.",
+      "anchor_text": "receiving them at Longbourn"
+    },
+    {
+      "id": "quote_006",
+      "quote": "She was humbled, she was grieved; she repented, though she hardly knew of what. She became jealous of his esteem, when she could no longer hope to be benefited by it.",
+      "anchor_text": "jealous of his esteem"
+    },
+    {
+      "id": "quote_007",
+      "quote": "How little of permanent happiness could belong to a couple who were only brought together because their passions were stronger than their virtue, she could easily conjecture.",
+      "anchor_text": "But how little of permanent happiness could belong to\na couple who were only brought together because their passions were\nstronger than their virtue, she could easily conjecture."
+    }
+  ],
+  "insertion_methods": {
+    "analysis": "inline_paragraph_hooks",
+    "images": "illustration_placeholder_replacement",
+    "quotes": "end_of_sentence_anchors"
+  },
+  "summary": "Chapter 50 of Pride and Prejudice reveals Mr. Bennet's regrets over his financial imprudence and the arrangements for Lydia's marriage to Wickham. The chapter explores themes of parental responsibility, social scandal, and Elizabeth's growing realization of her lost opportunity with Mr. Darcy. Mr. Bennet initially refuses to welcome the couple to Longbourn but is eventually persuaded by his daughters. Meanwhile, Elizabeth confronts her feelings of regret and the finality of her separation from Mr. Darcy, recognizing that their previous connection has been poisoned by the family's dishonour."
+}

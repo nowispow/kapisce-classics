@@ -11,7 +11,8 @@
     "metadata_content_insertion": "done",
     "holistic_quality_assurance": "done",
     "translation_initialization": "done",
-    "translation_batch_processing": "done"
+    "translation_batch_processing": "done",
+    "format_enforced": "pending"
   },
   "image_progress": {
     "completed": 14,
@@ -50,7 +51,7 @@
       "zh-TW": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/zh-TW/pride-and-prejudice-chapter-4.mdx"
     }
   },
-  "last_updated": "2026-03-13T16:41:36Z",
+  "last_updated": "2026-03-26T14:28:12Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
@@ -82,7 +83,7 @@
     "batch_size_chars": 2800,
     "languages": {
       "ar": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ar/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -90,7 +91,7 @@
         "last_updated": "2026-02-27T17:47:33Z"
       },
       "bn": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/bn/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -98,7 +99,7 @@
         "last_updated": "2026-02-27T17:53:02Z"
       },
       "de": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/de/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -106,7 +107,7 @@
         "last_updated": "2026-02-27T17:58:39Z"
       },
       "es": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/es/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -114,7 +115,7 @@
         "last_updated": "2026-02-27T18:03:37Z"
       },
       "fa": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/fa/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -122,7 +123,7 @@
         "last_updated": "2026-02-27T18:09:50Z"
       },
       "fr": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/fr/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -130,7 +131,7 @@
         "last_updated": "2026-02-27T18:15:29Z"
       },
       "ha": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ha/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -138,7 +139,7 @@
         "last_updated": "2026-02-27T18:21:56Z"
       },
       "hi": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/hi/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -146,7 +147,7 @@
         "last_updated": "2026-02-27T18:27:31Z"
       },
       "id": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/id/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -154,7 +155,7 @@
         "last_updated": "2026-02-27T18:32:42Z"
       },
       "it": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/it/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -162,7 +163,7 @@
         "last_updated": "2026-02-27T18:38:05Z"
       },
       "ja": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ja/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -170,7 +171,7 @@
         "last_updated": "2026-02-27T18:43:29Z"
       },
       "ko": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ko/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -178,7 +179,7 @@
         "last_updated": "2026-02-27T18:49:20Z"
       },
       "ms": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ms/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -186,7 +187,7 @@
         "last_updated": "2026-02-27T18:54:40Z"
       },
       "pt": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pt/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -194,7 +195,7 @@
         "last_updated": "2026-02-27T18:59:50Z"
       },
       "ru": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ru/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -202,7 +203,7 @@
         "last_updated": "2026-02-27T19:05:33Z"
       },
       "sw": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/sw/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -210,7 +211,7 @@
         "last_updated": "2026-02-27T19:11:50Z"
       },
       "th": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/th/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -218,7 +219,7 @@
         "last_updated": "2026-02-27T19:17:49Z"
       },
       "tr": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/tr/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -226,7 +227,7 @@
         "last_updated": "2026-02-27T19:23:26Z"
       },
       "vi": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/vi/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -234,7 +235,7 @@
         "last_updated": "2026-02-27T19:29:08Z"
       },
       "zh-TW": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/zh-TW/pride-and-prejudice-chapter-4.mdx",
         "chunks_total": 4,
         "chunks_completed": 4,
@@ -242,6 +243,13 @@
         "last_updated": "2026-02-27T19:34:06Z"
       }
     },
-    "last_synced": "2026-03-13T16:41:36Z"
-  }
+    "last_synced": "2026-03-26T14:28:12Z"
+  },
+  "novel_slug": "pride-and-prejudice",
+  "chapter_slug": "chapter-4",
+  "status": "pending",
+  "phase": "assembled",
+  "retry_count": 0,
+  "rejection_reason": null,
+  "summary": "Pipeline complete. Translations have finished and chapter is awaiting final holistic human review. ACTION: Notify Yatit to perform final review."
 }

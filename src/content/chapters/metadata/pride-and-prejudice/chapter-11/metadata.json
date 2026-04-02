@@ -1,379 +1,238 @@
 {
-  "schema_version": "2.1.0",
-  "title": "Pride and Prejudice - Chapter XI",
+  "schema_version": "1.0",
+  "title": "Pride and Prejudice: Chapter XI Analysis",
+  "enhanced_title": "The Art of Pride and Prejudice: Chapter XI - Netherfield's Evening Conversations",
   "author": "Jane Austen",
+  "description": "An analytical exploration of Chapter 11 of Pride and Prejudice, examining the social dynamics, character interactions, and themes of wit, pride, and courtship at Netherfield Park.",
   "source": {
-    "novel": "pride-and-prejudice",
-    "chapter": "chapter-11",
-    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-11.mdx",
-    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-11/metadata.json"
+    "novel": "Pride and Prejudice",
+    "chapter": "XI",
+    "source_text_file": "pride-and-prejudice-chapter-xi.md",
+    "metadata_file": "pride-and-prejudice-chapter-xi-metadata.json"
   },
   "pattern_requirements": {
-    "analysis_count_min": 7,
-    "analysis_label_format": "[n]",
-    "analysis_sentence_range": [2, 3],
-    "description_sentence_count": 3,
-    "image_style_lock": "Renaissance oil painting",
-    "image_variations_per_prompt_min": 2,
-    "insertion_methods_by_section": {
-      "analysis_entries": ["append"],
-      "image_prompt_entries": ["append"],
-      "quote_entries": ["replace"]
-    },
-    "memorable_quote_count_min": 7,
-    "quote_rendering": "Callout component"
+    "analysis_entries_count": 7,
+    "image_prompt_entries_count": 7,
+    "quote_entries_count": 7
   },
   "field_aliases": {
-    "analysis_entries": "analysis",
-    "image_prompt_entries": "image_prompts",
-    "quote_entries": "memorable_quotes"
+    "analysis_entries": "literary_analysis",
+    "image_prompt_entries": "illustration_prompts",
+    "quote_entries": "significant_quotations"
   },
-  "agentic_generation": {
-    "orchestrator": "chapter-metadata-orchestrator",
-    "sub_agents": ["metadata-composer-agent", "python-validation-agent"],
-    "handoff_order": ["metadata-composer-agent", "python-validation-agent", "deterministic-insertion-agent"],
-    "pattern": "orchestrator",
-    "scripts": [
-      "scripts/metadata/generate_metadata.py",
-      "scripts/metadata/validate_schema.py",
-      "scripts/metadata/validate_777.py",
-      "scripts/metadata/validate_image_variations.py",
-      "scripts/metadata/validate_anchors.py",
-      "scripts/metadata/review_failed_items.py",
-      "scripts/metadata/validate_callout_blocks.py",
-      "scripts/metadata/render_image_jobs.py",
-      "scripts/metadata/apply_insertions.py"
-    ]
-  },
-  "enhanced_title": "The War of Wit and Character at Netherfield",
-  "description": "Jane's recovery leads to her first evening in the Netherfield drawing-room, where Bingley's devoted attention to her contrasts sharply with Miss Bingley's desperate attempts to capture Mr. Darcy's interest. The chapter features a sophisticated intellectual duel between Elizabeth and Darcy, where they dissect the nature of pride, vanity, and character defects. Amidst the social games of the drawing-room, Darcy begins to recognize the 'danger' of his increasing fascination with Elizabeth.",
-  "summary": "Chapter XI metadata follows a strict 7-7-7 contract with superscript-labeled analysis, Renaissance-consistent image prompts with two prompt variations per scene, and callout-ready memorable quotes anchored for deterministic replacement.",
   "analysis_entries": [
     {
-      "id": "analysis-1",
-      "label": "[1]",
-      "display_label_mdx": "<sup>[1]</sup>",
-      "section_focus": "The Agreeable Facade",
-      "paragraph": "Elizabeth's observation of the Bingley sisters reveals their social dexterity; they are 'agreeable' only in the absence of the gentlemen. Their ability to describe entertainments with humor and spirit highlights a performative elegance that lacks genuine depth. Austen suggests that their social graces are tools for status rather than reflections of character.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "laugh at their acquaintance with spirit.",
-        "insertion_method": "append"
-      }
+      "id": "A001",
+      "paragraph": "This chapter brilliantly showcases Miss Bingley's calculated attempts to capture Mr. Darcy's attention. From feigning interest in reading by selecting his second volume, to orchestrating a promenade with Elizabeth designed to display her figure, her machinations reveal the performative nature of courtship in Austen's society. Her desperation escalates until she is reduced to criticizing balls—a thinly veiled attempt to exclude the Bennet sisters whom she perceives as rivals.",
+      "anchor_text_end_of_sentence": "Elizabeth herself could be, and unconsciously closed his book."
     },
     {
-      "id": "analysis-2",
-      "label": "[2]",
-      "display_label_mdx": "<sup>[2]</sup>",
-      "section_focus": "Bingley's Singular Devotion",
-      "paragraph": "Bingley's immediate and exclusive focus on Jane upon the gentlemen's entry confirms his romantic preference. His concern for her comfort, from the piling of the fire to his choice of seat, creates a private sphere within the public drawing-room. This singular attention stands in stark contrast to the performative social maneuvers occurring around them.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "He then sat down by her, and talked scarcely to anyone else.",
-        "insertion_method": "append"
-      }
+      "id": "A002",
+      "paragraph": "The contrast between Mr. Bingley's genuine, open-hearted attention to Jane and Miss Bingley's artifice is striking. Bingley's simple acts—piling the fire, ensuring Jane's comfort, choosing to sit with her—demonstrate authentic affection that requires no performance. Elizabeth observes this with delight, reinforcing her sister's worthiness of such devotion while silently contrasting it with the artificial manners of the others.",
+      "anchor_text_end_of_sentence": "Elizabeth, at work in the opposite corner, saw it all with great\ndelight."
     },
     {
-      "id": "analysis-3",
-      "label": "[3]",
-      "display_label_mdx": "<sup>[3]</sup>",
-      "section_focus": "Caroline's Performative Reading",
-      "paragraph": "Miss Bingley's choice of a book solely because it is the second volume of Darcy's is a transparent attempt at intellectual mimicry. Her subsequent yawns and performative declarations about the 'enjoyment like reading' expose the emptiness of her social pursuits. Austen uses this irony to demonstrate how social ambition can lead to comical levels of self-betrayal.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "When I have a house of my own, I shall be miserable if I have not an excellent library.",
-        "insertion_method": "append"
-      }
+      "id": "A003",
+      "paragraph": "Mr. Darcy's declaration about his pride being 'always under good regulation' represents the central irony of the novel that bears his vice in its title. His assertion that pride with 'real superiority of mind' is justified reveals his own blind spot. The careful regulation he claims is precisely what Elizabeth will later challenge, proving that genuine superiority requires more than intellectual self-conviction.",
+      "anchor_text_end_of_sentence": "Elizabeth turned away to hide a smile."
     },
     {
-      "id": "analysis-4",
-      "label": "[4]",
-      "display_label_mdx": "<sup>[4]</sup>",
-      "section_focus": "The Walk About the Room",
-      "paragraph": "The 'turn about the room' initiated by Miss Bingley is a calculated move to display her figure and draw Darcy's gaze. Darcy's clinical analysis of their motives—either secret-sharing or vanity—strips the gesture of its intended elegance. This moment illustrates Darcy's refusal to participate in the standard social games of the era.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "if the second, I can admire you much better as I sit by the fire.",
-        "insertion_method": "append"
-      }
+      "id": "A004",
+      "paragraph": "The witty exchange between Elizabeth and Darcy reaches its sharpest point when he claims her defect is wilfully to misunderstand them. This mutual diagnosis reveals their intellectual compatibility through opposition. Both characters use wit as armor and weapon, deflecting genuine vulnerability even as they recognize something captivating in the other's mental agility.",
+      "anchor_text_end_of_sentence": "”\n\n“And yours,” he replied, with a smile, “is wilfully to misunderstand\nthem."
     },
     {
-      "id": "analysis-5",
-      "label": "[5]",
-      "display_label_mdx": "<sup>[5]</sup>",
-      "section_focus": "The Anatomy of Pride",
-      "paragraph": "The debate on pride and vanity serves as the intellectual heart of the chapter. Darcy's defense of pride as 'under good regulation' for a superior mind reveals his own self-conception and moral framework. Elizabeth's skeptical smile indicates her rejection of this hierarchy, marking the fundamental clash between their worldviews.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "Elizabeth turned away to hide a smile.",
-        "insertion_method": "append"
-      }
+      "id": "A005",
+      "paragraph": "Miss Bingley's sudden fatigue with the conversation ('Do let us have a little music') exposes her inability to compete intellectually with Elizabeth and Darcy. Her interruption is a survival tactic—she cannot contribute to their sparring, so she must redirect attention to domains where she maintains advantage. The irony that she must wake her sleeping brother-in-law to achieve this emphasizes her social limitations.",
+      "anchor_text_end_of_sentence": "”\n\nHer sister made not the smallest objection, and the pianoforte was\nopened; and Darcy, after a few moments’ recollection, was not sorry for\nit."
     },
     {
-      "id": "analysis-6",
-      "label": "[6]",
-      "display_label_mdx": "<sup>[6]</sup>",
-      "section_focus": "Implacable Resentment",
-      "paragraph": "Darcy's admission of an 'implacable resentment'—where his good opinion, once lost, is lost forever—is a crucial character revelation. Elizabeth correctly identifies this as a 'shade in a character,' highlighting the danger of his rigid judgment. This moment defines the 'prejudice' Elizabeth will soon harbor against him based on his own admissions.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "My good opinion once lost is lost for ever.",
-        "insertion_method": "append"
-      }
+      "id": "A006",
+      "paragraph": "The chapter's final observation that Darcy 'began to feel the danger of paying Elizabeth too much attention' marks a pivotal shift in his awareness. Despite his stated principles about resentful temper and implacable judgments, he recognizes an involuntary pull toward Elizabeth that threatens his self-conception. This unconscious attraction, against his rational social assessments, foreshadows the novel's central conflict between reason and feeling.",
+      "anchor_text_end_of_sentence": "He began to feel the danger of paying Elizabeth too much attention."
     },
     {
-      "id": "analysis-7",
-      "label": "[7]",
-      "display_label_mdx": "<sup>[7]</sup>",
-      "section_focus": "The Danger of Attention",
-      "paragraph": "Darcy's sudden desire for music at the chapter's end stems from a self-protective realization. He recognizes the 'danger' of paying Elizabeth too much attention, indicating that his intellectual interest is evolving into something more profound. The music serves as a necessary distraction from a growing attraction that threatens his social and personal order.",
-      "sentence_count": 3,
-      "anchor": {
-        "anchor_text_end_of_sentence": "He began to feel the danger of paying Elizabeth too much attention.",
-        "insertion_method": "append"
-      }
+      "id": "A007",
+      "paragraph": "Elizabeth's declaration of her love for laughter and her willingness to indulge in ridiculing 'follies and nonsense' establishes her ethical framework. She distinguishes between mocking the wise and good—which she claims to avoid—and exposing pretension and inconsistency. This episode demonstrates how both Elizabeth and Darcy construct elaborate psychological defenses, each presenting a calculated self-image while subtly probing the other's vulnerability.",
+      "anchor_text_end_of_sentence": "Follies\nand nonsense, whims and inconsistencies, _do_ divert me, I own, and I\nlaugh at them whenever I can."
     }
   ],
   "image_prompt_entries": [
     {
-      "id": "image-1",
-      "label": "[1]",
-      "scene_title": "The Netherfield Drawing-Room",
+      "id": "I001",
+      "scene_title": "Elizabeth Attends Jane in the Drawing Room",
       "style": "Renaissance oil painting",
-      "alt_text": "A Renaissance-style painting of a lavish Regency drawing-room at night, with Jane and Bingley by the fire.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "He then sat down by her, and talked scarcely to anyone else.",
-        "insertion_method": "append"
-      },
+      "alt_text": "Elizabeth Bennet entering a warmly lit drawing room where Jane is seated by the fire, attended by her friends with welcoming expressions",
       "variations": [
         {
-          "variation_id": "a",
-          "output_asset": "scene-1-var-1.png",
-          "prompt_text": "Renaissance oil painting of a warm, candlelit Regency drawing-room; Mr. Bingley leans toward Jane Bennet by a glowing fireplace; Elizabeth works on her embroidery in a shadowed corner. Rich velvet textures, soft golden highlights, and an atmosphere of domestic intimacy."
+          "variation_id": "I001-v1",
+          "prompt_text": "Renaissance oil painting of Elizabeth Bennet in a sage green Regency gown entering an elegant drawing room, approaching her sister Jane who sits near a grand fireplace, candlelight casting warm golden hues across the scene, two ladies in fashionable attire rising to greet them with expressions of pleasure, rich mahogany furniture and silk curtains in the background",
+          "output_asset": "elizabeth-janes-arrival-drawing-room.jpg"
         },
         {
-          "variation_id": "b",
-          "output_asset": "scene-1-var-2.png",
-          "prompt_text": "Renaissance oil painting focusing on Jane and Bingley in private conversation amidst a larger party; the firelight casts long shadows across the polished floor; Louisa Hurst plays with her bracelets nearby. Masterful use of chiaroscuro to highlight the central couple."
+          "variation_id": "I001-v2",
+          "prompt_text": "Classical oil painting style scene of two young women in early 19th-century dress entering a stately room, one sister looking concerned while the other appears relieved, friends welcoming them with animated gestures, period-accurate interior with ornate furniture and a crackling fire, chiaroscuro lighting emphasizing the intimate domestic atmosphere",
+          "output_asset": "bennet-sisters-netherfield-welcome.jpg"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "Elizabeth had never seen them so agreeable as they were\nduring the hour which passed before the gentlemen appeared."
     },
     {
-      "id": "image-2",
-      "label": "[2]",
-      "scene_title": "Caroline's Boredom",
+      "id": "I002",
+      "scene_title": "Bingley's Devoted Attention to Jane",
       "style": "Renaissance oil painting",
-      "alt_text": "A Renaissance-style painting of Miss Bingley yawning over a book while Darcy reads intently.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "She then yawned again, threw aside her book, and cast her eyes round the room in quest of some amusement",
-        "insertion_method": "append"
-      },
+      "alt_text": "Mr. Bingley crouching by the fireplace tending to the fire while Jane Bennet sits nearby with a gentle smile",
       "variations": [
         {
-          "variation_id": "a",
-          "output_asset": "scene-2-var-1.png",
-          "prompt_text": "Renaissance oil painting of Caroline Bingley in a lavish silk gown, yawning with performative exhaustion; Mr. Darcy sits nearby, his face half-hidden by a large book. Fine details of lace and jewelry, deep jewel tones, and a sense of social frustration."
+          "variation_id": "I002-v1",
+          "prompt_text": "Renaissance oil painting depicting a young gentleman in a blue coat kneeling by an elaborate marble fireplace, arranging logs with devoted attention, while an elegant young woman in a white muslin dress watches with affectionate warmth, seated in an ornate chair, soft firelight illuminating their faces, classical interior with gilded mirrors and rich draperies",
+          "output_asset": "bingley-tending-fire-jane.jpg"
         },
         {
-          "variation_id": "b",
-          "output_asset": "scene-2-var-2.png",
-          "prompt_text": "Renaissance oil painting of a young woman casting her eyes round a library for amusement; heavy drapes and leather-bound books in the background; a sleeping man on a distant sofa. Focus on the contrast between intellectual effort and social boredom."
+          "variation_id": "I002-v2",
+          "prompt_text": "Classical oil painting of a Regency-era domestic scene, a handsome gentleman in formal attire stacking firewood with anxious care beside a beautiful seated lady, the warmth of the fire reflecting on their faces, hinting at nascent romance, period drawing room with Empire furniture and heavy curtains, soft romantic lighting",
+          "output_asset": "bingley-jane-fireside-moment.jpg"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "The first half hour was spent in piling up the fire, lest she\nshould suffer from the change of room; and she removed, at his desire,\nto the other side of the fireplace, that she might be farther from the\ndoor."
     },
     {
-      "id": "image-3",
-      "label": "[3]",
-      "scene_title": "A Turn About the Room",
+      "id": "I003",
+      "scene_title": "Miss Bingley Pretending to Read",
       "style": "Renaissance oil painting",
-      "alt_text": "A Renaissance-style painting of Miss Bingley and Elizabeth walking together, watched by Darcy.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "take a turn about the room. I assure you it is very refreshing after sitting so long in one attitude.",
-        "insertion_method": "append"
-      },
+      "alt_text": "Miss Bingley holding an open book while gazing surreptitiously at Mr. Darcy who is absorbed in reading",
       "variations": [
         {
-          "variation_id": "a",
-          "output_asset": "scene-3-var-1.png",
-          "prompt_text": "Renaissance oil painting of two elegant women walking across a grand parlour; Miss Bingley's figure is poised and tall, while Elizabeth's movement is natural and lively. Mr. Darcy looks up from his book with a keen, observant gaze. Classical perspective and rich architectural detail."
+          "variation_id": "I003-v1",
+          "prompt_text": "Renaissance oil painting of a fashionably dressed woman in an amber silk gown sitting with an open book on her lap, her gaze slyly directed toward a distant gentleman in dark formal attire who reads intently, candlelight highlighting her decorative jewelry and calculating expression, elegant drawing room with classical proportions in the background",
+          "output_asset": "miss-bingley-watching-darcy-read.jpg"
         },
         {
-          "variation_id": "b",
-          "output_asset": "scene-3-var-2.png",
-          "prompt_text": "Renaissance oil painting of a formal promenade within a Regency interior; the flow of fine muslin and silk dresses; the rigid posture of a man watching from the hearth. Emphasize the geometry of the room and the social theater of the walk."
+          "variation_id": "I003-v2",
+          "prompt_text": "Classical oil painting depicting subtle social intrigue, a lady with elaborate hairstyle pretending to read while actually observing a serious gentleman across the room, both figures in period clothing, the contrast between her feigned concentration and genuine calculation, luxurious interior with rich textures and period furnishings",
+          "output_asset": "caroline-bingley-reading-pretense.jpg"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "Mr."
     },
     {
-      "id": "image-4",
-      "label": "[4]",
-      "scene_title": "The Debate on Pride",
+      "id": "I004",
+      "scene_title": "The Promenade Around the Room",
       "style": "Renaissance oil painting",
-      "alt_text": "A Renaissance-style painting of Elizabeth and Darcy in a focused intellectual debate.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "Elizabeth turned away to hide a smile.",
-        "insertion_method": "append"
-      },
+      "alt_text": "Elizabeth and Miss Bingley walking elegantly around the drawing room while Mr. Darcy looks up from his book",
       "variations": [
         {
-          "variation_id": "a",
-          "output_asset": "scene-4-var-1.png",
-          "prompt_text": "Renaissance oil painting of Elizabeth Bennet and Mr. Darcy standing near a writing desk; Elizabeth's expression is one of amused skepticism, while Darcy appears serious and defensive. The lighting is focused on their faces, highlighting the intellectual spark between them."
+          "variation_id": "I004-v1",
+          "prompt_text": "Renaissance oil painting of two elegant women in Regency-era gowns walking side by side across a grand drawing room, one taller figure in a cream dress with an elaborate figure, the other in simpler attire, a gentleman in the foreground looking up from his book with surprised attention, rich interior with polished floors reflecting the chandelier light",
+          "output_asset": "promenade-elizabeth-miss-bingley.jpg"
         },
         {
-          "variation_id": "b",
-          "output_asset": "scene-4-var-2.png",
-          "prompt_text": "Renaissance oil painting of two figures in a spirited exchange; the man in a dark, impeccable frock coat, the woman in a simple white gown; a backdrop of oil paintings and fine furniture. A study in facial storytelling and psychological depth."
+          "variation_id": "I004-v2",
+          "prompt_text": "Classical oil painting capturing a moment of social maneuvering, two ladies promenading with deliberate elegance in a stately room while a seated gentleman interrupts his reading to observe them, period-accurate clothing and interior, dramatic lighting emphasizing the calculated nature of the display",
+          "output_asset": "walking-scene-netherfield-drawing-room.jpg"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "Mr. Darcy looked\nup. He was as much awake to the novelty of attention in that quarter as\nElizabeth herself could be, and unconsciously closed his book."
     },
     {
-      "id": "image-5",
-      "label": "[5]",
-      "scene_title": "Implacable Resentment",
+      "id": "I005",
+      "scene_title": "Darcy's Two Motives Speech",
       "style": "Renaissance oil painting",
-      "alt_text": "A Renaissance-style painting of Darcy admitting his character faults to Elizabeth.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "My good opinion once lost is lost for ever.",
-        "insertion_method": "append"
-      },
+      "alt_text": "Mr. Darcy seated by the fireplace explaining his reasoning to the two standing ladies with characteristic severity",
       "variations": [
         {
-          "variation_id": "a",
-          "output_asset": "scene-5-var-1.png",
-          "prompt_text": "Renaissance oil painting of Mr. Darcy in a moment of stark honesty; his expression is resolute and somewhat tragic; Elizabeth watches him with a mixture of intrigue and judgment. Deep, atmospheric shadows and a palette of mahogany and cream."
+          "variation_id": "I005-v1",
+          "prompt_text": "Renaissance oil painting of a stern, handsome gentleman in dark formal attire seated by an ornate fireplace, gesturing with precision as he addresses two standing ladies, his expression serious and analytical, the women showing varied reactions of surprise and indignation, warm firelight contrasting with the cool formality of the scene",
+          "output_asset": "darcy-explains-two-motives.jpg"
         },
         {
-          "variation_id": "b",
-          "output_asset": "scene-5-var-2.png",
-          "prompt_text": "Renaissance oil painting of a formal dialogue by a hearth; the man stands with one hand on the mantel, his posture unyielding; the woman sits nearby, her gaze sharp and questioning. A sense of irreversible character revelation."
+          "variation_id": "I005-v2",
+          "prompt_text": "Classical oil painting depicting an intellectual confrontation, a confident gentleman delivering a cutting observation to two women in period dress, his posture relaxed yet commanding by the fire, the ladies caught between elegant walking and shocked attention, rich drawing room setting with dramatic chiaroscuro",
+          "output_asset": "darcy-deduction-scene.jpg"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "“You either choose this method of passing\nthe evening because you are in each other’s confidence, and have secret\naffairs to discuss, or because you are conscious that your figures\nappear to the greatest advantage in walking: if the first, I should be\ncompletely in your way; and if the second, I can admire you much better\nas I sit by the fire.”"
     },
     {
-      "id": "image-6",
-      "label": "[6]",
-      "scene_title": "Music at Netherfield",
+      "id": "I006",
+      "scene_title": "The Exchange of Defects",
       "style": "Renaissance oil painting",
-      "alt_text": "A Renaissance-style painting of the pianoforte being opened in the drawing-room.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "and the pianoforte was opened; and Darcy, after a few moments’ recollection, was not sorry for it.",
-        "insertion_method": "append"
-      },
+      "alt_text": "Elizabeth and Mr. Darcy engaged in spirited conversation while Miss Bingley observes with visible discomfort",
       "variations": [
         {
-          "variation_id": "a",
-          "output_asset": "scene-6-var-1.png",
-          "prompt_text": "Renaissance oil painting of a woman opening a grand pianoforte; the candlelight reflects off the polished wood; members of the party gather around. A scene of refined entertainment and social transition. Soft, sfumato edges and elegant poses."
+          "variation_id": "I006-v1",
+          "prompt_text": "Renaissance oil painting of two figures engaged in animated conversation—a spirited young woman with expressive features and a restrained smile, and a proud gentleman with an enigmatic smile, both showing intellectual engagement, while a third figure in elegant dress looks on with barely concealed annoyance, luxurious drawing room setting with soft candlelight",
+          "output_asset": "defects-conversation-elizabeth-darcy.jpg"
         },
         {
-          "variation_id": "b",
-          "output_asset": "scene-6-var-2.png",
-          "prompt_text": "Renaissance oil painting of a Regency musical evening; the player is positioned at the instrument; Darcy stands apart, his expression reflecting internal conflict. Focus on the harmony of color and the tension of the scene."
+          "variation_id": "I006-v2",
+          "prompt_text": "Classical oil painting capturing a battle of wits, a young woman with lively expression exchanging barbs with a composed gentleman displaying a subtle smile, their body language suggesting mutual challenge masking attraction, an excluded observer in the background, period interior with rich fabrics and warm lighting",
+          "output_asset": "witty-exchange-pride-prejudice.jpg"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "”\n\n“And yours,” he replied, with a smile, “is wilfully to misunderstand\nthem."
     },
     {
-      "id": "image-7",
-      "label": "[7]",
-      "scene_title": "The Danger of Attraction",
+      "id": "I007",
+      "scene_title": "Darcy's Moment of Recognition",
       "style": "Renaissance oil painting",
-      "alt_text": "A Renaissance-style painting of Darcy watching Elizabeth from a distance during the music.",
-      "anchor": {
-        "anchor_text_end_of_sentence": "He began to feel the danger of paying Elizabeth too much attention.",
-        "insertion_method": "append"
-      },
+      "alt_text": "Mr. Darcy alone with his thoughts, book closed, contemplating the danger of his growing regard for Elizabeth",
       "variations": [
         {
-          "variation_id": "a",
-          "output_asset": "scene-7-var-1.png",
-          "prompt_text": "Renaissance oil painting of Mr. Darcy in profile, his gaze fixed on Elizabeth from across a crowded room; the music is suggested by the group at the piano. A capture of silent, realization and the 'danger' of burgeoning love. Dark, moody tones and masterful composition."
+          "variation_id": "I007-v1",
+          "prompt_text": "Renaissance oil painting of a solitary gentleman in formal dress seated in thought by a fire, his book closed beside him, expression contemplative and slightly troubled, distant sounds of a pianoforte suggested through an open doorway, warm firelight casting dramatic shadows, rich brocade and classical architectural details suggesting wealth and constraint",
+          "output_asset": "darcy-dangerous-realization.jpg"
         },
         {
-          "variation_id": "b",
-          "output_asset": "scene-7-var-2.png",
-          "prompt_text": "Renaissance oil painting focusing on a man's troubled but fascinated expression; a woman is partially visible in the light; the rest of the party is in deep shadow. An intimate psychological portrait of attraction and restraint."
+          "variation_id": "I007-v2",
+          "prompt_text": "Classical oil painting depicting internal conflict, a proud man in period attire sitting alone with closed book, caught between rational principle and emerging emotion, his face showing rare vulnerability, elegant interior with a glimpse of social activity beyond, candlelight and shadow playing across determined features",
+          "output_asset": "darcy-awareness-growing-attention.jpg"
         }
-      ]
+      ],
+      "anchor_text_end_of_sentence": "He began to feel the danger of paying Elizabeth too much attention."
     }
   ],
   "quote_entries": [
     {
-      "id": "quote-1",
-      "label": "[1]",
-      "speaker": "Miss Bingley",
-      "quote": "“How pleasant it is to spend an evening in this way! I declare, after all, there is no enjoyment like reading! How much sooner one tires of anything than of a book!”",
-      "callout": { "title": "Memorable Quote" },
-      "anchor": {
-        "anchor_text": "“How pleasant it is to spend an evening in this way! I declare, after all, there is no enjoyment like reading! How much sooner one tires of anything than of a book!”",
-        "insertion_method": "replace"
-      }
+      "id": "Q001",
+      "quote": "Their powers of conversation were considerable. They could describe an entertainment with accuracy, relate an anecdote with humour, and laugh at their acquaintance with spirit.",
+      "anchor_text": "They could describe an entertainment\nwith accuracy, relate an anecdote with humour, and laugh at their\nacquaintance with spirit."
     },
     {
-      "id": "quote-2",
-      "label": "[2]",
-      "speaker": "Mr. Bingley",
-      "quote": "“Much more rational, my dear Caroline, I dare say; but it would not be near so much like a ball.”",
-      "callout": { "title": "Memorable Quote" },
-      "anchor": {
-        "anchor_text": "“Much more rational, my dear Caroline, I dare say; but it would not be near so much like a ball.”",
-        "insertion_method": "replace"
-      }
+      "id": "Q002",
+      "quote": "How pleasant it is to spend an evening in this way! I declare, after all, there is no enjoyment like reading! How much sooner one tires of anything than of a book!",
+      "anchor_text": "How pleasant it\nis to spend an evening in this way! I declare, after all, there is no\nenjoyment like reading! How much sooner one tires of anything than of a\nbook!"
     },
     {
-      "id": "quote-3",
-      "label": "[3]",
-      "speaker": "Mr. Darcy",
-      "quote": "“You either choose this method of passing the evening because you are in each other’s confidence, and have secret affairs to discuss, or because you are conscious that your figures appear to the greatest advantage in walking.”",
-      "callout": { "title": "Memorable Quote" },
-      "anchor": {
-        "anchor_text": "“You either choose this method of passing the evening because you are in each other’s confidence, and have secret affairs to discuss, or because you are conscious that your figures appear to the greatest advantage in walking.”",
-        "insertion_method": "replace"
-      }
+      "id": "Q003",
+      "quote": "It would surely be much more rational if conversation instead of dancing made the order of the day.",
+      "anchor_text": "It would surely be much\nmore rational if conversation instead of dancing made the order of the\nday."
     },
     {
-      "id": "quote-4",
-      "label": "[4]",
-      "speaker": "Mr. Darcy",
-      "quote": "“The wisest and best of men,--nay, the wisest and best of their actions,--may be rendered ridiculous by a person whose first object in life is a joke.”",
-      "callout": { "title": "Memorable Quote" },
-      "anchor": {
-        "anchor_text": "“The wisest and best of men,--nay, the wisest and best of their actions,--may be rendered ridiculous by a person whose first object in life is a joke.”",
-        "insertion_method": "replace"
-      }
+      "id": "Q004",
+      "quote": "I can imagine but two motives for their choosing to walk up and down the room together, with either of which motives his joining them would interfere.",
+      "anchor_text": "he could imagine but two motives for their choosing to walk up and down\nthe room together, with either of which motives his joining them would\ninterfere."
     },
     {
-      "id": "quote-5",
-      "label": "[5]",
-      "speaker": "Elizabeth Bennet",
-      "quote": "“Follies and nonsense, whims and inconsistencies, _do_ divert me, I own, and I laugh at them whenever I can. But these, I suppose, are precisely what you are without.”",
-      "callout": { "title": "Memorable Quote" },
-      "anchor": {
-        "anchor_text": "“Follies and nonsense, whims and inconsistencies, _do_ divert me, I own, and I laugh at them whenever I can. But these, I suppose, are precisely what you are without.”",
-        "insertion_method": "replace"
-      }
+      "id": "Q005",
+      "quote": "Mr. Darcy is not to be laughed at! That is an uncommon advantage, and uncommon I hope it will continue, for it would be a great loss to me to have many such acquaintance. I dearly love a laugh.",
+      "anchor_text": "Mr."
     },
     {
-      "id": "quote-6",
-      "label": "[6]",
-      "speaker": "Mr. Darcy",
-      "quote": "“My temper would perhaps be called resentful. My good opinion once lost is lost for ever.”",
-      "callout": { "title": "Memorable Quote" },
-      "anchor": {
-        "anchor_text": "“My temper would perhaps be called resentful. My good opinion once lost is lost for ever.”",
-        "insertion_method": "replace"
-      }
+      "id": "Q006",
+      "quote": "My good opinion once lost is lost for ever.",
+      "anchor_text": "My good opinion once lost is lost for\never."
     },
     {
-      "id": "quote-7",
-      "label": "[7]",
-      "speaker": "Mr. Darcy",
-      "quote": "“There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome.”",
-      "callout": { "title": "Memorable Quote" },
-      "anchor": {
-        "anchor_text": "“There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome.”",
-        "insertion_method": "replace"
-      }
+      "id": "Q007",
+      "quote": "And yours is wilfully to misunderstand them.",
+      "anchor_text": "”\n\n“And yours,” he replied, with a smile, “is wilfully to misunderstand\nthem."
     }
-  ]
+  ],
+  "insertion_methods": {
+    "analysis_entries": "inline_within_text",
+    "image_prompt_entries": "at_scene_breaks",
+    "quote_entries": "pull_quotations"
+  },
+  "summary": "Chapter XI of Pride and Prejudice centers on an evening at Netherfield Park that reveals the complex social dynamics between Elizabeth Bennet, Mr. Darcy, and Miss Bingley. The chapter showcases Miss Bingley's transparent attempts to attract Darcy's attention through feigned interests and calculated displays, contrasted with Bingley's genuine devotion to Jane. The core of the chapter features a brilliant battle of wits between Elizabeth and Darcy, during which they diagnose each other's character defects—Darcy claiming his pride is well-regulated while confessing to a resentful temper, and Elizabeth defending her love of laughter against his severity. Darcy's final realization that he risks paying Elizabeth 'too much attention' signals the beginning of his transformation, establishing the tension between reason and emotion that will drive the novel's central romantic plot."
 }

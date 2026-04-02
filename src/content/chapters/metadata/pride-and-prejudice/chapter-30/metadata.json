@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: Chapter XXX",
+  "enhanced_title": "Pride And Prejudice: Chapter XXX - A Fortnight at Hunsford and the Arrival of Mr. Darcy",
+  "author": "Jane Austen",
+  "description": "Chapter 30 follows Elizabeth Bennet's stay at the Parsonage with Mr. and Mrs. Collins, detailing her observations of the neighborhood, Lady Catherine de Bourgh's imposing presence, and the unexpected arrival of Mr. Darcy and Colonel Fitzwilliam at Rosings, setting the stage for renewed social encounters.",
+  "source": {
+    "novel": "Pride And Prejudice",
+    "chapter": "Chapter XXX",
+    "source_text_file": "chapter-xxx.md",
+    "metadata_file": "chapter-xxx-meta.json"
+  },
+  "pattern_requirements": {
+    "format": "7-7-7 pattern",
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "paragraph": "text",
+    "anchor_text_end_of_sentence": "end_marker",
+    "variations": "outputs",
+    "quote": "text"
+  },
+  "analysis_entries": [
+    {
+      "id": "A001_parsonage_layout",
+      "paragraph": "Elizabeth's perception of the Parsonage layout reveals Charlotte's strategic domestic management. By choosing the backwards drawing-room, Charlotte ensures Mr. Collins spends less time with company, exposing the practical compromises required in her marriage. This arrangement demonstrates Elizabeth's growing recognition that Charlotte has made peace with a life of calculated avoidance rather than companionship.",
+      "anchor_text_end_of_sentence": "she gave Charlotte credit for the arrangement."
+    },
+    {
+      "id": "A002_lady_catherine_magistrate",
+      "paragraph": "Lady Catherine's self-appointed role as magistrate of her parish exposes the absurdity of aristocratic interference in common matters. Her tendency to sally forth into the village to settle disputes and silence complaints reveals the patronizing approach of the upper class toward those they consider beneath them. This behavior demonstrates how unchecked power allows her to disguise meddling as benevolence, imposing order through sheer force of social authority.",
+      "anchor_text_end_of_sentence": "Collins; and whenever any of the cottagers were disposed to be\nquarrelsome, discontented, or too poor, she sallied forth into the\nvillage to settle their differences, silence their complaints, and scold\nthem into harmony and plenty."
+    },
+    {
+      "id": "A003_mr_collins_obsequiousness",
+      "paragraph": "Mr. Collins' vigilance for Miss de Bourgh's phaeton and his compulsion to report every passing of her carriage illustrate the relentless performance of deference required by his position at Hunsford. His daily walks to Rosings and his morning-long vigil at the lodge gates reveal both his ridiculousness and the crushing social machinery that governs his existence. The narrator's dry observation that this happened 'almost every day' underscores the comic monotony of his devotion to his patroness.",
+      "anchor_text_end_of_sentence": "Collins for the knowledge of what carriages went\nalong, and how often especially Miss De Bourgh drove by in her phaeton,\nwhich he never failed coming to inform them of, though it happened\nalmost every day."
+    },
+    {
+      "id": "A004_elizabeth_solitude",
+      "paragraph": "Elizabeth's discovery of the sheltered grove path represents her need for psychological refuge from the oppressive attention of Lady Catherine. This private space, valued by no one else, becomes vital to her comfort and symbolizes her resistance to the stifling scrutiny that pervades the Parsonage existence. Her retreat to the grove while others call on Lady Catherine is a quiet act of self-preservation, carving out an interior freedom that social obligation cannot reach.",
+      "anchor_text_end_of_sentence": "Her favourite walk, and where\nshe frequently went while the others were calling on Lady Catherine, was\nalong the open grove which edged that side of the park, where there was\na nice sheltered path, which no one seemed to value but herself, and\nwhere she felt beyond the reach of Lady Catherine’s curiosity."
+    },
+    {
+      "id": "A005_darcy_anticipation",
+      "paragraph": "Elizabeth's mixed feelings about Darcy's arrival demonstrate her internal conflict regarding his character. While professing indifference, she admits his presence will provide novelty to the Rosings circle and reveals her secret interest in observing his behaviour toward his cousin, whom Lady Catherine evidently intends for him. This ambivalence—framed as detached amusement—foreshadows her continued preoccupation with Darcy and the emotional entanglement she has not yet acknowledged.",
+      "anchor_text_end_of_sentence": "Darcy\nwas expected there in the course of a few weeks; and though there were\nnot many of her acquaintance whom she did not prefer, his coming would\nfurnish one comparatively new to look at in their Rosings parties, and\nshe might be amused in seeing how hopeless Miss Bingley’s designs on him\nwere, by his behaviour to his cousin, for whom he was evidently destined\nby Lady Catherine, who talked of his coming with the greatest\nsatisfaction, spoke of him in terms of the highest admiration, and\nseemed almost angry to find that he had already been frequently seen by\nMiss Lucas and herself."
+    },
+    {
+      "id": "A006_colonel_fitzwilliam_introduction",
+      "paragraph": "The introduction of Colonel Fitzwilliam provides crucial contrast to Mr. Darcy's reserved demeanor. His readiness and ease in conversation immediately establish him as a genuinely well-bred gentleman, unlike Darcy's affected reserve, which the narrator pointedly distinguishes from true good breeding. This juxtaposition allows Elizabeth and the reader to recognize that Darcy's silence is a choice rather than an inevitable consequence of his elevated station.",
+      "anchor_text_end_of_sentence": "Colonel Fitzwilliam entered into conversation directly, with the\nreadiness and ease of a well-bred man, and talked very pleasantly; but\nhis cousin, after having addressed a slight observation on the house and\ngarden to Mrs."
+    },
+    {
+      "id": "A007_elizabeth_test_darcy",
+      "paragraph": "Elizabeth's calculated inquiry about Jane's presence in London serves as a deliberate test of Mr. Darcy's conscience and self-possession. By observing his confusion, she confirms her suspicion of his awareness of his interference in Bingley and Jane's relationship. This moment reveals Elizabeth's analytical nature and her growing conviction that Darcy bears responsibility for her sister's unhappiness, a conviction that will fuel the confrontation to come.",
+      "anchor_text_end_of_sentence": "”\n\nShe was perfectly sensible that he never had: but she wished to see\nwhether he would betray any consciousness of what had passed between the\nBingleys and Jane; and she thought he looked a little confused as he\nanswered that he had never been so fortunate as to meet Miss Bennet."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "I001_parsonage_drawing_room",
+      "scene_title": "The Parsonage Drawing Room",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth and Charlotte seated in a modest country drawing room, looking out a window facing away from the main road, while Mr. Collins is seen through a doorway in his book room looking out at the lane.",
+      "variations": [
+        {
+          "variation_id": "V001",
+          "prompt_text": "Renaissance oil painting of a modest English country drawing room, two ladies in early 19th century dress seated near a window facing backwards away from the road, a clergyman visible through a doorway in a book room looking out at carriages, soft afternoon light, detailed interior with furniture arranged for domestic comfort, warm earthy tones",
+          "output_asset": "parsonage_drawing_room_interior.png"
+        },
+        {
+          "variation_id": "V002",
+          "prompt_text": "Renaissance oil painting depicting a parsonage interior scene, women in Empire waist dresses engaged in needlework near a window, a man in clerical attire peering from an adjacent room, classical composition with attention to domestic architecture and period costume details, golden candlelight ambiance",
+          "output_asset": "parsonage_ladies_room_detail.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "she gave Charlotte credit for the arrangement."
+    },
+    {
+      "id": "I002_lady_catherine_carriage",
+      "scene_title": "Miss de Bourgh's Phaeton",
+      "style": "Renaissance oil painting",
+      "alt_text": "A fashionable open phaeton carriage driven by a pale young lady in fine dress, passing along a country lane near a parsonage, observed by a clergyman from the roadside.",
+      "variations": [
+        {
+          "variation_id": "V001",
+          "prompt_text": "Renaissance oil painting of an elegant high-perched phaeton carriage on a country lane, a pale aristocratic young woman driving, fine horses pulling the vehicle, a clergyman standing at attention by the roadside watching intently, English countryside with stone walls and hedgerows, atmospheric perspective, detailed equine anatomy",
+          "output_asset": "phaeton_country_lane.png"
+        },
+        {
+          "variation_id": "V002",
+          "prompt_text": "Renaissance oil painting depicting a gentleman's daughter in a sporting carriage, fashionable Regency-era phaeton scene, rural English estate road, observers in the distance, soft pastoral lighting, classical composition emphasizing social hierarchy and country life",
+          "output_asset": "miss_de_bourgh_carriage_scene.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Collins for the knowledge of what carriages went\nalong, and how often especially Miss De Bourgh drove by in her phaeton,\nwhich he never failed coming to inform them of, though it happened\nalmost every day."
+    },
+    {
+      "id": "I003_lady_catherine_inspection",
+      "scene_title": "Lady Catherine Examines the Parsonage",
+      "style": "Renaissance oil painting",
+      "alt_text": "An imposing elderly noblewoman in elaborate dress inspecting a cottage parlor, examining furniture arrangement while two younger ladies look on with restrained expressions.",
+      "variations": [
+        {
+          "variation_id": "V001",
+          "prompt_text": "Renaissance oil painting of an aristocratic elderly lady in rich dress inspecting a modest parlor, pointing at furniture arrangement with a critical expression, two younger women standing nearby with composed faces, detailed period interior with joints of meat on display, dramatic lighting emphasizing the social divide, rich fabrics and textures",
+          "output_asset": "lady_catherine_inspection.png"
+        },
+        {
+          "variation_id": "V002",
+          "prompt_text": "Renaissance oil painting depicting a noblewoman's visit to a country parsonage, matriarchal figure in ornate clothing examining domestic arrangements, seated and standing figures arranged in hierarchical composition, candlelit interior with period-appropriate furnishings, psychological tension in facial expressions",
+          "output_asset": "lady_catherine_parsonage_visit.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Collins’s joints of meat were too large for her family."
+    },
+    {
+      "id": "I004_cottagers_quarrel",
+      "scene_title": "Lady Catherine as Village Magistrate",
+      "style": "Renaissance oil painting",
+      "alt_text": "An aristocratic lady in fine dress interrupting a quarrel among humble country cottagers, gesturing authoritatively while the poor villagers appear subdued and resentful.",
+      "variations": [
+        {
+          "variation_id": "V001",
+          "prompt_text": "Renaissance oil painting of a noblewoman intervening in a village dispute, aristocratic figure in elaborate dress standing before humble cottagers, thatched cottages in background, peasants in simple clothing looking discontented or fearful, dramatic outdoor scene with strong chiaroscuro, social commentary on class intervention",
+          "output_asset": "lady_catherine_cottagers.png"
+        },
+        {
+          "variation_id": "V002",
+          "prompt_text": "Renaissance oil painting depicting aristocratic authority in a rural setting, imposing female figure addressing villagers, pastoral landscape with poor dwellings, contrast between fine clothing and humble attire, classical composition with moral undertones, detailed rendering of peasant life and manor authority",
+          "output_asset": "village_magistrate_scene.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Collins; and whenever any of the cottagers were disposed to be\nquarrelsome, discontented, or too poor, she sallied forth into the\nvillage to settle their differences, silence their complaints, and scold\nthem into harmony and plenty."
+    },
+    {
+      "id": "I005_elizabeth_grove_walk",
+      "scene_title": "Elizabeth in the Sheltered Grove",
+      "style": "Renaissance oil painting",
+      "alt_text": "A young woman in a simple walking dress strolling along a wooded path at the edge of a park, finding solitude and peace away from the great house.",
+      "variations": [
+        {
+          "variation_id": "V001",
+          "prompt_text": "Renaissance oil painting of a young woman in Regency walking dress strolling through a wooded grove path, English parkland landscape with mature trees, dappled sunlight filtering through leaves, figure in contemplative solitude, distant view of an estate beyond the trees, peaceful pastoral atmosphere, detailed foliage and natural setting",
+          "output_asset": "elizabeth_grove_walk.png"
+        },
+        {
+          "variation_id": "V002",
+          "prompt_text": "Renaissance oil painting depicting female solitude in nature, woman walking a sheltered path at park's edge, classical pastoral landscape, soft atmospheric perspective, harmonious color palette of greens and earth tones, figure small against the grandeur of mature woodland, sense of privacy and escape",
+          "output_asset": "sheltered_grove_solitude.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Her favourite walk, and where\nshe frequently went while the others were calling on Lady Catherine, was\nalong the open grove which edged that side of the park, where there was\na nice sheltered path, which no one seemed to value but herself, and\nwhere she felt beyond the reach of Lady Catherine’s curiosity."
+    },
+    {
+      "id": "I006_darcy_arrival",
+      "scene_title": "Darcy's Arrival at Hunsford",
+      "style": "Renaissance oil painting",
+      "alt_text": "A fine carriage turning into a grand estate park, observed by a clergyman making his bow from the roadside, his wife watching from an upper window of a nearby parsonage.",
+      "variations": [
+        {
+          "variation_id": "V001",
+          "prompt_text": "Renaissance oil painting of a gentleman's carriage arriving at a country estate, elegant horses and vehicle turning through stone lodge gates, a clergyman bowing reverently from the roadside, a woman's figure visible at a parsonage window, English country landscape with estate parkland, atmospheric morning light, anticipation in the scene",
+          "output_asset": "darcy_arrival_rosings.png"
+        },
+        {
+          "variation_id": "V002",
+          "prompt_text": "Renaissance oil painting depicting the arrival of gentlefolk at a country seat, carriage entering through estate gates, observers in various positions of deference, grand house visible in the distance, classical composition with attention to social ritual and domestic architecture, soft natural lighting",
+          "output_asset": "carriage_entrance_rosings.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "hurried home with the great intelligence."
+    },
+    {
+      "id": "I007_three_gentlemen_call",
+      "scene_title": "The Gentlemen's Visit to the Parsonage",
+      "style": "Renaissance oil painting",
+      "alt_text": "Three gentlemen—a clergyman, a stern reserved gentleman, and a pleasant-looking military officer—entering a drawing room where two ladies rise to receive them, social tension visible in their stances.",
+      "variations": [
+        {
+          "variation_id": "V001",
+          "prompt_text": "Renaissance oil painting of three gentlemen entering a country drawing room, clergyman leading, distinguished reserved gentleman in fine dress, military officer in regimentals, two ladies rising from their seats to receive visitors, Regency-era interior with appropriate furnishings, social encounter scene with psychological tension, warm interior lighting",
+          "output_asset": "three_gentlemen_parsonage.png"
+        },
+        {
+          "variation_id": "V002",
+          "prompt_text": "Renaissance oil painting depicting a social call in a country parsonage, group of five figures in early 19th century dress, hierarchical arrangement of standing and seated figures, detailed attention to period costume including military uniform and clerical dress, domestic interior with classical proportions, subtle emotional dynamics between characters",
+          "output_asset": "gentlemen_calling_scene.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "the three gentlemen entered the room."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "Q001_charlotte_arrangement",
+      "quote": "she gave Charlotte credit for the arrangement.",
+      "anchor_text": "she gave Charlotte credit for the arrangement."
+    },
+    {
+      "id": "Q002_collins_carriage_news",
+      "quote": "which he never failed coming to inform them of, though it happened almost every day.",
+      "anchor_text": "Collins for the knowledge of what carriages went\nalong, and how often especially Miss De Bourgh drove by in her phaeton,\nwhich he never failed coming to inform them of, though it happened\nalmost every day."
+    },
+    {
+      "id": "Q003_lady_catherine_inspection",
+      "quote": "and if she accepted any refreshment, seemed to do it only for the sake of finding out that Mrs. Collins's joints of meat were too large for her family.",
+      "anchor_text": "Collins’s joints of meat were too large for her family."
+    },
+    {
+      "id": "Q004_lady_catherine_magistrate",
+      "quote": "she sallied forth into the village to settle their differences, silence their complaints, and scold them into harmony and plenty.",
+      "anchor_text": "Collins; and whenever any of the cottagers were disposed to be\nquarrelsome, discontented, or too poor, she sallied forth into the\nvillage to settle their differences, silence their complaints, and scold\nthem into harmony and plenty."
+    },
+    {
+      "id": "Q005_elizabeth_beyond_reach",
+      "quote": "where she felt beyond the reach of Lady Catherine's curiosity.",
+      "anchor_text": "Her favourite walk, and where\nshe frequently went while the others were calling on Lady Catherine, was\nalong the open grove which edged that side of the park, where there was\na nice sheltered path, which no one seemed to value but herself, and\nwhere she felt beyond the reach of Lady Catherine’s curiosity."
+    },
+    {
+      "id": "Q006_darcy_early_intelligence",
+      "quote": "hurried home with the great intelligence.",
+      "anchor_text": "hurried home with the great intelligence."
+    },
+    {
+      "id": "Q007_elizabeth_suspicion_confirmed",
+      "quote": "she thought he looked a little confused as he answered that he had never been so fortunate as to meet Miss Bennet.",
+      "anchor_text": "”\n\nShe was perfectly sensible that he never had: but she wished to see\nwhether he would betray any consciousness of what had passed between the\nBingleys and Jane; and she thought he looked a little confused as he\nanswered that he had never been so fortunate as to meet Miss Bennet."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_text": "Inlaid between paragraphs using [Illustration] markers",
+    "image_generation": "Stable Diffusion with Renaissance style prompts",
+    "quotes": "Embedded highlight callouts"
+  },
+  "summary": "Chapter XXX of Pride and Prejudice presents Elizabeth Bennet's first fortnight at Hunsford Parsonage, revealing through her observant eye the domestic arrangements that Charlotte Collins has made to manage her marriage to Mr. Collins. The chapter establishes the suffocating social atmosphere through Lady Catherine de Bourgh's constant supervision and Mr. Collins' obsequious devotion to his patroness. Elizabeth's discovery of a secluded grove path provides her necessary refuge from this scrutiny. The narrative turns significantly with the arrival of Mr. Darcy and Colonel Fitzwilliam at Rosings, introducing the central conflict's renewal. Darcy's unexpected visit to the Parsonage, accompanied by Colonel Fitzwilliam's engaging contrast, sets up Elizabeth's maneuver to test Darcy's knowledge of Jane's presence in London—a test he fails by his visible confusion, confirming Elizabeth's growing suspicions about his interference in her sister's affairs. The chapter skillfully balances social satire with the developing romantic tension between Elizabeth and Darcy."
+}

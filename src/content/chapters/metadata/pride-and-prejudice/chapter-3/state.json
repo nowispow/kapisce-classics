@@ -16,7 +16,8 @@
     "metadata_content_insertion": "done",
     "holistic_quality_assurance": "done",
     "translation_initialization": "done",
-    "translation_batch_processing": "done"
+    "translation_batch_processing": "done",
+    "format_enforced": "pending"
   },
   "image_progress": {
     "completed": 7,
@@ -55,7 +56,7 @@
       "zh-TW": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/zh-TW/pride-and-prejudice-chapter-3.mdx"
     }
   },
-  "last_updated": "2026-03-13T16:41:36Z",
+  "last_updated": "2026-03-26T14:28:12Z",
   "translation": {
     "ready_after_step": "holistic_quality_assurance",
     "ready": true,
@@ -87,7 +88,7 @@
     "batch_size_chars": 2800,
     "languages": {
       "ar": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ar/pride-and-prejudice-chapter-3.mdx",
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -95,7 +96,7 @@
         "last_updated": "2026-02-27T15:19:24Z"
       },
       "bn": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/bn/pride-and-prejudice-chapter-3.mdx",
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -103,7 +104,7 @@
         "last_updated": "2026-02-27T15:26:28Z"
       },
       "es": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/es/pride-and-prejudice-chapter-3.mdx",
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -111,7 +112,7 @@
         "last_updated": "2026-02-27T15:40:32Z"
       },
       "fa": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/fa/pride-and-prejudice-chapter-3.mdx",
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -119,7 +120,7 @@
         "last_updated": "2026-02-27T15:48:25Z"
       },
       "hi": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/hi/pride-and-prejudice-chapter-3.mdx",
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -127,7 +128,7 @@
         "last_updated": "2026-02-27T16:11:25Z"
       },
       "ja": {
-        "status": "done",
+        "status": "in-progress",
         "output_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/ja/pride-and-prejudice-chapter-3.mdx",
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -135,7 +136,7 @@
         "last_updated": "2026-02-27T16:32:35Z"
       },
       "de": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -144,7 +145,7 @@
         "last_updated": "2026-02-27T15:33:45Z"
       },
       "fr": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -153,7 +154,7 @@
         "last_updated": "2026-02-27T15:55:49Z"
       },
       "ha": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -162,7 +163,7 @@
         "last_updated": "2026-02-27T16:04:27Z"
       },
       "id": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -171,7 +172,7 @@
         "last_updated": "2026-02-27T16:18:18Z"
       },
       "it": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -180,7 +181,7 @@
         "last_updated": "2026-02-27T16:25:28Z"
       },
       "ko": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -189,7 +190,7 @@
         "last_updated": "2026-02-27T16:40:35Z"
       },
       "ms": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -198,7 +199,7 @@
         "last_updated": "2026-02-27T16:47:53Z"
       },
       "pt": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -207,7 +208,7 @@
         "last_updated": "2026-02-27T16:54:51Z"
       },
       "ru": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -216,7 +217,7 @@
         "last_updated": "2026-02-27T17:02:32Z"
       },
       "sw": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -225,7 +226,7 @@
         "last_updated": "2026-02-27T17:11:36Z"
       },
       "th": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -234,7 +235,7 @@
         "last_updated": "2026-02-27T17:19:55Z"
       },
       "tr": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -243,7 +244,7 @@
         "last_updated": "2026-02-27T17:27:27Z"
       },
       "vi": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -252,7 +253,7 @@
         "last_updated": "2026-02-27T17:35:15Z"
       },
       "zh-TW": {
-        "status": "done",
+        "status": "in-progress",
         "progress": 0,
         "chunks_total": 5,
         "chunks_completed": 5,
@@ -261,6 +262,13 @@
         "last_updated": "2026-02-27T17:42:02Z"
       }
     },
-    "last_synced": "2026-03-13T16:41:36Z"
-  }
+    "last_synced": "2026-03-26T14:28:12Z"
+  },
+  "novel_slug": "pride-and-prejudice",
+  "chapter_slug": "chapter-3",
+  "status": "pending",
+  "phase": "assembled",
+  "retry_count": 0,
+  "rejection_reason": null,
+  "summary": "Pipeline complete. Translations have finished and chapter is awaiting final holistic human review. ACTION: Notify Yatit to perform final review."
 }

@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: CHAPTER XIV",
+  "enhanced_title": "Mr. Collins's Mortifying Sycophancy and the Reading Room Debacle",
+  "author": "Jane Austen",
+  "description": "Chapter XIV of Pride and Prejudice features Mr. Collins's obsequious praise of Lady Catherine de Bourgh during dinner, his refusal to read novels, his choice of Fordyce's Sermons, and Lydia's irreverent interruption, culminating in his abandonment of literature for backgammon with Mr. Bennet.",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "Chapter XIV",
+    "source_text_file": "pride-and-prejudice_chapter-14.txt",
+    "metadata_file": "pride-and-prejudice_chapter-14_metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries_count": 7,
+    "image_prompt_entries_count": 7,
+    "quote_entries_count": 7,
+    "image_style": "Renaissance oil painting"
+  },
+  "field_aliases": {},
+  "analysis_entries": [
+    {
+      "id": "analysis_001",
+      "paragraph": "Mr. Bennet's strategic silence during dinner reveals his characteristically manipulative approach to social interactions. By waiting until the servants withdraw, he creates an intimate setting designed to expose his guest's absurdity. His calculated choice of subject matter—Lady Catherine de Bourgh—demonstrates his understanding that sycophants cannot resist opportunities for elaborate self-congratulation disguised as praise of their patrons.",
+      "anchor_text_end_of_sentence": "Mr. Collins was eloquent in her praise."
+    },
+    {
+      "id": "analysis_002",
+      "paragraph": "Mr. Collins's excessive deference illustrates Austen's critique of the clergyman class and their obsequious relationships with aristocratic patrons. His description of Lady Catherine's 'affability'—which includes approving his sermons, inviting him to dine, and allowing him to play quadrille—reveals how desperately the lower gentry cling to any attention from their social superiors. The irony that others find her proud while he sees only kindness exposes his pathetic need for validation.",
+      "anchor_text_end_of_sentence": "some shelves in the closets upstairs."
+    },
+    {
+      "id": "analysis_003",
+      "paragraph": "Mrs. Bennet's mercenary interest in Lady Catherine transforms the conversation toward matrimonial opportunities. Her immediate pivot from the widow's character to questions about distance, family, and the daughter's eligibility demonstrates the obsession with advantageous marriages that drives the novel's plot. Her exclamation upon learning Miss de Bourgh is the sole heiress of Rosings—'then she is better off than many girls'—reveals her own aspirations and the transactional lens through which she views all female prospects.",
+      "anchor_text_end_of_sentence": "Bennet, shaking her head, “then she is better off than\nmany girls."
+    },
+    {
+      "id": "analysis_004",
+      "paragraph": "The description of Miss de Bourgh as 'far superior to the handsomest of her sex' through the lens of 'true beauty' associated with 'distinguished birth' satirizes the aristocratic mythology of innate superiority. Mr. Collins's unthinking repetition of Lady Catherine's propaganda about her daughter—combined with the reality of the girl's sickly constitution and limited accomplishments—exposes the gap between aristocratic pretension and actual merit. That Miss de Bourgh's chief social appearance is to condescend to drive past his humble abode in her little phaeton and ponies only deepens the comedy of his reverence.",
+      "anchor_text_end_of_sentence": "in her little phaeton and ponies."
+    },
+    {
+      "id": "analysis_005",
+      "paragraph": "Mr. Collins's mastery of 'delicate compliments' represents Austen's commentary on the art of flattery among the aspiring classes. His admission that he prepares compliments while attempting to give them 'an unstudied air' reveals the calculated nature of social climbing. Mr. Bennet's dry question about whether these attentions proceed from 'the impulse of the moment' or 'previous study' demonstrates his appreciation of the performance while maintaining his characteristic ironic detachment.",
+      "anchor_text_end_of_sentence": "as unstudied an air as possible."
+    },
+    {
+      "id": "analysis_006",
+      "paragraph": "The novel-reading scene serves as a pivotal moment of character revelation and social commentary. Mr. Collins's visible recoil from the circulating library book—symbol of popular, feminized, and potentially subversive literature—exposes his pretentious disdain for entertainment he deems beneath his clerical dignity. His substitution of Fordyce's Sermons, with their notoriously misogynistic advice to women, demonstrates his alignment with patriarchal control masked as moral instruction.",
+      "anchor_text_end_of_sentence": "protested that he never read novels."
+    },
+    {
+      "id": "analysis_007",
+      "paragraph": "Lydia Bennet's interruption epitomizes the generational and temperamental conflict between solemn propriety and youthful irreverence. Her complete indifference to Mr. Collins's moral instruction—focused instead on soldiers, gossip, and Meryton excursions—represents the failure of traditional authority to engage the younger generation. The chapter closes with Mr. Collins seating himself at another table with Mr. Bennet and preparing for backgammon, a retreat into masculine strategic games that signals his final abandonment of any pretense to civilizing influence.",
+      "anchor_text_end_of_sentence": "seated himself at another table with Mr. Bennet, and prepared\nfor backgammon."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "img_001",
+      "scene_title": "The Silent Strategist at Dinner",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Bennet sits at the head of a candlelit dining table, observing with subtle amusement while Mr. Collins gestures expansively about Lady Catherine de Bourgh's virtues.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a country gentleman with an ironic smile seated at a Georgian dining table, servants withdrawing through a doorway, while a pompous clergyman gestures emphatically; warm candlelight, rich wood paneling, oil painting texture with visible brushstrokes, 18th century interior",
+          "output_asset": "img_001_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting styled scene of dinner conversation in a modest country house parlour, host maintaining composed silence while guest performs elaborate praise, soft evening light through windows, period costumes, detailed table setting with silver, atmospheric shadows",
+          "output_asset": "img_001_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr. Collins was eloquent in her praise."
+    },
+    {
+      "id": "img_002",
+      "scene_title": "The Patroness's Graciousness",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins stands in an imagined scene at Rosings Park, bowing deeply before an imposing Lady Catherine who gestures magnanimously from her chair.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting depicting an obsequious clergyman in black clerical dress bowing low before an aristocratic lady seated in an ornate chair, grand drawing room with gilded furniture, window overlooking formal gardens, dramatic chiaroscuro lighting, rich jewel tones, classical composition",
+          "output_asset": "img_002_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting interpretation of aristocratic patronage scene, humble parson receiving approval from grand lady, elaborate period costumes, imposing interior architecture, warm light from fireplace, oil painting impasto technique, 18th century Hogarthian satire influence",
+          "output_asset": "img_002_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "some shelves in the closets upstairs."
+    },
+    {
+      "id": "img_003",
+      "scene_title": "Mrs. Bennet's Calculating Interest",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mrs. Bennet leans forward at the tea table with eager expression, mentally calculating marriage prospects as she questions Mr. Collins about the de Bourgh heiress.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of an eager middle-aged woman in provincial gentry dress leaning forward with calculating interest, seated around a tea table in a modest drawing room, animated conversation scene, warm domestic lighting, detailed fabric textures, expressive facial features, oil on canvas aesthetic",
+          "output_asset": "img_003_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style domestic scene, mother figure with hopeful expression questioning a visitor about eligible daughters, cozy parlour interior, afternoon tea service visible, natural window light, 18th century English country house atmosphere, painterly brushwork",
+          "output_asset": "img_003_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Bennet, shaking her head, “then she is better off than\nmany girls."
+    },
+    {
+      "id": "img_004",
+      "scene_title": "Lady Catherine's Darling Daughter",
+      "style": "Renaissance oil painting",
+      "alt_text": "A pale, delicate young woman of distinguished bearing sits in a small carriage with ponies, looking aristocratic but frail in the countryside near Rosings.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a pale aristocratic young lady in an elegant phaeton carriage drawn by small ponies, country estate landscape background, sickly but distinguished beauty, ornate dress of fine muslin, soft natural light, pastoral setting with mansion in distance, refined brushwork",
+          "output_asset": "img_004_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting depicting delicate heiress in small carriage, de Bourgh estate grounds, aristocratic bearing despite frail health, Georgian fashion, parkland scenery with mature trees, gentle diffused light, oil painting luminosity, portraits of nobility tradition",
+          "output_asset": "img_004_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "in her little phaeton and ponies."
+    },
+    {
+      "id": "img_005",
+      "scene_title": "The Art of Calculated Flattery",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins bows before Mr. Bennet, explaining his technique of offering delicate compliments with an appearance of spontaneity.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a confident clergyman explaining himself to a seated gentleman with ironic expression, drawing room setting, animated gesture of the speaker, detailed period costumes, warm interior lighting, psychological portraiture, oil painting rich color palette",
+          "output_asset": "img_005_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style conversation piece, two men in contrasting poses—one earnestly explaining, one skeptically listening—Georgian drawing room details, book-lined walls, comfortable armchairs, natural daylight from sash windows, painterly realism",
+          "output_asset": "img_005_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "as unstudied an air as possible."
+    },
+    {
+      "id": "img_006",
+      "scene_title": "The Mortifying Discovery",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins recoils in horror from a novel bearing a circulating library label, while young ladies look on with surprise and disappointment.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a shocked clergyman drawing back from a book as if from poison, young women in the background with surprised expressions, drawing room setting, dramatic gesture of recoil, tension in the scene, warm lamplight, rich period details, expressive oil painting technique",
+          "output_asset": "img_006_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting depicting moment of literary rejection, offended clergyman refusing a novel, three young ladies reacting with varying degrees of surprise, domestic interior with books scattered, theatrical composition, chiaroscuro lighting effects, 18th century satire style",
+          "output_asset": "img_006_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "protested that he never read novels."
+    },
+    {
+      "id": "img_007",
+      "scene_title": "Sanctuary in Backgammon",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Bennet and Mr. Collins sit at a games table with backgammon board, while ladies occupy themselves elsewhere in the drawing room, separated by social purpose.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of two men playing backgammon at a table while women converse separately in a drawing room, divided composition, warm firelight illuminating the game board, comfortable armchairs, detailed interior with books and tea things, domestic genre scene, oil painting rich textures",
+          "output_asset": "img_007_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style domestic scene with gendered separation of activities—men absorbed in board game, women knitting and chatting—Georgian parlour interior, afternoon light, peaceful domesticity after social tension, painterly atmosphere, warm earth tones",
+          "output_asset": "img_007_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "seated himself at another table with Mr. Bennet, and prepared\nfor backgammon."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_001",
+      "quote": "Mr. Bennet scarcely spoke at all; but when the servants were withdrawn, he thought it time to have some conversation with his guest, and therefore started a subject in which he expected him to shine, by observing that he seemed very fortunate in his patroness.",
+      "anchor_text": "Bennet scarcely spoke at all; but when the servants\nwere withdrawn, he thought it time to have some conversation with his\nguest, and therefore started a subject in which he expected him to\nshine, by observing that he seemed very fortunate in his patroness."
+    },
+    {
+      "id": "quote_002",
+      "quote": "The subject elevated him to more than usual solemnity of manner; and with a most important aspect he protested that he had never in his life witnessed such behaviour in a person of rank.",
+      "anchor_text": "more than usual solemnity of manner"
+    },
+    {
+      "id": "quote_003",
+      "quote": "Lady Catherine was reckoned proud by many people, he knew, but he had never seen anything but affability in her.",
+      "anchor_text": "never seen anything but affability"
+    },
+    {
+      "id": "quote_004",
+      "quote": "Lady Catherine herself says that, in point of true beauty, Miss de Bourgh is far superior to the handsomest of her sex; because there is that in her features which marks the young woman of distinguished birth.",
+      "anchor_text": "Lady Catherine herself says\nthat, in point of true beauty, Miss de Bourgh is far superior to the\nhandsomest of her sex; because there is that in her features which marks\nthe young woman of distinguished birth."
+    },
+    {
+      "id": "quote_005",
+      "quote": "You judge very properly, said Mr. Bennet; and it is happy for you that you possess the talent of flattering with delicacy.",
+      "anchor_text": "talent of flattering with delicacy"
+    },
+    {
+      "id": "quote_006",
+      "quote": "On beholding it (for everything announced it to be from a circulating library) he started back, and, begging pardon, protested that he never read novels.",
+      "anchor_text": "he never read novels"
+    },
+    {
+      "id": "quote_007",
+      "quote": "I have often observed how little young ladies are interested by books of a serious stamp, though written solely for their benefit. It amazes me, I confess; for certainly there can be nothing so advantageous to them as instruction.",
+      "anchor_text": "It amazes\nme, I confess; for certainly there can be nothing so advantageous to\nthem as instruction."
+    }
+  ],
+  "insertion_methods": {},
+  "summary": "Chapter XIV of Pride and Prejudice centers on Mr. Collins's visit to Longbourn, featuring his sycophantic praise of Lady Catherine de Bourgh during dinner conversation skillfully manipulated by Mr. Bennet. The chapter exposes the absurdity of hierarchical deference through Collins's elaborate descriptions of his patroness's 'affability,' his calculated compliment techniques, and his mortified rejection of novels. Lydia Bennet's interruption of Fordyce's Sermons with gossip about soldiers precipitates a retreat to backgammon, ending the literary evening in masculine strategic retreat. Austen employs satire to critique class obsequiousness, gendered education, and the performative nature of social advancement in Regency England."
+}

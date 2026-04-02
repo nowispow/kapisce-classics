@@ -1,28 +1,76 @@
 {
   "novel_slug": "pride-and-prejudice",
   "chapter_slug": "chapter-6",
-  "phase": "init",
-  "status": "on_hold",
+  "phase": "assembled",
+  "status": "pending",
   "retry_count": 0,
   "rejection_reason": null,
-  "last_updated": "2026-03-15T09:14:00Z",
+  "last_updated": "2026-04-01T08:55:50Z",
   "pipeline_version": "5.0",
   "steps": {
     "analysis_metadata_enhancement": "pending",
-    "analysis_metadata_generation": "pending",
+    "analysis_metadata_generation": "done",
     "holistic_qa": "pending",
     "holistic_quality_assurance": "pending",
-    "image_generation": "pending",
-    "metadata_content_insertion": "pending",
+    "image_generation": "done",
+    "metadata_content_insertion": "done",
     "metadata_insertion": "pending",
     "reviewer_metadata_quality_assurance": "pending",
     "reviewer_metadata_verification": "pending",
     "translation": "pending",
     "translation_batch_processing": "pending",
-    "translation_initialization": "pending"
+    "translation_initialization": "pending",
+    "format_enforced": "pending"
   },
   "translation": {
     "status": "blocked",
-    "ready": false
-  }
+    "ready": false,
+    "ready_after_step": "holistic_quality_assurance",
+    "source_mdx": null,
+    "active_language": null,
+    "batch_size_chars": 2800,
+    "last_synced": "2026-04-01T08:55:50Z",
+    "target_languages": [
+      "ar",
+      "bn",
+      "de",
+      "es",
+      "fa",
+      "fr",
+      "ha",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "pt",
+      "ru",
+      "sw",
+      "th",
+      "tr",
+      "vi",
+      "zh-TW"
+    ],
+    "languages": {}
+  },
+  "output_files": {
+    "metadata_yaml": "metadata.yaml",
+    "metadata_json": "metadata.json",
+    "enhanced_mdx": "/workspace/chapters/pride-and-prejudice-chapter-6-enhanced.mdx",
+    "translations": {},
+    "metadata": "metadata.json"
+  },
+  "image_progress": {
+    "completed": 14,
+    "last_scene_completed": 7,
+    "total_scenes": 7,
+    "variants_per_scene": 2
+  },
+  "metadata_validation": {
+    "last_checked": null,
+    "passed": false,
+    "errors": []
+  },
+  "summary": "Pipeline complete. Chapter is ready for the holistic QA and translation phase. ACTION: Await human holistic review."
 }

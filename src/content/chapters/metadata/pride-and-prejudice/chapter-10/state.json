@@ -2,11 +2,11 @@
   "chapter": "chapter-10",
   "novel": "pride-and-prejudice",
   "pipeline_version": "4.1",
-  "last_updated": "2026-03-13T16:41:36Z",
+  "last_updated": "2026-04-01T09:46:39Z",
   "source_markdown": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-10.mdx",
   "output_files": {
     "metadata": "metadata.json",
-    "enhanced_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-10-enhanced.mdx",
+    "enhanced_mdx": "/workspace/chapters/pride-and-prejudice-chapter-10-enhanced.mdx",
     "translations": {}
   },
   "steps": {
@@ -18,7 +18,8 @@
     "metadata_content_insertion": "done",
     "holistic_quality_assurance": "pending",
     "translation_initialization": "pending",
-    "translation_batch_processing": "pending"
+    "translation_batch_processing": "pending",
+    "format_enforced": "pending"
   },
   "metadata_validation": {
     "passed": true,
@@ -60,7 +61,14 @@
     ],
     "active_language": null,
     "batch_size_chars": 2800,
-    "last_synced": "2026-03-13T16:41:36Z",
+    "last_synced": "2026-04-01T09:46:39Z",
     "languages": {}
-  }
+  },
+  "novel_slug": "pride-and-prejudice",
+  "chapter_slug": "chapter-10",
+  "status": "pending",
+  "phase": "assembled",
+  "retry_count": 0,
+  "rejection_reason": null,
+  "summary": "Pipeline complete. Chapter is ready for the holistic QA and translation phase. ACTION: Await human holistic review."
 }
