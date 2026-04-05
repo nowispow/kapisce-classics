@@ -1,0 +1,74 @@
+{
+  "novel": "pride-and-prejudice",
+  "chapter": "chapter-11",
+  "pipeline_version": "4.1",
+  "steps": {
+    "analysis_metadata_generation": "done",
+    "reviewer_metadata_verification": "pending",
+    "analysis_metadata_enhancement": "pending",
+    "reviewer_metadata_quality_assurance": "done",
+    "image_generation": "done",
+    "metadata_content_insertion": "done",
+    "holistic_quality_assurance": "pending",
+    "translation_initialization": "pending",
+    "translation_batch_processing": "pending",
+    "format_enforced": "pending"
+  },
+  "image_progress": {
+    "completed": 14,
+    "total_scenes": 7,
+    "variants_per_scene": 2,
+    "last_scene_completed": 7
+  },
+  "metadata_validation": {
+    "passed": true,
+    "last_checked": "2026-02-27T08:21:25.607997+00:00",
+    "errors": []
+  },
+  "output_files": {
+    "metadata": "metadata.json",
+    "enhanced_mdx": "/workspace/chapters/pride-and-prejudice-chapter-11-enhanced.mdx",
+    "translations": {}
+  },
+  "translation": {
+    "ready_after_step": "holistic_quality_assurance",
+    "ready": false,
+    "status": "blocked",
+    "source_mdx": null,
+    "target_languages": [
+      "ar",
+      "bn",
+      "de",
+      "es",
+      "fa",
+      "fr",
+      "ha",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "pt",
+      "ru",
+      "sw",
+      "th",
+      "tr",
+      "vi",
+      "zh-TW"
+    ],
+    "active_language": null,
+    "batch_size_chars": 2800,
+    "languages": {},
+    "last_synced": "2026-04-01T09:49:28Z"
+  },
+  "last_updated": "2026-04-01T09:49:28Z",
+  "source_markdown": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-11.mdx",
+  "novel_slug": "pride-and-prejudice",
+  "chapter_slug": "chapter-11",
+  "status": "pending",
+  "phase": "assembled",
+  "retry_count": 0,
+  "rejection_reason": null,
+  "summary": "Pipeline complete. Chapter is ready for the holistic QA and translation phase. ACTION: Await human holistic review."
+}

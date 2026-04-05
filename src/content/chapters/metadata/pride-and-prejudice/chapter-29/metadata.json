@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: Chapter XXIX",
+  "enhanced_title": "Pride And Prejudice: Chapter XXIX - The Visit to Rosings",
+  "author": "Jane Austen",
+  "description": "This chapter depicts the Bennet party's visit to Rosings Park, where they encounter Lady Catherine de Bourgh in all her magnificence and condescension. The chapter masterfully contrasts the nervous apprehension of Mr. Collins, Maria, and Sir William with Elizabeth Bennet's composed dignity in the face of aristocratic arrogance.",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "XXIX",
+    "source_text_file": "chapter_29.txt",
+    "metadata_file": "chapter_29_metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries_count": 7,
+    "image_prompt_entries_count": 7,
+    "quote_entries_count": 7,
+    "image_style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "anchor_text_end_of_sentence": "Reference to the final sentence or key phrase in the analysis, image, or quote context",
+    "anchor_text": "Reference to the key phrase in the quote context"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis_001",
+      "paragraph": "Mr. Collins's character is revealed through his excessive admiration for Lady Catherine's 'condescension' in inviting them to dine. His inability to express sufficient wonder at her Ladyship's attention demonstrates his sycophantic nature and his delusion that proximity to aristocracy elevates his own status. Austen uses his triumph to satirize the class-consciousness of the era.",
+      "anchor_text_end_of_sentence": "he knew not how to admire enough."
+    },
+    {
+      "id": "analysis_002",
+      "paragraph": "Elizabeth's composure in the face of Lady Catherine's grandeur stands in sharp contrast to the nervousness of Sir William and Maria Lucas. While others are intimidated by wealth and rank, Elizabeth remains unaffected because she judges character by merit rather than status. This foreshadows her later refusal of Darcy's first proposal, where she will reject his wealth in favor of her principles.",
+      "anchor_text_end_of_sentence": "the mere stateliness of money and rank she\nthought she could witness without trepidation."
+    },
+    {
+      "id": "analysis_003",
+      "paragraph": "Austen's description of Lady Catherine makes clear that her authority derives not from any inherent quality but from her position and manner. The detail that whatever she said was spoken in so authoritative a tone as marked her self-importance, and brought Mr. Wickham immediately to Elizabeth's mind, links Lady Catherine's pride to the same family arrogance Elizabeth has already encountered. Elizabeth's calm observation of all three ladies before her reveals the arrogance that she will not bow to.",
+      "anchor_text_end_of_sentence": "Mr."
+    },
+    {
+      "id": "analysis_004",
+      "paragraph": "The stark contrast between mother and daughter—Lady Catherine being tall and commanding while Miss de Bourgh is thin, sickly, and insignificant—suggests the failure of aristocratic breeding to produce worthy heirs. Miss de Bourgh's dependency on Mrs. Jenkinson and her silence throughout the dinner expose the emptiness of a life designed solely for the preservation of wealth and lineage. The detail that Mrs. Jenkinson was entirely engaged in placing a screen in the proper direction before her eyes underscores the daughter's fragility and irrelevance to the social drama unfolding around her.",
+      "anchor_text_end_of_sentence": "who was entirely engaged in listening\nto what she said, and placing a screen in the proper direction before\nher eyes."
+    },
+    {
+      "id": "analysis_005",
+      "paragraph": "Lady Catherine's inquisition of Elizabeth reveals her desire to establish dominance through impertinent questioning about family, education, and accomplishments. Her shock at learning the Bennet sisters were raised without a governess exposes her belief that formal structures are necessary for propriety, insisting that if she had known Elizabeth's mother, she should have advised her most strenuously to engage one. Elizabeth's composed responses show her refusal to be diminished, even as she recognizes the rudeness of the interrogation.",
+      "anchor_text_end_of_sentence": "if I had\nknown your mother, I should have advised her most strenuously to engage\none."
+    },
+    {
+      "id": "analysis_006",
+      "paragraph": "Elizabeth's spirited defense of younger sisters' right to society before their elders marry demonstrates her independent thinking and her commitment to fairness over convention. Lady Catherine's astonishment at Elizabeth's 'decided' opinion marks the clash between Elizabeth's modern sensibility and the aristocratic expectation of deference. The chapter's climax arrives when Elizabeth suspected herself to be the first creature who had ever dared to trifle with so much dignified impertinence, a moment of private triumph that crystallizes her role as Austen's champion of individual merit.",
+      "anchor_text_end_of_sentence": "Elizabeth suspected herself to be the first creature who had ever\ndared to trifle with so much dignified impertinence."
+    },
+    {
+      "id": "analysis_007",
+      "paragraph": "The card party scene contrasts the 'superlatively stupid' table of the younger guests with the assertive dominance of Lady Catherine's conversation. Mr. Collins's behavior—agreeing to everything, thanking her for every fish he wins, and apologizing if he thought he won too many—is comically servile and exposes the absurdity of uncritical deference to rank. The chapter ends with Elizabeth politely concealing her true opinion for Charlotte's sake, demonstrating both her loyalty to her friend and her growing sophistication in social navigation, while Mr. Collins was very soon obliged to take her Ladyship's praise into his own hands.",
+      "anchor_text_end_of_sentence": "Collins, and he was very soon obliged to take her Ladyship’s\npraise into his own hands."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image_001",
+      "scene_title": "Mr. Collins's Triumph",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins gesturing excitedly with a letter of invitation, his face alight with pride and condescension toward his guests",
+      "variations": [
+        {
+          "variation_id": "var_001_a",
+          "prompt_text": "Renaissance oil painting style: Mr. Collins stands in a parlor holding a letter aloft, his face radiating triumph and self-importance, as he addresses Sir William and Elizabeth. Rich fabrics of 18th-century dress, warm candlelight illuminating his excited expression, detailed interior with period furniture, oil on canvas technique with dramatic chiaroscuro",
+          "output_asset": "mr_collins_triumph_001.png"
+        },
+        {
+          "variation_id": "var_001_b",
+          "prompt_text": "Renaissance oil painting style: A clergyman in clerical black with white bands stands with arms slightly raised in a gesture of exultation, holding a formal invitation letter. His audience—a gentleman and a young lady—listen with varying degrees of interest. Baroque composition with strong diagonal lines, rich velvet and silk textures, golden hour lighting through a window",
+          "output_asset": "mr_collins_triumph_002.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "he knew not how to admire enough."
+    },
+    {
+      "id": "image_002",
+      "scene_title": "The Walk to Rosings",
+      "style": "Renaissance oil painting",
+      "alt_text": "Four figures walking across a manicured park toward a grand estate, with Elizabeth gazing at the landscape while Mr. Collins points out architectural details",
+      "variations": [
+        {
+          "variation_id": "var_002_a",
+          "prompt_text": "Renaissance oil painting style: A pastoral landscape with four figures walking along a gravel path through an English park. A grand Palladian mansion in the distance. The young woman in the lead wearing a simple but elegant muslin dress looks thoughtfully at the scenery, while the clergyman beside her gestures toward the house windows. Soft atmospheric perspective, classical landscape composition inspired by Claude Lorrain",
+          "output_asset": "walk_to_rosings_001.png"
+        },
+        {
+          "variation_id": "var_002_b",
+          "prompt_text": "Renaissance oil painting style: Late afternoon scene in a formal park with manicured lawns and scattered specimen trees. A party of visitors approaches a magnificent country house. One lady walks with composed dignity, another clings nervously to her father's arm, while a clergyman points enthusiastically at the building's facade. Golden light, detailed rendering of Georgian architecture, oil painting technique with visible brushwork",
+          "output_asset": "walk_to_rosings_002.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "was but\nslightly affected by his enumeration of the windows in front of the\nhouse, and his relation of what the glazing altogether had originally\ncost Sir Lewis de Bourgh."
+    },
+    {
+      "id": "image_003",
+      "scene_title": "The Grand Reception Hall",
+      "style": "Renaissance oil painting",
+      "alt_text": "Austere figures in a magnificent entrance hall, with Lady Catherine rising from her seat to receive visitors with haughty condescension",
+      "variations": [
+        {
+          "variation_id": "var_003_a",
+          "prompt_text": "Renaissance oil painting style: A grand Palladian hall with double-height ceilings, marble floors, and classical columns. A tall, imposing woman in rich attire rises from a sofa to receive four visitors. The visitors display varying reactions—awe, nervousness, and composed observation. Dramatic lighting from tall windows emphasizing the architectural grandeur, baroque composition, rich jewel tones in the fabrics",
+          "output_asset": "reception_hall_001.png"
+        },
+        {
+          "variation_id": "var_003_b",
+          "prompt_text": "Renaissance oil painting style: Interior scene of an aristocratic drawing room with gilded ornamentation and fine proportions. An aristocratic lady of commanding presence stands to greet her guests, her posture conveying both condescension and authority. The visitors—a clergyman with obsequious bow, a nervous young lady, and a composed woman in simpler dress—enter the space. Velazquez-inspired composition with attention to spatial depth, oil painting on canvas",
+          "output_asset": "reception_hall_002.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "it was\nperformed in a proper manner, without any of those apologies and thanks\nwhich he would have thought necessary."
+    },
+    {
+      "id": "image_004",
+      "scene_title": "Lady Catherine in Judgment",
+      "style": "Renaissance oil painting",
+      "alt_text": "Lady Catherine seated in a magnificent chair, her features stern and authoritative, interrogating Elizabeth with aristocratic condescension",
+      "variations": [
+        {
+          "variation_id": "var_004_a",
+          "prompt_text": "Renaissance oil painting style: A commanding aristocratic woman seated in an ornate chair, her tall figure and strongly-marked features suggesting former beauty now hardened into authority. She leans forward slightly, one hand raised in a gesture of questioning impertinence toward a young lady who stands before her. The seated woman's expression is one of unchallenged self-importance. Titian-inspired portrait technique, rich crimson and gold tones, classical drapery",
+          "output_asset": "lady_catherine_judgment_001.png"
+        },
+        {
+          "variation_id": "var_004_b",
+          "prompt_text": "Renaissance oil painting style: Portrait of a grande dame in late 18th-century fashion, seated in a formal drawing room setting. Her authoritative posture and sharp facial features convey decades of accustomed command. Before her stands a younger woman in simpler dress, meeting her gaze with composed dignity. The contrast between the elaborate aristocratic setting and the visitor's modest appearance enhances the social tension. Rembrandt-style lighting with dramatic shadows, oil on canvas texture",
+          "output_asset": "lady_catherine_judgment_002.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr."
+    },
+    {
+      "id": "image_005",
+      "scene_title": "Miss de Bourgh's Silence",
+      "style": "Renaissance oil painting",
+      "alt_text": "A pale, delicate young lady seated quietly at a table, overshadowed by her commanding mother, with a companion anxiously attending her",
+      "variations": [
+        {
+          "variation_id": "var_005_a",
+          "prompt_text": "Renaissance oil painting style: A thin, sickly young lady sits at a dining table, her pale features almost fading into the background beside a grand, commanding maternal figure. An attentive companion leans toward her, screen in hand, concerned for her comfort. The young lady's insignificance contrasts with the imposing presence beside her. Soft, diffused lighting, muted color palette, delicate rendering of the invalid's fragility, oil painting technique",
+          "output_asset": "miss_de_bourgh_001.png"
+        },
+        {
+          "variation_id": "var_005_b",
+          "prompt_text": "Renaissance oil painting style: Interior dinner scene with figures seated at an elaborate table. A young woman of delicate constitution sits quietly, barely speaking, her slight figure and pale features suggesting ill health. Beside her, a chaperone hovers anxiously with a shade to protect her eyes. Baroque interior setting with rich fabrics and silver, the scene captures the smallness of the daughter against the magnificence of her surroundings. Venetian school painting style",
+          "output_asset": "miss_de_bourgh_002.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "she spoke very\nlittle, except in a low voice, to Mrs. Jenkinson, in whose appearance\nthere was nothing remarkable, and who was entirely engaged in listening\nto what she said, and placing a screen in the proper direction before\nher eyes."
+    },
+    {
+      "id": "image_006",
+      "scene_title": "Elizabeth's Defiance",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth standing with gentle defiance, a slight smile playing on her lips as she refuses to directly answer Lady Catherine's impertinent question",
+      "variations": [
+        {
+          "variation_id": "var_006_a",
+          "prompt_text": "Renaissance oil painting style: A young woman with intelligent eyes and a subtle, knowing smile stands in a formal drawing room. Her posture is composed but not subservient, as she addresses an unseen interrogator. Her hands might be clasped or at her sides in relaxed confidence. The expression balances politeness with spirited independence. Soft lighting on her face, detailed rendering of period muslin dress, background suggesting aristocratic surroundings but slightly blurred. Portraiture style reminiscent of Reynolds",
+          "output_asset": "elizabeth_defiance_001.png"
+        },
+        {
+          "variation_id": "var_006_b",
+          "prompt_text": "Renaissance oil painting style: Half-length portrait of a genteel young lady with dark expressive eyes and a playful smile that suggests wit and independence. She appears to be in the middle of conversation, her head slightly tilted, her expression one of gentle but firm resistance to impertinence. The background shows hints of an elegant interior. Warm skin tones, careful attention to the texture of her simple but refined dress, oil painting technique capturing the softness of youth with the strength of character",
+          "output_asset": "elizabeth_defiance_002.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Elizabeth suspected herself to be the first creature who had ever\ndared to trifle with so much dignified impertinence."
+    },
+    {
+      "id": "image_007",
+      "scene_title": "The Departure from Rosings",
+      "style": "Renaissance oil painting",
+      "alt_text": "A carriage waiting at the door of a grand house, with figures bowing and offering thanks, while Elizabeth looks relieved to depart",
+      "variations": [
+        {
+          "variation_id": "var_007_a",
+          "prompt_text": "Renaissance oil painting style: Evening scene outside a grand country house, with a carriage waiting at the entrance. A clergyman makes elaborate bows of gratitude to an imposing lady at the door, while an elderly gentleman doffs his hat repeatedly. A younger lady stands with composed patience, her expression suggesting she will be glad to depart. Warm lantern light illuminating the scene, classical architectural details of the house facade, dramatic twilight sky. Composition inspired by Dutch genre painting, rich atmospheric effects",
+          "output_asset": "departure_rosings_001.png"
+        },
+        {
+          "variation_id": "var_007_b",
+          "prompt_text": "Renaissance oil painting style: Nocturnal scene with figures gathered at the entrance of an aristocratic mansion. An elegant carriage waits with lamps lit. The departing guests display varying degrees of enthusiasm for their leave-taking—a man bows excessively, another nods formally, while a young lady looks forward to departure with barely concealed relief. The lady of the house receives their thanks with gracious condescension. Moonlit sky, the warm glow of interior lights spilling from the doorway, oil painting technique with careful attention to the effects of artificial and natural light",
+          "output_asset": "departure_rosings_002.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Collins, and he was very soon obliged to take her Ladyship’s\npraise into his own hands."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_001",
+      "quote": "Who could have imagined that we should receive an invitation to dine there (an invitation, moreover, including the whole party) so immediately after your arrival?",
+      "anchor_text": "Who could have imagined that we should receive an invitation to dine\nthere (an invitation, moreover, including the whole party) so\nimmediately after your arrival?"
+    },
+    {
+      "id": "quote_002",
+      "quote": "Elizabeth's courage did not fail her. She had heard nothing of Lady Catherine that spoke her awful from any extraordinary talents or miraculous virtue, and the mere stateliness of money and rank she thought she could witness without trepidation.",
+      "anchor_text": "the mere stateliness of money and rank she\nthought she could witness without trepidation."
+    },
+    {
+      "id": "quote_003",
+      "quote": "Whatever she said was spoken in so authoritative a tone as marked her self-importance",
+      "anchor_text": "whatever she said was spoken in so authoritative a tone as\nmarked her self-importance"
+    },
+    {
+      "id": "quote_004",
+      "quote": "Miss de Bourgh was pale and sickly: her features, though not plain, were insignificant; and she spoke very little, except in a low voice, to Mrs. Jenkinson",
+      "anchor_text": "Miss de Bourgh was pale and sickly: her\nfeatures, though not plain, were insignificant; and she spoke very\nlittle, except in a low voice, to Mrs. Jenkinson"
+    },
+    {
+      "id": "quote_005",
+      "quote": "I always say that nothing is to be done in education without steady and regular instruction, and nobody but a governess can give it.",
+      "anchor_text": "I always say that nothing is to be done in education without steady\nand regular instruction, and nobody but a governess can give it."
+    },
+    {
+      "id": "quote_006",
+      "quote": "The last born has as good a right to the pleasures of youth as the first. And to be kept back on such a motive! I think it would not be very likely to promote sisterly affection or delicacy of mind.",
+      "anchor_text": "The last born has as good a right to the pleasures of youth\nas the first. And to be kept back on _such_ a motive! I think it would\nnot be very likely to promote sisterly affection or delicacy of mind."
+    },
+    {
+      "id": "quote_007",
+      "quote": "Elizabeth suspected herself to be the first creature who had ever dared to trifle with so much dignified impertinence.",
+      "anchor_text": "Elizabeth suspected herself to be the first creature who had ever\ndared to trifle with so much dignified impertinence."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_insertion": "Analysis entries contain paragraphs with literary commentary and anchor to end-of-sentence text",
+    "image_insertion": "Image prompts use Renaissance oil painting style with detailed scene descriptions and variations",
+    "quote_insertion": "Quotes are extracted from the chapter text with anchor phrases for reference"
+  },
+  "summary": "Chapter XXIX presents the memorable visit to Rosings, where Elizabeth Bennet's strength of character is tested against Lady Catherine de Bourgh's aristocratic arrogance. Through satirical portraits of Mr. Collins's sycophancy, Lady Catherine's domineering condescension, and the contrast between the intimidated visitors and Elizabeth's composure, Austen critiques class consciousness while establishing Elizabeth as a heroine who values personal merit over social rank. The chapter's climax comes in Elizabeth's spirited defense of her sisters' right to society and her witty evasion of Lady Catherine's impertinent questions, establishing her as a match for the formidable noblewoman."
+}

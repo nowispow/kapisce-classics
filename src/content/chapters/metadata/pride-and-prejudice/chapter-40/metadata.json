@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride and Prejudice: Chapter XL",
+  "enhanced_title": "Chapter XL: Elizabeth's Revelations and Jane's Compassion",
+  "author": "Jane Austen",
+  "description": "In Chapter 40, Elizabeth confides in Jane about Mr. Darcy's unexpected proposal, her rejection, his letter revealing Wickham's true character, and ponders the mystery of Bingley's absence while concealing her sister's secret.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "40",
+    "source_text_file": "chapter-xl.txt",
+    "metadata_file": "chapter-xl-metadata.json"
+  },
+  "pattern_requirements": {
+    "format": "7-7-7",
+    "description": "Exactly 7 analysis entries, 7 image prompts, and 7 quote entries"
+  },
+  "field_aliases": {},
+  "analysis_entries": [
+    {
+      "id": "analysis-1",
+      "paragraph": "Elizabeth's decision to confide in Jane reveals the deep bond between the sisters, as her impatience to share the news of Darcy's proposal can no longer be suppressed. Despite her urgency, she exercises careful judgment by withholding particulars about Jane's connection to Bingley, protecting her sister from renewed pain. This selective disclosure demonstrates that Elizabeth's growth in self-awareness extends to a heightened sensitivity toward those she loves.",
+      "anchor_text_end_of_sentence": "Darcy and herself."
+    },
+    {
+      "id": "analysis-2",
+      "paragraph": "Jane's reaction to Darcy's proposal exemplifies her gentle nature\u2014far from envying her sister's suitor, Jane's primary concern is for Darcy's disappointment and Elizabeth's own misfortune. This selflessness is characteristic of Jane Bennet throughout the novel, and Austen uses it here to contrast the two sisters' moral temperaments. Where Elizabeth processes events through wit and irony, Jane's instinct is always toward compassion, even for those who have behaved badly.",
+      "anchor_text_end_of_sentence": "refusing him?"
+    },
+    {
+      "id": "analysis-3",
+      "paragraph": "The revelation of Wickham's true character through Darcy's letter creates a profound moral crisis for Jane, who has never before believed such wickedness could exist concentrated in one individual. This moment tests Jane's capacity to reconcile her idealistic worldview with uncomfortable facts, and she labours earnestly to find some exculpatory explanation. Her struggle to clear one man without involving the other illustrates the limits of her benevolent philosophy when confronted with genuine moral corruption.",
+      "anchor_text_end_of_sentence": "seek to clear one, without involving the other."
+    },
+    {
+      "id": "analysis-4",
+      "paragraph": "Elizabeth's ironic observation about the distribution of merit between Darcy and Wickham reveals her newfound ability to judge both men with clarity. Her wit has not abandoned her, but it has been tempered with genuine understanding of her own past errors in perception. The remark that merit has been 'shifting about pretty much' between the two men is both a self-deprecating acknowledgment of her former blindness and a sign that her intelligence is now properly directed.",
+      "anchor_text_end_of_sentence": "but you shall do as you choose."
+    },
+    {
+      "id": "analysis-5",
+      "paragraph": "The sisters' discussion regarding whether to expose Wickham's character illuminates the social conventions and moral reasoning of the era. Both agree that public revelation would be wrong\u2014Darcy's confidence prevents disclosure, and the general prejudice against him in Meryton would render any defence futile. Their shared conclusion that exposure might make Wickham desperate rather than reformed reflects a pragmatic Christian charity that prizes rehabilitation over punishment.",
+      "anchor_text_end_of_sentence": "We must not make him desperate."
+    },
+    {
+      "id": "analysis-6",
+      "paragraph": "Elizabeth's decision to withhold information about Bingley's interest in Jane demonstrates her maturity and sisterly devotion, as she recognises that sharing such knowledge prematurely would only inflict fresh suffering. She protects Jane from renewed hope until a perfect understanding between the parties can justify revealing the truth. The wry resignation of her reflection\u2014that the liberty of communication cannot be hers until it has lost all its value\u2014captures the painful irony of possessing knowledge one cannot use.",
+      "anchor_text_end_of_sentence": "The liberty of communication cannot be mine till it has lost\nall its value!"
+    },
+    {
+      "id": "analysis-7",
+      "paragraph": "Austen concludes the chapter with Mrs. Bennet's characteristic foolishness\u2014her melodramatic prediction that Jane will 'die of a broken heart' juxtaposes sharply with Jane's actual quiet suffering, which is borne with dignity and restraint. Her bitter resentment of the Collinses' future inheritance of Longbourn reveals her mercenary preoccupations and her inability to distinguish between genuine grief and social grievance. The contrast between Mrs. Bennet's theatrical self-pity and her daughters' interior lives underscores one of Austen's central comic ironies: the woman most vocal about family feeling is the least capable of genuine empathy.",
+      "anchor_text_end_of_sentence": "only entailed on me."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-1",
+      "scene_title": "Elizabeth Confiding in Jane",
+      "style": "Renaissance oil painting",
+      "alt_text": "Two sisters in morning dresses sharing secrets in a sunlit drawing room",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of two elegant young women sitting close together by a window, one leaning forward with animated expression while the other listens with gentle concern, soft morning light illuminating their faces, Regency-era interior with delicate furniture and drapery",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Raphaelite-inspired oil painting showing two sisters in a parlor, intimate conversation between siblings in period dress, gentle expressions of trust and sisterly love, soft pastoral color palette",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Darcy and herself."
+    },
+    {
+      "id": "image-2",
+      "scene_title": "Jane's Compassionate Response",
+      "style": "Renaissance oil painting",
+      "alt_text": "Jane Bennet with gentle, concerned expression contemplating her sister's tale",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a fair-haired young woman with serene expression and downcast eyes, hands folded gently, wearing a simple white morning dress, seated in a humble interior, soft light suggesting virtue and compassion",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Botticelli-inspired portrait of a gentle maiden with delicate features, contemplative gaze, hands clasped in empathy, pastoral background suggesting moral purity and sisterly devotion",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "refusing him?"
+    },
+    {
+      "id": "image-3",
+      "scene_title": "The Weight of Wickham's Revelation",
+      "style": "Renaissance oil painting",
+      "alt_text": "Jane receiving shocking news about human wickedness, her expression showing distress and disbelief",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting depicting a young woman receiving disquieting news, hand raised to her heart, expression of innocent shock, morning light filtering through curtains creating dramatic chiaroscuro, period room with reading desk and letter",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Caravaggio-influenced scene of feminine distress upon learning of evil deeds, face half in shadow, tears forming in eyes, hands holding a letter of revelation, baroque dramatic lighting emphasizing emotional turmoil",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "seek to clear one, without involving the other."
+    },
+    {
+      "id": "image-4",
+      "scene_title": "Elizabeth's Wit Restored",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth with a knowing smile, her characteristic irony and humor returning",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of an intelligent young woman with dark hair and lively eyes, slight smile playing on lips, animated hand gesture during conversation, period drawing room setting with elegant restraint",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "High Renaissance portrait style depicting feminine wit and intelligence, clever expression, bright intelligent eyes, confident posture suggesting both amusement and self-awareness",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "but you shall do as you choose."
+    },
+    {
+      "id": "image-5",
+      "scene_title": "The Letter's Secret Contents",
+      "style": "Renaissance oil painting",
+      "alt_text": "A folded letter held contemplatively, symbolizing hidden knowledge and discretion",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting still life of a sealed letter on a small table alongside folded hands, symbolizing confidential communication and discretion, muted earth tones, intimate interior setting with window light",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Dutch Golden Age style intimate scene of a private letter being carefully considered, woman in contemplation over personal correspondence, warm candlelit atmosphere suggesting confidential matters",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "We must not make him desperate."
+    },
+    {
+      "id": "image-6",
+      "scene_title": "Jane's Quiet Suffering",
+      "style": "Renaissance oil painting",
+      "alt_text": "Jane alone in contemplation, her unrequited love for Bingley evident in her pensive demeanor",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a solitary young woman gazing out a window, backward-facing pose showing contemplation, soft natural light, quiet garden visible, period bedroom or sitting room, atmosphere of gentle melancholy",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Botticelli-inspired scene of womanly resignation, seated figure with distant gaze, hands resting quietly, muted pastel colors conveying tender sorrow without despair, classical balance and harmony",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "The liberty of communication cannot be mine till it has lost\nall its value!"
+    },
+    {
+      "id": "image-7",
+      "scene_title": "Mrs. Bennet's Dramatic Predictions",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mrs. Bennet making exaggerated gestures while speaking dramatically to Elizabeth",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a middle-aged woman in elaborate dress speaking animatedly with dramatic hand gestures, listening figure maintaining stoic composure, domestic interior suggesting family tensions, theatrical composition emphasizing the speaker's theatrical nature",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Baroque style portrait of a mother figure in animated discussion, flamboyant gestures, dramatically lit scene suggesting melodrama and exaggeration, contrasting with a composed younger listener",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "only entailed on me."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-1",
+      "quote": "Elizabeth's impatience to acquaint Jane with what had happened could no longer be overcome.",
+      "anchor_text": "date: 2026-02-16\nauthors: ['jane-austen']\ntags: ['jane-austen', 'classic-literature', 'pride-and-prejudice']\nnovel: 'pride-and-prejudice'\nchapter_number: 40\ndraft: false\n---\n\n[Illustration]\n\nElizabeth\u2019s impatience to acquaint Jane with what had happened could no\nlonger be overcome; and at length resolving to suppress every particular\nin which her sister was concerned, and preparing her to be surprised,\nshe related to her the next morning the chief of the scene between Mr."
+    },
+    {
+      "id": "quote-2",
+      "quote": "Miss Bennet's astonishment was soon lessened by the strong sisterly partiality which made any admiration of Elizabeth appear perfectly natural.",
+      "anchor_text": "strong sisterly\npartiality which made any admiration of Elizabeth appear perfectly\nnatural"
+    },
+    {
+      "id": "quote-3",
+      "quote": "Jane, who would willingly have gone through the world without believing that so much wickedness existed in the whole race of mankind as was here collected in one individual!",
+      "anchor_text": "so much wickedness existed in the whole race of mankind as was here\ncollected in one individual"
+    },
+    {
+      "id": "quote-4",
+      "quote": "There is but such a quantity of merit between them; just enough to make one good sort of man; and of late it has been shifting about pretty much.",
+      "anchor_text": "There is but such a quantity of merit between them; just\nenough to make one good sort of man; and of late it has been shifting\nabout pretty much."
+    },
+    {
+      "id": "quote-5",
+      "quote": "It is such a spur to one's genius, such an opening for wit, to have a dislike of that kind.",
+      "anchor_text": "It is such a spur to one\u2019s genius, such an\nopening for wit, to have a dislike of that kind."
+    },
+    {
+      "id": "quote-6",
+      "quote": "Oh, how I wanted you!",
+      "anchor_text": "Oh, how I wanted you!"
+    },
+    {
+      "id": "quote-7",
+      "quote": "The liberty of communication cannot be mine till it has lost all its value!",
+      "anchor_text": "The liberty of communication cannot be mine till it has lost\nall its value!"
+    }
+  ],
+  "insertion_methods": {
+    "analysis": "inserted at paragraph breaks",
+    "image_prompts": "referenced by anchor text",
+    "quotes": "integrated into analysis"
+  },
+  "summary": "Chapter XL of Pride and Prejudice centers on Elizabeth's confidential conversation with Jane, wherein she reveals Darcy's proposal, her refusal, and the contents of his letter exposing Wickham's true character. The chapter highlights the sisters' contrasting temperaments\u2014Elizabeth's spirited wit and Jane's gentle idealism\u2014while exploring themes of sisterhood, moral judgment, social discretion, and unrequited love. Elizabeth decides to keep Bingley's interest in Jane secret, and the chapter concludes with Mrs. Bennet's typical emotional excesses regarding Jane's situation and the Collinses' future inheritance of Longbourn."
+}

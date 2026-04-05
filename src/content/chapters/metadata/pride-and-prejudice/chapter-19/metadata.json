@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: Chapter XIX",
+  "enhanced_title": "Mr. Collins' Proposal: A Study in Delusion and Elizabeth's Defiance",
+  "author": "Jane Austen",
+  "description": "This chapter presents Mr. Collins' elaborate, self-serving marriage proposal to Elizabeth Bennet, showcasing his pomposity, Lady Catherine's influence, and Elizabeth's principled rejection despite social pressures.",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "Chapter XIX",
+    "source_text_file": "pride-and-prejudice-chapter-19.md",
+    "metadata_file": "pride-and-prejudice-chapter-19-metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "analysis_entries": "Literary Commentary",
+    "image_prompt_entries": "Visual Scene Depictions",
+    "quote_entries": "Notable Quotations"
+  },
+  "analysis_entries": [
+    {
+      "id": "a1",
+      "paragraph": "Mr. Collins' proposal exemplifies Austen's mastery of ironic characterization and satirical prose. His methodical enumeration of reasons for marrying—setting an example for his parish, personal happiness, and Lady Catherine's recommendation—reveals not genuine affection but self-interest and social obligation. The absurdity of his 'violence of my affection' declaration, preceded by calculating paragraphs about entailment and financial practicalities, creates comedic tension that exposes the mercenary nature of many Regency marriages. Austen contrasts Collins' clerical pomposity with Elizabeth's quick wit and moral integrity throughout the scene.",
+      "anchor_text_end_of_sentence": "Having resolved to do it without loss of time, as\nhis leave of absence extended only to the following Saturday, and having\nno feelings of diffidence to make it distressing to himself even at the\nmoment, he set about it in a very orderly manner, with all the\nobservances which he supposed a regular part of the business."
+    },
+    {
+      "id": "a2",
+      "paragraph": "The power dynamics between mother and daughter drive the scene's opening drama. Mrs. Bennet's eagerness to secure Elizabeth's compliance—her immediate agreement, her assertion that Lizzy 'can have no objection,' and her maternal insistence—reveals a mother's desperate socio-economic anxiety. The entailment that threatens Longbourn transforms maternal affection into strategic maneuvering. Elizabeth's vexed embarrassment and attempted escape are overridden by her mother's injunction, yet her eventual acquiescence reflects pragmatic wisdom: a moment's consideration making her also sensible that it would be wisest to get it over as soon and as quietly as possible.",
+      "anchor_text_end_of_sentence": "Elizabeth would not oppose such an injunction; and a moment’s\nconsideration making her also sensible that it would be wisest to get it\nover as soon and as quietly as possible, she sat down again, and tried\nto conceal, by incessant employment, the feelings which were divided\nbetween distress and diversion."
+    },
+    {
+      "id": "a3",
+      "paragraph": "Lady Catherine de Bourgh casts a long shadow over this proposal, illustrating how aristocratic influence penetrates every level of provincial society. Mr. Collins presents her patronage as a marital asset, describing her unsolicited advice with reverential detail—the quadrille game, Mrs. Jenkinson arranging the footstool, the verbatim quotation of her imperious commands. This absurd deference to rank exposes how the gentry-class clergy internalized aristocratic values. Elizabeth's response—that Lady Catherine would find her in every respect ill qualified for the situation—demonstrates her recognition that Collins' criteria and her own values are fundamentally incompatible.",
+      "anchor_text_end_of_sentence": "Nay, were your friend Lady Catherine to know me, I\nam persuaded she would find me in every respect ill qualified for the\nsituation."
+    },
+    {
+      "id": "a4",
+      "paragraph": "The rhetoric of Mr. Collins' proposal deserves careful analysis as a specimen of Austen's comic genius. His declaration unravels through careful logical exposition: first, why clergy should marry; second, his advantageous situation; third, his connection to Longbourn's entailment. The proposal's climax—his promise of silence about her small fortune—intended as generous forbearance, ironically underscores his complete misunderstanding of romantic language. His insistence that it is usual with young ladies to reject the addresses of the man whom they secretly mean to accept reveals the dangerous assumptions about women that preserved patriarchal structures.",
+      "anchor_text_end_of_sentence": "“I am not now to learn,” replied Mr. Collins, with a formal wave of the\nhand, “that it is usual with young ladies to reject the addresses of the\nman whom they secretly mean to accept, when he first applies for their\nfavour; and that sometimes the refusal is repeated a second or even a\nthird time. I am, therefore, by no means discouraged by what you have\njust said, and shall hope to lead you to the altar ere long.”"
+    },
+    {
+      "id": "a5",
+      "paragraph": "Elizabeth's refusal tactics evolve throughout the exchange, showcasing her rhetorical skill under pressure. Initial directness ('it is impossible for me to do otherwise than decline them') yields to elaborate self-explanation ('I am the last woman in the world who would make you so') and finally philosophical distinction ('as a rational creature speaking the truth from her heart'). Her repeated insistence on plain speaking—'Can I speak plainer?'—highlights the absurdity that her clarity requires such labor. The contrast between Collins' elaborate circumlocutions and Elizabeth's demand for transparent communication embodies Enlightenment values of reason over social pretense.",
+      "anchor_text_end_of_sentence": "Can I speak plainer?"
+    },
+    {
+      "id": "a6",
+      "paragraph": "The theme of entailment pervades this chapter as both plot device and social critique. Mr. Collins frames his choice of Longbourn daughters as benevolent mitigation of their eventual loss, yet his phrasing—'when the melancholy event takes place'—betrays eager anticipation masked as concern. This economic reality, which makes Mrs. Bennet so desperate and Elizabeth's refusal so risky, illuminates how property law shaped women's destinies. Elizabeth's small portion of one thousand pounds in the 4 per cents., which will not be yours till after your mother's decease, becomes both weapon and vulnerability—Collins' weapon in attempted persuasion, and the economic reason women could not afford principled refusal.",
+      "anchor_text_end_of_sentence": ", which will not be yours till after your mother’s\ndecease, is all that you may ever be entitled to."
+    },
+    {
+      "id": "a7",
+      "paragraph": "The chapter's conclusion establishes Elizabeth's father as her necessary protector against social coercion. Her determination to apply to her father, whose negative might be uttered in such a manner as must be decisive, reveals Austen's exploration of father-daughter bonds as crucial bulwarks against improper matches. The paternal veto represents one of few avenues of female agency available to women in Austen's world. Mr. Bennet's anticipated behaviour is explicitly contrasted with the affectation and coquetry of an elegant female falsely attributed to Elizabeth, suggesting that authentic masculine authority can recognize genuine feminine rationality where deluded suitors see only strategic flirtation.",
+      "anchor_text_end_of_sentence": "”\n\nTo such perseverance in wilful self-deception Elizabeth would make no\nreply, and immediately and in silence withdrew; determined, that if he\npersisted in considering her repeated refusals as flattering\nencouragement, to apply to her father, whose negative might be uttered\nin such a manner as must be decisive, and whose behaviour at least could\nnot be mistaken for the affectation and coquetry of an elegant female."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "i1",
+      "scene_title": "The Morning Drawing Room at Longbourn",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mrs. Bennet, Elizabeth, and Kitty gathered in the morning light of the Longbourn drawing room as Mr. Collins prepares his declaration",
+      "variations": [
+        {
+          "variation_id": "i1-v1",
+          "prompt_text": "Renaissance oil painting of a modest English country house drawing room in morning light, showing three women in early 19th century dresses with needlework and tea things, a portly clergyman entering with solemn expression, soft window light, rich fabrics and period furniture, warm domestic atmosphere tinged with tension",
+          "output_asset": "collins_enters_drawing_room.png"
+        },
+        {
+          "variation_id": "i1-v2",
+          "prompt_text": "Renaissance oil painting of an intimate interior scene, mother in pale morning dress seated with daughters, younger girl with work basket, middle daughter blushing with surprise, doors open to garden light, detailed period textiles and furniture in the style of Vermeer's domestic scenes",
+          "output_asset": "bennet_family_morning.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "On finding\nMrs."
+    },
+    {
+      "id": "i2",
+      "scene_title": "Elizabeth's Embarrassed Escape",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth attempting to leave the room with vexed and embarrassed expression while her mother insists she stay",
+      "variations": [
+        {
+          "variation_id": "i2-v1",
+          "prompt_text": "Renaissance oil painting of a young woman in Regency dress rising hastily from a chair, face flushed with embarrassment, body turned toward an exit door while an older woman gestures authoritatively to stop her, domestic interior with soft morning light, emotional tension captured in poses and expressions",
+          "output_asset": "elizabeth_escapes_embarrassed.png"
+        },
+        {
+          "variation_id": "i2-v2",
+          "prompt_text": "Renaissance oil painting in the manner of Dutch Golden Age genre scenes, young woman in white muslin dress half-rising from seat, face showing vexation and distress, maternal figure with raised hand commanding her to stay, sisters departing in background, dramatic chiaroscuro lighting",
+          "output_asset": "lizzy_embarrassed_exit.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr."
+    },
+    {
+      "id": "i3",
+      "scene_title": "Mr. Collins' Pompous Declaration",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins standing before Elizabeth delivering his elaborate marriage proposal with formal solemnity",
+      "variations": [
+        {
+          "variation_id": "i3-v1",
+          "prompt_text": "Renaissance oil painting of a stout clergyman in black coat and white neckcloth standing formally before a seated young woman, one hand raised in rhetorical gesture, self-important expression, seated woman maintaining composed posture while concealing amusement, period interior with detailed fabrics and wood paneling, dignified absurdity",
+          "output_asset": "collins_proposal_solemn.png"
+        },
+        {
+          "variation_id": "i3-v2",
+          "prompt_text": "Renaissance oil painting in the style of English portraiture, heavy-set parson delivering rehearsed speech, young lady in empire-waist gown seated with hands clasped, expression of contained irony, domestic setting with books and needlework visible, warm candlelit atmosphere, contrast between speaker's earnestness and listener's hidden mirth",
+          "output_asset": "collins_declares_formally.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr."
+    },
+    {
+      "id": "i4",
+      "scene_title": "Lady Catherine's Phantom Presence",
+      "style": "Renaissance oil painting",
+      "alt_text": "A vision of Lady Catherine de Bourgh presiding over quadrille while Mr. Collins quotes her marriage advice",
+      "variations": [
+        {
+          "variation_id": "i4-v1",
+          "prompt_text": "Renaissance oil painting as imaginative insert, aristocratic lady in elaborate evening dress seated at card table, disdainful expression, companion arranging footstool, standing clergyman taking notes with reverential posture, luxurious drawing room with rich draperies and candlelight, allegory of patronage and social hierarchy",
+          "output_asset": "lady_catherine_quadrille.png"
+        },
+        {
+          "variation_id": "i4-v2",
+          "prompt_text": "Renaissance oil painting fantasy scene, imperious noblewoman in magnificent gown gesturing commandingly, seated at card table with playing cards visible, humble clergyman leaning in to catch every word, servant adjusting furniture, gilded interior suggesting Rosings Park, dramatic lighting emphasizing social distance",
+          "output_asset": "patroness_commands_collins.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr."
+    },
+    {
+      "id": "i5",
+      "scene_title": "Elizabeth's Direct Refusal",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth rising from her seat delivering her determined rejection with clear and firm expression",
+      "variations": [
+        {
+          "variation_id": "i5-v1",
+          "prompt_text": "Renaissance oil painting of a young woman in Regency dress standing with determined posture, hands slightly raised in gesture of rejection, face showing sincerity and resolve, seated disappointed suitor in background, domestic interior, dramatic moment of feminine agency, clear lighting emphasizing moral clarity",
+          "output_asset": "elizabeth_refuses_directly.png"
+        },
+        {
+          "variation_id": "i5-v2",
+          "prompt_text": "Renaissance oil painting in the manner of history painting, young heroine figure standing resolute against seated suitor, classical posture suggesting virtue and truth, white muslin dress catching window light, composed expression of plain dealing, period room with rich details, moment of moral victory",
+          "output_asset": "lizzy_stands_refused.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Accept my thanks for\nthe compliment you are paying me."
+    },
+    {
+      "id": "i6",
+      "scene_title": "The Argument Over Encouragement",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth and Mr. Collins engaged in their heated exchange about whether her refusal constitutes encouragement",
+      "variations": [
+        {
+          "variation_id": "i6-v1",
+          "prompt_text": "Renaissance oil painting of two figures in animated discussion, young woman leaning forward with frustrated expression, gesturing for emphasis, seated clergyman with hand raised in placating gesture and self-satisfied smile, domestic interior with soft lighting, emotional tension through body language, period costume details",
+          "output_asset": "argument_encouragement_dispute.png"
+        },
+        {
+          "variation_id": "i6-v2",
+          "prompt_text": "Renaissance oil painting of verbal duel, standing woman with animated expression and warmth, seated man with formal wave and complacent expression, contrast between genuine emotion and social pretense, Regency interior with furniture and fabrics, dramatic lighting highlighting the misunderstanding",
+          "output_asset": "collins_misreads_refusal.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr."
+    },
+    {
+      "id": "i7",
+      "scene_title": "Elizabeth's Silent Withdrawal",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth leaving the room in determined silence as Mr. Collins continues to misunderstand her rejection",
+      "variations": [
+        {
+          "variation_id": "i7-v1",
+          "prompt_text": "Renaissance oil painting of a young woman making her exit through a doorway, back turned to the viewer, graceful but determined posture, seated figure in background still gesturing as if speaking, soft light from adjacent room illuminating her figure, domestic interior suggesting both confinement and escape",
+          "output_asset": "elizabeth_withdraws_silently.png"
+        },
+        {
+          "variation_id": "i7-v2",
+          "prompt_text": "Renaissance oil painting in the style of narrative genre scenes, heroine departing room with composed dignity, flowing dress suggesting movement, oblivious suitor still seated gesturing with awkward gallantry, interior details of drawing room fading into background, light from the doorway suggesting freedom, psychological complexity in composition",
+          "output_asset": "lizzy_exit_determined.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "To such perseverance in wilful self-deception Elizabeth would make no\nreply, and immediately and in silence withdrew; determined, that if he\npersisted in considering her repeated refusals as flattering\nencouragement, to apply to her father, whose negative might be uttered\nin such a manner as must be decisive, and whose behaviour at least could\nnot be mistaken for the affectation and coquetry of an elegant female."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "q1",
+      "quote": "May I hope, madam, for your interest with your fair daughter Elizabeth, when I solicit for the honour of a private audience with her in the course of this morning?",
+      "anchor_text": "Bennet, Elizabeth, and one of the younger girls together, soon\nafter breakfast, he addressed the mother in these words,--\n\n“May I hope, madam, for your interest with your fair daughter Elizabeth,\nwhen I solicit for the honour of a private audience with her in the\ncourse of this morning?"
+    },
+    {
+      "id": "q2",
+      "quote": "Dear ma'am, do not go. I beg you will not go. Mr. Collins must excuse me. He can have nothing to say to me that anybody need not hear. I am going away myself.",
+      "anchor_text": "Mr."
+    },
+    {
+      "id": "q3",
+      "quote": "My reasons for marrying are, first, that I think it a right thing for every clergyman in easy circumstances (like myself) to set the example of matrimony in his parish; secondly, that I am convinced it will add very greatly to my happiness; and, thirdly, which perhaps I ought to have mentioned earlier, that it is the particular advice and recommendation of the very noble lady whom I have the honour of calling patroness.",
+      "anchor_text": "Collins, with all his solemn composure, being run away\nwith by his feelings, made Elizabeth so near laughing that she could not\nuse the short pause he allowed in any attempt to stop him farther, and\nhe continued,--\n\n“My reasons for marrying are, first, that I think it a right thing for\nevery clergyman in easy circumstances (like myself) to set the example\nof matrimony in his parish; secondly, that I am convinced it will add\nvery greatly to my happiness; and, thirdly, which perhaps I ought to\nhave mentioned earlier, that it is the particular advice and\nrecommendation of the very noble lady whom I have the honour of calling\npatroness."
+    },
+    {
+      "id": "q4",
+      "quote": "Mr. Collins, you must marry. A clergyman like you must marry. Choose properly, choose a gentlewoman for my sake, and for your own; let her be an active, useful sort of person, not brought up high, but able to make a small income go a good way.",
+      "anchor_text": "Mr."
+    },
+    {
+      "id": "q5",
+      "quote": "Accept my thanks for the compliment you are paying me. I am very sensible of the honour of your proposals, but it is impossible for me to do otherwise than decline them.",
+      "anchor_text": "Accept my thanks for\nthe compliment you are paying me."
+    },
+    {
+      "id": "q6",
+      "quote": "I do assure you that I am not one of those young ladies (if such young ladies there are) who are so daring as to risk their happiness on the chance of being asked a second time. I am perfectly serious in my refusal.",
+      "anchor_text": "I do assure you that I am not\none of those young ladies (if such young ladies there are) who are so\ndaring as to risk their happiness on the chance of being asked a second\ntime."
+    },
+    {
+      "id": "q7",
+      "quote": "Do not consider me now as an elegant female intending to plague you, but as a rational creature speaking the truth from her heart.",
+      "anchor_text": "Do not consider me now as an elegant\nfemale intending to plague you, but as a rational creature speaking the\ntruth from her heart."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_entries": "Sectional commentary following each major narrative beat",
+    "image_prompt_entries": "Visual accompaniment for key dramatic moments",
+    "quote_entries": "Epigraphic extraction for social media and educational use"
+  },
+  "summary": "Chapter XIX of Pride and Prejudice presents Mr. Collins' infamous marriage proposal to Elizabeth Bennet, a masterclass in Austen's comic irony and social critique. Through Collins' methodical, self-serving declaration—framed by obligations to his parish, himself, and Lady Catherine de Bourgh—Austen exposes the mercenary nature of many Regency marriages and the grotesque entitlement of mediocre men. Elizabeth's principled refusal, met with Collins' willful misinterpretation as feminine 'delicacy,' highlights the incompatibility between genuine feeling and social performance. The chapter interrogates women's economic vulnerability through the entailment system while celebrating Elizabeth's rational agency and moral integrity, ultimately establishing Mr. Bennet as the necessary arbiter of his daughter's refusal."
+}

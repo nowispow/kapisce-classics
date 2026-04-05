@@ -1,0 +1,72 @@
+{
+  "pipeline_version": "5.0",
+  "novel_slug": "pride-and-prejudice",
+  "chapter_slug": "chapter-48",
+  "status": "pending",
+  "phase": "assembled",
+  "retry_count": 0,
+  "rejection_reason": null,
+  "last_updated": "2026-04-01T11:00:18Z",
+  "steps": {
+    "analysis_metadata_generation": "done",
+    "reviewer_metadata_quality_assurance": "pending",
+    "format_enforced": "pending",
+    "image_generation": "pending",
+    "metadata_content_insertion": "done",
+    "holistic_quality_assurance": "pending",
+    "translation_initialization": "pending",
+    "translation_batch_processing": "pending",
+    "analysis_metadata_enhancement": "pending"
+  },
+  "output_files": {
+    "metadata_yaml": "metadata.yaml",
+    "metadata_json": "metadata.json",
+    "enhanced_mdx": "/workspace/chapters/pride-and-prejudice-chapter-48-enhanced.mdx",
+    "translations": {},
+    "metadata": "metadata.json"
+  },
+  "image_progress": {
+    "completed": 0,
+    "last_scene_completed": 0,
+    "total_scenes": 7,
+    "variants_per_scene": 2
+  },
+  "metadata_validation": {
+    "last_checked": null,
+    "passed": true,
+    "errors": []
+  },
+  "translation": {
+    "status": "blocked",
+    "ready": false,
+    "ready_after_step": "holistic_quality_assurance",
+    "source_mdx": null,
+    "active_language": null,
+    "batch_size_chars": 2800,
+    "last_synced": "2026-04-01T11:00:18Z",
+    "target_languages": [
+      "ar",
+      "bn",
+      "de",
+      "es",
+      "fa",
+      "fr",
+      "ha",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "pt",
+      "ru",
+      "sw",
+      "th",
+      "tr",
+      "vi",
+      "zh-TW"
+    ],
+    "languages": {}
+  },
+  "summary": "Pipeline complete. Chapter is ready for the holistic QA and translation phase. ACTION: Await human holistic review."
+}

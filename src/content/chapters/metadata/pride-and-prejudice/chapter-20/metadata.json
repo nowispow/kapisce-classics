@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: Chapter XX",
+  "enhanced_title": "Chapter Twenty: The Rejection and Its Aftermath",
+  "author": "Jane Austen",
+  "description": "In Chapter 20 of Pride and Prejudice, Elizabeth Bennet's rejection of Mr. Collins's marriage proposal creates significant family turmoil. Mr. Collins, convinced Elizabeth's refusal stems from feminine modesty, must be disabused of this notion by Mrs. Bennet, who desperately seeks to salvage the match. Mr. Bennet intervenes with characteristic wit, offering Elizabeth an ironic choice between her parents' favor. Despite Mrs. Bennet's continued pressure and emotional appeals, Elizabeth remains steadfast. Mr. Collins, nursing wounded pride but no real affection, eventually withdraws his suit with formal resignation. The chapter satirizes the mercenary concerns of marriage and the comic dynamics of the Bennet household.",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "Chapter XX",
+    "source_text_file": "pride-and-prejudice_chapter_20.md",
+    "metadata_file": "pride-and-prejudice_chapter_20_metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7
+  },
+  "field_aliases": {
+    "analysis_entries": "literary_analysis",
+    "image_prompt_entries": "visual_compositions",
+    "quote_entries": "notable_quotations"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis_01",
+      "paragraph": "Mr. Collins's inability to comprehend Elizabeth's genuine refusal demonstrates his profound self-delusion and the dangerous irony of interpreting a woman's clear 'no' as coquettish encouragement. His character embodies how social conventions around courtship can be weaponized to dismiss female agency. Austen makes plain that his attachment was never real: his regard for her was quite imaginary, and wounded pride rather than wounded feeling is all he suffers.",
+      "anchor_text_end_of_sentence": "His regard for her was quite imaginary; and the possibility of her\ndeserving her mother’s reproach prevented his feeling any regret."
+    },
+    {
+      "id": "analysis_02",
+      "paragraph": "Mrs. Bennet's frantic reaction reveals the desperate economic anxiety driving her maternal pressure. Her contradictory characterization of Elizabeth—simultaneously 'headstrong, foolish' yet 'good-natured'—shows how mothers in this society must perform rhetorical gymnastics to make their daughters marriageable while explaining away resistance. The speed of her exit from Mr. Collins is itself comic: she would not give him time to reply, but hurrying instantly to her husband, called out, as she entered the library.",
+      "anchor_text_end_of_sentence": "She would not give him time to reply, but hurrying instantly to her\nhusband, called out, as she entered the library,--"
+    },
+    {
+      "id": "analysis_03",
+      "paragraph": "Mr. Bennet's intervention represents the moral center of the chapter, using irony as a weapon against social coercion. His famous declaration subverts patriarchal expectations by supporting his daughter's autonomy through paradox, framing the choice as an impossible double bind that exposes the absurdity of the pressure placed on Elizabeth. The pronouncement—'An unhappy alternative is before you, Elizabeth. From this day you must be a stranger to one of your parents'—is at once comic and genuinely protective.",
+      "anchor_text_end_of_sentence": "From this day you must\nbe a stranger to one of your parents."
+    },
+    {
+      "id": "analysis_04",
+      "paragraph": "The contrast between Jane's mild retreat from interference and Elizabeth's spirited resistance highlights Austen's exploration of different modes of feminine strength. Jane's gentleness and Elizabeth's wit represent complementary strategies for navigating a society that devalues women's choices. The narrator captures this duality precisely: Jane, with all possible mildness, declined interfering; and Elizabeth, sometimes with real earnestness, and sometimes with playful gaiety, replied to her attacks.",
+      "anchor_text_end_of_sentence": "She endeavoured to secure Jane in\nher interest, but Jane, with all possible mildness, declined\ninterfering; and Elizabeth, sometimes with real earnestness, and\nsometimes with playful gaiety, replied to her attacks."
+    },
+    {
+      "id": "analysis_05",
+      "paragraph": "Lydia's characterization as the eavesdropping, gossip-hungry sister introduces comic relief while foreshadowing her later indiscretions. Her whispered announcement of the 'fun' to Charlotte Lucas transforms domestic crisis into entertainment, revealing the performative nature of social scandal. The scene is crystallized in her greeting: she was met in the vestibule by Lydia, who, flying to her, cried in a half whisper, 'I am glad you are come, for there is such fun here!'",
+      "anchor_text_end_of_sentence": "She was met in the vestibule by Lydia, who, flying to\nher, cried in a half whisper, “I am glad you are come, for there is such\nfun here!"
+    },
+    {
+      "id": "analysis_06",
+      "paragraph": "Mrs. Bennet's theatrical self-pity—claiming exclusive suffering while dismissing others' perspectives—exemplifies Austen's critique of sensibility culture gone awry. Her declaration that 'those who do not complain are never pitied' ironically indicts her own manipulative deployment of emotion, since she does nothing but complain. The daughters' silent endurance is the only rational response: her daughters listened in silence to this effusion, sensible that any attempt to reason with or soothe her would only increase the irritation.",
+      "anchor_text_end_of_sentence": "Her daughters listened in silence to this effusion, sensible that any\nattempt to reason with or soothe her would only increase the irritation."
+    },
+    {
+      "id": "analysis_07",
+      "paragraph": "Mr. Collins's final speech, with its formal withdrawal and paradoxical resignation, showcases Austen's mastery of mock-heroic style. His elaborate justification—claiming he withdraws to avoid burdening the family with intercession—preserves his dignity through self-serving rhetorical flourishes while revealing his complete lack of genuine feeling for Elizabeth. The speech culminates in a characteristic blend of wounded pride and hollow magnanimity: 'My object has been to secure an amiable companion for myself, with due consideration for the advantage of all your family; and if my manner has been at all reprehensible, I here beg leave to apologize.'",
+      "anchor_text_end_of_sentence": "My object has been to secure an amiable companion for myself, with due\nconsideration for the advantage of all your family; and if my _manner_\nhas been at all reprehensible, I here beg leave to apologize."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image_01",
+      "scene_title": "The Vestibule Aftermath",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth Bennet hurrying past her lurking mother in the vestibule after refusing Mr. Collins",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a modest country house vestibule, a young woman in Regency dress with hurried step ascending a wooden staircase, an older woman peeking from behind a door frame with eager expression, morning light streaming through a window, oil on canvas, dramatic chiaroscuro, rich warm tones of oak and cream",
+          "output_asset": "vestibule_aftermath_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Classical Renaissance oil painting style depicting an English country house interior, elegant young lady in white muslin gown with pink ribbon hurrying up stairs, matronly figure in doorway with anxious anticipation, domestic architecture details, soft natural lighting, deep shadows, fine brushwork in the manner of Vermeer",
+          "output_asset": "vestibule_aftermath_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "no sooner saw Elizabeth open the\ndoor and with quick step pass her towards the staircase, than she\nentered the breakfast-room, and congratulated both him and herself in\nwarm terms on the happy prospect of their nearer connection."
+    },
+    {
+      "id": "image_02",
+      "scene_title": "Mr. Bennet's Library",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Bennet raising his eyes from his book to contemplate Mrs. Bennet with calm unconcern in his library",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of an English gentleman's book-lined library, middle-aged man seated in leather armchair holding an open volume, looking up with dry amusement at a woman entering through the door, warm candlelight and daylight mixture, shelves of leather-bound books, rich mahogany and burgundy tones, detailed wood grain textures",
+          "output_asset": "bennet_library_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Masterful oil painting in Renaissance tradition showing a study with floor-to-ceiling bookshelves, gentleman reader with ironic expression looking up from his book, wife framed in doorway animatedly speaking, atmospheric lighting from tall windows, scholarly interior with globe and writing desk, palette of deep greens and browns",
+          "output_asset": "bennet_library_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr. Bennet raised his eyes from his book as she entered, and fixed them\non her face with a calm unconcern, which was not in the least altered by\nher communication."
+    },
+    {
+      "id": "image_03",
+      "scene_title": "The Library Conference",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth standing before her parents in the library during the crucial marriage discussion",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of three figures in an intimate library setting, young woman standing with composed dignity facing seated parents, father in armchair with book, mother standing with animated gesturing, dramatic triangular composition, soft window light from left, psychological tension visible in faces, rich interior details",
+          "output_asset": "library_conference_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Classical oil painting depicting a family confrontation in a gentleman's study, daughter in prideful stance before seated father and standing mother, library shelves as backdrop, natural daylight creating dramatic shadows, emotional resonance in facial expressions, warm palette of amber and wood tones, fine period costume details",
+          "output_asset": "library_conference_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Let her be called down. She shall hear my opinion."
+    },
+    {
+      "id": "image_04",
+      "scene_title": "Elizabeth's Defiance",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth smiling at her father's ironic pronouncement while Mrs. Bennet reacts with disappointment",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting capturing a moment of ironic family drama, young woman's face breaking into smile of relief and understanding, contrasted with matron's expression of crestfallen dismay, seated gentleman observer with sardonic satisfaction, three-figure composition, rich psychological portraiture, warm interior lighting",
+          "output_asset": "elizabeth_defiance_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Oil painting in manner of Dutch Golden Age depicting domestic emotional scene, daughter's amused expression versus mother's theatrical disappointment, father's knowing observation from his chair, dramatic facial expressions telling the story, deep rich shadows, intimate family setting with period detail",
+          "output_asset": "elizabeth_defiance_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Elizabeth could not but smile at such a conclusion of such a beginning;\nbut Mrs. Bennet, who had persuaded herself that her husband regarded the\naffair as she wished, was excessively disappointed."
+    },
+    {
+      "id": "image_05",
+      "scene_title": "Lydia's Whispered Gossip",
+      "style": "Renaissance oil painting",
+      "alt_text": "Lydia eagerly whispering news to Charlotte Lucas in the vestibule with animated excitement",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of two young women in a country house entrance hall, one girl leaning forward with enthusiastic whisper, hands gesturing, the other receiving news with surprised interest, natural light from doorway, youthful energy and animation captured in poses, soft pastel dresses against warm stone walls",
+          "output_asset": "lydia_whisper_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Classical oil painting depicting animated conversation in a vestibule, younger woman in lively whispered exchange with visitor, expressions of excitement and surprise, architectural details of country house entrance, flowing drapery on Regency gowns, natural lighting creating atmosphere of domestic drama",
+          "output_asset": "lydia_whisper_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "She was met in the vestibule by Lydia, who, flying to\nher, cried in a half whisper, “I am glad you are come, for there is such\nfun here!"
+    },
+    {
+      "id": "image_06",
+      "scene_title": "Mrs. Bennet's Address",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mrs. Bennet making an emotional appeal to her daughters in the breakfast room, gesturing dramatically",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a mother addressing her daughters in a breakfast room, matronly figure with theatrical gesture of lamentation, three young women listening with varying expressions of patience and resignation, domestic interior with breakfast table, morning light, rich emotional drama captured through body language and facial expressions",
+          "output_asset": "bennet_address_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Oil painting in classical tradition showing a family scene in a morning room, dramatic mother figure center stage with emotional appeal, daughters as passive audience, period breakfast setting with china and linen, natural window light, composition emphasizing the theatricality of domestic life, warm interior palette",
+          "output_asset": "bennet_address_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Her daughters listened in silence to this effusion, sensible that any\nattempt to reason with or soothe her would only increase the irritation."
+    },
+    {
+      "id": "image_07",
+      "scene_title": "Mr. Collins's Resignation",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins making a formal and stately withdrawal speech with Mrs. Bennet in the breakfast room",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting depicting a formal resignation scene, portly clergyman with stately posture and dignified expression addressing a seated matron, air of wounded pride and elaborate courtesy, domestic breakfast room setting transformed into stage for social ritual, rich detail in clerical attire and modest gentility, dramatic lighting emphasizing the theatrical nature",
+          "output_asset": "collins_resignation_v1.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Classical oil painting showing a parish clergyman in formal withdrawal from a courtship, pompous dignity and affected resignation in pose and expression, seated lady receiving the formal address, domestic interior elevated by dramatic composition, psychological tension between social pretension and actual feeling, warm earthy tones",
+          "output_asset": "collins_resignation_v2.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "My object has been to secure an amiable companion for myself, with due\nconsideration for the advantage of all your family; and if my _manner_\nhas been at all reprehensible, I here beg leave to apologize."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_01",
+      "quote": "She is a very headstrong, foolish girl, and does not know her own interest; but I will make her know it.",
+      "anchor_text": "She is\na very headstrong, foolish girl, and does not know her own interest; but\nI will _make_ her know it."
+    },
+    {
+      "id": "quote_02",
+      "quote": "If, therefore, she actually persists in rejecting my suit, perhaps it were better not to force her into accepting me, because, if liable to such defects of temper, she could not contribute much to my felicity.",
+      "anchor_text": "If, therefore, she\nactually persists in rejecting my suit, perhaps it were better not to\nforce her into accepting me, because, if liable to such defects of\ntemper, she could not contribute much to my felicity."
+    },
+    {
+      "id": "quote_03",
+      "quote": "An unhappy alternative is before you, Elizabeth. From this day you must be a stranger to one of your parents. Your mother will never see you again if you do not marry Mr. Collins, and I will never see you again if you do.",
+      "anchor_text": "An unhappy alternative is before you, Elizabeth. From this day you must\nbe a stranger to one of your parents."
+    },
+    {
+      "id": "quote_04",
+      "quote": "I have two small favours to request. First, that you will allow me the free use of my understanding on the present occasion; and, secondly, of my room.",
+      "anchor_text": "First, that you will allow me the free use of my understanding on the\npresent occasion; and, secondly, of my room."
+    },
+    {
+      "id": "quote_05",
+      "quote": "I am glad you are come, for there is such fun here! What do you think has happened this morning? Mr. Collins has made an offer to Lizzy, and she will not have him.",
+      "anchor_text": "I am glad you are come, for there is such\nfun here! What do you think has happened this morning? Mr. Collins has\nmade an offer to Lizzy, and she will not have him."
+    },
+    {
+      "id": "quote_06",
+      "quote": "Those who do not complain are never pitied.",
+      "anchor_text": "Those who do not complain are never pitied."
+    },
+    {
+      "id": "quote_07",
+      "quote": "Resignation to inevitable evils is the duty of us all: the peculiar duty of a young man who has been so fortunate as I have been, in early preferment; and, I trust, I am resigned.",
+      "anchor_text": "Resignation to\ninevitable evils is the duty of us all: the peculiar duty of a young man\nwho has been so fortunate as I have been, in early preferment; and, I\ntrust, I am resigned."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_entries": "Embedded after anchor text paragraph",
+    "image_prompt_entries": "Placed at chapter head and section breaks",
+    "quote_entries": "Featured in pull-quotes and marginalia"
+  },
+  "summary": "Chapter XX of Pride and Prejudice centers on the fallout from Elizabeth Bennet's rejection of Mr. Collins's marriage proposal. The chapter explores themes of female agency versus economic necessity, parental authority, and the social performance of courtship. Mr. Collins's self-delusion, Mrs. Bennet's mercenary panic, and Mr. Bennet's ironic defense of his daughter create a rich satirical tapestry. Character interactions reveal the pressures facing young women in marriage negotiations while maintaining Austen's characteristic wit and psychological acuity."
+}

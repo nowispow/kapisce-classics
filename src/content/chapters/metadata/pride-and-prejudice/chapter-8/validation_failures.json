@@ -1,0 +1,590 @@
+{
+  "metadata_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/metadata/pride-and-prejudice/chapter-8/metadata.json",
+  "chapter_file": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-8.mdx",
+  "status": "fail",
+  "failure_count": 97,
+  "failures": [
+    {
+      "item_id": "metadata",
+      "field": "schema_version",
+      "reason": "Missing required top-level field.",
+      "suggested_fix": "Add `schema_version` using the reference metadata contract."
+    },
+    {
+      "item_id": "metadata",
+      "field": "title",
+      "reason": "Missing required top-level field.",
+      "suggested_fix": "Add `title` using the reference metadata contract."
+    },
+    {
+      "item_id": "metadata",
+      "field": "author",
+      "reason": "Missing required top-level field.",
+      "suggested_fix": "Add `author` using the reference metadata contract."
+    },
+    {
+      "item_id": "metadata",
+      "field": "source",
+      "reason": "Missing required top-level field.",
+      "suggested_fix": "Add `source` using the reference metadata contract."
+    },
+    {
+      "item_id": "metadata",
+      "field": "pattern_requirements",
+      "reason": "Missing required top-level field.",
+      "suggested_fix": "Add `pattern_requirements` using the reference metadata contract."
+    },
+    {
+      "item_id": "metadata",
+      "field": "field_aliases",
+      "reason": "Missing required top-level field.",
+      "suggested_fix": "Add `field_aliases` using the reference metadata contract."
+    },
+    {
+      "item_id": "metadata",
+      "field": "quote_callout_spec",
+      "reason": "Missing required top-level field.",
+      "suggested_fix": "Add `quote_callout_spec` using the reference metadata contract."
+    },
+    {
+      "item_id": "metadata",
+      "field": "agentic_generation",
+      "reason": "Missing required top-level field.",
+      "suggested_fix": "Add `agentic_generation` using the reference metadata contract."
+    },
+    {
+      "item_id": "metadata",
+      "field": "source",
+      "reason": "`source` must be an object.",
+      "suggested_fix": "Add source object with novel/chapter/source_text_file/metadata_file."
+    },
+    {
+      "item_id": "metadata",
+      "field": "quote_callout_spec",
+      "reason": "`quote_callout_spec` must be an object.",
+      "suggested_fix": "Copy this object from the reference metadata and adapt only values."
+    },
+    {
+      "item_id": "metadata",
+      "field": "description",
+      "reason": "Description must have at least 3 sentences, found 2.",
+      "suggested_fix": "Rewrite description into at least 3 complete sentences."
+    },
+    {
+      "item_id": "metadata",
+      "field": "field_aliases",
+      "reason": "`field_aliases` must be an object.",
+      "suggested_fix": "Define aliases for analysis_entries, image_prompt_entries, quote_entries."
+    },
+    {
+      "item_id": "metadata",
+      "field": "agentic_generation",
+      "reason": "`agentic_generation` must be an object.",
+      "suggested_fix": "Add agentic generation metadata with orchestrator and sub-agents."
+    },
+    {
+      "item_id": "analysis-1",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[1]`."
+    },
+    {
+      "item_id": "analysis-1",
+      "field": "paragraph",
+      "reason": "Paragraph is missing or empty.",
+      "suggested_fix": "Write a paragraph with at least 3 sentences."
+    },
+    {
+      "item_id": "analysis-1",
+      "field": "sentence_count",
+      "reason": "`sentence_count` must be an integer.",
+      "suggested_fix": "Set `sentence_count` to the actual paragraph sentence count."
+    },
+    {
+      "item_id": "analysis-1",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "analysis-2",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[2]`."
+    },
+    {
+      "item_id": "analysis-2",
+      "field": "paragraph",
+      "reason": "Paragraph is missing or empty.",
+      "suggested_fix": "Write a paragraph with at least 3 sentences."
+    },
+    {
+      "item_id": "analysis-2",
+      "field": "sentence_count",
+      "reason": "`sentence_count` must be an integer.",
+      "suggested_fix": "Set `sentence_count` to the actual paragraph sentence count."
+    },
+    {
+      "item_id": "analysis-2",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "analysis-3",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[3]`."
+    },
+    {
+      "item_id": "analysis-3",
+      "field": "paragraph",
+      "reason": "Paragraph is missing or empty.",
+      "suggested_fix": "Write a paragraph with at least 3 sentences."
+    },
+    {
+      "item_id": "analysis-3",
+      "field": "sentence_count",
+      "reason": "`sentence_count` must be an integer.",
+      "suggested_fix": "Set `sentence_count` to the actual paragraph sentence count."
+    },
+    {
+      "item_id": "analysis-3",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "analysis-4",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[4]`."
+    },
+    {
+      "item_id": "analysis-4",
+      "field": "paragraph",
+      "reason": "Paragraph is missing or empty.",
+      "suggested_fix": "Write a paragraph with at least 3 sentences."
+    },
+    {
+      "item_id": "analysis-4",
+      "field": "sentence_count",
+      "reason": "`sentence_count` must be an integer.",
+      "suggested_fix": "Set `sentence_count` to the actual paragraph sentence count."
+    },
+    {
+      "item_id": "analysis-4",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "analysis-5",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[5]`."
+    },
+    {
+      "item_id": "analysis-5",
+      "field": "paragraph",
+      "reason": "Paragraph is missing or empty.",
+      "suggested_fix": "Write a paragraph with at least 3 sentences."
+    },
+    {
+      "item_id": "analysis-5",
+      "field": "sentence_count",
+      "reason": "`sentence_count` must be an integer.",
+      "suggested_fix": "Set `sentence_count` to the actual paragraph sentence count."
+    },
+    {
+      "item_id": "analysis-5",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "analysis-6",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[6]`."
+    },
+    {
+      "item_id": "analysis-6",
+      "field": "paragraph",
+      "reason": "Paragraph is missing or empty.",
+      "suggested_fix": "Write a paragraph with at least 3 sentences."
+    },
+    {
+      "item_id": "analysis-6",
+      "field": "sentence_count",
+      "reason": "`sentence_count` must be an integer.",
+      "suggested_fix": "Set `sentence_count` to the actual paragraph sentence count."
+    },
+    {
+      "item_id": "analysis-6",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "analysis-7",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[7]`."
+    },
+    {
+      "item_id": "analysis-7",
+      "field": "paragraph",
+      "reason": "Paragraph is missing or empty.",
+      "suggested_fix": "Write a paragraph with at least 3 sentences."
+    },
+    {
+      "item_id": "analysis-7",
+      "field": "sentence_count",
+      "reason": "`sentence_count` must be an integer.",
+      "suggested_fix": "Set `sentence_count` to the actual paragraph sentence count."
+    },
+    {
+      "item_id": "analysis-7",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "image-1",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[1]`."
+    },
+    {
+      "item_id": "image-1",
+      "field": "style",
+      "reason": "Style is missing.",
+      "suggested_fix": "Set style to `Renaissance oil painting`."
+    },
+    {
+      "item_id": "image-1",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "image-2",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[2]`."
+    },
+    {
+      "item_id": "image-2",
+      "field": "style",
+      "reason": "Style is missing.",
+      "suggested_fix": "Set style to `Renaissance oil painting`."
+    },
+    {
+      "item_id": "image-2",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "image-3",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[3]`."
+    },
+    {
+      "item_id": "image-3",
+      "field": "style",
+      "reason": "Style is missing.",
+      "suggested_fix": "Set style to `Renaissance oil painting`."
+    },
+    {
+      "item_id": "image-3",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "image-4",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[4]`."
+    },
+    {
+      "item_id": "image-4",
+      "field": "style",
+      "reason": "Style is missing.",
+      "suggested_fix": "Set style to `Renaissance oil painting`."
+    },
+    {
+      "item_id": "image-4",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "image-5",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[5]`."
+    },
+    {
+      "item_id": "image-5",
+      "field": "style",
+      "reason": "Style is missing.",
+      "suggested_fix": "Set style to `Renaissance oil painting`."
+    },
+    {
+      "item_id": "image-5",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "image-6",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[6]`."
+    },
+    {
+      "item_id": "image-6",
+      "field": "style",
+      "reason": "Style is missing.",
+      "suggested_fix": "Set style to `Renaissance oil painting`."
+    },
+    {
+      "item_id": "image-6",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "image-7",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[7]`."
+    },
+    {
+      "item_id": "image-7",
+      "field": "style",
+      "reason": "Style is missing.",
+      "suggested_fix": "Set style to `Renaissance oil painting`."
+    },
+    {
+      "item_id": "image-7",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text_end_of_sentence and insertion_method."
+    },
+    {
+      "item_id": "quote-1",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[1]`."
+    },
+    {
+      "item_id": "quote-1",
+      "field": "quote",
+      "reason": "Quote text is missing.",
+      "suggested_fix": "Set a non-empty quote string."
+    },
+    {
+      "item_id": "quote-1",
+      "field": "speaker",
+      "reason": "Speaker is missing.",
+      "suggested_fix": "Set a non-empty speaker value."
+    },
+    {
+      "item_id": "quote-1",
+      "field": "callout",
+      "reason": "Callout must be an object.",
+      "suggested_fix": "Set callout object with title, variant, and mdx."
+    },
+    {
+      "item_id": "quote-1",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text and insertion_method."
+    },
+    {
+      "item_id": "quote-2",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[2]`."
+    },
+    {
+      "item_id": "quote-2",
+      "field": "quote",
+      "reason": "Quote text is missing.",
+      "suggested_fix": "Set a non-empty quote string."
+    },
+    {
+      "item_id": "quote-2",
+      "field": "speaker",
+      "reason": "Speaker is missing.",
+      "suggested_fix": "Set a non-empty speaker value."
+    },
+    {
+      "item_id": "quote-2",
+      "field": "callout",
+      "reason": "Callout must be an object.",
+      "suggested_fix": "Set callout object with title, variant, and mdx."
+    },
+    {
+      "item_id": "quote-2",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text and insertion_method."
+    },
+    {
+      "item_id": "quote-3",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[3]`."
+    },
+    {
+      "item_id": "quote-3",
+      "field": "quote",
+      "reason": "Quote text is missing.",
+      "suggested_fix": "Set a non-empty quote string."
+    },
+    {
+      "item_id": "quote-3",
+      "field": "speaker",
+      "reason": "Speaker is missing.",
+      "suggested_fix": "Set a non-empty speaker value."
+    },
+    {
+      "item_id": "quote-3",
+      "field": "callout",
+      "reason": "Callout must be an object.",
+      "suggested_fix": "Set callout object with title, variant, and mdx."
+    },
+    {
+      "item_id": "quote-3",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text and insertion_method."
+    },
+    {
+      "item_id": "quote-4",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[4]`."
+    },
+    {
+      "item_id": "quote-4",
+      "field": "quote",
+      "reason": "Quote text is missing.",
+      "suggested_fix": "Set a non-empty quote string."
+    },
+    {
+      "item_id": "quote-4",
+      "field": "speaker",
+      "reason": "Speaker is missing.",
+      "suggested_fix": "Set a non-empty speaker value."
+    },
+    {
+      "item_id": "quote-4",
+      "field": "callout",
+      "reason": "Callout must be an object.",
+      "suggested_fix": "Set callout object with title, variant, and mdx."
+    },
+    {
+      "item_id": "quote-4",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text and insertion_method."
+    },
+    {
+      "item_id": "quote-5",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[5]`."
+    },
+    {
+      "item_id": "quote-5",
+      "field": "quote",
+      "reason": "Quote text is missing.",
+      "suggested_fix": "Set a non-empty quote string."
+    },
+    {
+      "item_id": "quote-5",
+      "field": "speaker",
+      "reason": "Speaker is missing.",
+      "suggested_fix": "Set a non-empty speaker value."
+    },
+    {
+      "item_id": "quote-5",
+      "field": "callout",
+      "reason": "Callout must be an object.",
+      "suggested_fix": "Set callout object with title, variant, and mdx."
+    },
+    {
+      "item_id": "quote-5",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text and insertion_method."
+    },
+    {
+      "item_id": "quote-6",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[6]`."
+    },
+    {
+      "item_id": "quote-6",
+      "field": "quote",
+      "reason": "Quote text is missing.",
+      "suggested_fix": "Set a non-empty quote string."
+    },
+    {
+      "item_id": "quote-6",
+      "field": "speaker",
+      "reason": "Speaker is missing.",
+      "suggested_fix": "Set a non-empty speaker value."
+    },
+    {
+      "item_id": "quote-6",
+      "field": "callout",
+      "reason": "Callout must be an object.",
+      "suggested_fix": "Set callout object with title, variant, and mdx."
+    },
+    {
+      "item_id": "quote-6",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text and insertion_method."
+    },
+    {
+      "item_id": "quote-7",
+      "field": "label",
+      "reason": "Label must match `[n]` format.",
+      "suggested_fix": "Set label to `[7]`."
+    },
+    {
+      "item_id": "quote-7",
+      "field": "quote",
+      "reason": "Quote text is missing.",
+      "suggested_fix": "Set a non-empty quote string."
+    },
+    {
+      "item_id": "quote-7",
+      "field": "speaker",
+      "reason": "Speaker is missing.",
+      "suggested_fix": "Set a non-empty speaker value."
+    },
+    {
+      "item_id": "quote-7",
+      "field": "callout",
+      "reason": "Callout must be an object.",
+      "suggested_fix": "Set callout object with title, variant, and mdx."
+    },
+    {
+      "item_id": "quote-7",
+      "field": "anchor",
+      "reason": "Anchor must be an object.",
+      "suggested_fix": "Set anchor with anchor_text and insertion_method."
+    }
+  ]
+}

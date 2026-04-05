@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride and Prejudice: Chapter XXVI",
+  "enhanced_title": "Chapter XXVI: Guarded Hearts and Deceptive Friendships",
+  "author": "Jane Austen",
+  "description": "Mrs. Gardiner warns Elizabeth against imprudent attachment to Mr. Wickham; Charlotte Lucas marries Mr. Collins and departs for Kent; Jane Bennett discovers Miss Bingley's duplicity in London; Elizabeth reflects on her own lack of romantic passion.",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "Chapter XXVI",
+    "source_text_file": "chapter_26.txt",
+    "metadata_file": "chapter_26_metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "analysis_entries": "critical_analysis",
+    "image_prompt_entries": "visual_representations",
+    "quote_entries": "significant_quotations"
+  },
+  "analysis_entries": [
+    {
+      "id": "1",
+      "paragraph": "Mrs. Gardiner's intervention exemplifies the role of female mentorship in Austen's novels, where an older, wiser woman attempts to guide a younger relation through the treacherous waters of courtship and social expectation. Her caution is delivered with both honesty and affection, acknowledging Elizabeth's intelligence rather than simply issuing commands. The exchange is described as 'a wonderful instance of advice being given on such a point without being resented,' marking it as an unusually successful act of familial guidance.",
+      "anchor_text_end_of_sentence": "a wonderful instance of advice\nbeing given on such a point without being resented."
+    },
+    {
+      "id": "2",
+      "paragraph": "Elizabeth's response to her aunt's warning reveals her characteristic wit and self-awareness, acknowledging the imprudence of attachment to Wickham while simultaneously admitting her own vulnerability to romantic temptation. She promises only 'not to be in a hurry,' a carefully hedged commitment that satisfies social expectation without surrendering her autonomy. This measured compliance demonstrates how Elizabeth navigates the tension between personal desire and familial duty with ironic intelligence.",
+      "anchor_text_end_of_sentence": "I will not be in a hurry to believe myself his\nfirst object."
+    },
+    {
+      "id": "3",
+      "paragraph": "The marriage of Charlotte Lucas to Mr. Collins marks a pivotal moment in the narrative, representing the economic realities faced by women of limited fortune and the compromises required for social security. Elizabeth's sense of loss is captured in the observation that she 'could never address her without feeling that all the comfort of intimacy was over,' signaling how marriage can dissolve the bonds of female friendship. Charlotte's cheerful letters from Hunsford, carefully praising everything without revealing genuine feeling, further underscore the performance required to sustain a pragmatic union.",
+      "anchor_text_end_of_sentence": "address her without feeling that all the comfort of intimacy was over;"
+    },
+    {
+      "id": "4",
+      "paragraph": "Elizabeth's realization that she was never truly in love with Wickham introduces a sophisticated understanding of authentic emotion versus social performance, questioning what constitutes genuine romantic attachment. Her self-diagnosis is characteristically witty: she reasons that real passion would have made her 'detest his very name,' and the absence of such hatred proves the shallowness of her feeling. Her further observation that 'Importance may sometimes be purchased too dearly' offers a pointed critique of the social visibility that accompanies romantic drama, suggesting she values self-possession over spectacle.",
+      "anchor_text_end_of_sentence": "Importance may sometimes be purchased too dearly."
+    },
+    {
+      "id": "5",
+      "paragraph": "The contrast between Kitty and Lydia's romantic enthusiasm and Elizabeth's measured restraint demonstrates varying levels of social maturity within the Bennet household. Elizabeth notes that her younger sisters 'take his defection much more to heart than I do,' attributing their distress to being 'young in the ways of the world.' This generational contrast reinforces Mrs. Gardiner's role as a stabilising confidante who bridges the gap between youthful emotional turbulence and the practical wisdom Elizabeth is in the process of acquiring.",
+      "anchor_text_end_of_sentence": "Kitty and Lydia take\nhis defection much more to heart than I do."
+    },
+    {
+      "id": "6",
+      "paragraph": "Jane's discovery of Miss Bingley's duplicity serves as a crucial turning point in her character development, forcing her to abandon her natural inclination to think well of everyone and confront the reality of calculated social maneuvering. Her letter to Elizabeth is a careful document of dawning disillusionment, acknowledging that Caroline 'was, in every respect, so altered a creature' that Jane resolved to continue the acquaintance no longer. This resolution marks a significant growth in Jane's ability to protect herself from emotional manipulation, even as she continues to extend charitable interpretations of Miss Bingley's motives.",
+      "anchor_text_end_of_sentence": "altered a creature, that when she went away I was perfectly\n     resolved to continue the acquaintance no longer."
+    },
+    {
+      "id": "7",
+      "paragraph": "Elizabeth's hope that Bingley might marry Darcy's sister as punishment for his abandonment of Jane reveals the complex interplay of revenge fantasy and social realism in her worldview, while simultaneously foreshadowing future developments in the narrative. Her reasoning that such a marriage would make him 'abundantly regret what he had thrown away' shows how she channels emotional pain into strategic thinking. The chapter thus closes by establishing patterns of deception, emotional management, and quiet disillusionment that will continue to shape the novel's trajectory toward its eventual reversals.",
+      "anchor_text_end_of_sentence": "Mr."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "1",
+      "scene_title": "The Aunt's Caution",
+      "style": "Renaissance oil painting",
+      "alt_text": "an interior scene with two women in period dress engaged in intimate conversation, one older and concerned, the other younger and thoughtful",
+      "variations": [
+        {
+          "variation_id": "1a",
+          "prompt_text": "Renaissance oil painting, an elegant drawing room interior, Mrs. Gardiner in modest yet refined attire leaning forward earnestly while speaking to Elizabeth Bennet, who sits with composed posture listening intently, soft window light illuminating the intimate family conference, rich fabric textures and period furnishings, warm earth tones",
+          "output_asset": "img_1a_gardiner_warning.png"
+        },
+        {
+          "variation_id": "1b",
+          "prompt_text": "Renaissance oil painting, close-up of two women's hands and faces during serious conversation, the older woman's hand gesturing with gentle authority, the younger woman's expression showing amused comprehension, detailed rendering of facial expressions conveying familial affection and concern, chiaroscuro lighting",
+          "output_asset": "img_1b_intimate_conference.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "a wonderful instance of advice\nbeing given on such a point without being resented."
+    },
+    {
+      "id": "2",
+      "scene_title": "Elizabeth's Composed Resistance",
+      "style": "Renaissance oil painting",
+      "alt_text": "a young woman with intelligent expression and slight smile, sitting in contemplation",
+      "variations": [
+        {
+          "variation_id": "2a",
+          "prompt_text": "Renaissance oil painting, Elizabeth Bennet seated by a window, half-turned with a knowing smile playing at her lips, one hand resting on an embroidery frame, her expression conveying witty self-awareness and quiet defiance, natural light highlighting her thoughtful profile, soft blue and cream period dress",
+          "output_asset": "img_2a_elizabeth_wit.png"
+        },
+        {
+          "variation_id": "2b",
+          "prompt_text": "Renaissance oil painting, three-quarter portrait of a young lady with expressive dark eyes and intelligent countenance, hint of amusement in her features, finely rendered fabric details of her gown, background suggesting domestic elegance, the overall composition conveying both compliance and independence",
+          "output_asset": "img_2b_elizabeth_portrait.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "I will not be in a hurry to believe myself his\nfirst object."
+    },
+    {
+      "id": "3",
+      "scene_title": "Charlotte's Farewell",
+      "style": "Renaissance oil painting",
+      "alt_text": "two women descending a staircase together, one departing with mixed emotions",
+      "variations": [
+        {
+          "variation_id": "3a",
+          "prompt_text": "Renaissance oil painting, Elizabeth and Charlotte Lucas descending a grand staircase arm in arm, Charlotte's expression composed yet with hint of nervous anticipation, Elizabeth showing sincere affection mixed with concern, period architectural details, soft dramatic lighting from upper windows, muted color palette suggesting transition and change",
+          "output_asset": "img_3a_farewell_stairs.png"
+        },
+        {
+          "variation_id": "3b",
+          "prompt_text": "Renaissance oil painting, interior scene of two women in intimate conversation on a staircase landing, one woman grasping the other's hands in farewell, expressions showing complex emotions of friendship, duty, and foreboding, detailed rendering of clothing and architectural elements, Rembrandt-inspired lighting",
+          "output_asset": "img_3b_farewell_embrace.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "” Thursday was to be the\nwedding-day, and on Wednesday Miss Lucas paid her farewell visit; and\nwhen she rose to take leave, Elizabeth, ashamed of her mother’s\nungracious and reluctant good wishes, and sincerely affected herself,\naccompanied her out of the room."
+    },
+    {
+      "id": "4",
+      "scene_title": "The Wedding Departure",
+      "style": "Renaissance oil painting",
+      "alt_text": "a bride and groom departing from a church, surrounded by wedding guests",
+      "variations": [
+        {
+          "variation_id": "4a",
+          "prompt_text": "Renaissance oil painting, Mr. Collins and Charlotte Lucas emerging from a country church doorway, Charlotte in simple wedding attire with composed expression, Mr. Collins self-important and pleased, scattered wedding guests in background, village setting with autumn atmosphere, the composition suggesting social ritual rather than romantic passion",
+          "output_asset": "img_4a_wedding_departure.png"
+        },
+        {
+          "variation_id": "4b",
+          "prompt_text": "Renaissance oil painting, wedding party gathered outside stone church, focus on the bride's composed face showing resignation rather than joy, the groom adjusting his coat with self-satisfaction, background figures conversing in small groups, overcast sky suggesting the practical nature of the union, detailed architectural rendering",
+          "output_asset": "img_4b_wedding_scene.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "The wedding took place: the bride and bridegroom set off for Kent from\nthe church door, and everybody had as much to say or to hear on the\nsubject as usual."
+    },
+    {
+      "id": "5",
+      "scene_title": "Jane's Disappointment",
+      "style": "Renaissance oil painting",
+      "alt_text": "a young woman reading a letter with visible sadness, seated in a London drawing room",
+      "variations": [
+        {
+          "variation_id": "5a",
+          "prompt_text": "Renaissance oil painting, Jane Bennet seated near a window in a London drawing room, holding a letter with downcast eyes and sorrowful expression, elegant but simple dress, the room suggesting temporary lodging rather than home, soft natural light emphasizing her gentle beauty and melancholy, detailed rendering of letter and hands",
+          "output_asset": "img_5a_jane_reading.png"
+        },
+        {
+          "variation_id": "5b",
+          "prompt_text": "Renaissance oil painting, young woman in blue gown seated at writing desk, pen in hand, expression showing struggle between natural optimism and dawning awareness of betrayal, London town house interior visible through window, the composition balanced between interior emotion and exterior social world",
+          "output_asset": "img_5b_jane_writing.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "altered a creature, that when she went away I was perfectly\n     resolved to continue the acquaintance no longer."
+    },
+    {
+      "id": "6",
+      "scene_title": "Miss Bingley's Calculated Visit",
+      "style": "Renaissance oil painting",
+      "alt_text": "two women in a formal drawing room, one visibly uncomfortable and making excuses to leave",
+      "variations": [
+        {
+          "variation_id": "6a",
+          "prompt_text": "Renaissance oil painting, Caroline Bingley in fashionable London attire making a stiff formal visit, her expression cold and forced, Jane Bennet receiving her with remaining warmth but growing comprehension, elegant drawing room setting, subtle body language conveying the breakdown of artificial friendship, sophisticated color palette",
+          "output_asset": "img_6a_bingley_visit.png"
+        },
+        {
+          "variation_id": "6b",
+          "prompt_text": "Renaissance oil painting, awkward social encounter between two women, one standing as if to depart while the other remains seated, the space between them filled with unspoken tension, detailed period costumes showing social status, interior lighting emphasizing the emotional coldness of the exchange",
+          "output_asset": "img_6b_formal_encounter.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "After waiting at home every morning\nfor a fortnight, and inventing every evening a fresh excuse for her, the\nvisitor did at last appear; but the shortness of her stay, and, yet\nmore, the alteration of her manner, would allow Jane to deceive herself\nno longer."
+    },
+    {
+      "id": "7",
+      "scene_title": "Elizabeth's Self-Reflection",
+      "style": "Renaissance oil painting",
+      "alt_text": "a young woman in quiet contemplation, her expression showing philosophical acceptance",
+      "variations": [
+        {
+          "variation_id": "7a",
+          "prompt_text": "Renaissance oil painting, Elizabeth Bennet in domestic interior, alone with her thoughts, expression showing mature self-assessment and philosophical acceptance, one hand resting thoughtfully against her cheek, books and writing materials nearby suggesting intellectual engagement, warm subdued lighting emphasizing interior reflection",
+          "output_asset": "img_7a_elizabeth_reflection.png"
+        },
+        {
+          "variation_id": "7b",
+          "prompt_text": "Renaissance oil painting, young lady seated in window embrasure, gazing outward but clearly lost in thought, her expression showing the wisdom gained through emotional experience, natural light creating halo effect, detailed rendering of texture and fabric, the composition suggesting the value of self-knowledge",
+          "output_asset": "img_7b_contemplative_elizabeth.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Importance may sometimes be purchased too dearly."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "1",
+      "quote": "You are too sensible a girl, Lizzy, to fall in love merely because you are warned against it; and, therefore, I am not afraid of speaking openly.",
+      "anchor_text": "You are too sensible a girl, Lizzy, to fall in love merely because you\nare warned against it; and, therefore, I am not afraid of speaking\nopenly."
+    },
+    {
+      "id": "2",
+      "quote": "Oh, _that_ abominable Mr. Darcy! My father's opinion of me does me the greatest honour; and I should be miserable to forfeit it.",
+      "anchor_text": "Oh, _that_ abominable Mr."
+    },
+    {
+      "id": "3",
+      "quote": "How can I promise to be wiser than so many of my fellow-creatures, if I am tempted, or how am I even to know that it would be wiser to resist?",
+      "anchor_text": "how can I promise to be wiser than so many\nof my fellow-creatures, if I am tempted, or how am I even to know that\nit would be wiser to resist?"
+    },
+    {
+      "id": "4",
+      "quote": "Elizabeth could never address her without feeling that all the comfort of intimacy was over; and, though determined not to slacken as a correspondent, it was for the sake of what had been rather than what was.",
+      "anchor_text": "Elizabeth could never\naddress her without feeling that all the comfort of intimacy was over;\nand, though determined not to slacken as a correspondent, it was for the\nsake of what had been rather than what was."
+    },
+    {
+      "id": "5",
+      "quote": "Miss Bingley said something of his never returning to Netherfield again, of giving up the house, but not with any certainty.",
+      "anchor_text": "Miss Bingley said something of his never\n     returning to Netherfield again, of giving up the house, but not\n     with any certainty."
+    },
+    {
+      "id": "6",
+      "quote": "His character sunk on every review of it; and, as a punishment for him, as well as a possible advantage to Jane, she seriously hoped he might really soon marry Mr. Darcy's sister.",
+      "anchor_text": "Mr."
+    },
+    {
+      "id": "7",
+      "quote": "I am now convinced, my dear aunt, that I have never been much in love; for had I really experienced that pure and elevating passion, I should at present detest his very name, and wish him all manner of evil.",
+      "anchor_text": "I am now convinced, my dear aunt,\nthat I have never been much in love; for had I really experienced that\npure and elevating passion, I should at present detest his very name,\nand wish him all manner of evil."
+    }
+  ],
+  "insertion_methods": {
+    "image_placeholder": "[Illustration]",
+    "quote_format": "block quote with attribution",
+    "analysis_integration": "chapter metadata"
+  },
+  "summary": "Chapter XXVI of Pride and Prejudice centers on three interconnected narratives of romantic negotiation and social maneuvering: Mrs. Gardiner's cautionary advice to Elizabeth regarding Mr. Wickham, Charlotte Lucas's marriage to Mr. Collins and subsequent departure for Kent, and Jane Bennett's painful discovery of Caroline Bingley's insincere friendship in London. Through these parallel threads, Austen explores the tension between emotional authenticity and social pragmatism, the economic realities governing women's marital choices, and the subtle betrayals inherent in class-conscious social networks. Elizabeth's emerging self-knowledge regarding her own heart prepares the ground for her later emotional development, while Jane's disillusionment marks a crucial step in her education about the world's harsher truths."
+}

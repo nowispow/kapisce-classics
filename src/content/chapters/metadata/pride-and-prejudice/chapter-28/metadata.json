@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride and Prejudice: Chapter XXVIII",
+  "enhanced_title": "A Visit to Hunsford: First Encounters at the Parsonage",
+  "author": "Jane Austen",
+  "description": "Chapter 28 of Pride and Prejudice follows Elizabeth Bennet as she arrives at the Hunsford parsonage to visit her newly married friend Charlotte Collins. The chapter explores themes of marital compromise, social hierarchy, and Elizabeth's first observations of the neighborhood, including her introduction to Miss de Bourgh and Lady Catherine's influence over the Collins household.",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "Chapter XXVIII",
+    "source_text_file": "pride-and-prejudice-chapter-28.txt",
+    "metadata_file": "pride-and-prejudice-chapter-28-metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "paragraph": "analysis",
+    "anchor_text_end_of_sentence": "hook",
+    "anchor_text": "hook"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis_001",
+      "paragraph": "Elizabeth's journey to Hunsford is marked by a sense of anticipation and enjoyment. Having confirmed Jane's wellbeing, Elizabeth is free to appreciate the novelty of her surroundings, and the prospect of her northern tour remains a sustaining pleasure. This opening establishes her as an observant traveler whose spirits remain high despite the social trials ahead.",
+      "anchor_text_end_of_sentence": "the prospect of her northern tour was a constant source of delight."
+    },
+    {
+      "id": "analysis_002",
+      "paragraph": "The approach to the Parsonage is described with careful attention to spatial boundaries, particularly the paling of Rosings Park that serves as a physical and metaphorical barrier. Elizabeth's smile at the recollection of Lady Catherine's reputation foreshadows the social landscape she is about to enter. This moment of private amusement establishes Elizabeth's ironic distance from the deference others pay to the de Bourgh family.",
+      "anchor_text_end_of_sentence": "Elizabeth\nsmiled at the recollection of all that she had heard of its inhabitants."
+    },
+    {
+      "id": "analysis_003",
+      "paragraph": "Mr. Collins's character remains unchanged by marriage; his formal civility and ostentatious humility persist as comic elements. Austen uses his behavior to satirize both the clergyman's self-importance and the performative nature of his hospitality, particularly in his desire to make Elizabeth feel her loss. His repetition of his wife's offers of refreshment underscores his compulsive need to perform domestic virtue for an audience.",
+      "anchor_text_end_of_sentence": "They were then, with no other delay than his pointing out the\nneatness of the entrance, taken into the house; and as soon as they were\nin the parlour, he welcomed them a second time, with ostentatious\nformality, to his humble abode, and punctually repeated all his wife’s\noffers of refreshment."
+    },
+    {
+      "id": "analysis_004",
+      "paragraph": "The complex dynamic between Charlotte and Mr. Collins reveals the pragmatic nature of Charlotte's marriage. Elizabeth's observation of her friend's command of countenance and ability to ignore her husband's embarrassing remarks demonstrates the psychological strategies women of limited means employed to survive unhappy unions. Austen makes clear that Charlotte's domestic competence is inseparable from her cultivated capacity for selective deafness, and that by Charlotte's evident enjoyment of the house, Elizabeth supposed he must be often forgotten.",
+      "anchor_text_end_of_sentence": "Collins could be\nforgotten, there was really a great air of comfort throughout, and by\nCharlotte’s evident enjoyment of it, Elizabeth supposed he must be often\nforgotten."
+    },
+    {
+      "id": "analysis_005",
+      "paragraph": "Mr. Collins's garden tour exemplifies his pedantic nature and inability to appreciate natural beauty without quantification. The contrast between his minuteness and true aesthetic appreciation highlights his character's deficit, as every view was pointed out with a minuteness which left beauty entirely behind. The view of Rosings becomes the centerpiece, establishing Lady Catherine's estate as the symbolic apex of local prestige.",
+      "anchor_text_end_of_sentence": "It was a\nhandsome modern building, well situated on rising ground."
+    },
+    {
+      "id": "analysis_006",
+      "paragraph": "The dinner conversation reveals Mr. Collins's complete submission to Lady Catherine's patronage. His enumeration of carriages and social privileges demonstrates how hierarchical relationships define his sense of self-worth, culminating in his careful correction that Lady Catherine possesses not one but several carriages. Charlotte's qualified praise of Lady Catherine as an 'attentive neighbour' suggests a more complex, perhaps guarded, perspective on the great lady's condescension.",
+      "anchor_text_end_of_sentence": "I\n_should_ say, one of her Ladyship’s carriages, for she has several."
+    },
+    {
+      "id": "analysis_007",
+      "paragraph": "Elizabeth's nighttime reflection reveals her growing understanding of Charlotte's marital strategy. While she must 'acknowledge that it was all done very well,' her meditation on 'quiet tenour' and 'vexatious interruptions' reveals her persistent romantic idealism. The chapter concludes with the dramatic entrance of Miss de Bourgh, whose sickly appearance ironically confirms Elizabeth's judgment of Darcy's pride and provides a darkly comic coda to the day's social observations.",
+      "anchor_text_end_of_sentence": "A lively imagination soon settled it all."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image_001",
+      "scene_title": "The Journey to Kent",
+      "style": "Renaissance oil painting",
+      "alt_text": "A carriage travels along a country lane through the Kentish landscape in the soft morning light.",
+      "variations": [
+        {
+          "variation_id": "var_001",
+          "prompt_text": "Renaissance oil painting of a Regency-era horse-drawn carriage on a country road, rolling green hills of Kent in the background, golden morning light filtering through trees, a young woman visible through the carriage window looking out with anticipation, pastoral landscape with hedgerows and distant estates, warm color palette, classical composition",
+          "output_asset": "journey_to_kent_carriage.png"
+        },
+        {
+          "variation_id": "var_002",
+          "prompt_text": "Renaissance oil painting style view from inside a traveling chaise, a young Regency lady in period dress with bonnet looking out at passing countryside through carriage window, soft diffused light, pastoral English landscape visible beyond, sense of journey and anticipation, muted earth tones",
+          "output_asset": "journey_to_kent_interior.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "the prospect of her northern tour was a constant source of delight."
+    },
+    {
+      "id": "image_002",
+      "scene_title": "Approaching the Parsonage",
+      "style": "Renaissance oil painting",
+      "alt_text": "View of the Hunsford parsonage with its sloping garden and green pales, nestled near Rosings Park.",
+      "variations": [
+        {
+          "variation_id": "var_001",
+          "prompt_text": "Renaissance oil painting of a modest English country parsonage house in the Georgian style, neat garden sloping down to a country lane, green wooden pales and laurel hedge, well-maintained but unpretentious, afternoon light, tall trees bordering a park visible in background, classical architectural details, pastoral setting",
+          "output_asset": "parsonage_exterior.png"
+        },
+        {
+          "variation_id": "var_002",
+          "prompt_text": "Renaissance oil painting aerial perspective of a village parsonage with extensive gardens, a lane leading to the house, green painted fencing, neat gravel paths, a carriage approaching through a small gate, pastoral English countryside, late afternoon golden light, classical landscape composition",
+          "output_asset": "parsonage_aerial_view.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "everything declared they were arriving."
+    },
+    {
+      "id": "image_003",
+      "scene_title": "Mr. Collins at the Gate",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins greeting Elizabeth at the parsonage gate with excessive formality and his wife Charlotte nearby.",
+      "variations": [
+        {
+          "variation_id": "var_001",
+          "prompt_text": "Renaissance oil painting of a tall thin clergyman in black Regency attire standing at a garden gate greeting visitors, obsequious bow and gesture, a woman in modest country dress beside him, gravel path and neat garden behind them, small iron gate, expression of self-importance on his face, warm afternoon light, pastoral setting",
+          "output_asset": "collins_at_gate.png"
+        },
+        {
+          "variation_id": "var_002",
+          "prompt_text": "Renaissance oil painting of a formal greeting at a country house gate, a clerical gentleman with exaggerated politeness receiving two young ladies from a traveling carriage, his wife standing with welcoming but slightly weary expression, well-kept garden in background, social awkwardness captured in gestures, soft natural light",
+          "output_asset": "formal_greeting_scene.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "She saw\ninstantly that her cousin’s manners were not altered by his marriage:\nhis formal civility was just what it had been; and he detained her some\nminutes at the gate to hear and satisfy his inquiries after all her\nfamily."
+    },
+    {
+      "id": "image_004",
+      "scene_title": "The Parsonage Parlour",
+      "style": "Renaissance oil painting",
+      "alt_text": "The interior of the Collins parsonage parlour, modestly furnished but neat and comfortable.",
+      "variations": [
+        {
+          "variation_id": "var_001",
+          "prompt_text": "Renaissance oil painting of a modest but comfortable Regency-era parlour interior, sideboard and fender visible, middle-class furnishings in good taste but not elaborate, three ladies seated conversing, a clergyman standing and gesturing toward the furniture with pride, soft window light, domestic interior scene, warm color palette",
+          "output_asset": "parsonage_parlour.png"
+        },
+        {
+          "variation_id": "var_002",
+          "prompt_text": "Renaissance oil painting of a country parsonage drawing room, simple but well-proportioned room with good furniture, a tea service on a table, women in morning dresses seated, one hostess hearing her husband's conversation with practiced deafness, domestic harmony masking private resignation, soft interior lighting",
+          "output_asset": "parlour_interior_scene.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "They were then, with no other delay than his pointing out the\nneatness of the entrance, taken into the house; and as soon as they were\nin the parlour, he welcomed them a second time, with ostentatious\nformality, to his humble abode, and punctually repeated all his wife’s\noffers of refreshment."
+    },
+    {
+      "id": "image_005",
+      "scene_title": "The Garden at Hunsford",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins leading a garden tour, pointing out features with excessive detail while ladies follow.",
+      "variations": [
+        {
+          "variation_id": "var_001",
+          "prompt_text": "Renaissance oil painting of a formal English garden scene with gravel walks and cross-paths, a tall clergyman in black gesturing expansively while leading two ladies through the garden, neat flower beds and trimmed hedges, one lady looking on with slight weariness, the other with curiosity, pastoral garden setting, late morning light",
+          "output_asset": "garden_tour.png"
+        },
+        {
+          "variation_id": "var_002",
+          "prompt_text": "Renaissance oil painting of a gentleman enthusiastically showing off his garden, pointing toward distant trees and fields, two ladies in walking dresses following behind, well-maintained garden paths with geometric precision, a view opening toward a grand park and estate in the distance, pastoral landscape composition",
+          "output_asset": "garden_view_rosings.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "It was a\nhandsome modern building, well situated on rising ground."
+    },
+    {
+      "id": "image_006",
+      "scene_title": "Miss de Bourgh at the Gate",
+      "style": "Renaissance oil painting",
+      "alt_text": "A low phaeton with two ladies stopped at the Hunsford parsonage garden gate, with observers watching from doorway and windows.",
+      "variations": [
+        {
+          "variation_id": "var_001",
+          "prompt_text": "Renaissance oil painting of a low phaeton carriage stopped at a garden gate, two ladies seated inside visible through the gate, a tall gentleman and his wife standing in conversation with them, figures watching from a doorway in the background, wind blowing slightly, country lane setting, sense of social import of the visit",
+          "output_asset": "phaeton_at_gate.png"
+        },
+        {
+          "variation_id": "var_002",
+          "prompt_text": "Renaissance oil painting of a modest country parsonage exterior, a lady's phaeton with two occupants visible through a garden gate, several people gathered at the gate and doorway observing, one figure bowing with excessive deference, humble dwelling contrasted with fine carriage, afternoon light, social hierarchy visible in postures",
+          "output_asset": "debourgh_visit.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Collins and Charlotte were both standing at the gate in conversation\nwith the ladies; and Sir William, to Elizabeth’s high diversion, was\nstationed in the doorway, in earnest contemplation of the greatness\nbefore him, and constantly bowing whenever Miss De Bourgh looked that\nway."
+    },
+    {
+      "id": "image_007",
+      "scene_title": "Evening Reflections",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth alone in her chamber at the parsonage, reflecting by candlelight on her observations of the day.",
+      "variations": [
+        {
+          "variation_id": "var_001",
+          "prompt_text": "Renaissance oil painting of a young woman alone in a modest bedchamber, seated by candlelight in contemplation, Regency-era simple room at a country parsonage, the woman in nightdress with thoughtful expression, hand near her chin, soft candle glow illuminating her face, quiet evening atmosphere, introspective mood",
+          "output_asset": "elizabeth_reflection.png"
+        },
+        {
+          "variation_id": "var_002",
+          "prompt_text": "Renaissance oil painting of a solitary figure by candlelight in a small chamber, a young lady writing in correspondence or journal, simple furnishings suggesting modest country lodgings, window showing darkness outside, contemplative expression, warm candlelight contrasting with cool evening shadows, intimate interior scene",
+          "output_asset": "bedchamber_contemplation.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "A lively imagination soon settled it all."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_001",
+      "quote": "Every object in the next day's journey was new and interesting to Elizabeth; and her spirits were in a state of enjoyment",
+      "anchor_text": "her spirits were in a state of enjoyment"
+    },
+    {
+      "id": "quote_002",
+      "quote": "The paling of Rosings park was their boundary on one side. Elizabeth smiled at the recollection of all that she had heard of its inhabitants.",
+      "anchor_text": "Elizabeth\nsmiled at the recollection of all that she had heard of its inhabitants."
+    },
+    {
+      "id": "quote_003",
+      "quote": "he welcomed them a second time, with ostentatious formality, to his humble abode, and punctually repeated all his wife's offers of refreshment.",
+      "anchor_text": "They were then, with no other delay than his pointing out the\nneatness of the entrance, taken into the house; and as soon as they were\nin the parlour, he welcomed them a second time, with ostentatious\nformality, to his humble abode, and punctually repeated all his wife’s\noffers of refreshment."
+    },
+    {
+      "id": "quote_004",
+      "quote": "When Mr. Collins said anything of which his wife might reasonably be ashamed, which certainly was not seldom, she involuntarily turned her eye on Charlotte. Once or twice she could discern a faint blush; but in general Charlotte wisely did not hear.",
+      "anchor_text": "Once or twice she could discern a faint blush; but in general\nCharlotte wisely did not hear."
+    },
+    {
+      "id": "quote_005",
+      "quote": "But of all the views which his garden, or which the country or the kingdom could boast, none were to be compared with the prospect of Rosings, afforded by an opening in the trees that bordered the park nearly opposite the front of his house.",
+      "anchor_text": "But of all the views which his garden, or which\nthe country or the kingdom could boast, none were to be compared with\nthe prospect of Rosings, afforded by an opening in the trees that\nbordered the park nearly opposite the front of his house."
+    },
+    {
+      "id": "quote_006",
+      "quote": "She is all affability and condescension, and I doubt not but you will be honoured with some portion of her notice",
+      "anchor_text": "She is all affability and condescension, and I\ndoubt not but you will be honoured with some portion of her notice when\nservice is over."
+    },
+    {
+      "id": "quote_007",
+      "quote": "I like her appearance. She looks sickly and cross. Yes, she will do for him very well. She will make him a very proper wife.",
+      "anchor_text": "She will\nmake him a very proper wife."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_entries": "append_to_end_of_matching_sentence",
+    "image_prompt_entries": "append_to_end_of_matching_sentence",
+    "quote_entries": "append_to_end_of_matching_sentence"
+  },
+  "summary": "Chapter XXVIII of Pride and Prejudice presents Elizabeth Bennet's arrival at the Hunsford parsonage, where she observes the domestic life of her friend Charlotte Collins and the unbearable Mr. Collins. The chapter uses Elizabeth's perspective to explore themes of marital pragmatism versus romantic idealism, the performance of social hierarchy, and the first tangible encounter with the de Bourgh family's influence. Through Elizabeth's sharp observations, Austen satirizes both Mr. Collins's obsequiousness and the social structures that enable it, while the dramatic entrance of the sickly Miss de Bourgh provides both comedy and foreshadowing of Darcy's potential romantic fate."
+}
