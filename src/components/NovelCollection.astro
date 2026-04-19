@@ -1,44 +1,115 @@
 ---
 import { getCollection } from 'astro:content';
+import { extractLocale, LOCALE_NAMES } from '@/lib/novel-utils';
 
 interface Props {
   novelId: string;
+  initialLocale?: string;
 }
 
-const { novelId } = Astro.props;
+const { novelId, initialLocale } = Astro.props;
 
-// Fetch chapters for this novel
-// Use casting to any to bypass strict type checking for the collection name 
-// if the types haven't been regenerated yet.
 const allChapters = await getCollection('chapters' as any);
 const chapters = allChapters.filter((entry: any) => {
   return entry.data.novel === novelId && !entry.data.draft;
 });
 
-// Sort by chapter_number
-const sortedChapters = chapters.sort((a: any, b: any) => {
-  const aNum = a.data.chapter_number ?? 0;
-  const bNum = b.data.chapter_number ?? 0;
-  return aNum - bNum;
+// Group chapters by locale
+const byLocale: Record<string, any[]> = {};
+for (const chapter of chapters as any[]) {
+  const locale = extractLocale(chapter.id);
+  if (!byLocale[locale]) byLocale[locale] = [];
+  byLocale[locale].push(chapter);
+}
+
+// Sort chapters within each locale by chapter_number
+for (const locale of Object.keys(byLocale)) {
+  byLocale[locale].sort((a: any, b: any) => (a.data.chapter_number ?? 0) - (b.data.chapter_number ?? 0));
+}
+
+// English first, then alphabetically
+const locales = Object.keys(byLocale).sort((a, b) => {
+  if (a === 'en') return -1;
+  if (b === 'en') return 1;
+  return a.localeCompare(b);
 });
+
+const hasMultipleLocales = locales.length > 1;
 ---
 
-<div class="novel-collection mt-12 border-t pt-8">
-  <h2 class="text-2xl font-semibold mb-6">Table of Contents</h2>
-  <nav class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    {sortedChapters.map((chapter: any) => (
-      <a 
-        href={`/chapters/${chapter.id}`}
-        class="flex items-center p-3 rounded-lg border bg-card hover:bg-accent transition-colors group"
-      >
-        <div class="flex-1">
-          {/* <div class="text-sm text-muted-foreground">Chapter {chapter.data.chapter_number}</div> */}
-          <div class="font-medium group-hover:text-accent-foreground">{(chapter.data.title as string).replace(/.*: /, '')}</div>
-        </div>
-        <div class="text-muted-foreground group-hover:text-accent-foreground">
-           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
-        </div>
-      </a>
-    ))}
-  </nav>
+<div class="novel-collection mt-12 border-t pt-8" id="novel-collection" data-initial-locale={initialLocale ?? ''}>
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-6">
+    <h2 class="text-2xl font-semibold">Table of Contents</h2>
+
+    {hasMultipleLocales && (
+      <div class="flex items-center gap-2">
+        <label for="locale-select" class="text-sm text-muted-foreground shrink-0">Language:</label>
+        <select
+          id="locale-select"
+          class="rounded-md border bg-background px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+        >
+          {locales.map((locale) => (
+            <option value={locale}>
+              {LOCALE_NAMES[locale] ?? locale}
+            </option>
+          ))}
+        </select>
+      </div>
+    )}
+  </div>
+
+  {locales.map((locale) => (
+    <div data-locale-panel={locale} class="locale-panel">
+      <nav class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {byLocale[locale].map((chapter: any) => (
+          <a
+            href={`/chapters/${chapter.id}`}
+            class="flex items-center p-3 rounded-lg border bg-card hover:bg-accent transition-colors group"
+          >
+            <div class="flex-1">
+              <div class="font-medium group-hover:text-accent-foreground">{(chapter.data.title as string).replace(/.*: /, '')}</div>
+            </div>
+            <div class="text-muted-foreground group-hover:text-accent-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+          </a>
+        ))}
+      </nav>
+    </div>
+  ))}
 </div>
+
+<script>
+  function initLocaleSelector() {
+    const container = document.getElementById('novel-collection');
+    if (!container) return;
+
+    const select = container.querySelector<HTMLSelectElement>('#locale-select');
+    const panels = container.querySelectorAll<HTMLElement>('[data-locale-panel]');
+    if (!panels.length) return;
+
+    const availableLocales = Array.from(panels).map((p) => p.dataset.localePanel!);
+
+    function showLocale(locale: string) {
+      panels.forEach((panel) => {
+        panel.style.display = panel.dataset.localePanel === locale ? '' : 'none';
+      });
+      try { localStorage.setItem('kapisce-locale', locale); } catch {}
+      if (select) select.value = locale;
+    }
+
+    const forced = (container as HTMLElement).dataset.initialLocale;
+    let saved = 'en';
+    try { saved = localStorage.getItem('kapisce-locale') ?? 'en'; } catch {}
+    const preferred = forced || saved;
+    const initial = availableLocales.includes(preferred) ? preferred : availableLocales[0];
+
+    showLocale(initial);
+
+    select?.addEventListener('change', () => showLocale(select.value));
+  }
+
+  // Run on first load and after Astro view transitions
+  initLocaleSelector();
+  document.addEventListener('astro:page-load', initLocaleSelector);
+</script>
