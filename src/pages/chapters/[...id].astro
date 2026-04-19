@@ -7,7 +7,7 @@ import DropCap from '@/components/DropCap.astro'
 import PageMarker from '@/components/PageMarker.astro'
 import IllustratedFigure from '@/components/IllustratedFigure.astro'
 import Layout from '@/layouts/Layout.astro'
-import { getAdjacentChapters, getAllChapters, getNovelById } from '@/lib/novel-utils'
+import { getAdjacentChapters, getAllChapters, getNovelById, getLocaleVariants, extractLocale, LOCALE_NAMES } from '@/lib/novel-utils'
 import { parseAuthors } from '@/lib/data-utils'
 import { formatDate, readingTime, calculateWordCountFromHtml } from '@/lib/utils'
 import { Icon } from 'astro-icon/components'
@@ -30,6 +30,8 @@ const novel = await getNovelById(chapter.data.novel)
 const navigation = await getAdjacentChapters(chapter.id, chapter.data.novel)
 const wordCount = calculateWordCountFromHtml(chapter.body)
 const postReadingTime = readingTime(wordCount)
+const currentLocale = extractLocale(chapter.id)
+const localeVariants = await getLocaleVariants(chapter.data.chapter_number, chapter.data.novel, currentLocale)
 ---
 
 <Layout>
@@ -92,6 +94,21 @@ const postReadingTime = readingTime(wordCount)
           >
             <span>{postReadingTime}</span>
           </div>
+
+          {localeVariants.length > 0 && (
+            <div class="flex w-full items-center justify-center gap-2 py-2 sm:w-fit sm:px-2 sm:py-0 first:sm:pl-0 last:sm:pr-0">
+              <span class="text-muted-foreground/60">Read in:</span>
+              <span class="font-medium text-foreground">{LOCALE_NAMES[currentLocale] ?? currentLocale}</span>
+              {localeVariants.map((v) => (
+                <a
+                  href={`/chapters/${v.id}`}
+                  class="hover:text-foreground hover:underline transition-colors"
+                >
+                  {LOCALE_NAMES[v.locale] ?? v.locale}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>
@@ -100,7 +117,7 @@ const postReadingTime = readingTime(wordCount)
       <SpeedReader client:load text={chapter.body} />
       <Content components={{ DropCap, PageMarker, IllustratedFigure }} />
 
-      <NovelCollection novelId={chapter.data.novel} />
+      <NovelCollection novelId={chapter.data.novel} initialLocale={currentLocale} />
     </article>
 
     <nav class="col-start-2 flex justify-between gap-4 py-8 border-t mt-8">
