@@ -1,3 +1,11 @@
+# Kapisce Classics
+
+Interactive eBook platform presenting annotated, illustrated public domain classics. Target audience: educators and book-club leaders. Monetization: per-edition purchase (enhanced editions; plain text free).
+
+**For the production roadmap, current phase, and task checklist — see [PRD.md](PRD.md).**
+
+---
+
 ## Built on astro-erudite
 
 astro-erudite is an opinionated, unstyled static blogging template built with [Astro](https://astro.build/), [Tailwind](https://tailwindcss.com/), and [shadcn/ui](https://ui.shadcn.com/). Extraordinarily loosely based off the [Astro Micro](https://astro-micro.vercel.app/) theme by [trevortylerlee](https://github.com/trevortylerlee).
