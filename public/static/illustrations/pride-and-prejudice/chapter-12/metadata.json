@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: CHAPTER XII",
+  "enhanced_title": "Chapter XII: The Departure from Netherfield and Darcy's Silent Resistance",
+  "author": "Jane Austen",
+  "description": "Chapter 12 follows Elizabeth and Jane Bennet's departure from Netherfield Park, revealing the complex emotional dynamics between Elizabeth and Mr. Darcy, the calculated indifference of Miss Bingley, and the contrasting family dynamics at Longbourn. The chapter explores themes of social obligation, restrained emotion, and the contrast between the refined world of Netherfield and the provincial Bennet household.",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "XII",
+    "source_text_file": "pride-and-prejudice-chapter-12.txt",
+    "metadata_file": "pride-and-prejudice-chapter-12-metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries_min": 7,
+    "analysis_entries_max": 7,
+    "image_prompt_entries_min": 7,
+    "image_prompt_entries_max": 7,
+    "quote_entries_min": 7,
+    "quote_entries_max": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "analysis_entries": "literary_analysis_units",
+    "image_prompt_entries": "visual_representation_prompts",
+    "quote_entries": "notable_quotations"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis_001",
+      "paragraph": "This opening paragraph establishes the tension between Elizabeth's desire for independence and Mrs. Bennet's social calculations. The mother's manipulation of the carriage availability reveals her desire to prolong her daughters' proximity to Mr. Bingley, prioritizing social advancement over her daughters' comfort and wishes. Elizabeth's proactive resolution to borrow Bingley's carriage demonstrates her assertive character and her awareness of social propriety—she fears being seen as intruding 'needlessly long,' and so the design of leaving that very morning is settled and the request made.",
+      "anchor_text_end_of_sentence": "and the request made."
+    },
+    {
+      "id": "analysis_002",
+      "paragraph": "Austen masterfully exposes Miss Bingley's duplicity in this brief passage. Her 'professions of concern' are immediately undermined by the author's omniscient insight into her true motivations: jealousy toward Elizabeth and calculated preference for Jane. The paradox of being 'sorry that she had proposed the delay' illustrates the self-defeating nature of performative politeness when it conflicts with genuine emotion, for her jealousy and dislike of one sister much exceeded her affection for the other.",
+      "anchor_text_end_of_sentence": "Miss Bingley was\nthen sorry that she had proposed the delay; for her jealousy and dislike\nof one sister much exceeded her affection for the other."
+    },
+    {
+      "id": "analysis_003",
+      "paragraph": "Bingley's character emerges through genuine contrast with his sister's artifice. His 'real sorrow' and repeated entreaties for Jane to stay reveal authentic feeling untainted by social maneuvering. Jane's firmness in her decision underscores her moral principle—she will not overstay her welcome despite personal inclination or romantic possibility—and the narrative affirms this resolve by noting that Jane was firm where she felt herself to be right.",
+      "anchor_text_end_of_sentence": "The master of the house heard with real sorrow that they were to go so\nsoon, and repeatedly tried to persuade Miss Bennet that it would not be\nsafe for her--that she was not enough recovered; but Jane was firm where\nshe felt herself to be right."
+    },
+    {
+      "id": "analysis_004",
+      "paragraph": "This pivotal revelation marks Darcy's internal conflict becoming conscious strategy. His attraction to Elizabeth 'more than he liked' signals dangerous emotional vulnerability from his perspective. His resolution to suppress all 'sign of admiration' represents the defining tension of their relationship: authentic feeling versus social prudence. The extended silence and book-reading during their half-hour alone constitute a performative withdrawal that ironically reveals rather than conceals his interest, as he adhered most conscientiously to his book, and would not even look at her.",
+      "anchor_text_end_of_sentence": "Steady to his purpose, he scarcely spoke\nten words to her through the whole of Saturday: and though they were at\none time left by themselves for half an hour, he adhered most\nconscientiously to his book, and would not even look at her."
+    },
+    {
+      "id": "analysis_005",
+      "paragraph": "The departure scene operates through layers of irony. 'Separation, so agreeable to almost all' encompasses Miss Bingley's relief, Darcy's self-preservation, and Elizabeth's oblivious cheerfulness. Miss Bingley's sudden civility—culminating in the condescension of a handshake—reveals the hollow performance of good breeding. Elizabeth took leave of the whole party in the liveliest spirits, a detail that contrasts sharply with Darcy's internal turmoil and establishes the dramatic irony that structures their relationship.",
+      "anchor_text_end_of_sentence": "Elizabeth took leave of\nthe whole party in the liveliest spirits."
+    },
+    {
+      "id": "analysis_006",
+      "paragraph": "The return to Longbourn presents a stark comparative study of family dynamics. Mrs. Bennet's lack of 'cordial' welcome prioritizes her own inconvenience and social schemes over maternal affection. Mr. Bennet's laconic but genuine pleasure provides emotional authenticity through economic expression. The observation that the evening conversation had lost much of its animation, and almost all its sense, by the absence of Jane and Elizabeth implicitly values the two elder sisters' contribution while critiquing the remaining household's intellectual poverty.",
+      "anchor_text_end_of_sentence": "The\nevening conversation, when they were all assembled, had lost much of its\nanimation, and almost all its sense, by the absence of Jane and\nElizabeth."
+    },
+    {
+      "id": "analysis_007",
+      "paragraph": "The closing tableau establishes the thematic chasm between Netherfield and Longbourn. Mary's pedantic pursuits—thorough bass and human nature studied as equivalent academic subjects—represent failed intellectual aspiration. The 'information' from Kitty and Lydia reduces military affairs to gossip and romance: a flogging and a potential marriage carry equal weight in their shallow social calculus. The chapter ends on the hint that Colonel Forster was going to be married, foreshadowing future developments while emphasizing the younger sisters' preoccupation with officers.",
+      "anchor_text_end_of_sentence": "Much had been done, and much had been said\nin the regiment since the preceding Wednesday; several of the officers\nhad dined lately with their uncle; a private had been flogged; and it\nhad actually been hinted that Colonel Forster was going to be married."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image_001",
+      "scene_title": "The Carriage Request",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth Bennet writing a letter by morning light, with Jane seated nearby looking concerned, in an elegant Netherfield morning room",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting style: A young woman with intelligent dark eyes and fine features writing at a mahogany desk by tall windows with morning light streaming in, wearing a simple but elegant muslin dress of the Regency period. Another fair-haired young woman sits nearby on a chaise, looking anxious. The room features classical columns, a crystal inkwell, fine drapery, and pastoral landscape visible through the windows. Chiaroscuro lighting emphasizes the writer's determined expression.",
+          "output_asset": "elizabeth-writing-carriage-request.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting: Close-up of elegant hands holding a quill pen over parchment, with morning light illuminating the writing. Soft focus background showing two young women in period dress in a sumptuous drawing room with gilded mirrors and silk curtains. Warm earth tones and dramatic shadows characteristic of Italian Renaissance portraiture.",
+          "output_asset": "writing-letter-closeup.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "and the request made."
+    },
+    {
+      "id": "image_002",
+      "scene_title": "Miss Bingley's Duplicitous Concern",
+      "style": "Renaissance oil painting",
+      "alt_text": "Caroline Bingley with a false smile expressing concern while internally scheming, in a lavish drawing room",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting style: An elegantly dressed woman with aristocratic features and cold eyes attempting a smile of concern, standing in a grand drawing room with marble fireplace and elaborate chandeliers. Her expression betrays insincerity through subtle tension around the eyes. Rich jewel-toned silk gown contrasts with her pale complexion. Caravaggio-inspired dramatic lighting from a single source emphasizes the theatricality of her performance.",
+          "output_asset": "miss-bingley-false-concern.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting: Full-length portrait of a proud woman in fashionable Regency dress standing by a harpsichord in an opulent room. Her posture is rigid with controlled emotion, one hand raised in a gesture of false solicitude. The background includes classical architectural elements, landscape paintings, and expensive furnishings. Rembrandt-style use of shadow conceals the truth of her emotions.",
+          "output_asset": "miss-bingley-full-length.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Miss Bingley was\nthen sorry that she had proposed the delay; for her jealousy and dislike\nof one sister much exceeded her affection for the other."
+    },
+    {
+      "id": "image_003",
+      "scene_title": "Bingley's Earnest Entreaty",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Bingley pleading with Jane Bennet to stay longer, genuine concern on his face, in a library or sitting room",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting style: A handsome young gentleman with open, honest features and reddish hair leaning forward earnestly toward a seated young woman with fair hair and gentle composure. He gestures with one hand in supplication while she maintains dignified stillness. The setting is a comfortable country house library with leather-bound books, a globe, and landscape paintings. Warm golden lighting suggests sincerity and domestic comfort. Raphael-inspired balanced composition.",
+          "output_asset": "bingley-pleading-with-jane.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting: Intimate half-length portrait of a sincere-faced young man in a blue coat, his expression vulnerable and pleading, addressing someone beyond the frame. Soft natural light from a window illuminates his face while the background shows hints of an elegant interior with classical columns. The painting captures the emotional truth of unguarded feeling.",
+          "output_asset": "bingley-sincere-expression.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "The master of the house heard with real sorrow that they were to go so\nsoon, and repeatedly tried to persuade Miss Bennet that it would not be\nsafe for her--that she was not enough recovered; but Jane was firm where\nshe felt herself to be right."
+    },
+    {
+      "id": "image_004",
+      "scene_title": "Darcy's Deliberate Isolation",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Darcy sternly reading a large book, deliberately avoiding looking at Elizabeth who sits nearby, in a drawing room",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting style: A stern, handsome gentleman with dark hair and aristocratic bearing seated in a carved mahogany chair, intensely focused on a large leather-bound book he holds before his face like a shield. In the background, slightly out of focus, a young woman with dark hair sits on a sofa, looking puzzled by his behavior. The room features ornate plasterwork ceiling, heavy drapery, and rich wood paneling. Dramatic side lighting creates deep shadows, emphasizing the psychological distance between figures.",
+          "output_asset": "darcy-avoiding-elizabeth.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting: Tense interior scene showing a proud man in formal dress pointedly reading a folio volume, his body turned away from a seated woman visible in the corner of the composition. The painting emphasizes the space and silence between them through careful arrangement of furniture and architectural elements. Titian-inspired rich color palette of burgundies and deep greens.",
+          "output_asset": "darcy-reading-aloof.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Steady to his purpose, he scarcely spoke\nten words to her through the whole of Saturday: and though they were at\none time left by themselves for half an hour, he adhered most\nconscientiously to his book, and would not even look at her."
+    },
+    {
+      "id": "image_005",
+      "scene_title": "The Netherfield Departure",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth and Jane leaving Netherfield with cheerful composure while Miss Bingley shakes hands coolly, the carriage waiting outside",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting style: A departure scene in a grand entrance hall with marble floors and a sweeping staircase. Two young women in traveling cloaks stand near the open doorway where a carriage is visible. A third woman with haughty bearing extends a limp hand in farewell, her expression pleasant but cold. Other figures observe from the background. Bright light from the doorway suggests freedom and anticipation. Canaletto-influenced architectural precision with Venetian color harmonies.",
+          "output_asset": "departure-netherfield-scene.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting: Outdoor scene of two young women being handed into a barouche by a footman, with a stately manor house in the background and several figures gathered on the steps. The departing women appear cheerful while those remaining show mixed expressions. Dramatic sky with breaking clouds suggests transition and change. Claude Lorrain-inspired landscape composition with golden light.",
+          "output_asset": "into-the-carriage.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Elizabeth took leave of\nthe whole party in the liveliest spirits."
+    },
+    {
+      "id": "image_006",
+      "scene_title": "The Longbourn Welcome",
+      "style": "Renaissance oil painting",
+      "alt_text": "The Bennet family gathered in the drawing room at Longbourn, with Mrs. Bennet expressing displeasure and Mr. Bennet showing quiet satisfaction",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting style: A domestic interior scene with a family assembled in a modest but comfortable drawing room. A middle-aged woman with an acid expression gestures in complaint while an older gentleman with intelligent eyes and a slight smile observes from his armchair. Two returning young women stand in the doorway looking resigned. The room features worn but respectable furnishings, family portraits, and a piano-forte. Dutch Golden Age influence in domestic realism and attention to textile details.",
+          "output_asset": "longbourn-family-gathered.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting: Three-quarter length portrait of a sardonic middle-aged gentleman seated by a fire, observing the scene before him with amused detachment. His expression suggests intelligence and hidden affection. The background shows an overcrowded drawing room with various family members engaged in different activities. Warm firelight illumination in the style of Dutch masters.",
+          "output_asset": "mr-bennet-quiet-pleasure.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "The\nevening conversation, when they were all assembled, had lost much of its\nanimation, and almost all its sense, by the absence of Jane and\nElizabeth."
+    },
+    {
+      "id": "image_007",
+      "scene_title": "The Younger Bennet Sisters' Gossip",
+      "style": "Renaissance oil painting",
+      "alt_text": "Kitty and Lydia Bennet excitedly sharing news about officers and military gossip in a provincial sitting room",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting style: Two young women in brightly colored dresses animatedly conversing in a modest sitting room, their expressions lively and somewhat foolish. One gestures excitedly while the other leans in to listen. Sheet music and books scattered around suggest interrupted studies. Through a window, red coats of soldiers are visible in the distance. Genre painting style influenced by Jan Steen, capturing the comedy of youthful folly.",
+          "output_asset": "kitty-lydia-gossiping.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting: Interior scene focused on two enthusiastic young women examining a letter or billet-doux, their faces animated with excitement and romantic speculation. The setting is a cluttered feminine space with bits of ribbon, gloves, and correspondence scattered on tables. A mirror reflects their animated gestures. Rococo-influenced lightness and pastel colors contrast with the more serious Netherfield scenes.",
+          "output_asset": "young-bennets-excitement.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Much had been done, and much had been said\nin the regiment since the preceding Wednesday; several of the officers\nhad dined lately with their uncle; a private had been flogged; and it\nhad actually been hinted that Colonel Forster was going to be married."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_001",
+      "quote": "Mrs. Bennet sent them word that they could not possibly have the carriage before Tuesday; and in her postscript it was added, that if Mr. Bingley and his sister pressed them to stay longer, she could spare them very well.",
+      "anchor_text": "Bingley\nand his sister pressed them to stay longer, she could spare them very\nwell."
+    },
+    {
+      "id": "quote_002",
+      "quote": "Against staying longer, however, Elizabeth was positively resolved--nor did she much expect it would be asked; and fearful, on the contrary, of being considered as intruding themselves needlessly long, she urged Jane to borrow Mr. Bingley's carriage immediately.",
+      "anchor_text": "intruding themselves needlessly long"
+    },
+    {
+      "id": "quote_003",
+      "quote": "Miss Bingley was then sorry that she had proposed the delay; for her jealousy and dislike of one sister much exceeded her affection for the other.",
+      "anchor_text": "Miss Bingley was\nthen sorry that she had proposed the delay; for her jealousy and dislike\nof one sister much exceeded her affection for the other."
+    },
+    {
+      "id": "quote_004",
+      "quote": "To Mr. Darcy it was welcome intelligence: Elizabeth had been at Netherfield long enough. She attracted him more than he liked; and Miss Bingley was uncivil to her and more teasing than usual to himself.",
+      "anchor_text": "She attracted him more than he liked"
+    },
+    {
+      "id": "quote_005",
+      "quote": "Steady to his purpose, he scarcely spoke ten words to her through the whole of Saturday: and though they were at one time left by themselves for half an hour, he adhered most conscientiously to his book, and would not even look at her.",
+      "anchor_text": "would not even look at her"
+    },
+    {
+      "id": "quote_006",
+      "quote": "Miss Bingley's civility to Elizabeth increased at last very rapidly, as well as her affection for Jane; and when they parted, after assuring the latter of the pleasure it would always give her to see her either at Longbourn or Netherfield, and embracing her most tenderly, she even shook hands with the former.",
+      "anchor_text": "she even shook hands with the former"
+    },
+    {
+      "id": "quote_007",
+      "quote": "They found Mary, as usual, deep in the study of thorough bass and human nature; and had some new extracts to admire and some new observations of threadbare morality to listen to.",
+      "anchor_text": "They found Mary, as usual, deep in the study of thorough bass and human\nnature; and had some new extracts to admire and some new observations of\nthreadbare morality to listen to."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_entries": "embedded_chapter_notes",
+    "image_prompt_entries": "illustration_markers",
+    "quote_entries": "pull_quote_excerpts"
+  },
+  "summary": "Chapter XII of Pride and Prejudice marks the transition between the Netherfield stay and the return to Longbourn, revealing critical character dynamics: Elizabeth's assertive independence, Mrs. Bennet's social scheming, Miss Bingley's performative duplicity, Bingley's genuine affection for Jane, and most significantly, Darcy's internal conflict as he consciously suppresses his growing attraction to Elizabeth. The chapter establishes the dramatic irony central to the Darcy-Elizabeth relationship—his deliberate coldness versus her oblivious spirits—and contrasts the refined falseness of Netherfield society with the authentic but intellectually impoverished world of Longbourn."
+}

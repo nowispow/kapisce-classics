@@ -1,0 +1,428 @@
+{
+  "schema_version": "2.1.0",
+  "title": "Pride and Prejudice - Chapter III",
+  "enhanced_title": "The Meryton Assembly",
+  "author": "Jane Austen",
+  "description": "The mysterious Mr. Bingley finally arrives in Hertfordshire, making a grand entrance at the local assembly ball. While Bingley delights the neighborhood with his charm, his friend Mr. Darcy offends the room with his cold pride. This chapter introduces the initial friction between Darcy and Elizabeth following his famous slight of her beauty.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-3",
+    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-3.mdx",
+    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-3/metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count_min": 7,
+    "image_prompt_count_min": 7,
+    "memorable_quote_count_min": 7,
+    "image_variations_per_prompt_min": 2,
+    "description_sentence_count": 3,
+    "analysis_sentence_range": [3, 4],
+    "analysis_label_format": "[n]",
+    "image_style_lock": "Renaissance oil painting",
+    "quote_rendering": "Callout component",
+    "insertion_methods_by_section": {
+      "analysis_entries": ["append"],
+      "image_prompt_entries": ["append"],
+      "quote_entries": ["replace"]
+    }
+  },
+  "field_aliases": {
+    "analysis_entries": "analysis",
+    "image_prompt_entries": "image_prompts",
+    "quote_entries": "memorable_quotes"
+  },
+  "quote_callout_spec": {
+    "import_statement": "import Callout from '@/components/Callout.astro'",
+    "component": "Callout",
+    "default_title": "Memorable Quote",
+    "body_template": "<QUOTE>",
+    "insertion_method": "replace",
+    "anchor_field": "anchor_text"
+  },
+  "agentic_generation": {
+    "pattern": "orchestrator",
+    "orchestrator": "chapter-metadata-orchestrator",
+    "sub_agents": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "handoff_order": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent-on-failure",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "scripts": [
+      "scripts/metadata/generate_metadata.py",
+      "scripts/metadata/validate_schema.py",
+      "scripts/metadata/validate_777.py",
+      "scripts/metadata/validate_image_variations.py",
+      "scripts/metadata/validate_anchors.py",
+      "scripts/metadata/review_failed_items.py",
+      "scripts/metadata/validate_callout_blocks.py",
+      "scripts/metadata/render_image_jobs.py",
+      "scripts/metadata/apply_insertions.py"
+    ]
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis-1",
+      "label": "[1]",
+      "section_focus": "Mr. Bennet's strategic silence",
+      "paragraph": "Mr. Bennet remains intentionally vague about his visit to Mr. Bingley to frustrate his family's curiosity. He enjoys the intellectual power that comes from withholding information in the domestic sphere. This playful antagonism defines his relationship with his wife and daughters throughout the early chapters.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "eluded the skill of them all;",
+        "insertion_method": "append"
+      },
+      "callout_variant": "note"
+    },
+    {
+      "id": "analysis-2",
+      "label": "[2]",
+      "section_focus": "The social currency of Lady Lucas",
+      "paragraph": "Lady Lucas serves as the primary conduit for social information when Mr. Bennet fails to provide it. Her favorable report on Mr. Bingley's handsome features and agreeable manners fuels the neighborhood's speculative fire. Information in this society acts as a form of currency that determines social status and marital hope.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "intelligence of their neighbour, Lady Lucas.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "tip"
+    },
+    {
+      "id": "analysis-3",
+      "label": "[3]",
+      "section_focus": "Mr. Bingley's brief visitation",
+      "paragraph": "Mr. Bingley’s return visit to the library lasts only ten minutes and excludes the Bennet sisters entirely. Despite this brevity, the ladies find ways to satisfy their curiosity by observing him from an upper window. The specific details they note—the blue coat and black horse—show how every detail is scrutinized for social significance.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "wore a blue coat and rode a black horse.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "important"
+    },
+    {
+      "id": "analysis-4",
+      "label": "[4]",
+      "section_focus": "The economic attraction of Mr. Darcy",
+      "paragraph": "The report of Mr. Darcy having ten thousand a year instantly makes him the most attractive man in the assembly room. This figure is more important to the guests than his noble mien or handsome features. It illustrates the stark reality that wealth often dictates character judgment in the Regency social landscape.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "of his having ten thousand a year.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "definition"
+    },
+    {
+      "id": "analysis-5",
+      "label": "[5]",
+      "section_focus": "The tide of public opinion",
+      "paragraph": "Public opinion of Mr. Darcy shifts rapidly from admiration to disgust as his proud manners become evident. His refusal to be pleased by local society is seen as an unpardonable insult to the community. This collective judgment establishes the 'pride' and 'prejudice' that will complicate the central romance.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "turned the tide of his popularity;",
+        "insertion_method": "append"
+      },
+      "callout_variant": "explanation"
+    },
+    {
+      "id": "analysis-6",
+      "label": "[6]",
+      "section_focus": "The core slight to Elizabeth",
+      "paragraph": "Mr. Darcy's cold dismissal of Elizabeth as merely 'tolerable' serves as the catalyst for her long-standing prejudice. He explicitly refuses to 'give consequence' to a woman he deems slighted by others. This moment of rejection creates the initial obstacle that defines Elizabeth's early view of his character.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "no humour at present to give consequence to young ladies who are slighted by other men.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "important"
+    },
+    {
+      "id": "analysis-7",
+      "label": "[7]",
+      "section_focus": "Mrs. Bennet's hyperbolic review",
+      "paragraph": "Mrs. Bennet's recount of the evening is colored by her desire for her daughters' success and her resentment toward Darcy. She exaggerates Jane's triumph while painting Darcy as a 'horrid' and 'disagreeable' man. Her narrative shows how personal bias can reshape the memory of social events into a moral drama.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "related, with much bitterness of spirit, and some exaggeration, the shocking rudeness of Mr. Darcy.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "summary"
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-1",
+      "label": "[1]",
+      "scene_title": "The Lucas Report",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Lady Lucas sharing gossip with the Bennet family in their drawing room.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, an interior scene of a Regency drawing room. Lady Lucas is leaning in toward Mrs. Bennet and her daughters, sharing news with a secretive expression. Warm candlelight, rich fabrics, and expressive faces.",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the Bennet sisters gathered around Lady Lucas. The lighting highlights their eager faces as they listen to the description of Mr. Bingley. Classical composition with deep shadows.",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "intelligence of their neighbour, Lady Lucas.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-2",
+      "label": "[2]",
+      "scene_title": "Observation from the Window",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of the Bennet sisters peering through an upper window at Mr. Bingley on his horse.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, three young women (Bennet sisters) crowded at an upstairs window. One looks through a telescope or just peers down. Outside, a man in a blue coat rides a black horse through the gate. Soft, ethereal lighting.",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, a focused view of the sisters' faces reflecting curiosity and excitement as they look out a window. The man below is partially visible in the distance. Rich texture on the curtains and dresses.",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "wore a blue coat and rode a black horse.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-3",
+      "label": "[3]",
+      "scene_title": "The Arrival at the Assembly",
+      "style": "Renaissance oil painting",
+      "alt_text": "A grand Renaissance oil painting of the Netherfield party entering the assembly-room.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a wide shot of a crowded ballroom as a small, fashionable party enters. Mr. Bingley and Mr. Darcy stand out with their elegant attire and noble bearing. Chiaroscuro lighting, bustling atmosphere.",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, focusing on the contrast between the friendly Mr. Bingley and the stiff, tall Mr. Darcy as they are introduced to the room. Deep reds and golds in the background.",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "five altogether: Mr. Bingley, his two sisters, the husband of the eldest, and another young man.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-4",
+      "label": "[4]",
+      "scene_title": "Darcy the Proud",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style portrait of Mr. Darcy standing alone at the ball, looking down on the company.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a full-length portrait of a tall, handsome man (Mr. Darcy) with a forbidding and proud expression. He stands apart from the dancing crowd, arms crossed. Dramatic shadows and sharp detail on his features.",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Mr. Darcy surveying the assembly room with cold indifference. The crowd in the background is blurred, emphasizing his isolation and perceived superiority.",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "above being pleased; and not all his large estate in Derbyshire could save him",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-5",
+      "label": "[5]",
+      "scene_title": "The Overheard Conversation",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Elizabeth Bennet sitting by the wall, overhearing Darcy and Bingley.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Elizabeth Bennet seated on a wooden bench against a wall, her head slightly turned toward two men (Darcy and Bingley) standing nearby. She has a subtle, intelligent expression. The lighting is intimate and focused.",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the moment Darcy turns to look at Elizabeth. Bingley is gesturing toward her, while Darcy's face remains cold. Elizabeth is in the background, clearly listening.",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "he looked for a moment at Elizabeth, till, catching her eye, he withdrew his own,",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-6",
+      "label": "[6]",
+      "scene_title": "Elizabeth's Playful Retelling",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Elizabeth Bennet laughing with her friends after the ball.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Elizabeth Bennet surrounded by a small circle of laughing friends. She is gesturing with her hands, telling a story with a lively and playful disposition. Warm, golden hour light.",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Elizabeth's face in a moment of genuine laughter. Her eyes are bright and mischievous. A study in personality and Regency charm.",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "lively, playful disposition, which delighted in anything ridiculous.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-7",
+      "label": "[7]",
+      "scene_title": "Mrs. Bennet's Triumph and Rage",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Mrs. Bennet excitedly talking to her husband in his library late at night.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Mrs. Bennet gesturing wildly as she talks to her weary husband. He is seated with a book, looking up with a dry expression. A single candle illuminates the scene, casting long shadows.",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Mrs. Bennet's face expressive with both joy for Jane and anger toward Darcy. Mr. Bennet is partially in shadow, emphasizing the late hour and his detachment.",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "found that he had a very different story to hear.",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-1",
+      "label": "[1]",
+      "quote": "If I can but see one of my daughters happily settled at Netherfield, and all the others equally well married, I shall have nothing to wish for.",
+      "speaker": "Mrs. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  If I can but see one of my daughters happily settled at Netherfield, and all the others equally well married, I shall have nothing to wish for.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“If I can but see one of my daughters happily settled at Netherfield,”\nsaid Mrs. Bennet to her husband, “and all the others equally well\nmarried, I shall have nothing to wish for.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-2",
+      "label": "[2]",
+      "quote": "Come, Darcy, I must have you dance. I hate to see you standing about by yourself in this stupid manner.",
+      "speaker": "Mr. Bingley",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "tip",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"tip\">\\n  Come, Darcy, I must have you dance. I hate to see you standing about by yourself in this stupid manner.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“Come, Darcy,” said he, “I must have you dance. I hate to see you\nstanding about by yourself in this stupid manner. You had much better\ndance.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-3",
+      "label": "[3]",
+      "quote": "I certainly shall not. You know how I detest it, unless I am particularly acquainted with my partner.",
+      "speaker": "Mr. Darcy",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "important",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"important\">\\n  I certainly shall not. You know how I detest it, unless I am particularly acquainted with my partner.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“I certainly shall not. You know how I detest it, unless I am\nparticularly acquainted with my partner.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-4",
+      "label": "[4]",
+      "quote": "She is tolerable: but not handsome enough to tempt me; and I am in no humour at present to give consequence to young ladies who are slighted by other men.",
+      "speaker": "Mr. Darcy",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "important",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"important\">\\n  She is tolerable: but not handsome enough to tempt me; and I am in no humour at present to give consequence to young ladies who are slighted by other men.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“She is tolerable: but not handsome enough to tempt _me_; and I am in no\nhumour at present to give consequence to young ladies who are slighted\nby other men.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-5",
+      "label": "[5]",
+      "quote": "If he had had any compassion for me, he would not have danced half so much! For God’s sake, say no more of his partners.",
+      "speaker": "Mr. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  If he had had any compassion for me, he would not have danced half so much! For God’s sake, say no more of his partners.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“If he had had any compassion for _me_,” cried her husband impatiently,\n“he would not have danced half so much! For God’s sake, say no more of\nhis partners. O that he had sprained his ancle in the first dance!”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-6",
+      "label": "[6]",
+      "quote": "Oh, my dear, I am quite delighted with him. He is so excessively handsome! and his sisters are charming women.",
+      "speaker": "Mrs. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "tip",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"tip\">\\n  Oh, my dear, I am quite delighted with him. He is so excessively handsome! and his sisters are charming women.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“Oh, my dear,” continued Mrs. Bennet, “I am quite delighted with him.\nHe is so excessively handsome! and his sisters are charming women.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-7",
+      "label": "[7]",
+      "quote": "I can assure you that Lizzy does not lose much by not suiting his fancy; for he is a most disagreeable, horrid man, not at all worth pleasing.",
+      "speaker": "Mrs. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "summary",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"summary\">\\n  I can assure you that Lizzy does not lose much by not suiting his fancy; for he is a most disagreeable, horrid man, not at all worth pleasing.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“But I can assure you,” she added, “that Lizzy does not lose much by not\nsuiting _his_ fancy; for he is a most disagreeable, horrid man, not at\nall worth pleasing.",
+        "insertion_method": "replace"
+      }
+    }
+  ],
+  "summary": "Chapter III metadata details the Meryton Assembly ball, where Mr. Bingley's charm is contrasted with Mr. Darcy's pride. It features 7 analysis points, 7 memorable quotes with speaker-specific callouts, and 14 Renaissance-style image prompts anchored for deterministic placement."
+}

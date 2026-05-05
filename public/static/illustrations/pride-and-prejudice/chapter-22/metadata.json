@@ -1,0 +1,234 @@
+{
+  "schema_version": "1.0.0",
+  "title": "Pride And Prejudice: Chapter XXII",
+  "enhanced_title": "Pride And Prejudice, Chapter Twenty-Two: The Pragmatic Engagement of Charlotte Lucas",
+  "author": "Jane Austen",
+  "description": "In Chapter 22 of Pride and Prejudice, Mr. Collins's proposal to Elizabeth is quickly followed by an unexpected engagement to Charlotte Lucas, revealing the sharp ideological divide between romantic ideals and pragmatic necessities facing women of limited means in Austen's England.",
+  "source": {
+    "novel": "Pride And Prejudice",
+    "chapter": "Chapter XXII",
+    "source_text_file": "./chapters/chapter_22.md",
+    "metadata_file": "./metadata/chapter_22_metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count": 7,
+    "image_prompt_count": 7,
+    "quote_count": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {},
+  "analysis_entries": [
+    {
+      "id": "analysis_001",
+      "paragraph": "This opening passage introduces the chapter's central action through Charlotte Lucas's calculated kindness toward Mr. Collins. Elizabeth's gratitude reveals her complete misunderstanding of Charlotte's true motives—she believes Charlotte is merely being polite, unaware that Charlotte is deliberately encouraging Collins's affections toward herself. This dramatic irony establishes the tension between Elizabeth's romantic worldview and Charlotte's pragmatic approach to marriage.",
+      "anchor_text_end_of_sentence": "than I can express."
+    },
+    {
+      "id": "analysis_002",
+      "paragraph": "Austen explicitly reveals Charlotte's scheme to the reader, creating a sharp contrast between Elizabeth's perceptions and the reality of the situation. The phrase 'nothing less than to secure her from any return of Mr. Collins's addresses, by engaging them towards herself' emphasizes Charlotte's calculated intention to redirect his affections, marking a pivotal moment in the novel's exploration of female agency and the marriage market. This disclosure positions the reader as a privileged observer, aware of a deception that Elizabeth cannot yet perceive.",
+      "anchor_text_end_of_sentence": "Collins’s addresses, by engaging them towards\nherself."
+    },
+    {
+      "id": "analysis_003",
+      "paragraph": "Mr. Collins's 'admirable slyness' in escaping to propose to Charlotte provides comedic characterization while highlighting his self-importance. His desire to keep his intentions secret from his cousins demonstrates his inflated sense of his own significance—he believes they would instantly deduce his purpose. The irony lies in the fact that the Bennets would never suspect such a rapid shift in his affections.",
+      "anchor_text_end_of_sentence": "adventure of Wednesday."
+    },
+    {
+      "id": "analysis_004",
+      "paragraph": "Austen delivers a devastating critique of the economic realities facing women through Mr. Collins's rapid courtship and Charlotte's swift acceptance. The narrator's observation that the 'stupidity' of Mr. Collins actually protects him from romantic complications reveals the cynical truth: Charlotte does not desire charm or wit—she desires an establishment, and his foolishness ensures she will control the marriage. The phrase 'cared not how soon that establishment were gained' strips away all romantic pretense and exposes the transaction at the heart of this union.",
+      "anchor_text_end_of_sentence": "establishment were gained."
+    },
+    {
+      "id": "analysis_005",
+      "paragraph": "The reaction of Sir William and Lady Lucas reveals the mercenary calculations underlying the socially acceptable 'good marriage.' Lady Lucas's immediate calculation of Mr. Bennet's remaining years exposes the grim reality that their daughter's marriage depends on another man's death. Sir William's ambition that the couple appear at St. James's demonstrates how marriage serves as a vehicle for social advancement, and the narrator's dry observation that 'the whole family in short were properly overjoyed on the occasion' underscores the collective relief at Charlotte's secured future.",
+      "anchor_text_end_of_sentence": "The whole family in short were properly overjoyed on the\noccasion."
+    },
+    {
+      "id": "analysis_006",
+      "paragraph": "Charlotte's internal meditation offers the novel's most explicit statement of the economic determinism facing women of small fortune. Her acknowledgment that marriage is 'the only honourable provision' for women like herself represents a worldview diametrically opposed to Elizabeth's romantic ideals. At twenty-seven, Charlotte recognizes she has no luxury of waiting for love—she must secure her future while she can, and the narrator confirms her pragmatic satisfaction: 'she felt all the good luck of it.'",
+      "anchor_text_end_of_sentence": "This preservative she had now obtained; and at the age of\ntwenty-seven, without having ever been handsome, she felt all the good\nluck of it."
+    },
+    {
+      "id": "analysis_007",
+      "paragraph": "The confrontation between Elizabeth and Charlotte constitutes the chapter's philosophical climax. Charlotte's defense—'I am not romantic, you know. I never was'—articulates the pragmatist's manifesto against Elizabeth's idealism. Elizabeth's inability to comprehend this perspective reveals her privilege and naivety, while Charlotte's calm composure suggests a self-knowledge that Elizabeth has yet to attain. The chapter concludes with Elizabeth's 'distressing conviction' that Charlotte cannot be happy in the lot she had chosen, demonstrating that friendship cannot bridge the chasm between their incompatible worldviews.",
+      "anchor_text_end_of_sentence": "And to the pang of a friend disgracing\nherself, and sunk in her esteem, was added the distressing conviction\nthat it was impossible for that friend to be tolerably happy in the lot\nshe had chosen."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "img_001",
+      "scene_title": "Charlotte's Calculated Encounter",
+      "style": "Renaissance oil painting",
+      "alt_text": "Charlotte Lucas watches from an upper window as Mr. Collins approaches Lucas Lodge on a country lane",
+      "variations": [
+        {
+          "variation_id": "var_001A",
+          "prompt_text": "Renaissance oil painting depicting a refined young woman in Regency-era dress peering intently from an upper window of a country manor house, watching a clergyman in somber black attire walking along a winding lane below; warm afternoon light streams through the leaded glass window, creating dramatic chiaroscuro; the woman's expression shows calculation and determination; lush English countryside visible in the background; rich browns, deep greens, and golden tones; highly detailed period architecture in the style of Raphael",
+          "output_asset": "assets/chapter_22/charlotte_watching_window.png"
+        },
+        {
+          "variation_id": "var_001B",
+          "prompt_text": "Oil painting in Renaissance style showing Miss Lucas hastening down a garden path to 'accidentally' encounter Mr. Collins; the scene captures dramatic tension through body language—the woman's purposeful stride versus the man's oblivious approach; verdant hedgerows and blooming roses frame the composition; soft pastoral lighting; period-accurate Regency costumes; painted with the atmospheric depth and naturalistic detail characteristic of Renaissance masters like Titian",
+          "output_asset": "assets/chapter_22/charlotte_planning_encounter.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "meet him accidentally in the lane."
+    },
+    {
+      "id": "img_002",
+      "scene_title": "The Rapid Courtship",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins making his proposal to Charlotte Lucas in a drawing room at Lucas Lodge",
+      "variations": [
+        {
+          "variation_id": "var_002A",
+          "prompt_text": "Renaissance oil painting of a matrimonial proposal scene; a pompous clergyman in clerical black kneels before a composed young woman in modest morning dress seated in an elegant drawing room; the room features period furniture, draped curtains, and a landscape painting on the wall; the woman's expression is serene and accepting rather than emotional; warm candlelight and natural window light create a balanced composition; rich textures of fabric and wood rendered with the meticulous detail of Renaissance portraiture in the manner of Holbein",
+          "output_asset": "assets/chapter_22/collins_proposing.png"
+        },
+        {
+          "variation_id": "var_002B",
+          "prompt_text": "Classical oil painting depicting the aftermath of an accepted proposal; two figures in Regency attire standing in a well-appointed parlor, holding hands or exchanging rings; the male figure appears self-satisfied while the female maintains an expression of practical satisfaction rather than romantic rapture; architectural elements including a mantelpiece with clock and family portraits; balanced composition with warm earth tones; style reminiscent of Venetian Renaissance masters with attention to fabric textures and interior detail",
+          "output_asset": "assets/chapter_22/engagement_accepted.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "establishment were gained."
+    },
+    {
+      "id": "img_003",
+      "scene_title": "The Joyful Parents",
+      "style": "Renaissance oil painting",
+      "alt_text": "Sir William and Lady Lucas receiving news of their daughter's engagement with expressions of calculated delight",
+      "variations": [
+        {
+          "variation_id": "var_003A",
+          "prompt_text": "Renaissance oil painting of a respectable middle-aged couple in late 18th-century dress reacting to happy news; the gentleman stands with an expression of satisfied pride while the seated lady claps her hands in delight, her face showing both joy and shrewd calculation; they are in a well-furnished drawing room of a country gentry home; rich fabrics, polished wood, and silver ornaments demonstrate comfortable prosperity; dramatic lighting emphasizes their expressive faces; painted with the psychological insight and compositional balance of Renaissance family portraiture",
+          "output_asset": "assets/chapter_22/lucas_parents_joy.png"
+        },
+        {
+          "variation_id": "var_003B",
+          "prompt_text": "Oil painting in Renaissance manner showing Lady Lucas alone, bent over a desk or table calculating figures with an abacus or writing materials; her concentration shows the practical reality behind the celebration of marriage; autumnal light streams through a window; period details include account books, sealing wax, and quill pens; the composition emphasizes the economic foundation of matrimonial arrangements; rendered with the sober realism and attention to detail characteristic of Northern Renaissance painting",
+          "output_asset": "assets/chapter_22/lady_lucas_calculating.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "The whole family in short were properly overjoyed on the\noccasion."
+    },
+    {
+      "id": "img_004",
+      "scene_title": "Charlotte's Reflection",
+      "style": "Renaissance oil painting",
+      "alt_text": "Charlotte Lucas in a moment of private contemplation after accepting Mr. Collins's proposal",
+      "variations": [
+        {
+          "variation_id": "var_004A",
+          "prompt_text": "Renaissance oil painting of a plain but dignified young woman seated alone in quiet contemplation; she wears simple but respectable Regency dress; her expression is composed, accepting, and quietly satisfied rather than joyful; she sits by a window looking out at an English garden; soft diffused light creates a meditative atmosphere; the painting emphasizes dignity and resignation rather than romance; executed with the psychological depth and restrained emotion characteristic of Renaissance portraiture in the style of Moroni",
+          "output_asset": "assets/chapter_22/charlotte_reflection.png"
+        },
+        {
+          "variation_id": "var_004B",
+          "prompt_text": "Classical oil painting depicting a woman of twenty-seven in early 19th-century dress standing before a mirror; her reflection shows her objectively assessing her appearance with practical realism rather than vanity; the room is modestly appointed, suggesting a family of small fortune; natural window light illuminates the scene; the composition conveys themes of self-knowledge and acceptance of one's circumstances; painted with the clarity and humanistic detail of Renaissance masters concerned with individual character",
+          "output_asset": "assets/chapter_22/charlotte_mirror.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "This preservative she had now obtained; and at the age of\ntwenty-seven, without having ever been handsome, she felt all the good\nluck of it."
+    },
+    {
+      "id": "img_005",
+      "scene_title": "Mr. Bennet's Warning",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Bennet delivering his ironic warning to Mr. Collins about Lady Catherine's potential displeasure",
+      "variations": [
+        {
+          "variation_id": "var_005A",
+          "prompt_text": "Renaissance oil painting of two men in a candlelit drawing room; an older gentleman with ironic, knowing expression addresses a younger, pompous clergyman who appears simultaneously flattered and concerned; the older man's body language suggests veiled mockery while the younger shows earnest deference; rich period interiors with books, portraits, and mahogany furniture; dramatic chiaroscuro lighting emphasizes the psychological tension between the speakers; rendered with the narrative clarity and character study typical of Renaissance history painting",
+          "output_asset": "assets/chapter_22/bennet_warning.png"
+        },
+        {
+          "variation_id": "var_005B",
+          "prompt_text": "Oil painting in Renaissance style showing Mr. Bennet alone, wearing an expression of quiet amusement; he sits in his study surrounded by books, a half-smile playing on his lips as he contemplates the irony of Collins's pretensions; warm lamplight creates cocooned atmosphere; the composition emphasizes intellectual detachment and ironic observation; painted with the psychological penetration and use of shadow characteristic of Caravaggio's followers, emphasizing the character's inner life",
+          "output_asset": "assets/chapter_22/bennet_amused.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "we_ shall take no offence."
+    },
+    {
+      "id": "img_006",
+      "scene_title": "The Revelation to Elizabeth",
+      "style": "Renaissance oil painting",
+      "alt_text": "Charlotte Lucas privately informing Elizabeth Bennet of her engagement to Mr. Collins",
+      "variations": [
+        {
+          "variation_id": "var_006A",
+          "prompt_text": "Renaissance oil painting of two young women in an intimate tête-à-tête; one sits composed, delivering news, while the other recoils with visible shock and disbelief; the listener's hand is raised to her lips, her eyes wide with astonishment; the room suggests a modest morning parlor with breakfast things partially cleared; dramatic lighting emphasizes the contrast between the speaker's calm and the listener's turmoil; painted with the emotional intensity and gestural expressiveness of Renaissance narrative painting in the manner of Raphael's earlier works",
+          "output_asset": "assets/chapter_22/elizabeth_shocked.png"
+        },
+        {
+          "variation_id": "var_006B",
+          "prompt_text": "Classical oil painting capturing a moment of shattered friendship and opposing worldviews; two women facing each other across a small distance that seems impassable; one maintains steady composure while the other struggles to maintain decorum; their body language speaks of ideological chasm despite physical proximity; soft morning light from a window creates gentle illumination that contrasts with the emotional weight of the scene; rendered with the emotional nuance and balanced composition characteristic of High Renaissance masters",
+          "output_asset": "assets/chapter_22/charlotte_telling_elizabeth.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "the bounds of decorum,"
+    },
+    {
+      "id": "img_007",
+      "scene_title": "Elizabeth's Private Grief",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth Bennet left alone to contemplate Charlotte's engagement and its implications for their friendship",
+      "variations": [
+        {
+          "variation_id": "var_007A",
+          "prompt_text": "Renaissance oil painting of a young woman in white muslin dress seated in solitary reflection; her expression shows wounded disillusionment and pained contemplation rather than tears; she sits in a window seat or elegant chair, gazing into middle distance; soft afternoon light creates melancholy atmosphere; the composition emphasizes isolation and internal conflict; painted with the emotional depth and quiet dignity of Renaissance depictions of contemplative figures, reminiscent of Giorgione's melancholy maidens",
+          "output_asset": "assets/chapter_22/elizabeth_reflecting.png"
+        },
+        {
+          "variation_id": "var_007B",
+          "prompt_text": "Oil painting in Renaissance manner showing Elizabeth Bennet in her chamber, the scene conveying philosophical reflection on marriage, friendship, and female destiny; books, letters, or personal objects suggest intellectual engagement with the problem before her; the young woman's pose suggests both strength and vulnerability; diffused natural light from a window creates poetic atmosphere; executed with the symbolic richness and psychological introspection characteristic of Renaissance allegorical portraiture",
+          "output_asset": "assets/chapter_22/elizabeth_contemplation.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "And to the pang of a friend disgracing\nherself, and sunk in her esteem, was added the distressing conviction\nthat it was impossible for that friend to be tolerably happy in the lot\nshe had chosen."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_001",
+      "quote": "It keeps him in good humour",
+      "anchor_text": "addresses, by engaging"
+    },
+    {
+      "id": "quote_002",
+      "quote": "Such was Miss Lucas's scheme; and appearances were so favourable",
+      "anchor_text": "Such was Miss Lucas’s scheme; and appearances were so\nfavourable, that when they parted at night, she would have felt almost\nsure of success if he had not been to leave Hertfordshire so very soon."
+    },
+    {
+      "id": "quote_003",
+      "quote": "In as short a time as Mr. Collins's long speeches would allow",
+      "anchor_text": "of both; and as"
+    },
+    {
+      "id": "quote_004",
+      "quote": "The stupidity with which he was favoured by nature must guard his courtship from any charm that could make a woman wish for its continuance",
+      "anchor_text": "disinterested desire of an establishment,"
+    },
+    {
+      "id": "quote_005",
+      "quote": "marriage had always been her object: it was the only honourable provision for well-educated young women of small fortune",
+      "anchor_text": "must be their pleasantest preservative"
+    },
+    {
+      "id": "quote_006",
+      "quote": "I am not romantic, you know. I never was",
+      "anchor_text": "the marriage state."
+    },
+    {
+      "id": "quote_007",
+      "quote": "Charlotte, the wife of Mr. Collins, was a most humiliating picture!",
+      "anchor_text": "And to the pang of a friend disgracing\nherself, and sunk in her esteem, was added the distressing conviction\nthat it was impossible for that friend to be tolerably happy in the lot\nshe had chosen."
+    }
+  ],
+  "insertion_methods": {
+    "anchor_strategy": "end_of_sentence",
+    "distribution": "evenly_spaced"
+  },
+  "summary": "Chapter XXII of Pride and Prejudice presents the pivotal engagement between Charlotte Lucas and Mr. Collins, establishing one of the novel's most significant thematic tensions. Through Charlotte's calculated acceptance of a loveless but secure marriage, Austen explores the brutal economic realities facing women of limited means in Regency England. The chapter contrasts Charlotte's pragmatic worldview with Elizabeth's romantic ideals, testing their friendship and forcing both characters—and readers—to confront uncomfortable truths about marriage as both an emotional and economic institution. The chapter culminates in Elizabeth's disillusionment, establishing that her principles, however admirable, may reflect the privilege of relative youth and beauty rather than universal moral truths."
+}

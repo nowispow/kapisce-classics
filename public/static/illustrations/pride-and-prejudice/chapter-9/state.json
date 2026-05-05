@@ -1,0 +1,74 @@
+{
+  "chapter": "chapter-9",
+  "novel": "pride-and-prejudice",
+  "pipeline_version": "4.1",
+  "last_updated": "2026-04-01T09:45:54Z",
+  "source_markdown": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-9.mdx",
+  "output_files": {
+    "metadata": "metadata.json",
+    "enhanced_mdx": "/workspace/chapters/pride-and-prejudice-chapter-9-enhanced.mdx",
+    "translations": {}
+  },
+  "steps": {
+    "analysis_metadata_generation": "done",
+    "analysis_metadata_enhancement": "pending",
+    "reviewer_metadata_quality_assurance": "done",
+    "reviewer_metadata_verification": "pending",
+    "image_generation": "done",
+    "metadata_content_insertion": "done",
+    "holistic_quality_assurance": "pending",
+    "translation_initialization": "pending",
+    "translation_batch_processing": "pending",
+    "format_enforced": "pending"
+  },
+  "metadata_validation": {
+    "passed": true,
+    "last_checked": "2026-02-27T07:56:24.832720+00:00",
+    "errors": []
+  },
+  "image_progress": {
+    "total_scenes": 7,
+    "variants_per_scene": 2,
+    "completed": 14,
+    "last_scene_completed": 7
+  },
+  "translation": {
+    "status": "blocked",
+    "ready": false,
+    "ready_after_step": "holistic_quality_assurance",
+    "source_mdx": "/home/yatit/Documents/Kapisce/GitHub/kapisce-classics/src/content/chapters/pride-and-prejudice-chapter-9-enhanced.mdx",
+    "target_languages": [
+      "ar",
+      "bn",
+      "de",
+      "es",
+      "fa",
+      "fr",
+      "ha",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "pt",
+      "ru",
+      "sw",
+      "th",
+      "tr",
+      "vi",
+      "zh-TW"
+    ],
+    "active_language": null,
+    "batch_size_chars": 2800,
+    "last_synced": "2026-04-01T09:45:54Z",
+    "languages": {}
+  },
+  "novel_slug": "pride-and-prejudice",
+  "chapter_slug": "chapter-9",
+  "status": "pending",
+  "phase": "assembled",
+  "retry_count": 0,
+  "rejection_reason": null,
+  "summary": "Pipeline complete. Chapter is ready for the holistic QA and translation phase. ACTION: Await human holistic review."
+}

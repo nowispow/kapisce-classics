@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: Chapter LVI",
+  "enhanced_title": "The Confrontation: Lady Catherine's Intervention",
+  "author": "Jane Austen",
+  "description": "Lady Catherine de Bourgh's unexpected visit to Longbourn, where she confronts Elizabeth Bennet with demands regarding Elizabeth's alleged engagement to Mr. Darcy, revealing maternal aspirations and Elizabeth's steadfast character.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "LVI",
+    "source_text_file": "chapter_56.txt",
+    "metadata_file": "chapter_56_metadata.json"
+  },
+  "pattern_requirements": {
+    "format": "7-7-7",
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "analysis_entries": "LitCharts-style analysis paragraphs",
+    "image_prompt_entries": "Visual scene interpretations",
+    "quote_entries": "Notable quotations with context anchors"
+  },
+  "alignment_guidelines": "Each entry maintains thematic consistency with the confrontation between Lady Catherine and Elizabeth Bennet, highlighting social class tensions, female agency, and 19th-century marriage expectations.",
+  "analysis_entries": [
+    {
+      "id": "analysis_01_arrival",
+      "paragraph": "The chapter opens with the unprecedented arrival of Lady Catherine de Bourgh's chaise and four, an imposing equipage that signals the gravity of her errand. The early hour and unfamiliar livery create immediate tension among the Bennet household, whose astonishment exceeds even their own expectations. Bingley and Jane's strategic withdrawal into the shrubbery ironically foreshadows the romantic concerns that will dominate the upcoming confrontation.",
+      "anchor_text_end_of_sentence": "It was Lady Catherine de Bourgh."
+    },
+    {
+      "id": "analysis_02_dismissal",
+      "paragraph": "Lady Catherine's entrance embodies aristocratic arrogance\u2014her 'air more than usually ungracious,' her perfunctory acknowledgment of Elizabeth, and her silent examination of the premises reveal her condescension. As they pass through the hall, she opens the doors of the dining-parlour and drawing-room, subjecting the modest Bennet home to a wordless audit of its social worth. Her criticism of Longbourn's sitting-room and park serve as calculated insults designed to establish social hierarchy before the true purpose of her visit emerges.",
+      "anchor_text_end_of_sentence": "As they passed through the hall,\nLady Catherine opened the doors into the dining-parlour and\ndrawing-room, and pronouncing them, after a short survey, to be\ndecent-looking rooms, walked on."
+    },
+    {
+      "id": "analysis_03_accusation",
+      "paragraph": "The confrontation escalates dramatically when Lady Catherine reveals her intelligence: a report of Elizabeth's impending engagement to Darcy. Elizabeth's coloring with 'astonishment and disdain' demonstrates her genuine surprise while signaling her moral superiority. Lady Catherine's admission that she considers the report 'a scandalous falsehood' yet still journeyed to intervene exposes the depth of her anxiety, as she declares she instantly resolved on setting off for this place, that she might make her sentiments known to you.",
+      "anchor_text_end_of_sentence": "Though I\n_know_ it must be a scandalous falsehood, though I would not injure him\nso much as to suppose the truth of it possible, I instantly resolved on\nsetting off for this place, that I might make my sentiments known to\nyou."
+    },
+    {
+      "id": "analysis_04_frankness",
+      "paragraph": "A battle of rhetorical styles ensues: Lady Catherine deploys her celebrated 'sincerity and frankness' as weapons, demanding explicit answers and invoking familial authority. Elizabeth counters with principled evasion, refusing to submit to interrogation and deflecting each demand with cool precision. The clash between aristocratic entitlement and personal dignity forms the chapter's central dramatic tension, crystallized in Elizabeth's pointed retort: 'Your Ladyship has declared it to be impossible.'",
+      "anchor_text_end_of_sentence": "Your Ladyship has declared it to be impossible."
+    },
+    {
+      "id": "analysis_05_tainted_alliance",
+      "paragraph": "Lady Catherine's rhetorical strategy shifts to character assassination, invoking Lydia's elopement as evidence of the Bennet family's moral contamination. Her horrified invocation\u2014'Are the shades of Pemberley to be thus polluted?'\u2014reveals how property and bloodline transcend individual merit in aristocratic value systems, while simultaneously betraying her fear that Darcy might value love over lineage. Elizabeth's response\u2014that Lady Catherine has insulted her in every possible method\u2014marks the moment the conversation crosses from interrogation into open hostility.",
+      "anchor_text_end_of_sentence": "You have insulted me, in every possible method."
+    },
+    {
+      "id": "analysis_06_defiance",
+      "paragraph": "Elizabeth's final declaration of autonomy represents a radical assertion of female agency: 'I am only resolved to act in that manner, which will, in my own opinion, constitute my happiness, without reference to you, or to any person so wholly unconnected with me.' She systematically dismantles Lady Catherine's appeals to duty, honor, and gratitude, substituting individual conscience for social obligation. Her further claim that the world in general would have too much sense to join in the scorn against such a marriage underscores her confidence that personal merit can withstand aristocratic censure.",
+      "anchor_text_end_of_sentence": "and the world in general would have too much sense to join in\nthe scorn."
+    },
+    {
+      "id": "analysis_07_departure",
+      "paragraph": "The chapter concludes with dramatic irony: Lady Catherine exits in high dudgeon, having failed utterly in her mission, while Mrs. Bennet remains oblivious to the true significance of the visit. Elizabeth is forced to give in to a little falsehood when her mother presses her for details, since to acknowledge the substance of their conversation was impossible. This necessary deception emphasizes the gap between Elizabeth's interior life of principled resistance and the social performance required by her domestic position.",
+      "anchor_text_end_of_sentence": "Elizabeth was forced to give in to a little falsehood here; for to\nacknowledge the substance of their conversation was impossible."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "ip_01_arrival",
+      "scene_title": "The Chaise Approaches Longbourn",
+      "style": "Renaissance oil painting",
+      "alt_text": "A grand carriage with four horses approaches a modest country estate in the early morning light",
+      "variations": [
+        {
+          "variation_id": "ip_01a",
+          "prompt_text": "Renaissance oil painting of a stately chaise and four horses approaching a modest Georgian country house at dawn, golden morning light streaming across manicured lawns, servants watching from windows, sense of impending drama in the pastoral setting",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "ip_01b",
+          "prompt_text": "Renaissance oil painting detail of ornate carriage door with family crest, a lady's pale hand resting on velvet curtain, dramatic chiaroscuro lighting suggesting aristocratic authority descending upon humble surroundings",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "It was Lady Catherine de Bourgh."
+    },
+    {
+      "id": "ip_02_confrontation",
+      "scene_title": "The Parlor Meeting",
+      "style": "Renaissance oil painting",
+      "alt_text": "Lady Catherine and Elizabeth in tense exchange within the modest Bennet parlor",
+      "variations": [
+        {
+          "variation_id": "ip_02a",
+          "prompt_text": "Renaissance oil painting of two women in a modest drawing room, one older austere noblewoman in elaborate silks seated rigidly, a younger woman in simpler dress standing her ground, dramatic tension in body language, warm interior candlelight contrasting with cold formality",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "ip_02b",
+          "prompt_text": "Renaissance oil painting focusing on faces: haughty aristocratic matron with disapproving expression confronting a composed young woman with defiant eyes, psychological intensity rendered through masterful use of shadow and light",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "She entered the room with an air more than usually ungracious, made no\nother reply to Elizabeth\u2019s salutation than a slight inclination of the\nhead, and sat down without saying a word."
+    },
+    {
+      "id": "ip_03_walk",
+      "scene_title": "The Garden Interview Begins",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth and Lady Catherine walking along a gravel path toward the wilderness",
+      "variations": [
+        {
+          "variation_id": "ip_03a",
+          "prompt_text": "Renaissance oil painting of two figures walking along a gravel garden path bordered by hedges, mature woman in elegant traveling dress leading, younger woman with parasol following, pastoral landscape in background, sense of impending private confrontation",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "ip_03b",
+          "prompt_text": "Renaissance oil painting: dramatic low angle view of gravel walk stretching toward dark copse, two small figures in the distance suggesting importance of conversation to come, foreboding atmosphere with theatrical sky",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "attended her noble guest downstairs."
+    },
+    {
+      "id": "ip_04_accusation",
+      "scene_title": "The Accusation in the Wilderness",
+      "style": "Renaissance oil painting",
+      "alt_text": "Lady Catherine confronting Elizabeth with accusations about Mr. Darcy",
+      "variations": [
+        {
+          "variation_id": "ip_04a",
+          "prompt_text": "Renaissance oil painting of dramatic outdoor confrontation in a wilderness garden, noblewoman gesturing imperiously, young woman with shocked expression, dappled sunlight through trees illuminating the scene of social conflict",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "ip_04b",
+          "prompt_text": "Renaissance oil painting focusing on the noblewoman's accusatory gesture and the younger woman's response of dignified astonishment, emotional intensity captured through facial expressions and hand movements",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Though I\n_know_ it must be a scandalous falsehood, though I would not injure him\nso much as to suppose the truth of it possible, I instantly resolved on\nsetting off for this place, that I might make my sentiments known to\nyou."
+    },
+    {
+      "id": "ip_05_defiance",
+      "scene_title": "Elizabeth's Principled Stand",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth firmly refusing Lady Catherine's demands in the garden setting",
+      "variations": [
+        {
+          "variation_id": "ip_05a",
+          "prompt_text": "Renaissance oil painting of a young woman standing firm against seated aristocratic matron in garden setting, upright posture suggesting moral rectitude, natural surroundings contrasted with artificial social constraints, golden afternoon light",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "ip_05b",
+          "prompt_text": "Renaissance oil painting close-up: young woman's face showing serene determination against older woman's furious disapproval, psychological portrait of generational and philosophical conflict, masterful rendering of complex emotions",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "I am only resolved to act in that manner,\nwhich will, in my own opinion, constitute my happiness, without\nreference to _you_, or to any person so wholly unconnected with me."
+    },
+    {
+      "id": "ip_06_farewell",
+      "scene_title": "The Lady's Departure",
+      "style": "Renaissance oil painting",
+      "alt_text": "Lady Catherine departing in her carriage without taking leave",
+      "variations": [
+        {
+          "variation_id": "ip_06a",
+          "prompt_text": "Renaissance oil painting of grand carriage door with crest, noblewoman entering without looking back, young woman watching from threshold of country house, dramatic separation suggesting unresolved conflict, atmospheric dusk lighting",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "ip_06b",
+          "prompt_text": "Renaissance oil painting: dust rising from carriage wheels, receding grandeur emphasizing futility of aristocratic intervention in matters of the heart, lone figure on doorstep watching departure, melancholic twilight atmosphere",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "She\nheard the carriage drive away as she proceeded upstairs."
+    },
+    {
+      "id": "ip_07_mother",
+      "scene_title": "Mrs. Bennet's Innocent Inquiry",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth's mother eagerly meeting her in the hallway seeking gossip",
+      "variations": [
+        {
+          "variation_id": "ip_07a",
+          "prompt_text": "Renaissance oil painting interior scene: anxious middle-aged woman in doorway of dressing room eagerly questioning composed daughter, domestic interior with scattered vanity items suggesting social aspirations, warm candlelight contrast with daughter's cool demeanor",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "ip_07b",
+          "prompt_text": "Renaissance oil painting: two figures in hallway, one animated with curiosity, other restrained and secretive, painted floor tiles and paneled walls suggesting modest gentry setting, dramatic irony conveyed through compositional juxtaposition",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Elizabeth was forced to give in to a little falsehood here; for to\nacknowledge the substance of their conversation was impossible."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_01_arrival",
+      "quote": "It was too early in the morning for visitors; and besides, the equipage did not answer to that of any of their neighbours.",
+      "anchor_text": "It was too early in the morning for visitors; and besides, the\nequipage did not answer to that of any of their neighbours."
+    },
+    {
+      "id": "quote_02_dismissal",
+      "quote": "She entered the room with an air more than usually ungracious, made no other reply to Elizabeth's salutation than a slight inclination of the head, and sat down without saying a word.",
+      "anchor_text": "She entered the room with an air more than usually ungracious, made no\nother reply to Elizabeth\u2019s salutation than a slight inclination of the\nhead, and sat down without saying a word."
+    },
+    {
+      "id": "quote_03_accusation",
+      "quote": "Your own heart, your own conscience, must tell you why I come.",
+      "anchor_text": "Your own heart, your own conscience, must tell you why I\ncome."
+    },
+    {
+      "id": "quote_04_frankness",
+      "quote": "My character has ever been celebrated for its sincerity and frankness; and in a cause of such moment as this, I shall certainly not depart from it.",
+      "anchor_text": "My character has ever been\ncelebrated for its sincerity and frankness; and in a cause of such\nmoment as this, I shall certainly not depart from it."
+    },
+    {
+      "id": "quote_05_claims",
+      "quote": "I am only resolved to act in that manner, which will, in my own opinion, constitute my happiness, without reference to you, or to any person so wholly unconnected with me.",
+      "anchor_text": "I am only resolved to act in that manner,\nwhich will, in my own opinion, constitute my happiness, without\nreference to _you_, or to any person so wholly unconnected with me."
+    },
+    {
+      "id": "quote_06_pollution",
+      "quote": "Are the shades of Pemberley to be thus polluted?",
+      "anchor_text": "Are the shades of Pemberley to be thus polluted?"
+    },
+    {
+      "id": "quote_07_departure",
+      "quote": "I take no leave of you, Miss Bennet. I send no compliments to your mother. You deserve no such attention. I am most seriously displeased.",
+      "anchor_text": "I take no leave of you, Miss Bennet. I send no compliments to your\nmother. You deserve no such attention. I am most seriously displeased."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_entries": "insert_after_anchor_paragraph",
+    "image_prompt_entries": "insert_at_anchor_location",
+    "quote_entries": "replace_anchor_with_blockquote"
+  },
+  "summary": "Chapter LVI of Pride and Prejudice presents one of the novel's most dramatic confrontations: Lady Catherine de Bourgh's unexpected visit to Longbourn with the express purpose of preventing Elizabeth Bennet's alleged engagement to Mr. Darcy. Through a carefully constructed progression from silent condescension through overt interrogation to final impasse, Austen explores themes of class prejudice, female autonomy, and the tension between social expectation and individual happiness. Elizabeth's steadfast refusal to submit to Lady Catherine's demands\u2014refusing to promise never to marry Darcy\u2014represents her moral triumph and foreshadows the novel's resolution where personal merit ultimately transcends aristocratic privilege."
+}

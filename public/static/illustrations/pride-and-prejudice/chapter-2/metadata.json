@@ -1,0 +1,428 @@
+{
+  "schema_version": "2.1.0",
+  "title": "Pride and Prejudice - Chapter II",
+  "enhanced_title": "The Secret Visit Disclosed",
+  "author": "Jane Austen",
+  "description": "Mr. Bennet reveals he has already visited the mysterious Mr. Bingley. This sudden disclosure follows days of playful irony and mock-refusal. The chapter establishes the satirical domestic dynamic of the household as Mrs. Bennet swings between despair and triumph.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-2",
+    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-2.mdx",
+    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-2/metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count_min": 7,
+    "image_prompt_count_min": 7,
+    "memorable_quote_count_min": 7,
+    "image_variations_per_prompt_min": 2,
+    "description_sentence_count": 3,
+    "analysis_sentence_range": [3, 4],
+    "analysis_label_format": "[n]",
+    "image_style_lock": "Renaissance oil painting",
+    "quote_rendering": "Callout component",
+    "insertion_methods_by_section": {
+      "analysis_entries": ["append"],
+      "image_prompt_entries": ["append"],
+      "quote_entries": ["replace"]
+    }
+  },
+  "field_aliases": {
+    "analysis_entries": "analysis",
+    "image_prompt_entries": "image_prompts",
+    "quote_entries": "memorable_quotes"
+  },
+  "quote_callout_spec": {
+    "import_statement": "import Callout from '@/components/Callout.astro'",
+    "component": "Callout",
+    "default_title": "Memorable Quote",
+    "body_template": "<QUOTE>",
+    "insertion_method": "replace",
+    "anchor_field": "anchor_text"
+  },
+  "agentic_generation": {
+    "pattern": "orchestrator",
+    "orchestrator": "chapter-metadata-orchestrator",
+    "sub_agents": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "handoff_order": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent-on-failure",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "scripts": [
+      "scripts/metadata/generate_metadata.py",
+      "scripts/metadata/validate_schema.py",
+      "scripts/metadata/validate_777.py",
+      "scripts/metadata/validate_image_variations.py",
+      "scripts/metadata/validate_anchors.py",
+      "scripts/metadata/review_failed_items.py",
+      "scripts/metadata/validate_callout_blocks.py",
+      "scripts/metadata/render_image_jobs.py",
+      "scripts/metadata/apply_insertions.py"
+    ]
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis-1",
+      "label": "[1]",
+      "section_focus": "Mr. Bennet's paternal affection",
+      "paragraph": "Mr. Bennet's secret visit reveals that he is actively engaged in his daughters' future. This teasing serves as a shield against his wife's frantic social climbing. His behavior demonstrates a paternal care hidden behind a facade of indifference.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "earliest of those who waited on Mr. Bingley.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "note"
+    },
+    {
+      "id": "analysis-2",
+      "label": "[2]",
+      "section_focus": "Social skepticism",
+      "paragraph": "Mrs. Bennet's dismissal of Mrs. Long exposes the competitive marriage market. Neighbors are viewed primarily as rivals for eligible bachelors in this environment. This reveals the zero-sum nature of social advancement in Regency England.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "She is a selfish, hypocritical woman, and I have no opinion of her.”",
+        "insertion_method": "append"
+      },
+      "callout_variant": "important"
+    },
+    {
+      "id": "analysis-3",
+      "label": "[3]",
+      "section_focus": "Kitty's cough as domestic static",
+      "paragraph": "Kitty’s coughing acts as a manifestation of the underlying domestic tension. Mr. Bennet treats this common family behavior as a piece of theatrical performance. He uses her illness as a tool to poke fun at his wife's agitation.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "she times them ill.”",
+        "insertion_method": "append"
+      },
+      "callout_variant": "tip"
+    },
+    {
+      "id": "analysis-4",
+      "label": "[4]",
+      "section_focus": "The value of circumspection",
+      "paragraph": "Mr. Bennet's mock-praise of his wife's 'circumspection' highlights the rigid social rites of the time. He implies that social 'knowing' is often superficial and performative. This irony serves to underscore the absurdity of their neighbors' social expectations.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "I honour your circumspection.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "definition"
+    },
+    {
+      "id": "analysis-5",
+      "label": "[5]",
+      "section_focus": "Mary's characterization",
+      "paragraph": "Mary is defined by her desire for intellectual status, yet she lacks the 'quickness' of Elizabeth. Her inability to find something 'sensible' to say emphasizes her role as a comic foil in the family. She stands as a warning against the affectation of wisdom without true insight.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "make extracts.”",
+        "insertion_method": "append"
+      },
+      "callout_variant": "theorem"
+    },
+    {
+      "id": "analysis-6",
+      "label": "[6]",
+      "section_focus": "The pivot of joy",
+      "paragraph": "The shift in Mrs. Bennet's attitude to rapturous joy illustrates her volatile and shallow focus. Her immediate claim that she 'expected' the news all along acts as a defense mechanism for her pride. This volatility is a central theme in Austen's depiction of her character.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "what she had expected all the while.",
+        "insertion_method": "append"
+      },
+      "callout_variant": "explanation"
+    },
+    {
+      "id": "analysis-7",
+      "label": "[7]",
+      "section_focus": "Lydia's naive confidence",
+      "paragraph": "Lydia’s boast about her height foreshadows her impulsive and reckless nature. She views the social world with a physical confidence that lacks any of Elizabeth's nuance or caution. This early dialogue establishes the youthful folly that will drive her later plot line.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "youngest, I’m the tallest.”",
+        "insertion_method": "append"
+      },
+      "callout_variant": "summary"
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-1",
+      "label": "[1]",
+      "scene_title": "Elizabeth Trimming a Hat",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Elizabeth Bennet in a sunlit room, focused on trimming a straw hat.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of a young woman with dark hair (Elizabeth Bennet) meticulously trimming a straw hat with ribbons. Seated near a window with soft, natural light illuminating her face and hands. Rich fabric textures and domestic detail.",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, focused domestic scene of Elizabeth Bennet working on her millinery. Warm interior tones, sharp detail on the straw and ribbons, with a peaceful, introspective mood.",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "second daughter employed in trimming a hat",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-2",
+      "label": "[2]",
+      "scene_title": "The Nerves of Mrs. Bennet",
+      "style": "Renaissance oil painting",
+      "alt_text": "A dramatic Renaissance-style portrait of Mrs. Bennet in distress, clutching a handkerchief.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, dramatic portrait of a middle-aged woman (Mrs. Bennet) with an expression of performative agitation. Gesturing toward her chest, with fine lace and silk clothing rendered in high detail. Chiaroscuro lighting.",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Mrs. Bennet looking distressed on a velvet settee, her face reflecting long-suffering 'nerves'. Deep colors, rich shadows, and intricate Regency-era fashion.",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "You tear them to pieces.”",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-3",
+      "label": "[3]",
+      "scene_title": "Kitty's Discretion",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Kitty Bennet coughing into a lace handkerchief while her father looks on dryly.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a young girl (Kitty Bennet) caught in the middle of a cough. Her father stands in the background with a dry, ironic expression. Focus on the emotional contrast and historical interior.",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, a domestic interaction between Kitty and Mr. Bennet. Kitty looks fretful, holding a handkerchief, while the lighting emphasizes the divide between her father's humor and her annoyance.",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "she times them ill.”",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-4",
+      "label": "[4]",
+      "scene_title": "Mary's Deep Reflection",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style painting of Mary Bennet surrounded by heavy books, looking overwhelmed.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Mary Bennet is seated at a heavy oak desk covered in large, leather-bound books and inkstands. She is 'adjusting her ideas,' looking thoughtful but slightly lost. Mastery of shadow and wood texture.",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, a scholarly study of Mary Bennet. The lighting focuses on the pages of an open book and her serious, plain features. Muted tones and classical composition.",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "read great books, and make extracts.”",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-5",
+      "label": "[5]",
+      "scene_title": "The Revelation of the Visit",
+      "style": "Renaissance oil painting",
+      "alt_text": "A grand Renaissance-style scene of the Bennet family gathered as Mr. Bennet reveals his secret visit.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a family tableau in a Regency drawing room. Mr. Bennet stands in the center, having just delivered his news. The daughters and Mrs. Bennet are shown in various states of shock and joy. Vibrant colors and dynamic gestures.",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, the moment of astonishment in the Bennet household. Lighting highlights the different reactions of the five sisters, with Mrs. Bennet's face showing the most surpassing joy.",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "cannot escape the acquaintance now.”",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-6",
+      "label": "[6]",
+      "scene_title": "Mr. Bennet's Fatigue",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance oil painting of Mr. Bennet exiting the room, looking exhausted by his wife's excitement.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, Mr. Bennet is walking through a doorway, leaving behind a room filled with chatter. His posture is one of weary relief. Soft candlelight in the hallway contrasts with the bright room behind him.",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Mr. Bennet seen from the back as he leaves the drawing room. The door is half-closed, and his shadow is long. A study in isolation and domestic fatigue.",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "fatigued with the raptures of his wife.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-7",
+      "label": "[7]",
+      "scene_title": "Lydia the Tallest",
+      "style": "Renaissance oil painting",
+      "alt_text": "A Renaissance-style portrait of young Lydia Bennet standing tall and confident beside her sisters.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting, a full-body portrait of Lydia Bennet standing with hands on her hips, looking bold and youthful. She is visibly tall for her age, with a mischievous sparkle in her eye. Bright, energetic palette.",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting, Lydia Bennet asserting her presence among her sisters. Her youthful confidence is framed by the elegant furniture of the drawing room. Strong composition focusing on her posture.",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "youngest, I’m the tallest.”",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-1",
+      "label": "[1]",
+      "quote": "I hope Mr. Bingley will like it, Lizzy.",
+      "speaker": "Mr. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  I hope Mr. Bingley will like it, Lizzy.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“I hope Mr. Bingley will like it, Lizzy.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-2",
+      "label": "[2]",
+      "quote": "Don’t keep coughing so, Kitty, for heaven’s sake! Have a little compassion on my nerves. You tear them to pieces.",
+      "speaker": "Mrs. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "important",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"important\">\\n  Don’t keep coughing so, Kitty, for heaven’s sake! Have a little compassion on my nerves. You tear them to pieces.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“Don’t keep coughing so, Kitty, for heaven’s sake! Have a little\ncompassion on my nerves. You tear them to pieces.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-3",
+      "label": "[3]",
+      "quote": "Kitty has no discretion in her coughs; she times them ill.",
+      "speaker": "Mr. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "tip",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"tip\">\\n  Kitty has no discretion in her coughs; she times them ill.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“Kitty has no discretion in her coughs,” said her father; “she times\nthem ill.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-4",
+      "label": "[4]",
+      "quote": "I am sick of Mr. Bingley.",
+      "speaker": "Mrs. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "summary",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"summary\">\\n  I am sick of Mr. Bingley.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“I am sick of Mr. Bingley,” cried his wife.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-5",
+      "label": "[5]",
+      "quote": "As I have actually paid the visit, we cannot escape the acquaintance now.",
+      "speaker": "Mr. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "important",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"important\">\\n  As I have actually paid the visit, we cannot escape the acquaintance now.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "as I have actually paid the visit, we\ncannot escape the acquaintance now.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-6",
+      "label": "[6]",
+      "quote": "Now, Kitty, you may cough as much as you choose.",
+      "speaker": "Mr. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  Now, Kitty, you may cough as much as you choose.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“Now, Kitty, you may cough as much as you choose,” said Mr. Bennet;",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-7",
+      "label": "[7]",
+      "quote": "Lydia, my love, though you are the youngest, I dare say Mr. Bingley will dance with you at the next ball.",
+      "speaker": "Mrs. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "tip",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"tip\">\\n  Lydia, my love, though you are the youngest, I dare say Mr. Bingley will dance with you at the next ball.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Lydia, my love, though you _are_\nthe youngest, I dare say Mr. Bingley will dance with you at the next\nball.”",
+        "insertion_method": "replace"
+      }
+    }
+  ],
+  "summary": "Chapter II metadata details the revelation of Mr. Bennet's visit to Mr. Bingley, featuring 7 analysis points, 7 memorable quotes with speaker-specific callouts, and 14 Renaissance-style image prompts anchored for deterministic placement."
+}

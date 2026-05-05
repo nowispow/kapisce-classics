@@ -1,0 +1,239 @@
+{
+  "schema_version": "7-7-7-pattern-v1",
+  "title": "Pride And Prejudice: CHAPTER XXXVII",
+  "enhanced_title": "Pride And Prejudice: CHAPTER XXXVII - Contemplations of Refused Proposals and Lady Catherine's Condescension",
+  "author": "Jane Austen",
+  "description": "Elizabeth Bennet reflects upon Mr. Darcy's letter and the implications of his revelations while enduring Lady Catherine de Bourgh's overbearing attentions during her final week at Rosings Park.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "37",
+    "source_text_file": "pride-and-prejudice-chapter-37.txt",
+    "metadata_file": "metadata-chapter-37.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "analysis_entries": "Literary analysis paragraphs",
+    "image_prompt_entries": "Scene illustrations",
+    "quote_entries": "Significant quotations"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis-001",
+      "paragraph": "Chapter XXXVII marks the period of introspection following Darcy's proposal and letter. Elizabeth's internal struggle is vividly portrayed as she oscillates between anger at his initial address and remorse for her own unjustified accusations. This psychological tension represents Austen's mastery in depicting the complexity of first impressions and self-knowledge, and the chapter's quiet domestic setting throws that inner turbulence into sharp relief.",
+      "anchor_text_end_of_sentence": "Reflection\nmust be reserved for solitary hours: whenever she was alone, she gave\nway to it as the greatest relief; and not a day went by without a\nsolitary walk, in which she might indulge in all the delight of\nunpleasant recollections."
+    },
+    {
+      "id": "analysis-002",
+      "paragraph": "Lady Catherine de Bourgh serves as a foil to Elizabeth, embodying aristocratic pretension and the rigid class structure that Darcy initially embraced. Her condescending offer to extend the visit and her unsolicited advice about travel arrangements underscore the patronizing attitude Elizabeth would have faced had she accepted Darcy's proposal. The irony is sharpest when Elizabeth privately reflects that she might by this time have been presented to Lady Catherine as her future niece, and silently imagines her Ladyship's indignation.",
+      "anchor_text_end_of_sentence": "Elizabeth could not see Lady Catherine without recollecting that, had\nshe chosen it, she might by this time have been presented to her as her\nfuture niece; nor could she think, without a smile, of what her\nLadyship\u2019s indignation would have been."
+    },
+    {
+      "id": "analysis-003",
+      "paragraph": "The chapter underscores the theme of female vulnerability in Georgian society, particularly through Lady Catherine's obsessive concern with proper escorts for young women travelling alone. Her insistence that young women should always be properly guarded and attended, according to their situation in life, ironically foreshadows the very scandal involving Wickham and Georgiana that Elizabeth has just learned about through Darcy's letter. This anxiety about female propriety masks deeper anxieties about family honour and the precarious position of women dependent on male protection and social reputation.",
+      "anchor_text_end_of_sentence": "Young women should always be properly\nguarded and attended, according to their situation in life."
+    },
+    {
+      "id": "analysis-004",
+      "paragraph": "Elizabeth's solitary walks become a metaphor for the isolation necessary for genuine reflection. The pastoral setting of Rosings Park, normally associated with aristocratic leisure, is transformed into the space where Elizabeth confronts uncomfortable truths about her family's conduct and her own prejudiced judgments. Austen signals this inward turn with the observation that reflection must be reserved for solitary hours, marking the walks as the novel's primary site of psychological reckoning in this chapter.",
+      "anchor_text_end_of_sentence": "Reflection\nmust be reserved for solitary hours: whenever she was alone, she gave\nway to it as the greatest relief;"
+    },
+    {
+      "id": "analysis-005",
+      "paragraph": "Mr. Collins's continued obsequiousness toward Lady Catherine demonstrates the stifling nature of social climbing and deference to rank. His willingness to interpret the ordinary departure of guests as a 'melancholy scene' illustrates the performative nature of class relationships among those aspiring to gentility. Having been in waiting near the lodges to make his parting obeisance, Collins embodies the comic extreme of a social order that Elizabeth, by contrast, navigates with ironic detachment.",
+      "anchor_text_end_of_sentence": "Mr. Collins having\nbeen in waiting near the lodges, to make them his parting obeisance, was\nable to bring home the pleasing intelligence of their appearing in very\ngood health, and in as tolerable spirits as could be expected, after the\nmelancholy scene so lately gone through at Rosings."
+    },
+    {
+      "id": "analysis-006",
+      "paragraph": "Elizabeth's realization of her family's hopeless impropriety\u2014particularly her father's indulgent neglect and her mother's vulgarity\u2014represents a painful coming-of-age moment. Austen renders this with unusual directness: the defects of her family are described as hopeless of remedy, a verdict that strips away any consoling illusion. This recognition that family cannot be reformed or escaped adds a tragic dimension to the comedy of manners, and it is the weight of this knowledge that makes Elizabeth's cheerfulness almost impossible to maintain.",
+      "anchor_text_end_of_sentence": "They were hopeless of remedy."
+    },
+    {
+      "id": "analysis-007",
+      "paragraph": "The chapter concludes with Elizabeth's heightened concern for Jane, demonstrating that Darcy's revelations have not merely affected Elizabeth personally but have deepened her empathy for her sister's loss. The restoration of Bingley's good character in Elizabeth's eyes makes Jane's deprivation feel all the more poignant, and Austen frames this grief in terms of what might have been: a situation so desirable in every respect, so replete with advantage, so promising for happiness. The expansion of concern from self to sister reflects Elizabeth's capacity for love and loyalty even amid her own emotional turmoil.",
+      "anchor_text_end_of_sentence": "How\ngrievous then was the thought that, of a situation so desirable in every\nrespect, so replete with advantage, so promising for happiness, Jane had\nbeen deprived, by the folly and indecorum of her own family!"
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-001",
+      "scene_title": "Elizabeth's Contemplative Solitude",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth walking alone in the gardens of Rosings Park, lost in thought about Darcy's letter",
+      "variations": [
+        {
+          "variation_id": "img-001-v1",
+          "prompt_text": "A young woman in Regency-era dress walking alone on a garden path at Rosings Park, golden afternoon light filtering through ancient oak trees, her expression contemplative and slightly troubled, Renaissance oil painting style with rich earth tones and delicate brushwork",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "img-001-v2",
+          "prompt_text": "Side view of a thoughtful woman in 19th-century muslin gown walking beneath an avenue of lime trees, dappled sunlight on her face, carrying a book, Renaissance oil painting style with soft sfumato technique and pastoral landscape background",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Reflection\nmust be reserved for solitary hours: whenever she was alone, she gave\nway to it as the greatest relief; and not a day went by without a\nsolitary walk, in which she might indulge in all the delight of\nunpleasant recollections."
+    },
+    {
+      "id": "image-002",
+      "scene_title": "Lady Catherine's Condescension",
+      "style": "Renaissance oil painting",
+      "alt_text": "Lady Catherine issuing imperious instructions to Elizabeth and Maria about their departure arrangements",
+      "variations": [
+        {
+          "variation_id": "img-002-v1",
+          "prompt_text": "An imposing aristocratic woman in elaborate 19th-century dress seated in a grand drawing room, gesturing dismissively to two younger women, rich crimson drapery and gilded furniture, Renaissance oil painting style with dramatic chiaroscuro and formal composition",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "img-002-v2",
+          "prompt_text": "A heavy-set noblewoman with haughty expression addressing attentive listeners in an ornate interior with classical columns visible through tall windows, Renaissance oil painting style with courtly elegance and hierarchical composition",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Young women should always be properly\nguarded and attended, according to their situation in life."
+    },
+    {
+      "id": "image-003",
+      "scene_title": "Mr. Collins's Obeisance",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins bowing extravagantly as Darcy and Colonel Fitzwilliam depart from Rosings",
+      "variations": [
+        {
+          "variation_id": "img-003-v1",
+          "prompt_text": "A clergyman in black attire bowing deeply to two departing gentlemen in a carriage at the gates of a great estate, comical obsequiousness in gesture, Renaissance oil painting style with narrative detail and expressive postures",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "img-003-v2",
+          "prompt_text": "A carriage departing down an avenue while a man in clerical dress waves farewell with excessive deference, grand Palladian facade in background, Renaissance oil painting style with anecdotal scene composition",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr. Collins having\nbeen in waiting near the lodges, to make them his parting obeisance, was\nable to bring home the pleasing intelligence of their appearing in very\ngood health, and in as tolerable spirits as could be expected, after the\nmelancholy scene so lately gone through at Rosings."
+    },
+    {
+      "id": "image-004",
+      "scene_title": "The Letter Remembered",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth privately rereading Darcy's letter in her chamber, morning light illuminating the pages",
+      "variations": [
+        {
+          "variation_id": "img-004-v1",
+          "prompt_text": "A young woman seated by a window in a modest bedroom, holding and intently reading a letter, soft morning light on her face showing mixed emotions, crumpled correspondence nearby, Renaissance oil painting style with intimate domestic setting and luminous atmosphere",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "img-004-v2",
+          "prompt_text": "Close compositional study of a woman at a writing desk, letter in hand, face lit by window light showing contemplation and emotion, Regency interior details, Renaissance oil painting style with psychological intimacy",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr."
+    },
+    {
+      "id": "image-005",
+      "scene_title": "The Bennet Family in Absentia",
+      "style": "Renaissance oil painting",
+      "alt_text": "Imagined scene of the Bennet household with Lydia and Kitty flirting with officers in the drawing room at Longbourn",
+      "variations": [
+        {
+          "variation_id": "img-005-v1",
+          "prompt_text": "Interior scene of a modest country drawing room with two young women in flirtatious attitudes before officers in red coats, parents watching with differing expressions, Renaissance oil painting style with genre scene composition and social observation",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "img-005-v2",
+          "prompt_text": "Domestic scene showing unstructured gaiety in a family parlor, young women in disarray, military presence, contrasting parental figures in background, Renaissance oil painting style with narrative genre painting technique",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "While\nthere was an officer in Meryton, they would flirt with him; and while\nMeryton was within a walk of Longbourn, they would be going there for\never."
+    },
+    {
+      "id": "image-006",
+      "scene_title": "Jane's Imagined Loss",
+      "style": "Renaissance oil painting",
+      "alt_text": "A melancholy vision of Jane alone, representing her disappointed hopes after Bingley's departure",
+      "variations": [
+        {
+          "variation_id": "img-006-v1",
+          "prompt_text": "A serene young woman in white dress seated alone in a grand but empty drawing room, distant view of park through window, expression of gentle sorrow, Renaissance oil painting style with melancholic atmosphere and refined sentiment",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "img-006-v2",
+          "prompt_text": "A woman at a pianoforte with hands stilled, vacant chair nearby suggesting absence, soft diffused light, mood of resigned disappointment, Renaissance oil painting style with emotional symbolism",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "How\ngrievous then was the thought that, of a situation so desirable in every\nrespect, so replete with advantage, so promising for happiness, Jane had\nbeen deprived, by the folly and indecorum of her own family!"
+    },
+    {
+      "id": "image-007",
+      "scene_title": "The Final Parting at Rosings",
+      "style": "Renaissance oil painting",
+      "alt_text": "Lady Catherine bidding farewell to Elizabeth and Maria with grand condescension",
+      "variations": [
+        {
+          "variation_id": "img-007-v1",
+          "prompt_text": "A formal leave-taking scene in an entrance hall with an imposing noblewoman extending her hand casually to departing guests, classical statuary and rich decorative elements, Renaissance oil painting style with ceremonial composition",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "img-007-v2",
+          "prompt_text": "Grand interior with departing figures receiving coolly gracious farewells from a seated patroness, carriage visible through open doors, ritual of status display, Renaissance oil painting style with architectural grandeur and social ritual",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "When they parted, Lady Catherine, with great condescension, wished them\na good journey, and invited them to come to Hunsford again next year;"
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-001",
+      "quote": "Reflection must be reserved for solitary hours: whenever she was alone, she gave way to it as the greatest relief; and not a day went by without a solitary walk, in which she might indulge in all the delight of unpleasant recollections.",
+      "anchor_text": "Reflection\nmust be reserved for solitary hours: whenever she was alone, she gave\nway to it as the greatest relief; and not a day went by without a\nsolitary walk, in which she might indulge in all the delight of\nunpleasant recollections."
+    },
+    {
+      "id": "quote-002",
+      "quote": "Mr. Darcy's letter she was in a fair way of soon knowing by heart. She studied every sentence; and her feelings towards its writer were at times widely different.",
+      "anchor_text": "Mr."
+    },
+    {
+      "id": "quote-003",
+      "quote": "When she remembered the style of his address, she was still full of indignation: but when she considered how unjustly she had condemned and upbraided him, her anger was turned against herself; and his disappointed feelings became the object of compassion.",
+      "anchor_text": "When she remembered the style of his address,\nshe was still full of indignation: but when she considered how unjustly\nshe had condemned and upbraided him, her anger was turned against\nherself; and his disappointed feelings became the object of compassion."
+    },
+    {
+      "id": "quote-004",
+      "quote": "Her father, contented with laughing at them, would never exert himself to restrain the wild giddiness of his youngest daughters; and her mother, with manners so far from right herself, was entirely insensible of the evil.",
+      "anchor_text": "Her father, contented with laughing at\nthem, would never exert himself to restrain the wild giddiness of his\nyoungest daughters; and her mother, with manners so far from right\nherself, was entirely insensible of the evil."
+    },
+    {
+      "id": "quote-005",
+      "quote": "When my niece Georgiana went to Ramsgate last summer, I made a point of her having two men-servants go with her.",
+      "anchor_text": "When my\nniece Georgiana went to Ramsgate last summer, I made a point of her\nhaving two men-servants go with her."
+    },
+    {
+      "id": "quote-006",
+      "quote": "How grievous then was the thought that, of a situation so desirable in every respect, so replete with advantage, so promising for happiness, Jane had been deprived, by the folly and indecorum of her own family!",
+      "anchor_text": "How\ngrievous then was the thought that, of a situation so desirable in every\nrespect, so replete with advantage, so promising for happiness, Jane had\nbeen deprived, by the folly and indecorum of her own family!"
+    },
+    {
+      "id": "quote-007",
+      "quote": "I have the greatest dislike in the world to that sort of thing. Young women should always be properly guarded and attended, according to their situation in life.",
+      "anchor_text": "I have the greatest dislike in the\nworld to that sort of thing. Young women should always be properly\nguarded and attended, according to their situation in life."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_spacing": "Every 3-4 paragraphs",
+    "image_placement": "Strategic scene illustration",
+    "quote_highlighting": "Key dialogue extraction"
+  },
+  "summary": "Chapter XXXVII of Pride and Prejudice depicts Elizabeth Bennet's final days at Rosings Park, characterized by intense introspection regarding Mr. Darcy's letter and revelations. While enduring Lady Catherine de Bourgh's overbearing attention and unwanted advice, Elizabeth processes her conflicting emotions about Darcy's proposal and her family's conduct. The chapter juxtaposes external social performance with internal psychological struggle, as Elizabeth recognizes her own prejudiced judgments and her family's irremediable vulgarity. Through solitary walks and private reflection, she arrives at a painful maturity, accepting her family's flaws while recognizing the genuine nature of Jane's lost happiness with Bingley. Lady Catherine's condescending control and Mr. Collins's obsequiousness provide comic counterpoints to Elizabeth's serious self-examination."
+}

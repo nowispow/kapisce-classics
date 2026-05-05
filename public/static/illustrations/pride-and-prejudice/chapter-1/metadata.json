@@ -1,0 +1,432 @@
+{
+  "schema_version": "2.1.0",
+  "title": "Pride and Prejudice - Chapter I",
+  "enhanced_title": "Netherfield at Longbourn",
+  "author": "Jane Austen",
+  "description": "The Bennet family hears that Netherfield Park has been let to a wealthy bachelor, sparking immediate marriage speculation. Through sharp dialogue, Austen contrasts social urgency with ironic wit as household tensions rise. Chapter 1 establishes the novel's themes of courtship, status, and economic pressure in Regency England.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-1",
+    "source_text_file": "src/content/chapters/pride-and-prejudice-chapter-1.mdx",
+    "metadata_file": "src/content/chapters/metadata/pride-and-prejudice/chapter-1/metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count_min": 7,
+    "image_prompt_count_min": 7,
+    "memorable_quote_count_min": 7,
+    "image_variations_per_prompt_min": 2,
+    "description_sentence_count": 3,
+    "analysis_sentence_range": [2, 3],
+    "analysis_label_format": "[n]",
+    "image_style_lock": "Renaissance oil painting",
+    "quote_rendering": "Callout component",
+    "insertion_methods_by_section": {
+      "analysis_entries": ["append"],
+      "image_prompt_entries": ["append"],
+      "quote_entries": ["replace"]
+    }
+  },
+  "field_aliases": {
+    "analysis_entries": "analysis",
+    "image_prompt_entries": "image_prompts",
+    "quote_entries": "memorable_quotes"
+  },
+  "quote_callout_spec": {
+    "import_statement": "import Callout from '@/components/Callout.astro'",
+    "component": "Callout",
+    "default_title": "Memorable Quote",
+    "body_template": "<QUOTE>",
+    "insertion_method": "replace",
+    "anchor_field": "anchor_text"
+  },
+  "agentic_generation": {
+    "pattern": "orchestrator",
+    "orchestrator": "chapter-metadata-orchestrator",
+    "sub_agents": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "handoff_order": [
+      "metadata-composer-agent",
+      "python-validation-agent",
+      "metadata-reviewer-agent-on-failure",
+      "image-direction-agent",
+      "deterministic-insertion-agent"
+    ],
+    "scripts": [
+      "scripts/metadata/generate_metadata.py",
+      "scripts/metadata/validate_schema.py",
+      "scripts/metadata/validate_777.py",
+      "scripts/metadata/validate_image_variations.py",
+      "scripts/metadata/validate_anchors.py",
+      "scripts/metadata/review_failed_items.py",
+      "scripts/metadata/validate_callout_blocks.py",
+      "scripts/metadata/render_image_jobs.py",
+      "scripts/metadata/apply_insertions.py"
+    ]
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis-1",
+      "label": "[1]",
+      "display_label_mdx": "<sup>[1]</sup>",
+      "section_focus": "Opening axiom and irony",
+      "paragraph": "Austen opens with a statement that sounds objective but is actually social satire. The phrase 'truth universally acknowledged' exposes how marriage gossip gets presented as common sense. By starting this way, the chapter frames courtship as public economics rather than private affection.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "must be in want of a wife.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-2",
+      "label": "[2]",
+      "display_label_mdx": "<sup>[2]</sup>",
+      "section_focus": "Marriage market language",
+      "paragraph": "The second paragraph shifts from maxim to neighborhood surveillance. A wealthy bachelor is described as 'rightful property,' which converts a person into a prize. Austen uses that language to critique a system where daughters compete for security under male-controlled wealth.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "property of some one or other of their daughters.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-3",
+      "label": "[3]",
+      "display_label_mdx": "<sup>[3]</sup>",
+      "section_focus": "Dialogue engine",
+      "paragraph": "Mrs Bennet's first speech establishes urgency, repetition, and social rumor as engines of the plot. Mr Bennet answers with deliberate restraint, creating comedy through contrast. Their dialogue models the novel's core tension between practical anxiety and ironic distance.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "told me all about it.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-4",
+      "label": "[4]",
+      "display_label_mdx": "<sup>[4]</sup>",
+      "section_focus": "Economics of courtship",
+      "paragraph": "Bingley's reported income immediately sets his rank in the marriage market. Mrs Bennet's exclamation about 'our girls' shows that romance is secondary to financial establishment. The chapter treats money not as background detail but as the metric that drives every decision.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "What a fine thing for our girls!",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-5",
+      "label": "[5]",
+      "display_label_mdx": "<sup>[5]</sup>",
+      "section_focus": "Etiquette as gatekeeping",
+      "paragraph": "The argument over making the first visit reveals the procedural rules of Regency sociability. Mrs Bennet understands that without formal introduction, the family is blocked from opportunity. Austen turns etiquette into plot machinery, where a single call determines access.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "therefore you must visit him as soon as he comes.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-6",
+      "label": "[6]",
+      "display_label_mdx": "<sup>[6]</sup>",
+      "section_focus": "Comedy and marital mismatch",
+      "paragraph": "Mr Bennet's 'poor nerves' exchange is funny, but it also reveals emotional mismatch in the marriage. He performs wit to avoid direct engagement, while Mrs Bennet escalates through theatrical distress. The humor therefore doubles as character diagnosis.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "You have no compassion on my poor nerves.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "analysis-7",
+      "label": "[7]",
+      "display_label_mdx": "<sup>[7]</sup>",
+      "section_focus": "Narrative close and social critique",
+      "paragraph": "The closing narrator summary is severe and efficient, reducing the marriage to incompatible temperaments. Mrs Bennet's purpose and solace define a life narrowed by social pressure and limited agency. This ending converts domestic banter into structural critique of gendered expectation.",
+      "sentence_count": 3,
+      "anchor": {
+        "anchor_text_end_of_sentence": "its solace was visiting and news.",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-1",
+      "label": "[1]",
+      "scene_title": "News at Longbourn",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mrs. Bennet excitedly tells Mr. Bennet that Netherfield Park has been let, in a sunlit Regency drawing room.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of the Longbourn drawing room at midday, with Mrs. Bennet leaning forward to announce the Netherfield news while Mr. Bennet remains seated with a book. Rich textiles, warm window light, oak furnishings, and period-accurate Regency clothing. Painterly realism, balanced composition, and natural skin tones.",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the same Longbourn announcement scene from a wider angle, with the hearth, rugs, and portraits visible while Mrs. Bennet speaks and Mr. Bennet stays composed. Emphasize layered depth, linen detail, and gentle golden daylight. Historically coherent Regency interior and costume styling.",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "Netherfield Park is let at last?",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-2",
+      "label": "[2]",
+      "scene_title": "Dry Wit in the Parlour",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Bennet responds with polite sarcasm while Mrs. Bennet waits impatiently for gossip.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of Mr. Bennet delivering a dry reply to his wife, with subtle humor in his expression and impatient curiosity in hers. Use chiaroscuro to separate calm detachment from agitation, with quill, tea service, and embroidered chairs in frame. Keep architecture and costume historically coherent with early 19th-century England.",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the same exchange with Mrs. Bennet closer to the foreground and Mr. Bennet half-turned from his chair, emphasizing verbal sparring. Add textured drapery, porcelain tableware, and controlled candlelight contrast. Preserve period-accurate Regency dress and domestic setting.",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "“_You_ want to tell me, and I have no objection to hearing it.”",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-3",
+      "label": "[3]",
+      "scene_title": "Arrival at Netherfield",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Bingley arrives in a four-horse carriage at Netherfield Park as servants prepare for his residence.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of Mr. Bingley's chaise and four arriving at Netherfield Park, horses in motion and servants preparing the house. Late afternoon light, sweeping sky, stone manor facade, and lively rural detail. Emphasize scale, wealth, and anticipation with classical perspective.",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the Netherfield arrival viewed from the carriage side, highlighting polished harnesses, travel dust, and servants opening the entry. Use dramatic cloud breaks, deep greens, and refined architectural detail to convey status and expectation. Keep all props and clothing period-correct.",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "in the house by the end of next week.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-4",
+      "label": "[4]",
+      "scene_title": "What a Fine Thing",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mrs. Bennet celebrates Mr. Bingley's income as her daughters listen, sensing new marriage prospects.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of Mrs. Bennet celebrating Bingley's fortune while the Bennet sisters gather behind her in mixed curiosity and calculation. Include layered gestures, lace textures, and candlelit depth that suggest both family intimacy and social ambition. Preserve a restrained palette with gold, umber, and deep green accents.",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the same fortune announcement, focusing on expressive reactions of the sisters while Mrs. Bennet speaks emphatically. Use warm interior tones, subtle facial storytelling, and intricate fabric rendering. Keep composition balanced and historically accurate for Regency domestic life.",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "What a fine thing for our girls!",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-5",
+      "label": "[5]",
+      "scene_title": "The Visit Debate",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mrs. Bennet insists on a formal visit to Mr. Bingley while Mr. Bennet responds with measured irony.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of a domestic argument over social protocol, with Mrs. Bennet standing and gesturing while Mr. Bennet remains composed beside a writing desk. Use directional light to highlight tension between urgency and irony. Add books, correspondence, and period decor to signal etiquette as social procedure.",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the visit argument from a lower viewpoint, emphasizing Mrs. Bennet's insistence and Mr. Bennet's reserved posture. Include parchment letters, inkstand, carved desk, and carefully lit room depth to underline formal social rules. Maintain historical fidelity and painterly realism.",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "therefore you must visit him as soon as he comes.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-6",
+      "label": "[6]",
+      "scene_title": "Poor Nerves",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mrs. Bennet laments her nerves as Mr. Bennet replies with teasing composure.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of Mrs. Bennet distressed on a settee while Mr. Bennet answers with amused restraint in the background. Capture expressive hands, facial tension, and domestic detail without caricature. Keep brushwork classical and color harmony warm with muted reds and creams.",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the nerves exchange with a tighter character composition, showing Mrs. Bennet's theatrical expression and Mr. Bennet's dry composure. Use soft shadows, detailed upholstery, and restrained palette shifts for emotional contrast. Preserve Regency-era authenticity.",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "You have no compassion on my poor nerves.",
+        "insertion_method": "append"
+      }
+    },
+    {
+      "id": "image-7",
+      "label": "[7]",
+      "scene_title": "Closing Household Portrait",
+      "style": "Renaissance oil painting",
+      "alt_text": "A closing portrait of the Bennet household showing Mr. Bennet's reserve and Mrs. Bennet's social preoccupation.",
+      "variations": [
+        {
+          "variation_id": "a",
+          "prompt_text": "Renaissance oil painting of the Bennet household in evening quiet, with Mr. Bennet withdrawn in thought and Mrs. Bennet oriented toward social chatter and visiting plans. Compose the room as a character study, using spatial separation to imply marital distance. Favor fine fabric texture, candle glow, and controlled realism.",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "b",
+          "prompt_text": "Renaissance oil painting of the same closing tableau with stronger architectural framing, showing Mr. Bennet apart from Mrs. Bennet as the household settles at dusk. Emphasize perspective lines, subdued candlelight, and period furniture detail. Keep mood introspective and historically grounded.",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor": {
+        "anchor_text_end_of_sentence": "its solace was visiting and news.",
+        "insertion_method": "append"
+      }
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-1",
+      "label": "[1]",
+      "quote": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+      "speaker": "Narrator",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "important",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"important\">\\n  It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-2",
+      "label": "[2]",
+      "quote": "You want to tell me, and I have no objection to hearing it.",
+      "speaker": "Mr. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  You want to tell me, and I have no objection to hearing it.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "“_You_ want to tell me, and I have no objection to hearing it.”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-3",
+      "label": "[3]",
+      "quote": "A single man of large fortune; four or five thousand a year. What a fine thing for our girls!",
+      "speaker": "Mrs. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "tip",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"tip\">\\n  A single man of large fortune; four or five thousand a year. What a fine thing for our girls!\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "A single man of large fortune; four or five thousand a year. What a fine thing for our girls!",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-4",
+      "label": "[4]",
+      "quote": "When a woman has five grown-up daughters, she ought to give over thinking of her own beauty.",
+      "speaker": "Mrs. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "definition",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"definition\">\\n  When a woman has five grown-up daughters, she ought to give over thinking of her own beauty.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "When a woman has five grown-up daughters, she ought to give over thinking of her own beauty.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-5",
+      "label": "[5]",
+      "quote": "Indeed you must go, for it will be impossible for us to visit him, if you do not.",
+      "speaker": "Mrs. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "explanation",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"explanation\">\\n  Indeed you must go, for it will be impossible for us to visit him, if you do not.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "Indeed you must go, for it will be impossible for _us_ to visit him, if you do not.",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-6",
+      "label": "[6]",
+      "quote": "They are all silly and ignorant like other girls; but Lizzy has something more of quickness than her sisters.",
+      "speaker": "Mr. Bennet",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "note",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"note\">\\n  They are all silly and ignorant like other girls; but Lizzy has something more of quickness than her sisters.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "But you are always giving _her_ the preference.”\n\n“They have none of them much to recommend them,”",
+        "insertion_method": "replace"
+      }
+    },
+    {
+      "id": "quote-7",
+      "label": "[7]",
+      "quote": "The business of her life was to get her daughters married: its solace was visiting and news.",
+      "speaker": "Narrator",
+      "callout": {
+        "title": "Memorable Quote",
+        "variant": "summary",
+        "mdx": "<Callout title=\"Memorable Quote\" variant=\"summary\">\\n  The business of her life was to get her daughters married: its solace was visiting and news.\\n</Callout>"
+      },
+      "anchor": {
+        "anchor_text": "The business of her life was to get her daughters married: its solace was visiting and news.",
+        "insertion_method": "replace"
+      }
+    }
+  ],
+  "insertion_methods": {
+    "replace": "Replace the matched anchor text with generated content. Used for quote entries.",
+    "append": "Insert new generated content immediately after the sentence that contains the anchor phrase. Used for analysis and image entries."
+  },
+  "summary": "Chapter I metadata follows a strict 7-7-7 contract with superscript-labeled analysis, Renaissance-consistent image prompts with two prompt variations per scene, and callout-ready memorable quotes anchored for deterministic replacement."
+}

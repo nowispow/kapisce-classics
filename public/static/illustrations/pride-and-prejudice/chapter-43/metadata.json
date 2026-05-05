@@ -1,0 +1,230 @@
+{
+  "title": "Pride And Prejudice: CHAPTER XLIII",
+  "enhanced_title": "The Gardens of Pemberley: A Chapter of Revelation and Transformation",
+  "author": "Jane Austen",
+  "description": "Elizabeth Bennet's first visit to Pemberley, where she discovers Darcy's true character through the testimony of his housekeeper and encounters the man himself in a manner strikingly altered from their previous meetings.",
+  "schema_version": "1.0",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "Chapter 43",
+    "source_text_file": "chapter_43.txt",
+    "metadata_file": "chapter_43_metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {},
+  "analysis_entries": [
+    {
+      "id": "analysis_001",
+      "paragraph": "Elizabeth's initial approach to Pemberley is marked by nervous anticipation, watching for the woods with 'perturbation' and experiencing 'high flutter' in her spirits. This emotional volatility reveals her complex feelings about Darcy\u2014not simple aversion, but something deeper and more conflicted that she has not fully acknowledged to herself. The very landscape seems to mirror her inner state, drawing her forward even as propriety and pride counsel retreat.",
+      "anchor_text_end_of_sentence": "her spirits were in a high flutter."
+    },
+    {
+      "id": "analysis_002",
+      "paragraph": "The description of Pemberley House as where 'natural beauty had been so little counteracted by an awkward taste' serves as powerful symbolism. Elizabeth realizes that Darcy's character, like his estate, possesses a natural dignity and refinement that belies her earlier judgment of him as artificial and proud. The phrase 'to be mistress of Pemberley might be something' veils deeper, unacknowledged longing.",
+      "anchor_text_end_of_sentence": "to be mistress of Pemberley might be something!"
+    },
+    {
+      "id": "analysis_003",
+      "paragraph": "The housekeeper Mrs. Reynolds becomes a crucial narrative device, offering testimony that contradicts Elizabeth's established opinion of Darcy. When she speaks of his sweet temper, generosity, and excellent treatment of servants and tenants, Elizabeth is forced to confront that her prejudice has distorted her perception of his true character. The moment of recognition is crystallized when Elizabeth almost stares at the housekeeper and silently asks herself whether this can truly be the same man she has so long misjudged.",
+      "anchor_text_end_of_sentence": "Darcy?"
+    },
+    {
+      "id": "analysis_004",
+      "paragraph": "The unexpected encounter by the stables represents a pivotal moment of dramatic irony. Elizabeth, who had believed herself safe from encountering Darcy, must face him in circumstances that might seem like deliberate pursuit. Their mutual blushing and discomfort reveal suppressed feelings that polite society demands be constrained, and the few minutes they spend together become, for Elizabeth, some of the most uncomfortable of her life.",
+      "anchor_text_end_of_sentence": "the few\nminutes in which they continued together were some of the most\nuncomfortable of her life."
+    },
+    {
+      "id": "analysis_005",
+      "paragraph": "Darcy's transformation in manner\u2014from 'haughty' to 'gentle,' from 'proud' to 'civil'\u2014suggests either genuine character development or Elizabeth's altered perception. The contrast with his behavior at Rosings, where he delivered his proposal with such arrogance, is striking and disorienting for Elizabeth. She turns the question over repeatedly, unable to settle on an explanation, as his every sentence increases her astonishment and her embarrassment in equal measure.",
+      "anchor_text_end_of_sentence": "She knew not what to think, or how to\naccount for it."
+    },
+    {
+      "id": "analysis_006",
+      "paragraph": "The invitation to meet Georgiana represents the highest compliment Darcy can offer, as his sister represents his most treasured relationship. Elizabeth immediately recognizes that whatever desire Miss Darcy might have of being acquainted with her must be the work of her brother, acknowledging the active role Darcy plays in his sister's social connections. This gesture signals that his resentment has not curdled into contempt, and that his regard for Elizabeth persists despite her rejection.",
+      "anchor_text_end_of_sentence": "it was gratifying to know that his resentment had not made\nhim think really ill of her."
+    },
+    {
+      "id": "analysis_007",
+      "paragraph": "The Gardiners' favorable assessment of Darcy provides external validation that Elizabeth's transformed opinion is not merely wishful thinking. Their discernment\u2014seeing him as 'perfectly well-behaved, polite, and unassuming'\u2014confirms that his behavior is genuinely altered, not simply a product of Elizabeth's changed perception. Elizabeth's silent recognition that they have entirely mistaken his character marks her own quiet, private vindication of the man she is beginning to love.",
+      "anchor_text_end_of_sentence": "Elizabeth felt that they had entirely mistaken his character, but said\nnothing."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image_001",
+      "scene_title": "The Approach to Pemberley Woods",
+      "style": "Renaissance oil painting",
+      "alt_text": "A horse-drawn carriage winding through ancient woodland, with a young woman gazing anxiously from the window toward distant trees bathed in golden afternoon light.",
+      "variations": [
+        {
+          "variation_id": "image_001_v1",
+          "prompt_text": "Renaissance oil painting style: A Regency-era carriage passing through a grand wooded estate, golden sunlight filtering through ancient oaks, a contemplative young woman in period dress looking from the carriage window with anticipation and nervousness, the park stretching into misty distance, warm earth tones and deep greens",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "image_001_v2",
+          "prompt_text": "Renaissance oil painting style: First view of Pemberley Woods from a curving country road, dramatic chiaroscuro lighting, the forest appearing as a dark promise against bright sky, a ladies' traveling carriage in the foreground, rendered in the manner of Claude Lorrain with atmospheric perspective",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "her spirits were in a high flutter."
+    },
+    {
+      "id": "image_002",
+      "scene_title": "The Revelation of Pemberley House",
+      "style": "Renaissance oil painting",
+      "alt_text": "A magnificent stone manor house viewed from across a valley, positioned on rising ground beside a natural river, surrounded by wooded hills in the tradition of English country estates.",
+      "variations": [
+        {
+          "variation_id": "image_002_v1",
+          "prompt_text": "Renaissance oil painting style: Pemberley House as seen from a hilltop, a large handsome stone building on rising ground, backed by woody hills, a natural river in the foreground, golden hour lighting, romantic pastoral composition in the manner of Canaletto meets Constable, emphasizing harmony between architecture and nature",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "image_002_v2",
+          "prompt_text": "Renaissance oil painting style: View from eminence looking down into wooded valley, the manor house situated opposite across gentle stream, aspirational perspective emphasizing grandeur and tasteful elegance, soft atmospheric haze, winding road visible, Italianate landscape tradition",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "to be mistress of Pemberley might be something!"
+    },
+    {
+      "id": "image_003",
+      "scene_title": "Mrs. Reynolds in the Picture Gallery",
+      "style": "Renaissance oil painting",
+      "alt_text": "An elderly, respectable housekeeper in modest but dignified attire gesturing toward family portraits in an elegant room, with visitors observing miniatures displayed over a mantelpiece.",
+      "variations": [
+        {
+          "variation_id": "image_003_v1",
+          "prompt_text": "Renaissance oil painting style: Interior of a fine country house portrait gallery, an elderly respectable woman in modest dark dress pointing to miniature portraits over a marble mantelpiece, two elegantly dressed visitors from a carriage party, warm candlelit atmosphere, rich wood paneling, Dutch Golden Age interior influence",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "image_003_v2",
+          "prompt_text": "Renaissance oil painting style: The moment of revelation when the housekeeper identifies Darcy's portrait, three figures in eighteenth-century dress studying miniatures, dramatic lighting from tall windows, period furniture and gilded frames, intimate domestic scene painted with Caravaggio-inspired chiaroscuro",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Darcy?"
+    },
+    {
+      "id": "image_004",
+      "scene_title": "The Unexpected Encounter by the Stables",
+      "style": "Renaissance oil painting",
+      "alt_text": "A gentleman in riding dress standing frozen in surprise on a lawn, encountering a party of visitors, mutual recognition and embarrassment evident in the composition.",
+      "variations": [
+        {
+          "variation_id": "image_004_v1",
+          "prompt_text": "Renaissance oil painting style: Abrupt pastoral encounter, a gentleman in riding clothes arrested mid-step on a wide lawn near stable buildings, a lady turning away with blush visible, two other figures pausing in surprise, dramatic triangular composition, the moment of shock frozen in time, Titian-inspired color palette with crimson and gold accents",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "image_004_v2",
+          "prompt_text": "Renaissance oil painting style: The moment when eyes meet across a garden path, figures arranged in harmonious group, gentleman starting back in surprise, lady with crimson cheeks turning, rendered as a Raphael stanza with perfect perspective and idealized forms, country estate setting",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Their eyes\ninstantly met, and the cheeks of each were overspread with the deepest\nblush."
+    },
+    {
+      "id": "image_005",
+      "scene_title": "Darcy and Elizabeth on the River Path",
+      "style": "Renaissance oil painting",
+      "alt_text": "A couple walking together on a riverside path through a park landscape, engaged in conversation, with distant figures following behind, set against a backdrop of woods and gentle hills.",
+      "variations": [
+        {
+          "variation_id": "image_005_v1",
+          "prompt_text": "Renaissance oil painting style: Two figures walking side by side beside a stream in lush parkland, the gentleman gesturing toward fishing spots, lady listening attentively, figures in Regency morning dress, verdant English landscape with mature trees and dappled light, Giorgione pastoral quality with soft atmospheric effects",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "image_005_v2",
+          "prompt_text": "Renaissance oil painting style: The significant walk when companions fall behind, gentleman and lady proceeding along river bank in earnest conversation, others visible as small figures in distance, balance of intimacy and propriety, painted in the manner of Watteau with silvery tonalities",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "his wishing her to be acquainted with his sister."
+    },
+    {
+      "id": "image_006",
+      "scene_title": "The Formal Portrait Gallery Encounter",
+      "style": "Renaissance oil painting",
+      "alt_text": "A young woman standing before a large portrait in a gallery, contemplating the painted likeness with emotion, other visitors and a housekeeper visible in the background of a grand room.",
+      "variations": [
+        {
+          "variation_id": "image_006_v1",
+          "prompt_text": "Renaissance oil painting style: Interior of picture gallery, young woman in Empire-waist white muslin standing in contemplation before a large formal portrait of a gentleman, her face showing complex emotion, other visitors and housekeeper in background, nobility of setting emphasized, Bellini portrait influence with psychological depth",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "image_006_v2",
+          "prompt_text": "Renaissance oil painting style: The moment of transformation as gazes meet between woman and portrait, candles illuminating the canvas face, intimate connection across the barrier of paint, the gallery stretching into candlelit distance, rendering in the style of Vel\u00e1zquez with profound psychological realism",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "she thought of his regard with a deeper sentiment of gratitude\nthan it had ever raised before: she remembered its warmth, and softened\nits impropriety of expression."
+    },
+    {
+      "id": "image_007",
+      "scene_title": "Departure from Pemberley",
+      "style": "Renaissance oil painting",
+      "alt_text": "A gentleman handing ladies into a carriage on a country house lawn, a moment of polite farewell, with the great house visible in the background and the occupants of the carriage conversing animatedly.",
+      "variations": [
+        {
+          "variation_id": "image_007_v1",
+          "prompt_text": "Renaissance oil painting style: Final departure scene, gentleman in morning coat with exquisite manners handing two ladies into a waiting carriage, the grand house behind with its classical portico, carved stone steps, sense of concluded visit and new beginning, rendered with the narrative clarity of Veronese",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "image_007_v2",
+          "prompt_text": "Renaissance oil painting style: The solitary figure of a gentleman walking slowly toward his house as a carriage departs down the avenue, the composition divided between departing and remaining, melancholy and hope intermingled, landscape sunset lighting, composition after Poussin with classical restraint",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Elizabeth saw him\nwalking slowly towards the house."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_001",
+      "quote": "Elizabeth, as they drove along, watched for the first appearance of Pemberley Woods with some perturbation; and when at length they turned in at the lodge, her spirits were in a high flutter.",
+      "anchor_text": "Elizabeth, as they drove along, watched for the first appearance of\nPemberley Woods with some perturbation; and when at length they turned\nin at the lodge, her spirits were in a high flutter."
+    },
+    {
+      "id": "quote_002",
+      "quote": "She had never seen a place for which nature had done more, or where natural beauty had been so little counteracted by an awkward taste. They were all of them warm in their admiration; and at that moment she felt that to be mistress of Pemberley might be something!",
+      "anchor_text": "They were\nall of them warm in their admiration; and at that moment she felt that\nto be mistress of Pemberley might be something!"
+    },
+    {
+      "id": "quote_003",
+      "quote": "I have never had a cross word from him in my life, and I have known him ever since he was four years old.",
+      "anchor_text": "I have never had a cross word from him in my life, and I have known him\never since he was four years old.\u201d"
+    },
+    {
+      "id": "quote_004",
+      "quote": "They were within twenty yards of each other; and so abrupt was his appearance, that it was impossible to avoid his sight. Their eyes instantly met, and the cheeks of each were overspread with the deepest blush.",
+      "anchor_text": "Their eyes\ninstantly met, and the cheeks of each were overspread with the deepest\nblush."
+    },
+    {
+      "id": "quote_005",
+      "quote": "What a contrast did it offer to his last address in Rosings Park, when he put his letter into her hand! She knew not what to think, or how to account for it.",
+      "anchor_text": "What a contrast did it offer to his last address in Rosings Park, when\nhe put his letter into her hand!"
+    },
+    {
+      "id": "quote_006",
+      "quote": "There is also one other person in the party who more particularly wishes to be known to you. Will you allow me, or do I ask too much, to introduce my sister to your acquaintance during your stay at Lambton?",
+      "anchor_text": "Will you allow\nme, or do I ask too much, to introduce my sister to your acquaintance\nduring your stay at Lambton?"
+    },
+    {
+      "id": "quote_007",
+      "quote": "The occurrences of the day were too full of interest to leave Elizabeth much attention for any of these new friends; and she could do nothing but think, and think with wonder, of Mr. Darcy's civility, and, above all, of his wishing her to be acquainted with his sister.",
+      "anchor_text": "Mr."
+    }
+  ],
+  "insertion_methods": {}
+}

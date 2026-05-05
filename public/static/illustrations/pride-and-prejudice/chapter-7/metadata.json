@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: Chapter VII",
+  "enhanced_title": "Maternal Machinations and Sisterly Devotion: The Journey to Netherfield",
+  "author": "Jane Austen",
+  "description": "Mrs. Bennet schemes to keep Jane at Netherfield by sending her on horseback in the rain. Jane falls ill, and Elizabeth walks three miles through muddy fields to nurse her sister, arriving disheveled but devoted at the Bingley residence.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "chapter-vii",
+    "source_text_file": "pride-and-prejudice_chapter-vii.txt",
+    "metadata_file": "pride-and-prejudice_chapter-vii_metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7
+  },
+  "field_aliases": {
+    "analysis_entries": "literary_analysis",
+    "image_prompt_entries": "scene_visualization",
+    "quote_entries": "significant_quotations"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis-001",
+      "paragraph": "The chapter opens with a stark exposition of the Bennet family's precarious financial situation, establishing the entailment that threatens the daughters' futures and sets the stage for the urgency behind Mrs. Bennet's marital schemes. The detail that Mrs. Bennet's father was an attorney and left her only four thousand pounds underscores the family's middling social position, caught between gentility and trade. This economic reality gives every maternal maneuver in the chapter a desperate, if comic, logic.",
+      "anchor_text_end_of_sentence": "Bennet’s property consisted almost entirely in an estate of two\nthousand a year, which, unfortunately for his daughters, was entailed,\nin default of heirs male, on a distant relation; and their mother’s\nfortune, though ample for her situation in life, could but ill supply\nthe deficiency of his."
+    },
+    {
+      "id": "analysis-002",
+      "paragraph": "Austen masterfully characterizes Kitty and Lydia through their obsession with the militia regiment, contrasting their intellectual vacancy with Elizabeth's discernment while simultaneously mocking the superficial attractions of military uniforms. The narrator's dry observation that 'a walk to Meryton was necessary to amuse their morning hours and furnish conversation for the evening' exposes the poverty of their inner lives with elegant economy. Their inability to value Bingley's fortune over an ensign's scarlet coat signals a comic inversion of the very mercenary logic their mother otherwise champions.",
+      "anchor_text_end_of_sentence": "and furnish conversation for the evening;"
+    },
+    {
+      "id": "analysis-003",
+      "paragraph": "Mr. Bennet's dry wit serves as the moral counterpoint to his wife's foolishness; his declaration that Kitty and Lydia are 'two of the silliest girls in the country' carries both paternal disappointment and authorial judgment, highlighting the theme of parental negligence. His admission that he has 'suspected it some time' but is 'now convinced' reveals a man who observes his household with sardonic clarity yet does nothing to correct it. This passive irony implicates Mr. Bennet himself in the family's dysfunction, complicating the reader's sympathy for him.",
+      "anchor_text_end_of_sentence": "I have suspected it some time, but\nI am now convinced."
+    },
+    {
+      "id": "analysis-004",
+      "paragraph": "Mrs. Bennet's transparent manipulation to keep Jane overnight at Netherfield reveals both maternal calculation and Austen's critique of mothers who treat daughters as marital commodities, with the weather itself becoming a conspirator in her matchmaking scheme. Her insistence that Jane ride on horseback because 'it seems likely to rain' is a masterpiece of plausible deniability, and her self-congratulation when the rain arrives—'This was a lucky idea of mine, indeed!'—strips away any pretense of maternal concern. The exchange over the horses, culminating in Mr. Bennet's admission that 'they are wanted in the farm much oftener than I can get them,' shows the whole family colluding, wittingly or not, in the scheme.",
+      "anchor_text_end_of_sentence": "They are wanted in the farm much oftener than I can get them."
+    },
+    {
+      "id": "analysis-005",
+      "paragraph": "Elizabeth's morning walk through fields and across stiles represents a pivotal character moment—her physical exertion mirrors her energetic spirit, while her indifference to propriety contrasts sharply with the refined ladies at Netherfield who hold her in contempt for her disheveled appearance. The vivid image of her 'crossing field after field at a quick pace, jumping over stiles and springing over puddles, with impatient activity' renders her as a figure of vital, purposeful energy in a world of decorative femininity. Her arrival with 'weary ancles, dirty stockings, and a face glowing with the warmth of exercise' is both a social transgression and a quiet declaration of character.",
+      "anchor_text_end_of_sentence": "”\n\nIn Meryton they parted: the two youngest repaired to the lodgings of one\nof the officers’ wives, and Elizabeth continued her walk alone, crossing\nfield after field at a quick pace, jumping over stiles and springing\nover puddles, with impatient activity, and finding herself at last\nwithin view of the house, with weary ancles, dirty stockings, and a face\nglowing with the warmth of exercise."
+    },
+    {
+      "id": "analysis-006",
+      "paragraph": "The breakfast parlour scene establishes the social dynamics that will drive the narrative: Miss Bingley's and Mrs. Hurst's aristocratic disdain, Mr. Darcy's conflicted admiration, and Mr. Bingley's genuine kindness create a tableau of early nineteenth-century class attitudes. Austen's observation that 'in their brother's manners there was something better than politeness—there was good-humour and kindness' distinguishes Bingley's authentic warmth from the cold civility of his sisters. Mr. Darcy's division between 'admiration of the brilliancy which exercise had given to her complexion' and doubt about the propriety of her coming alone foreshadows the central tension of his character throughout the novel.",
+      "anchor_text_end_of_sentence": "She was received, however, very politely by them; and in their\nbrother’s manners there was something better than politeness--there was\ngood-humour and kindness."
+    },
+    {
+      "id": "analysis-007",
+      "paragraph": "Jane's illness serves as the narrative device that extends Elizabeth's stay at Netherfield, forcing her into closer proximity with the Bingley circle and setting the stage for the intellectual sparring and romantic tension that will develop between Elizabeth and Mr. Darcy. Elizabeth's vigil—'she did not quit her room for a moment'—demonstrates the depth of sisterly devotion that defines her character and implicitly rebukes the calculating social performances of Miss Bingley and Mrs. Hurst. The chapter closes with Elizabeth's consent to remain at Netherfield, a servant dispatched to Longbourn 'to acquaint the family with her stay, and bring back a supply of clothes,' signaling that what began as a morning errand will become a prolonged and consequential sojourn.",
+      "anchor_text_end_of_sentence": "Elizabeth most thankfully consented, and a servant was\ndespatched to Longbourn, to acquaint the family with her stay, and bring\nback a supply of clothes."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-001",
+      "scene_title": "The Bennet Estate and Its Entail",
+      "style": "Renaissance oil painting",
+      "alt_text": "A modest country manor house surrounded by working farmland under morning light, executed in Renaissance oil painting style",
+      "variations": [
+        {
+          "variation_id": "image-001a",
+          "prompt_text": "Renaissance oil painting of Longbourn estate: A modest country manor house surrounded by working farmland, with distant fields and hedgerows under morning light, English countryside 1810, warm earth tones, detailed pastoral landscape",
+          "output_asset": "longbourn_estate_establishing.png"
+        },
+        {
+          "variation_id": "image-001b",
+          "prompt_text": "Renaissance oil painting of an entailed estate: The Bennet property with visible agricultural activity, tenant cottages in the middle distance, storm clouds gathering symbolizing uncertain futures, dramatic chiaroscuro lighting",
+          "output_asset": "longbourn_estate_atmospheric.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Bennet’s property consisted almost entirely in an estate of two\nthousand a year, which, unfortunately for his daughters, was entailed,\nin default of heirs male, on a distant relation; and their mother’s\nfortune, though ample for her situation in life, could but ill supply\nthe deficiency of his."
+    },
+    {
+      "id": "image-002",
+      "scene_title": "The Meryton Militia Parade",
+      "style": "Renaissance oil painting",
+      "alt_text": "Red-coated officers walking through a village high street while two young women look on admiringly, Renaissance oil painting technique",
+      "variations": [
+        {
+          "variation_id": "image-002a",
+          "prompt_text": "Renaissance oil painting of militia officers in scarlet regimentals walking through Meryton village street, smart uniforms gleaming, villagers watching from doorways, charming English market town, soft natural lighting",
+          "output_asset": "militia_meryton_street.png"
+        },
+        {
+          "variation_id": "image-002b",
+          "prompt_text": "Renaissance oil painting of Kitty and Lydia observing officers: Two young women in Regency dress watching a militia procession, expressions of excitement and admiration, village setting, rich crimson uniforms contrasting with pastel dresses",
+          "output_asset": "bennet_sisters_militia.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Bingley’s large fortune, the mention of which gave animation to their\nmother, was worthless in their eyes when opposed to the regimentals of\nan ensign."
+    },
+    {
+      "id": "image-003",
+      "scene_title": "Mr. Bennet's Sardonic Judgment",
+      "style": "Renaissance oil painting",
+      "alt_text": "A father seated in a drawing room delivering a dry rebuke to two young women, Renaissance oil painting",
+      "variations": [
+        {
+          "variation_id": "image-003a",
+          "prompt_text": "Renaissance oil painting of the Bennet drawing room: Mr. Bennet seated with dry expression observing two youngest daughters, period interior with bookcases and windows, tense family dynamics, warm interior lighting, detailed costume",
+          "output_asset": "bennet_drawing_room_confrontation.png"
+        },
+        {
+          "variation_id": "image-003b",
+          "prompt_text": "Renaissance oil painting of paternal judgment: Mr. Bennet's contemplative face in half-shadow, two young women with downcast eyes behind him, symbolic representation of wit versus folly, dramatic Rembrandt lighting",
+          "output_asset": "bennet_paternal_judgment.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "I have suspected it some time, but\nI am now convinced."
+    },
+    {
+      "id": "image-004",
+      "scene_title": "Mrs. Bennet's Scheme",
+      "style": "Renaissance oil painting",
+      "alt_text": "A matron speaking animatedly to her daughter while planning a journey, Renaissance oil painting style",
+      "variations": [
+        {
+          "variation_id": "image-004a",
+          "prompt_text": "Renaissance oil painting of Mrs. Bennet choreographing Jane's departure: Mother with calculating expression directing daughter toward horse, suppressed excitement, early morning light through windows, domestic interior with riding habit visible",
+          "output_asset": "mrs_bennet_scheme.png"
+        },
+        {
+          "variation_id": "image-004b",
+          "prompt_text": "Renaissance oil painting of the Netherfield invitation: A handwritten letter held by elegant female hands, Caroline Bingley's signature visible, soft illumination suggesting feminine correspondence, desk with inkwell in background",
+          "output_asset": "bingley_invitation_letter.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "They are wanted in the farm much oftener than I can get them."
+    },
+    {
+      "id": "image-005",
+      "scene_title": "Elizabeth's Morning Walk",
+      "style": "Renaissance oil painting",
+      "alt_text": "A young woman crossing muddy fields and jumping over stiles with impatient energy, Renaissance oil painting",
+      "variations": [
+        {
+          "variation_id": "image-005a",
+          "prompt_text": "Renaissance oil painting of Elizabeth Bennet walking through English countryside: Young woman in simple dress navigating muddy lane, determined expression, autumn fields and stiles, overcast sky, sense of urgency and purpose",
+          "output_asset": "elizabeth_country_walk.png"
+        },
+        {
+          "variation_id": "image-005b",
+          "prompt_text": "Renaissance oil painting of the three-mile tramp: Elizabeth lifting her skirt to avoid mud, rural landscape with distant manor, puddles reflecting grey sky, physical exertion visible in posture, dynamic composition",
+          "output_asset": "elizabeth_muddy_journey.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "”\n\nIn Meryton they parted: the two youngest repaired to the lodgings of one\nof the officers’ wives, and Elizabeth continued her walk alone, crossing\nfield after field at a quick pace, jumping over stiles and springing\nover puddles, with impatient activity, and finding herself at last\nwithin view of the house, with weary ancles, dirty stockings, and a face\nglowing with the warmth of exercise."
+    },
+    {
+      "id": "image-006",
+      "scene_title": "The Netherfield Arrival",
+      "style": "Renaissance oil painting",
+      "alt_text": "A disheveled young woman entering an elegant breakfast parlour, faced with surprised aristocratic ladies, Renaissance oil painting",
+      "variations": [
+        {
+          "variation_id": "image-006a",
+          "prompt_text": "Renaissance oil painting of Elizabeth's entrance at Netherfield: Breathless young woman with flushed cheeks and dirty hem being received by elegant but disapproving ladies at breakfast table, grand interior, contrast between visitors, morning light",
+          "output_asset": "elizabeth_netherfield_arrival.png"
+        },
+        {
+          "variation_id": "image-006b",
+          "prompt_text": "Renaissance oil painting of social contrast: Elizabeth's glowing face and muddy stockings in foreground, aristocratic ladies' disdainful expressions behind, breakfast parlour with silver service, dramatic lighting emphasizing class divide",
+          "output_asset": "netherfield_social_contrast.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mrs."
+    },
+    {
+      "id": "image-007",
+      "scene_title": "The Sick Room Vigil",
+      "style": "Renaissance oil painting",
+      "alt_text": "Two sisters at a bedside, one resting while the other watches with concern, Renaissance oil painting",
+      "variations": [
+        {
+          "variation_id": "image-007a",
+          "prompt_text": "Renaissance oil painting of Jane's sick chamber: Feverish young woman resting in elegant four-poster bed, devoted sister seated beside holding her hand, soft afternoon light filtering through curtains, atmosphere of tender concern",
+          "output_asset": "jane_sickroom_vigil.png"
+        },
+        {
+          "variation_id": "image-007b",
+          "prompt_text": "Renaissance oil painting of sisterly devotion: Elizabeth's anxious face illuminated by candlelight, Jane's pale form in bed behind, intimate bedroom scene at Netherfield, Baroque intimacy with domestic realism",
+          "output_asset": "bennet_sisters_bedside.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Elizabeth did not quit her room for a moment, nor were\nthe other ladies often absent; the gentlemen being out, they had in fact\nnothing to do elsewhere."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-001",
+      "quote": "Mr. Bennet's property consisted almost entirely in an estate of two thousand a year, which, unfortunately for his daughters, was entailed, in default of heirs male, on a distant relation",
+      "anchor_text": "unfortunately for his daughters"
+    },
+    {
+      "id": "quote-002",
+      "quote": "The two youngest of the family, Catherine and Lydia, were particularly frequent in these attentions: their minds were more vacant than their sisters'",
+      "anchor_text": "their minds were more vacant"
+    },
+    {
+      "id": "quote-003",
+      "quote": "From all that I can collect by your manner of talking, you must be two of the silliest girls in the country. I have suspected it some time, but I am now convinced.",
+      "anchor_text": "I have suspected it some time, but\nI am now convinced."
+    },
+    {
+      "id": "quote-004",
+      "quote": "I remember the time when I liked a red coat myself very well--and, indeed, so I do still at my heart",
+      "anchor_text": "I remember the time when I\nliked a red coat myself very well--and, indeed, so I do still at my\nheart; and if a smart young colonel, with five or six thousand a year,\nshould want one of my girls, I shall not say nay to him; and I thought\nColonel Forster looked very becoming the other night at Sir William’s in\nhis regimentals."
+    },
+    {
+      "id": "quote-005",
+      "quote": "Jane was therefore obliged to go on horseback, and her mother attended her to the door with many cheerful prognostics of a bad day",
+      "anchor_text": "”\n\nShe did at last extort from her father an acknowledgment that the horses\nwere engaged; Jane was therefore obliged to go on horseback, and her\nmother attended her to the door with many cheerful prognostics of a bad\nday."
+    },
+    {
+      "id": "quote-006",
+      "quote": "I shall be very fit to see Jane--which is all I want",
+      "anchor_text": "all I want"
+    },
+    {
+      "id": "quote-007",
+      "quote": "crossing field after field at a quick pace, jumping over stiles and springing over puddles, with impatient activity, and finding herself at last within view of the house, with weary ancles, dirty stockings, and a face glowing with the warmth of exercise",
+      "anchor_text": "”\n\nIn Meryton they parted: the two youngest repaired to the lodgings of one\nof the officers’ wives, and Elizabeth continued her walk alone, crossing\nfield after field at a quick pace, jumping over stiles and springing\nover puddles, with impatient activity, and finding herself at last\nwithin view of the house, with weary ancles, dirty stockings, and a face\nglowing with the warmth of exercise."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_placement": "Paragraph-level literary commentary following narrative beats",
+    "image_placement": "Scene visualization preceding relevant narrative sections",
+    "quote_placement": "Pull-quotes at chapter section boundaries"
+  },
+  "summary": "Chapter VII of Pride and Prejudice establishes the Bennet family's financial precarity through the entailment, introduces the militia that captivates Kitty and Lydia, and features Mr. Bennet's sardonic assessment of his youngest daughters. The narrative accelerates through Mrs. Bennet's successful scheme to strand Jane at Netherfield during a rainstorm, leading to Jane's illness and Elizabeth's determined three-mile walk to nurse her sister. The chapter concludes with Elizabeth's extended stay at Netherfield, setting the stage for her proximity to Mr. Darcy and the development of their complex relationship."
+}
