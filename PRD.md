@@ -33,25 +33,25 @@ Transform public domain classics into a "Content-First" digital experience for e
 *Clean up, brand, and make legally ready. Do this before any public traffic.*
 
 #### Branding & Template Cleanup
-- [ ] Fix `src/consts.ts`: `description`, `href` (→ `https://kapisce.com`), `author` (→ `kapisce`), `SOCIAL_LINKS` (replace template author links with Kapisce accounts)
-- [ ] Fix `package.json`: `name` from `astro-erudite` → `kapisce-classics`
-- [ ] Fix `public/site.webmanifest`: `name` and `short_name` from `astro-erudite` → `Kapisce`
-- [ ] Fix `astro.config.ts`: `site` from `https://astro-erudite.vercel.app` → `https://kapisce.com`
-- [ ] Fix `README.md`: replace template boilerplate with Kapisce description
-- [ ] Remove template blog posts from `src/content/blog/` (the demo callouts post, state-of-static-blogs post, etc.)
-- [ ] Create `.env.example` documenting all environment variables with descriptions and example values
+- [X] Fix `src/consts.ts`: `description`, `href` (→ `https://kapisce.com`), `author` (→ `kapisce`), `SOCIAL_LINKS` (replace template author links with Kapisce accounts)
+- [X] Fix `package.json`: `name` from `astro-erudite` → `kapisce-classics`
+- [X] Fix `public/site.webmanifest`: `name` and `short_name` from `astro-erudite` → `Kapisce`
+- [X] Fix `astro.config.ts`: `site` from `https://astro-erudite.vercel.app` → `https://kapisce.com`
+- [X] Fix `README.md`: replace template boilerplate with Kapisce description
+- [X] Remove template blog posts from `src/content/blog/` (the demo callouts post, state-of-static-blogs post, etc.)
+- [X] Create `.env.example` documenting all environment variables with descriptions and example values
 
 #### Legal & Compliance
-- [ ] Add Terms of Service page (`src/pages/terms.astro` → `/terms`)
-- [ ] Add Privacy Policy page (`src/pages/privacy.astro` → `/privacy`) — GDPR-compliant; list all data processors (PostHog, Listmonk, Resend, Lemon Squeezy)
-- [ ] Add EULA page (`src/pages/eula.astro` → `/eula`) — covers digital content license for purchased editions
-- [ ] Add Data Processing Agreement page (`src/pages/dpa.astro` → `/dpa`) — for EU users/organizations
-- [ ] Add cookie consent banner — use **Klaro** (open source, GDPR-compliant; blocks PostHog until consent)
-- [ ] Update `src/components/Footer.astro`: add links to `/terms`, `/privacy`, `/eula`, `/dpa`
-- [ ] Fix `LICENSE`: clarify dual license — CC BY-NC 4.0 for content, MIT for code
+- [X] Add Terms of Service page (`src/pages/terms.astro` → `/terms`)
+- [X] Add Privacy Policy page (`src/pages/privacy.astro` → `/privacy`) — GDPR-compliant; list all data processors (PostHog, Listmonk, Resend, Lemon Squeezy)
+- [X] Add EULA page (`src/pages/eula.astro` → `/eula`) — covers digital content license for purchased editions
+- [X] Add Data Processing Agreement page (`src/pages/dpa.astro` → `/dpa`) — for EU users/organizations
+- [ ] TODO: Add cookie consent banner — use **Klaro** (open source, GDPR-compliant; blocks PostHog until consent)
+- [X] Update `src/components/Footer.astro`: add links to `/terms`, `/privacy`, `/eula`, `/dpa`
+- [X] Fix `LICENSE`: clarify dual license — CC BY-NC 4.0 for content, MIT for code
 
 #### Developer Experience
-- [ ] Create `CLAUDE.md` at repo root with: project conventions, content pipeline steps, collection management rules (from Section 6), MCP connection details (once set up)
+- [X] Create `CLAUDE.md` at repo root with: project conventions, content pipeline steps, collection management rules (from Section 6), MCP connection details (once set up)
 
 ---
 
