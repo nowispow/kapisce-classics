@@ -175,6 +175,10 @@
     stopRafLoop();
   }
 
+  function updateWpm(event) {
+    wpm = Number(event.currentTarget.value);
+  }
+
   let currentWord = $derived(words[currentIndex] || '');
 
   // Apply new cadence immediately if WPM changes while playing.
@@ -203,9 +207,9 @@
   <div class="text-center mb-6 h-16 flex items-center justify-center">
     {#if currentWord}
       <div class="rsvp-word text-4xl font-bold tracking-tight" aria-label={currentWord}
-        ><span>{currentWord.slice(0, getPivotIndex(currentWord))}</span><span class="rsvp-pivot"
+        ><span class="rsvp-before">{currentWord.slice(0, getPivotIndex(currentWord))}</span><span class="rsvp-pivot"
           >{currentWord.charAt(getPivotIndex(currentWord))}</span
-        ><span>{currentWord.slice(getPivotIndex(currentWord) + 1)}</span></div
+        ><span class="rsvp-after">{currentWord.slice(getPivotIndex(currentWord) + 1)}</span></div
       >
     {:else}
       <span class="text-4xl font-bold tracking-tight">Ready?</span>
@@ -234,6 +238,7 @@
         <span class="text-sm font-medium">WPM:</span>
         <select
           bind:value={wpm}
+          on:change={updateWpm}
           class="bg-background border border-input rounded-md px-2 py-1 text-sm focus:ring-2 focus:ring-primary"
         >
           {#each wpmOptions as option}
@@ -259,13 +264,25 @@
 
 <style>
   .rsvp-word {
-    text-align: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: baseline;
     width: 100%;
     font-variant-ligatures: none;
     font-feature-settings: "liga" 0;
+    white-space: nowrap;
+  }
+
+  .rsvp-before {
+    justify-self: end;
   }
 
   .rsvp-pivot {
     color: #dc2626;
+    justify-self: center;
+  }
+
+  .rsvp-after {
+    justify-self: start;
   }
 </style>

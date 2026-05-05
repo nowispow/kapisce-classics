@@ -10,32 +10,18 @@ test('speed reader renders centered word and core controls work', async ({ page 
   await expect(wordDisplay).toBeVisible();
 
   const fullWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
-  const visibleText = (await wordDisplay.innerText()).trim();
+  const visibleText = ((await wordDisplay.textContent()) ?? '').trim();
   expect(fullWord).toBe('alpha');
   expect(visibleText).toBe(fullWord);
 
   const wordBox = await wordDisplay.boundingBox();
+  const pivotBox = await wordDisplay.locator('.rsvp-pivot').boundingBox();
   expect(wordBox).not.toBeNull();
-  if (wordBox) {
-    const textCenterX = await wordDisplay.evaluate((el) => {
-      const range = document.createRange();
-      range.selectNodeContents(el);
-      const rects = range.getClientRects();
-      if (!rects.length) return null;
-      let left = Number.POSITIVE_INFINITY;
-      let right = Number.NEGATIVE_INFINITY;
-      for (const rect of Array.from(rects)) {
-        if (rect.left < left) left = rect.left;
-        if (rect.right > right) right = rect.right;
-      }
-      return left + (right - left) / 2;
-    });
-
-    expect(textCenterX).not.toBeNull();
-    if (textCenterX !== null) {
-      const wordCenterX = wordBox.x + wordBox.width / 2;
-      expect(Math.abs(textCenterX - wordCenterX)).toBeLessThan(6);
-    }
+  expect(pivotBox).not.toBeNull();
+  if (wordBox && pivotBox) {
+    const wordCenterX = wordBox.x + wordBox.width / 2;
+    const pivotCenterX = pivotBox.x + pivotBox.width / 2;
+    expect(Math.abs(pivotCenterX - wordCenterX)).toBeLessThan(1);
   }
 
   const playButton = speedReader.locator('button[aria-label="Play"]');
@@ -52,6 +38,16 @@ test('speed reader renders centered word and core controls work', async ({ page 
     })
     .not.toBe(initialWord);
 
+  const movingPivotOffset = await wordDisplay.evaluate((el) => {
+    const pivot = el.querySelector('.rsvp-pivot');
+    if (!pivot) return null;
+    const wordRect = el.getBoundingClientRect();
+    const pivotRect = pivot.getBoundingClientRect();
+    return Math.abs(pivotRect.left + pivotRect.width / 2 - (wordRect.left + wordRect.width / 2));
+  });
+  expect(movingPivotOffset).not.toBeNull();
+  expect(movingPivotOffset!).toBeLessThan(1);
+
   const resetButton = speedReader.locator('button:has-text("Reset")');
   await resetButton.click();
   const afterResetWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
@@ -67,7 +63,9 @@ test('speed reader applies one-word extra pause after sentence punctuation', asy
   const wordDisplay = speedReader.locator('.rsvp-word');
   await expect(wordDisplay).toBeVisible();
 
-  await speedReader.locator('select').selectOption('150');
+  const wpmSelect = speedReader.locator('select');
+  await wpmSelect.selectOption('150');
+  await expect(wpmSelect).toHaveValue('150');
   await speedReader.locator('button[aria-label="Play"]').click();
 
   let previousWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
