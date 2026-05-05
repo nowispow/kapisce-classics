@@ -220,14 +220,14 @@
     <div class="flex items-center justify-between gap-4">
       <div class="flex items-center gap-2">
         <button
-          on:click={togglePlay}
+          onclick={togglePlay}
           class="px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium"
           aria-label={isPlaying ? 'Pause' : 'Play'}
         >
           {isPlaying ? 'Pause' : 'Play'}
         </button>
         <button
-          on:click={reset}
+          onclick={reset}
           class="px-4 py-2 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
         >
           Reset
@@ -238,7 +238,7 @@
         <span class="text-sm font-medium">WPM:</span>
         <select
           bind:value={wpm}
-          on:change={updateWpm}
+          onchange={updateWpm}
           class="bg-background border border-input rounded-md px-2 py-1 text-sm focus:ring-2 focus:ring-primary"
         >
           {#each wpmOptions as option}
