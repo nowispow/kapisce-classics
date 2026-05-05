@@ -1,11 +1,8 @@
 {
-	"compatibility_date": "2026-05-05",
-	"compatibility_flags": ["global_fetch_strictly_public"],
 	"name": "kapisce-classics",
-	"main": "@astrojs/cloudflare/entrypoints/server",
+	"compatibility_date": "2026-05-05",
 	"assets": {
-		"directory": "./dist",
-		"binding": "ASSETS"
+		"directory": "./dist"
 	},
 	"observability": {
 		"enabled": true

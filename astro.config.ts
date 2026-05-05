@@ -20,10 +20,9 @@ import type { ExpressiveCodeTheme } from 'rehype-expressive-code'
 
 import tailwindcss from '@tailwindcss/vite'
 
-import cloudflare from '@astrojs/cloudflare';
-
 export default defineConfig({
   site: 'https://kapisce.com',
+  output: 'static',
   integrations: [mdx(), react(), svelte(), sitemap(), icon()],
 
   vite: {
@@ -112,5 +111,4 @@ export default defineConfig({
     remarkPlugins: [remarkMath, remarkEmoji],
   },
 
-  adapter: cloudflare(),
 })

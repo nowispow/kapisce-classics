@@ -1,21 +1,22 @@
 import { SITE } from '@/consts'
 import rss from '@astrojs/rss'
 import type { APIContext } from 'astro'
-import { getAllPosts } from '@/lib/data-utils'
+import { getCollection } from 'astro:content'
 
 export async function GET(context: APIContext) {
   try {
-    const posts = await getAllPosts()
+    const chapters = await getCollection('chapters', ({ data }) => !data.draft)
+    chapters.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
 
     return rss({
       title: SITE.title,
       description: SITE.description,
       site: context.site ?? SITE.href,
-      items: posts.map((post) => ({
-        title: post.data.title,
-        description: post.data.description,
-        pubDate: post.data.date,
-        link: `/blog/${post.id}/`,
+      items: chapters.map((chapter) => ({
+        title: chapter.data.title,
+        description: chapter.data.description,
+        pubDate: chapter.data.date,
+        link: `/chapters/${chapter.id}/`,
       })),
     })
   } catch (error) {
