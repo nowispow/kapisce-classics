@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride and Prejudice: Chapter IX",
+  "enhanced_title": "A Morning at Netherfield: Domestic Intrusion and Social Folly",
+  "author": "Jane Austen",
+  "description": "In Chapter IX of Pride and Prejudice, Mrs. Bennet visits Netherfield with her youngest daughters, exposing the family to severe social embarrassment through her vulgar manners, while Elizabeth struggles to mitigate the damage and Jane continues her recovery.",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "Chapter IX",
+    "source_text_file": "pride-and-prejudice-chapter-9.txt",
+    "metadata_file": "pp-ch9-metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "paragraph": "analysis_text",
+    "anchor_text_end_of_sentence": "sentence_ending",
+    "variations": "image_variants"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis_001",
+      "paragraph": "This chapter brilliantly illustrates Jane Austen's mastery of dramatic irony through Mrs. Bennet's visit to Netherfield. The mother arrives ostensibly out of concern for her daughter's health, yet Austen reveals her true motivation: Mrs. Bennet hopes to prolong Jane's stay to facilitate romantic attachment with Mr. Bingley. This duplicity creates tension as Elizabeth must navigate between filial loyalty and social embarrassment.",
+      "anchor_text_end_of_sentence": "her from Netherfield."
+    },
+    {
+      "id": "analysis_002",
+      "paragraph": "Elizabeth's role as family guardian becomes paramount in this chapter. She functions as the bridge between her mother's vulgarity and the refined sensibilities of the Netherfield party. Her attempts to redirect conversation and soften her mother's blunders reveal not only her intelligence but also her deep sense of responsibility for her family's reputation.",
+      "anchor_text_end_of_sentence": "suffered to do at home."
+    },
+    {
+      "id": "analysis_003",
+      "paragraph": "The verbal sparring between Elizabeth and Mr. Darcy reaches new sophistication in this chapter. Their exchange regarding character study and the limitations of country society establishes them as intellectual equals despite their apparent differences. Darcy's comment about 'confined and unvarying society' ironically foreshadows how Elizabeth will challenge his prejudiced assumptions.",
+      "anchor_text_end_of_sentence": "observed in them for ever."
+    },
+    {
+      "id": "analysis_004",
+      "paragraph": "Mrs. Bennet's offensive declaration about social activity in the country versus the town represents a pivotal moment of class tension. Her misinterpretation of Darcy's subtle observation and her triumphant pronouncement about dining with 'four-and-twenty families' exposes the vast social gulf between the Bennets and the Bingley-Darcy circle. Austen uses this moment to critique the pretensions of the upwardly mobile gentry.",
+      "anchor_text_end_of_sentence": "four-and-twenty families."
+    },
+    {
+      "id": "analysis_005",
+      "paragraph": "The characterization of Mrs. Bennet through her dialogue demonstrates Austen's economy of exposition. Her relentless self-promotion of Jane's beauty, her boasting about the gentleman who wrote verses, her criticism of Charlotte Lucas's appearance, and her tactless comments about servants reveal a woman utterly lacking in self-awareness. This portrayal serves as a cautionary tale about the dangers of maternal ambition unchecked by propriety.",
+      "anchor_text_end_of_sentence": "very pretty they were."
+    },
+    {
+      "id": "analysis_006",
+      "paragraph": "Elizabeth's famous wit regarding poetry as 'the food of love' represents one of Austen's most celebrated aphorisms. The subsequent dialogue between Elizabeth and Darcy about whether poetry strengthens or destroys love encapsulates their opposing viewpoints on romance. Elizabeth's cynical observation that 'one good sonnet will starve it entirely away' reveals her sharp intelligence while also masking her vulnerability to genuine feeling.",
+      "anchor_text_end_of_sentence": "starve it entirely away."
+    },
+    {
+      "id": "analysis_007",
+      "paragraph": "Lydia's introduction in this chapter completes the picture of Bennet family indiscretion. Her bold demand for a ball, her casual mention of officers, and her comfortable assumption of social equality with Mr. Bingley foreshadow the calamity that will later befall her. The chapter concludes with the humiliating knowledge that Darcy, despite witnessing the family's vulgarity, still refuses to join in censure of Elizabeth—a subtle indication of his growing regard.",
+      "anchor_text_end_of_sentence": "fine eyes_."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "img_001",
+      "scene_title": "Elizabeth Keeping Vigil",
+      "style": "Renaissance oil painting",
+      "alt_text": "A young woman in Regency-era nightgown sits beside the bed of her ill sister, holding a candle in a dimly lit room.",
+      "variations": [
+        {
+          "variation_id": "v001",
+          "prompt_text": "Renaissance oil painting, chiaroscuro lighting, two young Regency-era women in a four-poster bed, one lying ill with pale complexion, the other sitting vigil in a white nightgown, single candle on bedside table, somber mood, rich fabrics, detailed textures, masterwork quality",
+          "output_asset": "elizabeth_jane_vigil_01.png"
+        },
+        {
+          "variation_id": "v002",
+          "prompt_text": "Renaissance oil painting, soft morning light streaming through window, two sisters in bedchamber, domestic intimacy, warm amber tones, detailed drapery, emotional connection, classical composition",
+          "output_asset": "elizabeth_jane_vigil_02.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "family breakfast."
+    },
+    {
+      "id": "img_002",
+      "scene_title": "Mrs. Bennet's Arrival",
+      "style": "Renaissance oil painting",
+      "alt_text": "An overdressed matron in bright colors flanked by two young girls enters an elegant drawing room, while elegant ladies observe with disdain.",
+      "variations": [
+        {
+          "variation_id": "v001",
+          "prompt_text": "Renaissance oil painting, grand interior with tall windows and classical columns, middle-aged woman in garish yellow and orange dress with feathered hat entering dramatically, two younger girls behind her, two elegant ladies in background looking disapproving, dramatic lighting, social tension palpable",
+          "output_asset": "mrs_bennet_arrival_01.png"
+        },
+        {
+          "variation_id": "v002",
+          "prompt_text": "Renaissance oil painting, Netherfield breakfast parlour, group composition showing social contrast, vulgar mother with overdressed daughters versus refined hostesses, warm interior colors, sophisticated architectural details, narrative moment frozen in time",
+          "output_asset": "mrs_bennet_arrival_02.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "breakfast parlour."
+    },
+    {
+      "id": "img_003",
+      "scene_title": "Elizabeth and Bingley's Exchange",
+      "style": "Renaissance oil painting",
+      "alt_text": "A lively young woman with intelligent eyes exchanges witty remarks with a good-natured gentleman in a sunlit drawing room.",
+      "variations": [
+        {
+          "variation_id": "v001",
+          "prompt_text": "Renaissance oil painting, elegant drawing room with large window, young woman with dark hair and expressive eyes standing, facing a cheerful young gentleman in fashionable attire, animated conversation pose, natural daylight, warm wood paneling, social gathering atmosphere",
+          "output_asset": "elizabeth_bingley_exchange_01.png"
+        },
+        {
+          "variation_id": "v002",
+          "prompt_text": "Renaissance oil painting, intimate conversation scene, two figures in Regency dress engaged in dialogue, her hand gesture suggesting wit, his posture showing amusement, classical interior with rich textures, emotional dynamics visible",
+          "output_asset": "elizabeth_bingley_exchange_02.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "than such a one as yours."
+    },
+    {
+      "id": "img_004",
+      "scene_title": "Darcy's Silent Rebuke",
+      "style": "Renaissance oil painting",
+      "alt_text": "A proud gentleman with a stern countenance turns away from an oblivious matron who gestures triumphantly.",
+      "variations": [
+        {
+          "variation_id": "v001",
+          "prompt_text": "Renaissance oil painting, dramatic profile view, tall dark-haired gentleman in somber coat turning away with rigid posture and disapproving expression, middle-aged woman in gaudy dress with hand raised mid-gesture in background, strong compositional contrast, emotional distance",
+          "output_asset": "darcy_silent_turn_01.png"
+        },
+        {
+          "variation_id": "v002",
+          "prompt_text": "Renaissance oil painting, interior scene with group dynamics, one figure withdrawing from conversation, body language expressing superiority and disdain, others oblivious to his reaction, classical proportions, subtle social commentary",
+          "output_asset": "darcy_silent_turn_02.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "turned silently away."
+    },
+    {
+      "id": "img_005",
+      "scene_title": "Elizabeth's Embarrassment",
+      "style": "Renaissance oil painting",
+      "alt_text": "A young woman blushes crimson, attempting to intervene between her animated mother and an elegant assembly.",
+      "variations": [
+        {
+          "variation_id": "v001",
+          "prompt_text": "Renaissance oil painting, young woman with flushed cheeks and mortified expression, leaning forward as if trying to redirect conversation, older woman gesturing expansively behind her, several observers in background, dramatic facial expressions, warm interior, emotional intensity",
+          "output_asset": "elizabeth_embarrassment_01.png"
+        },
+        {
+          "variation_id": "v002",
+          "prompt_text": "Renaissance oil painting, three-figure composition showing familial tension, young woman caught between affection and shame, mother figure unaware of social gaffe, elegant observer watching the scene, rich color palette, narrative storytelling",
+          "output_asset": "elizabeth_embarrassment_02.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "to be true."
+    },
+    {
+      "id": "img_006",
+      "scene_title": "The Poetry Debate",
+      "style": "Renaissance oil painting",
+      "alt_text": "Two figures engage in animated intellectual discourse, one speaking with animated gesture while the other listens with a subtle smile.",
+      "variations": [
+        {
+          "variation_id": "v001",
+          "prompt_text": "Renaissance oil painting, intimate conversation between two standing figures, young woman in white dress gesturing expressively, gentleman in dark coat with small knowing smile, elegant drawing room setting, intellectual engagement visible, warm lighting on faces, rich details",
+          "output_asset": "poetry_debate_01.png"
+        },
+        {
+          "variation_id": "v002",
+          "prompt_text": "Renaissance oil painting, dialogue scene with psychological depth, two figures engaged in verbal sparring, contrasting expressions of wit and dry amusement, classical interior with books and papers suggesting intellectual atmosphere, masterwork composition",
+          "output_asset": "poetry_debate_02.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "entirely away."
+    },
+    {
+      "id": "img_007",
+      "scene_title": "Lydia Demands a Ball",
+      "style": "Renaissance oil painting",
+      "alt_text": "A bold young girl in a bright dress confronts a gentleman, while her mother looks on with approval and others observe with varying reactions.",
+      "variations": [
+        {
+          "variation_id": "v001",
+          "prompt_text": "Renaissance oil painting, dynamic group composition, young stout girl of fifteen in brightly colored dress standing assertively before seated gentleman, mother figure in background with pleased expression, other figures reacting with amusement and concern, dramatic narrative moment, rich period details",
+          "output_asset": "lydia_ball_demand_01.png"
+        },
+        {
+          "variation_id": "v002",
+          "prompt_text": "Renaissance oil painting, social gathering scene showing generational contrasts, bold young woman making demand, seated host responding graciously, family dynamics visible, elegant drawing room setting, storytelling through gesture and expression",
+          "output_asset": "lydia_ball_demand_02.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "fine eyes_."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_001",
+      "quote": "Removed! cried Bingley. It must not be thought of.",
+      "anchor_text": "thought of."
+    },
+    {
+      "id": "quote_002",
+      "quote": "Whatever I do is done in a hurry, replied he; and therefore if I should resolve to quit Netherfield, I should probably be off in five minutes. At present, however, I consider myself as quite fixed here.",
+      "anchor_text": "fixed here."
+    },
+    {
+      "id": "quote_003",
+      "quote": "That is as it happens. It does not necessarily follow that a deep, intricate character is more or less estimable than such a one as yours.",
+      "anchor_text": "as yours."
+    },
+    {
+      "id": "quote_004",
+      "quote": "Lizzy, cried her mother, remember where you are, and do not run on in the wild manner that you are suffered to do at home.",
+      "anchor_text": "at home."
+    },
+    {
+      "id": "quote_005",
+      "quote": "I cannot see that London has any great advantage over the country, for my part, except the shops and public places.",
+      "anchor_text": "public places."
+    },
+    {
+      "id": "quote_006",
+      "quote": "I have been used to consider poetry as the food of love, said Darcy.",
+      "anchor_text": "the _food_ of love"
+    },
+    {
+      "id": "quote_007",
+      "quote": "But if it be only a slight, thin sort of inclination, I am convinced that one good sonnet will starve it entirely away.",
+      "anchor_text": "entirely away."
+    }
+  ],
+  "insertion_methods": {
+    "image_insertion": "placeholder_markers",
+    "quote_format": "block_quote_citation"
+  },
+  "summary": "Chapter IX of Pride and Prejudice presents one of the novel's most excruciating scenes of social embarrassment as Mrs. Bennet visits Netherfield with Lydia and Kitty. The chapter moves from Elizabeth's night vigil with Jane through the morning's relief at Jane's improvement, then descends into mortifying comedy as Mrs. Bennet reveals her vulgarity through boastful commentary on Jane's beauty, tactless observations about Charlotte Lucas, misinterpretation of Darcy's remarks, and general lack of social refinement. Throughout this trial, Elizabeth displays remarkable forbearance and wit, engaging in sophisticated banter with Darcy about character and poetry while attempting to redirect her mother's indiscretions. The chapter highlights the tension between Elizabeth's intelligence and her family's limitations, while also showing Darcy's growing regard for Elizabeth despite—or perhaps because of—her ability to navigate these social shoals with grace and humor. The introduction of Lydia's bold personality foreshadows future troubles, while Bingley's unaffected civility contrasts with his sister's cold formality. The chapter succeeds brilliantly in setting up the obstacles to Elizabeth and Darcy's eventual understanding: social class prejudice, family disgrace, and the challenge of discerning true character beneath surface appearances."
+}

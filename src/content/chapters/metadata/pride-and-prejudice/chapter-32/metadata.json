@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "title": "Pride And Prejudice: CHAPTER XXXII",
+  "enhanced_title": "An Unexpected Visit: Mr. Darcy's Reserved Courtship at Hunsford",
+  "author": "Jane Austen",
+  "description": "Chapter 32 of Pride and Prejudice features an unexpected visit from Mr. Darcy to Elizabeth Bennet at the Hunsford Parsonage, igniting speculation about his motives and affections.",
+  "source": {
+    "novel": "Pride and Prejudice",
+    "chapter": "Chapter XXXII",
+    "source_text_file": "pride-and-prejudice-chapter-32.txt",
+    "metadata_file": "pride-and-prejudice-chapter-32-metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_entries": 7,
+    "image_prompt_entries": 7,
+    "quote_entries": 7,
+    "style_constraint": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "paragraph": "analysis_text"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis-001",
+      "paragraph": "The chapter opens with Elizabeth alone at the Parsonage, writing to Jane while Mrs. Collins and Maria are away on business in the village. This solitary state creates the conditions for the unexpected visit from Mr. Darcy, demonstrating Austen's use of isolation as a narrative device to facilitate intimate character interactions. The absence of chaperones intensifies the social awkwardness of the encounter and heightens the reader's awareness of its impropriety.",
+      "anchor_text_end_of_sentence": "Collins and Maria were gone on business into the village,\nwhen she was startled by a ring at the door, the certain signal of a\nvisitor."
+    },
+    {
+      "id": "analysis-002",
+      "paragraph": "Mr. Darcy's entrance creates immediate dramatic irony\u2014both he and Elizabeth are astonished by the circumstances, yet their reactions reveal deeper emotional undercurrents. His apology for intrusion, explaining that he had understood all the ladies to be within, suggests an awareness of social impropriety that he is nonetheless willing to risk. The awkward explanation barely conceals the charged nature of the accidental t\u00eate-\u00e0-t\u00eate that follows.",
+      "anchor_text_end_of_sentence": "He seemed astonished too on finding her alone, and apologized for his\nintrusion, by letting her know that he had understood all the ladies to\nbe within."
+    },
+    {
+      "id": "analysis-003",
+      "paragraph": "The conversation about distance and proximity serves as a metaphor for the emotional gap between Elizabeth and Darcy. His assertion that fifty miles is 'a very easy distance' reveals his willingness to traverse both physical and emotional barriers for connection, while Elizabeth's resistance to this framing signals her attachment to home and her suspicion of his motives. The exchange about Hertfordshire and Longbourn subtly encodes the question of whether Jane and Bingley\u2014and by extension Elizabeth and Darcy\u2014might ever be brought closer together.",
+      "anchor_text_end_of_sentence": "Little more than half a day\u2019s\njourney."
+    },
+    {
+      "id": "analysis-004",
+      "paragraph": "Darcy's drawing his chair closer to Elizabeth and then retreating dramatically illustrates his internal conflict\u2014his attraction pulling him toward her while his reserved nature and awareness of social barriers cause him to withdraw. The physical choreography of approach and retreat is rendered with precise economy: he draws his chair a little towards her, then draws it back and takes up a newspaper. This small but telling sequence of gestures encodes the novel's central romantic tension in a single moment of embodied irresolution.",
+      "anchor_text_end_of_sentence": "The gentleman experienced some change of\nfeeling; he drew back his chair, took a newspaper from the table, and,\nglancing over it, said, in a colder voice,--\n\n\u201cAre you pleased with Kent?"
+    },
+    {
+      "id": "analysis-005",
+      "paragraph": "Charlotte Collins's interpretation of Darcy's visit as evidence of romantic interest introduces the theme of women's observation and speculation about courtship. Her declaration that 'he must be in love with you, or he would never have called on us in this familiar way' establishes the chapter's central interpretive tension. Yet Austen immediately complicates Charlotte's reading by noting that Elizabeth's account of his silence made the romantic explanation seem unlikely even to Charlotte's wishful thinking.",
+      "anchor_text_end_of_sentence": "\u201cMy dear Eliza, he must be in love with you, or he would never\nhave called on us in this familiar way."
+    },
+    {
+      "id": "analysis-006",
+      "paragraph": "The contrast between Colonel Fitzwilliam's sociable visits and Darcy's awkward ones highlights different expressions of masculine interest and social ease. While Fitzwilliam offers pleasant companionship\u2014it was plain to them all that he came because he had pleasure in their society\u2014Darcy's difficulty and frequent silence suggest a deeper, more conflicted emotional investment. Austen uses this comparison to distinguish between agreeable surface charm and the more turbulent, less legible workings of genuine feeling.",
+      "anchor_text_end_of_sentence": "It was plain to them all that Colonel Fitzwilliam came because he\nhad pleasure in their society,"
+    },
+    {
+      "id": "analysis-007",
+      "paragraph": "The chapter concludes with Charlotte's unsuccessful attempts to confirm Darcy's affections through careful observation at Rosings and at Hunsford. She notes his 'earnest, steadfast gaze' directed at Elizabeth, but finds the expression of that look disputable\u2014sometimes seeming like admiration, sometimes like mere absence of mind. This deliberate ambiguity preserves the romantic tension of the novel while foreshadowing the revelation of Darcy's feelings that will arrive in the following chapters.",
+      "anchor_text_end_of_sentence": "It was an earnest, steadfast gaze, but she often\ndoubted whether there were much admiration in it, and sometimes it\nseemed nothing but absence of mind."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "image-001",
+      "scene_title": "Elizabeth Writing at the Parsonage",
+      "style": "Renaissance oil painting",
+      "alt_text": "A young woman in Regency dress sits at a writing desk, quill in hand, in a sunlit parlor of a country parsonage.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of a Regency-era woman with auburn hair writing a letter by a window, soft morning light, detailed period dress, quiet parsonage interior, 1813 England",
+          "output_asset": "scene-1a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style, young lady in white muslin gown seated at mahogany desk, writing implements, peaceful domestic scene, oil on canvas texture, Jan Vermeer lighting influence",
+          "output_asset": "scene-1b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Collins and Maria were gone on business into the village,\nwhen she was startled by a ring at the door, the certain signal of a\nvisitor."
+    },
+    {
+      "id": "image-002",
+      "scene_title": "Mr. Darcy's Unexpected Entrance",
+      "style": "Renaissance oil painting",
+      "alt_text": "A tall gentleman in dark coat and breeches enters a drawing room where a young woman looks up in surprise.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of tall gentleman entering country parlor, young woman rising from chair in surprise, dramatic doorway lighting, period costume detail, emotional tension, 1813 English interior",
+          "output_asset": "scene-2a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style, surprise encounter in Regency drawing room, gentleman removing hat, lady with dropped letter, chiaroscuro lighting, dramatic moment frozen in oil paint",
+          "output_asset": "scene-2b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "to her very great surprise Mr. Darcy, and Mr.\nDarcy only, entered the room."
+    },
+    {
+      "id": "image-003",
+      "scene_title": "The Awkward T\u00eate-\u00e0-T\u00eate",
+      "style": "Renaissance oil painting",
+      "alt_text": "Two figures seated across from each other in a formal parlor, engaged in strained conversation with rigid postures.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of awkward social encounter, gentleman and lady seated across tea table, formal attire, strained silence, period furniture, palpable tension in body language, oil painting texture",
+          "output_asset": "scene-3a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style, tense drawing room scene, genteel couple avoiding eye contact, crossed hands and stiff posture, muted colors, dramatic interior lighting, emotional distance portrayed",
+          "output_asset": "scene-3b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "They then sat down, and when her inquiries after Rosings were made,\nseemed in danger of sinking into total silence."
+    },
+    {
+      "id": "image-004",
+      "scene_title": "The Chair Drawn Closer",
+      "style": "Renaissance oil painting",
+      "alt_text": "A gentleman moving his chair toward a seated lady, an intimate gesture charged with unspoken meaning.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of intimate gesture, gentleman drawing wooden chair closer to lady, subtle movement charged with meaning, Regency costume, parsonage interior, romantic tension, detailed fabric textures",
+          "output_asset": "scene-4a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style, moment of proximity, chairs arranged intimately, careful attention to hand positions and social space, warm candlelight, oil paint impasto technique, emotional turning point",
+          "output_asset": "scene-4b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr."
+    },
+    {
+      "id": "image-005",
+      "scene_title": "The Retreat to Newspaper",
+      "style": "Renaissance oil painting",
+      "alt_text": "A gentleman withdrawing physically and emotionally, burying himself in a newspaper with cold formality.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of gentleman retreating behind newspaper, emotional withdrawal, saturnine expression, lady looking puzzled, drawing room setting, dramatic shift in atmosphere, period details",
+          "output_asset": "scene-5a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style, social withdrawal depicted, man hiding behind broadsheet newspaper, woman watching with perplexed expression, cold lighting after warmth, psychological distance visualized",
+          "output_asset": "scene-5b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "The gentleman experienced some change of\nfeeling; he drew back his chair, took a newspaper from the table, and,\nglancing over it, said, in a colder voice,--\n\n\u201cAre you pleased with Kent?"
+    },
+    {
+      "id": "image-006",
+      "scene_title": "Charlotte Collins Observing",
+      "style": "Renaissance oil painting",
+      "alt_text": "A matronly woman watching a gentleman visitor with calculating interest, recognizing romantic possibilities.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of observant gentlewoman, knowing expression, watching visitor depart, parsonage doorway, matchmaking awareness, period costume, domestic interior, narrative moment of realization",
+          "output_asset": "scene-6a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style, woman at threshold, understanding smile, hands clasped thoughtfully, watching gentleman's departure, romantic speculation in her eyes, maternal concern, oil portrait technique",
+          "output_asset": "scene-6b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "\u201cMy dear Eliza, he must be in love with you, or he would never\nhave called on us in this familiar way."
+    },
+    {
+      "id": "image-007",
+      "scene_title": "The Steadfast Gaze",
+      "style": "Renaissance oil painting",
+      "alt_text": "A gentleman sitting silently, his eyes fixed on a young lady with an expression of earnest, contemplative intensity.",
+      "variations": [
+        {
+          "variation_id": "v1",
+          "prompt_text": "Renaissance oil painting of man gazing at woman with intense concentration, silent admiration, library or drawing room setting, psychological portraiture, unspoken emotions, dramatic lighting on faces",
+          "output_asset": "scene-7a.png"
+        },
+        {
+          "variation_id": "v2",
+          "prompt_text": "Renaissance oil painting style, portrait of longing, man's face in profile watching woman reading, candlelight illuminating features, contemplative expression, romantic ambiguity, masterful brushwork",
+          "output_asset": "scene-7b.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "It was an earnest, steadfast gaze, but she often\ndoubted whether there were much admiration in it, and sometimes it\nseemed nothing but absence of mind."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote-001",
+      "quote": "Elizabeth was sitting by herself the next morning, and writing to Jane, while Mrs. Collins and Maria were gone on business into the village, when she was startled by a ring at the door, the certain signal of a visitor.",
+      "anchor_text": "Elizabeth was sitting by herself the next morning, and writing to Jane,\nwhile Mrs. Collins and Maria were gone on business into the village,\nwhen she was startled by a ring at the door, the certain signal of a\nvisitor."
+    },
+    {
+      "id": "quote-002",
+      "quote": "To her very great surprise Mr. Darcy, and Mr. Darcy only, entered the room.",
+      "anchor_text": "to her very great surprise Mr. Darcy, and Mr.\nDarcy only, entered the room."
+    },
+    {
+      "id": "quote-003",
+      "quote": "It was absolutely necessary, therefore, to think of something; and in this emergency recollecting when she had seen him last in Hertfordshire.",
+      "anchor_text": "It was absolutely\nnecessary, therefore, to think of something; and in this emergency\nrecollecting _when_ she had seen him last in Hertfordshire,"
+    },
+    {
+      "id": "quote-004",
+      "quote": "And what is fifty miles of good road? Little more than half a day's journey. Yes, I call it a very easy distance.",
+      "anchor_text": "Little more than half a day\u2019s\njourney."
+    },
+    {
+      "id": "quote-005",
+      "quote": "Mr. Darcy drew his chair a little towards her, and said, \"_You_ cannot have a right to such very strong local attachment. _You_ cannot have been always at Longbourn.\"",
+      "anchor_text": "Mr."
+    },
+    {
+      "id": "quote-006",
+      "quote": "My dear Eliza, he must be in love with you, or he would never have called on us in this familiar way.",
+      "anchor_text": "\u201cMy dear Eliza, he must be in love with you, or he would never\nhave called on us in this familiar way."
+    },
+    {
+      "id": "quote-007",
+      "quote": "He certainly looked at her friend a great deal, but the expression of that look was disputable. It was an earnest, steadfast gaze, but she often doubted whether there were much admiration in it, and sometimes it seemed nothing but absence of mind.",
+      "anchor_text": "He\ncertainly looked at her friend a great deal, but the expression of that\nlook was disputable."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_entries": "Between paragraphs as interpretive commentary",
+    "image_prompt_entries": "As illustrated scenes following key narrative moments",
+    "quote_entries": "As pull quotes highlighting significant dialogue"
+  },
+  "summary": "Chapter XXXII of Pride and Prejudice centers on Mr. Darcy's unexpected solitary visit to Elizabeth Bennet at the Hunsford Parsonage, creating a tense t\u00eate-\u00e0-t\u00eate that sparks speculation about his romantic intentions. Through awkward conversation about distance, awkward silences, and telling physical movements like drawing his chair closer then retreating behind a newspaper, Austen portrays Darcy's conflicted attraction. Charlotte Collins's interpretation of these events as evidence of love introduces the theme of women's observation of courtship rituals, while the contrast with Colonel Fitzwilliam's easy sociability highlights Darcy's unique, troubled emotional state. The chapter sustains romantic ambiguity through descriptions of Darcy's 'earnest, steadfast gaze' that defies clear reading, maintaining the suspense of his developing feelings."
+}

@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0.0",
+  "title": "Pride And Prejudice: CHAPTER XIII",
+  "enhanced_title": "The Arrival of Mr. Collins: Entailment and Absurdity at Longbourn",
+  "author": "Jane Austen",
+  "description": "Chapter 13 introduces Mr. Collins, the obsequious clergyman and heir to Longbourn, whose letter and arrival bring social comedy and reveal the precarious position of the Bennet daughters under the entailment.",
+  "source": {
+    "novel": "pride-and-prejudice",
+    "chapter": "13",
+    "source_text_file": "pride-and-prejudice_chapter-13.txt",
+    "metadata_file": "pride-and-prejudice_chapter-13_metadata.json"
+  },
+  "pattern_requirements": {
+    "analysis_count": 7,
+    "image_prompt_count": 7,
+    "quote_count": 7,
+    "style": "Renaissance oil painting"
+  },
+  "field_aliases": {
+    "analysis_entries": "literary_analysis",
+    "image_prompt_entries": "visual_representations",
+    "quote_entries": "notable_quotations"
+  },
+  "analysis_entries": [
+    {
+      "id": "analysis_001",
+      "paragraph": "Mr. Bennet's teasing announcement at breakfast establishes his characteristic humor—deliberately tantalizing his wife and daughters with news of a male visitor, only to reveal it is not the hoped-for Mr. Bingley but the dreaded Mr. Collins. His playful withholding of information ('After amusing himself some time with their curiosity') is a form of domestic theater, casting himself as director of the family's emotional responses. This opener demonstrates Austen's mastery of domestic comedy and dramatic irony, using the breakfast table as a stage for the novel's central tensions.",
+      "anchor_text_end_of_sentence": "After amusing himself some time with their curiosity, he thus\nexplained:--“About a month ago I received this letter, and about a\nfortnight ago I answered it; for I thought it a case of some delicacy,\nand requiring early attention."
+    },
+    {
+      "id": "analysis_002",
+      "paragraph": "The introduction of the entailment conflict is central to the novel's premise—the five Bennet daughters face disinheritance because the estate is entailed to the male line. Mrs. Bennet's passionate but irrational response ('I should have tried long ago to do something or other about it') reveals her helplessness within legal systems she cannot comprehend. That Jane and Elizabeth have 'often attempted' to explain the entail before underscores how thoroughly this legal injustice has shaped the family's daily consciousness.",
+      "anchor_text_end_of_sentence": "in favour of a man whom nobody cared anything about."
+    },
+    {
+      "id": "analysis_003",
+      "paragraph": "Mr. Collins's letter is a masterpiece of Austenian satire, exposing a character simultaneously self-important and self-abasing. His groveling deference to Lady Catherine de Bourgh ('grateful respect towards her Ladyship') combined with his pomposity creates a study in social climbing and obsequiousness. The letter's elaborate syntax and self-congratulatory reasoning—framing his inheritance of Longbourn as a burden he nobly bears—reveals a man entirely without self-awareness.",
+      "anchor_text_end_of_sentence": "I remain, dear sir,\n     with respectful compliments to your lady and daughters, your\n     well-wisher and friend,\n\n“WILLIAM COLLINS."
+    },
+    {
+      "id": "analysis_004",
+      "paragraph": "The Bennet daughters' varied reactions to the letter reveal their distinct personalities: Jane sees good intentions; Elizabeth critiques his servility; Mary evaluates composition; Kitty and Lydia focus only on whether he wears a red coat. This showcases Austen's skill in characterization through response, using a single document as a lens that refracts each character's values and preoccupations. The contrast between Elizabeth's sharp critical reading and Mary's pedantic praise of the letter's 'composition' is particularly pointed.",
+      "anchor_text_end_of_sentence": "nor inclined to be silent himself."
+    },
+    {
+      "id": "analysis_005",
+      "paragraph": "Mr. Bennet's anticipation of Mr. Collins's absurdity ('There is a mixture of servility and self-importance in his letter which promises well') establishes the father-daughter bond between him and Elizabeth, united in their appreciation of the ridiculous. His declaration 'I am impatient to see him' frames the coming visit as entertainment rather than threat, a coping strategy that reveals both his wit and his emotional detachment from the family's precarious situation. This shared ironic sensibility between father and second daughter is one of the novel's most affectionate relationships.",
+      "anchor_text_end_of_sentence": "I am impatient to see him."
+    },
+    {
+      "id": "analysis_006",
+      "paragraph": "Mr. Collins's egotistical compliment to Mrs. Bennet—praising her daughters' beauty while noting the entail will displace them—demonstrates his complete lack of tact and social grace. His inability to perceive offense reveals profound self-absorption, as he moves seamlessly from flattery to the reminder of dispossession without registering the cruelty of the juxtaposition. The dinner scene compounds this when he implies the daughters might have cooked the meal, a class insult that Mrs. Bennet corrects 'with some asperity.'",
+      "anchor_text_end_of_sentence": "In a softened tone she declared\nherself not at all offended; but he continued to apologize for about a\nquarter of an hour."
+    },
+    {
+      "id": "analysis_007",
+      "paragraph": "The chapter culminates in Collins's inspection of Longbourn with 'mortifying' proprietorial interest—admiring the rooms, furniture, and dinner as if inheriting them already. His apology for suggesting the Bennet daughters cook the dinner exposes class assumptions and his deep insensitivity, as he spends a full quarter-hour in performative contrition that serves his own self-image more than it soothes Mrs. Bennet. The word 'mortifying' is carefully chosen: Collins's admiration is genuine, yet it wounds precisely because it reveals how thoroughly he has already mentally possessed what the Bennets still call home.",
+      "anchor_text_end_of_sentence": "Bennet’s\nheart, but for the mortifying supposition of his viewing it all as his\nown future property."
+    }
+  ],
+  "image_prompt_entries": [
+    {
+      "id": "img_001",
+      "scene_title": "The Breakfast Announcement",
+      "style": "Renaissance oil painting",
+      "alt_text": "The Bennet family gathered at breakfast table, Mr. Bennet teasing his wife with news of a visitor",
+      "variations": [
+        {
+          "variation_id": "img_001_a",
+          "prompt_text": "Renaissance oil painting of a modest English breakfast room in 1813, Mr. Bennet holding a letter with a sly smile while Mrs. Bennet and five daughters lean forward in anticipation, morning light streaming through tall windows, period dress and furniture, warm domestic scene with undercurrent of tension",
+          "output_asset": "breakfast_announcement_wide.png"
+        },
+        {
+          "variation_id": "img_001_b",
+          "prompt_text": "Renaissance oil painting close-up portrait of Mrs. Bennet's excited expression upon hearing of a gentleman and a stranger, her hands clasped, eyes bright with hope for Mr. Bingley, soft morning illumination, detailed period costume with lace cap",
+          "output_asset": "mrs_bennet_excited_portrait.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Lydia, my love, ring the bell."
+    },
+    {
+      "id": "img_002",
+      "scene_title": "Reading Mr. Collins's Letter",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Bennet reading aloud the obsequious letter from his cousin Mr. Collins to the assembled family",
+      "variations": [
+        {
+          "variation_id": "img_002_a",
+          "prompt_text": "Renaissance oil painting of Mr. Bennet seated by candlelight reading a letter aloud, Mrs. Bennet beside him looking skeptical, five daughters arranged around the drawing room with varied expressions of interest and disdain, rich interior details, dramatic chiaroscuro lighting",
+          "output_asset": "reading_letter_scene.png"
+        },
+        {
+          "variation_id": "img_002_b",
+          "prompt_text": "Renaissance oil painting of the letter itself held in Mr. Bennet's hands, ornate handwriting visible, with Elizabeth and Jane listening intently in the background, warm golden light, focus on the document as object of family concern",
+          "output_asset": "collins_letter_closeup.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "I remain, dear sir,\n     with respectful compliments to your lady and daughters, your\n     well-wisher and friend,\n\n“WILLIAM COLLINS."
+    },
+    {
+      "id": "img_003",
+      "scene_title": "Lady Catherine's Influence",
+      "style": "Renaissance oil painting",
+      "alt_text": "Imagined portrait of Lady Catherine de Bourgh as described in Collins's letter, embodiment of aristocratic patronage",
+      "variations": [
+        {
+          "variation_id": "img_003_a",
+          "prompt_text": "Renaissance oil painting portrait of Lady Catherine de Bourgh, wealthy widow in grand widow's weeds, stern expression of authority, seated in imposing chair, aristocratic bearing, cold palette suggesting hauteur and power, the face of patronage that dominates Mr. Collins",
+          "output_asset": "lady_catherine_portrait.png"
+        },
+        {
+          "variation_id": "img_003_b",
+          "prompt_text": "Renaissance oil painting of Mr. Collins kneeling figuratively before Lady Catherine's grandeur, a clergyman's shadow subservient to aristocratic light, allegorical composition showing the power dynamics of patronage and servility",
+          "output_asset": "collins_lady_catherine_allegory.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "’--“My mind, however, is now\n     made up on the subject; for, having received ordination at Easter,\n     I have been so fortunate as to be distinguished by the patronage of\n     the Right Honourable Lady Catherine de Bourgh, widow of Sir Lewis\n     de Bourgh, whose bounty and beneficence has preferred me to the\n     valuable rectory of this parish, where it shall be my earnest\n     endeavour to demean myself with grateful respect towards her\n     Ladyship, and be ever ready to perform those rites and ceremonies\n     which are instituted by the Church of England."
+    },
+    {
+      "id": "img_004",
+      "scene_title": "Elizabeth's Skeptical Assessment",
+      "style": "Renaissance oil painting",
+      "alt_text": "Elizabeth Bennet contemplating Mr. Collins's letter with critical intelligence",
+      "variations": [
+        {
+          "variation_id": "img_004_a",
+          "prompt_text": "Renaissance oil painting portrait of Elizabeth Bennet, young woman with expressive dark eyes and intelligent countenance, holding Collins's letter with slight curl of lip suggesting skepticism, seated in window seat with natural light, deep burgundy dress, thoughtful pose showing her critical mind at work",
+          "output_asset": "elizabeth_contemplating_letter.png"
+        },
+        {
+          "variation_id": "img_004_b",
+          "prompt_text": "Renaissance oil painting of Elizabeth and Mr. Bennet sharing an amused glance, father and daughter united in appreciating the absurd, conspiratorial warmth, library setting with books and correspondence, subtle smiles passing between them",
+          "output_asset": "elizabeth_mr_bennet_conspiracy.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Can he be a sensible man, sir?"
+    },
+    {
+      "id": "img_005",
+      "scene_title": "Arrival of Mr. Collins",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins's punctual arrival at Longbourn, the tall heavy-looking clergyman being received",
+      "variations": [
+        {
+          "variation_id": "img_005_a",
+          "prompt_text": "Renaissance oil painting of Mr. Collins arriving at Longbourn's entrance, tall heavy-looking young clergyman of twenty-five in black clerical garb, grave and stately air, the Bennet family assembled for greeting, doorway composition, dramatic arrival scene with architectural detail",
+          "output_asset": "collins_arrival.png"
+        },
+        {
+          "variation_id": "img_005_b",
+          "prompt_text": "Renaissance oil painting study of Mr. Collins's hands clasped in formal greeting, awkward posture of exaggerated politeness, tight collar and clerical bands, the physical awkwardness of social pretension rendered with anatomical precision",
+          "output_asset": "collins_formal_greeting_study.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Mr."
+    },
+    {
+      "id": "img_006",
+      "scene_title": "The Mortifying Inspection",
+      "style": "Renaissance oil painting",
+      "alt_text": "Mr. Collins admiring the Longbourn dining room with proprietorial interest as the Bennet family watches",
+      "variations": [
+        {
+          "variation_id": "img_006_a",
+          "prompt_text": "Renaissance oil painting of dining room interior, Mr. Collins standing with pompous approval examining furniture and decor as if already inheriting, Mrs. Bennet and daughters watching with mixed expressions of offense and mortification, warm candlelight on polished mahogany, tension between hospitality and the unspoken threat",
+          "output_asset": "collins_inspecting_dining_room.png"
+        },
+        {
+          "variation_id": "img_006_b",
+          "prompt_text": "Renaissance oil painting composition showing Mr. Collins's gaze directed proprietorially around a fine Georgian drawing room, his hand extended in admiring gesture, while Elizabeth stands in shadow observing with ironic detachment, split focus between possessive subject and perceptive observer",
+          "output_asset": "collins_proprietorial_gaze.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "Bennet’s\nheart, but for the mortifying supposition of his viewing it all as his\nown future property."
+    },
+    {
+      "id": "img_007",
+      "scene_title": "The Dinner and Awkward Apologies",
+      "style": "Renaissance oil painting",
+      "alt_text": "The Bennet family at dinner with Mr. Collins giving awkward compliments about cookery and apologizing excessively",
+      "variations": [
+        {
+          "variation_id": "img_007_a",
+          "prompt_text": "Renaissance oil painting of a Regency dinner party at Longbourn, Mr. Collins seated among the Bennet ladies, his expression earnest while complimenting the dinner, Mrs. Bennet's visible asperity, Elizabeth and Jane exchanging subtle smiles, period table setting with silver and candelabra, social comedy frozen in paint",
+          "output_asset": "dinner_with_collins.png"
+        },
+        {
+          "variation_id": "img_007_b",
+          "prompt_text": "Renaissance oil painting study of the quarter-hour apology, Mr. Collins bowing with excessive deference while Mrs. Bennet appears softened yet bemused, the geometry of social embarrassment, elongated composition emphasizing duration of awkwardness",
+          "output_asset": "collins_apology_scene.png"
+        }
+      ],
+      "anchor_text_end_of_sentence": "In a softened tone she declared\nherself not at all offended; but he continued to apologize for about a\nquarter of an hour."
+    }
+  ],
+  "quote_entries": [
+    {
+      "id": "quote_001",
+      "quote": "I hope, my dear, that you have ordered a good dinner to-day, because I have reason to expect an addition to our family party.",
+      "anchor_text": "Bennet to his wife, as they were at\nbreakfast the next morning, “that you have ordered a good dinner to-day,\nbecause I have reason to expect an addition to our family party."
+    },
+    {
+      "id": "quote_002",
+      "quote": "A gentleman and a stranger! It is Mr. Bingley, I am sure.",
+      "anchor_text": "A gentleman and a stranger! It is Mr.\nBingley, I am sure."
+    },
+    {
+      "id": "quote_003",
+      "quote": "It is from my cousin, Mr. Collins, who, when I am dead, may turn you all out of this house as soon as he pleases.",
+      "anchor_text": "It is from my cousin, Mr. Collins, who,\nwhen I am dead, may turn you all out of this house as soon as he\npleases."
+    },
+    {
+      "id": "quote_004",
+      "quote": "I cannot be otherwise than concerned at being the means of injuring your amiable daughters, and beg leave to apologize for it, as well as to assure you of my readiness to make them every possible amends; but of this hereafter.",
+      "anchor_text": "I cannot be otherwise than concerned at being the\n     means of injuring your amiable daughters, and beg leave to\n     apologize for it, as well as to assure you of my readiness to make\n     them every possible amends; but of this hereafter."
+    },
+    {
+      "id": "quote_005",
+      "quote": "There is a mixture of servility and self-importance in his letter which promises well. I am impatient to see him.",
+      "anchor_text": "There is a mixture of servility and self-importance in his\nletter which promises well. I am impatient to see him."
+    },
+    {
+      "id": "quote_006",
+      "quote": "He was a tall, heavy-looking young man of five-and-twenty. His air was grave and stately, and his manners were very formal.",
+      "anchor_text": "He was a tall,\nheavy-looking young man of five-and-twenty. His air was grave and\nstately, and his manners were very formal."
+    },
+    {
+      "id": "quote_007",
+      "quote": "The hall, the dining-room, and all its furniture, were examined and praised; and his commendation of everything would have touched Mrs. Bennet's heart, but for the mortifying supposition of his viewing it all as his own future property.",
+      "anchor_text": "The\nhall, the dining-room, and all its furniture, were examined and praised;\nand his commendation of everything would have touched Mrs."
+    }
+  ],
+  "insertion_methods": {
+    "analysis_insertion": "append_to_paragraph",
+    "image_insertion": "after_anchor",
+    "quote_insertion": "inline"
+  },
+  "summary": "Chapter XIII introduces Mr. William Collins, the obsequious clergyman who stands to inherit Longbourn through the entailment. Through his letter and subsequent arrival, Austen satirizes the intersection of social climbing, religious hypocrisy, and legal injustice. The chapter establishes Mr. Collins as a comic figure of servility and self-importance, while developing Elizabeth and Mr. Bennet's bond over their shared appreciation of the absurd. The specter of the entailment—that the five Bennet daughters will lose their home to this ridiculous relation—brings both humor and genuine social critique to the narrative."
+}

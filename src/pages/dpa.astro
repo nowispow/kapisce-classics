@@ -1,0 +1,156 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import PageHead from '@/components/PageHead.astro'
+import Layout from '@/layouts/Layout.astro'
+---
+
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="Data Processing Agreement" />
+  <Breadcrumbs items={[{ label: 'Data Processing Agreement', icon: 'lucide:database' }]} />
+
+  <section class="prose max-w-none">
+    <h1>Data Processing Agreement</h1>
+    <p class="text-muted-foreground text-sm">Last updated: May 4, 2026</p>
+
+    <p>
+      This Data Processing Agreement ("DPA") supplements our <a href="/privacy">Privacy Policy</a>
+      and <a href="/terms">Terms of Service</a> for organizations ("Controller") that use
+      Kapisce under an institutional or bulk license and are subject to data protection
+      regulations such as GDPR, UK GDPR, or similar laws.
+    </p>
+
+    <p>
+      To enter into this DPA with Nowispow, Inc ("Processor"), please contact
+      <a href="mailto:webmaster@nowispow.com">webmaster@nowispow.com</a>. Execution of a signed
+      DPA is required before we can act as a Processor for your organization's user data.
+    </p>
+
+    <h2>1. Definitions</h2>
+    <ul>
+      <li>
+        <strong>Controller</strong> — the organization that determines the purposes and means of
+        processing personal data (e.g. a school or library that provides Kapisce access to
+        students or patrons).
+      </li>
+      <li>
+        <strong>Processor</strong> — Nowispow, Inc, which processes personal data on behalf of
+        the Controller.
+      </li>
+      <li>
+        <strong>Personal Data</strong> — any information relating to an identified or identifiable
+        natural person, as defined under applicable data protection law.
+      </li>
+      <li>
+        <strong>Processing</strong> — any operation performed on Personal Data, including
+        collection, storage, use, and deletion.
+      </li>
+    </ul>
+
+    <h2>2. Subject Matter and Duration</h2>
+    <p>
+      This DPA covers Nowispow's processing of Personal Data on behalf of the Controller in
+      connection with the Controller's use of Kapisce's services. Processing continues for the
+      duration of the Controller's active license and for any legally required retention period
+      thereafter.
+    </p>
+
+    <h2>3. Nature and Purpose of Processing</h2>
+    <p>Nowispow processes Personal Data for the following purposes:</p>
+    <ul>
+      <li>Managing subscriber records and delivering email communications (Listmonk).</li>
+      <li>Collecting anonymised reading-engagement analytics (PostHog, self-hosted).</li>
+      <li>Processing payments and delivering license keys (via Lemon Squeezy as MoR).</li>
+    </ul>
+
+    <h2>4. Categories of Data Subjects and Personal Data</h2>
+    <ul>
+      <li>Email address and role (educator / book-club leader / reader) for subscribers.</li>
+      <li>Anonymised or hashed device identifiers for analytics.</li>
+      <li>Email address associated with a purchase, for license key delivery.</li>
+    </ul>
+
+    <h2>5. Processor Obligations</h2>
+    <p>Nowispow shall:</p>
+    <ul>
+      <li>Process Personal Data only on documented instructions from the Controller.</li>
+      <li>
+        Ensure that persons authorised to process Personal Data are bound by confidentiality
+        obligations.
+      </li>
+      <li>
+        Implement appropriate technical and organisational measures to protect Personal Data,
+        including self-hosting analytics and email infrastructure.
+      </li>
+      <li>
+        Not engage sub-processors without prior written consent of the Controller, except for
+        the sub-processors listed in Section 6.
+      </li>
+      <li>
+        Assist the Controller in responding to data subject rights requests (access, erasure,
+        portability) within a reasonable timeframe.
+      </li>
+      <li>
+        Notify the Controller without undue delay upon becoming aware of a Personal Data breach
+        that is likely to result in a risk to the rights and freedoms of natural persons.
+      </li>
+      <li>
+        At the Controller's choice, delete or return all Personal Data upon termination of the
+        services.
+      </li>
+    </ul>
+
+    <h2>6. Sub-processors</h2>
+    <p>
+      Nowispow currently uses the following sub-processors. We will provide prior notice of
+      changes to this list:
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Sub-processor</th>
+          <th>Purpose</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Resend</td>
+          <td>Transactional email relay</td>
+          <td>United States</td>
+        </tr>
+        <tr>
+          <td>Lemon Squeezy</td>
+          <td>Payment processing (Merchant of Record)</td>
+          <td>United States</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      PostHog and Listmonk are self-hosted by Nowispow and are not third-party sub-processors.
+    </p>
+
+    <h2>7. International Data Transfers</h2>
+    <p>
+      Personal Data processed by Resend and Lemon Squeezy may be transferred to and stored in
+      the United States. Such transfers are made under standard contractual clauses or other
+      lawful transfer mechanisms as required by applicable law.
+    </p>
+
+    <h2>8. Controller Obligations</h2>
+    <p>The Controller represents that it has a lawful basis to provide Personal Data to Nowispow
+    and to instruct Nowispow to process it as described herein.</p>
+
+    <h2>9. Governing Law</h2>
+    <p>
+      This DPA is governed by the laws of the State of Texas. For Controllers subject to GDPR
+      or UK GDPR, applicable EU/UK data protection law takes precedence where it conflicts with
+      Texas law with respect to data protection obligations.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      To execute a signed DPA or for data protection inquiries:
+      <a href="mailto:webmaster@nowispow.com">webmaster@nowispow.com</a>.
+    </p>
+  </section>
+</Layout>

@@ -2,10 +2,11 @@
 authors = ["Yatit <thakkery@gmail.com>"]
 channels = ["conda-forge"]
 name = "kapisce-classics"
-platforms = ["osx-arm64"]
+platforms = ["osx-arm64", "linux-64"]
 version = "0.1.0"
 
 [tasks]
 
 [dependencies]
 python = "3.14.*"
+nodejs = ">=25.8.2,<25.9"
