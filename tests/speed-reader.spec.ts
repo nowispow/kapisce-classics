@@ -11,6 +11,7 @@ test('speed reader renders centered word and core controls work', async ({ page 
 
   const fullWord = (await wordDisplay.getAttribute('aria-label')) ?? '';
   const visibleText = (await wordDisplay.innerText()).trim();
+  expect(fullWord).toBe('alpha');
   expect(visibleText).toBe(fullWord);
 
   const wordBox = await wordDisplay.boundingBox();
@@ -91,8 +92,7 @@ test('speed reader applies one-word extra pause after sentence punctuation', asy
       deltasByWord['theta.'] !== undefined &&
       deltasByWord['rho;'] !== undefined &&
       deltasByWord['sigma!'] !== undefined &&
-      deltasByWord['tau?'] !== undefined &&
-      deltasByWord['![]'] !== undefined;
+      deltasByWord['tau?'] !== undefined;
     if (hasRequiredSamples) break;
   }
 
@@ -104,7 +104,6 @@ test('speed reader applies one-word extra pause after sentence punctuation', asy
   const rhoPause = deltasByWord['rho;'];
   const sigmaPause = deltasByWord['sigma!'];
   const tauPause = deltasByWord['tau?'];
-  const markdownToken = deltasByWord['![]'];
   expect(gammaDelta).toBeDefined();
   expect(deltaPause).toBeDefined();
   expect(etaTheta).toBeDefined();
@@ -113,7 +112,8 @@ test('speed reader applies one-word extra pause after sentence punctuation', asy
   expect(rhoPause).toBeDefined();
   expect(sigmaPause).toBeDefined();
   expect(tauPause).toBeDefined();
-  expect(markdownToken).toBeDefined();
+  expect(deltasByWord['![]']).toBeUndefined();
+  expect(deltasByWord['Decorative']).toBeUndefined();
 
   // At 150 WPM, one word is ~400ms. Punctuation should add ~400ms.
   expect(deltaPause!).toBeGreaterThan(gammaDelta! + 250);
@@ -123,7 +123,4 @@ test('speed reader applies one-word extra pause after sentence punctuation', asy
   // Sentence endings should pause too.
   expect(sigmaPause!).toBeGreaterThan(piRho! + 250);
   expect(tauPause!).toBeGreaterThan(piRho! + 250);
-
-  // Markdown image shortcut token should not trigger punctuation pause.
-  expect(markdownToken!).toBeLessThan(tauPause! - 150);
 });

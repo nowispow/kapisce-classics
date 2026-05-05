@@ -3,7 +3,7 @@
   let { text = '' } = $props();
 
   let sourceText = $derived(typeof text === 'string' ? text : String(text ?? ''));
-  let words = $derived(sourceText.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean));
+  let words = $derived(tokenizeReadableText(sourceText));
 
   let currentIndex = $state(0);
   let isPlaying = $state(false);
@@ -17,6 +17,74 @@
   const punctuationPauseChars = new Set([',', ';', ':', '.', '!', '?']);
   const trailingClosers = new Set(['"', "'", '”', '’', ')', ']', '}']);
   const EXTRA_WORD_PAUSE_EQUIVALENT = 1;
+
+  function tokenizeReadableText(value) {
+    return normalizeReadableText(stripScriptLikeLines(value)).split(/\s+/).filter(Boolean);
+  }
+
+  function stripScriptLikeLines(value) {
+    let isSkippingDeclaration = false;
+
+    return value
+      .replace(/^\s*---\s*[\s\S]*?\n---\s*/, ' ')
+      .split('\n')
+      .map((line) => {
+        const trimmed = line.trim();
+
+        if (isSkippingDeclaration) {
+          if (endsDeclaration(trimmed)) {
+            isSkippingDeclaration = false;
+          }
+          return '';
+        }
+
+        if (!startsScriptLikeDeclaration(trimmed)) {
+          return line;
+        }
+
+        isSkippingDeclaration = !endsDeclaration(trimmed);
+        return '';
+      })
+      .join('\n');
+  }
+
+  function startsScriptLikeDeclaration(line) {
+    return (
+      /^(import|export)\b/.test(line) ||
+      /^type\s+\w+\s*=/.test(line) ||
+      /^interface\s+\w+\b/.test(line) ||
+      /^(const|let|var)\s+[\w$]+\s*=/.test(line) ||
+      /^(function|class)\s+[\w$]+\b/.test(line)
+    );
+  }
+
+  function endsDeclaration(line) {
+    return line === '' || line.endsWith(';') || /\bfrom\s+['"][^'"]+['"];?$/.test(line);
+  }
+
+  function normalizeReadableText(value) {
+    return value
+      .replace(/\{\/\*[\s\S]*?\*\/\}/g, ' ')
+      .replace(/```[\s\S]*?```/g, ' ')
+      .replace(/~~~[\s\S]*?~~~/g, ' ')
+      .replace(/!\[[^\]]*]\([^)]*\)/g, ' ')
+      .replace(/\[([^\]]+)]\([^)]*\)/g, '$1')
+      .replace(/<\/?[A-Za-z][\w.:-]*(?:\s+[^<>]*)?\/?>/g, ' ')
+      .replace(/\{[^{}\n]*\}/g, ' ')
+      .replace(/^#{1,6}\s+/gm, '')
+      .replace(/^>\s?/gm, '')
+      .replace(/^[\t ]*[-*+]\s+/gm, '')
+      .replace(/^[\t ]*\d+[.)]\s+/gm, '')
+      .replace(/([*_~]{1,3})(\S(?:.*?\S)?)\1/g, '$2')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
 
   function togglePlay() {
     if (isPlaying) {

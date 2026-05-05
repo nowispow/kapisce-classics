@@ -1,8 +1,18 @@
 ---
 import SpeedReaderComponent from '@/components/SpeedReader.svelte'
 
-const sampleText =
-  'alpha beta gamma delta, epsilon zeta eta theta. iota kappa lambda—mu nu xi: omicron pi rho; sigma! tau? ![] upsilon'
+const sampleText = `
+import Callout from '@/components/Callout.astro'
+type CalloutVariant = 'note' | 'explanation'
+
+<Callout title="Memorable Quote" variant="note">
+alpha beta gamma delta, epsilon zeta eta theta. iota kappa lambda—mu nu xi: omicron pi rho; sigma! tau?
+</Callout>
+
+![Decorative illustration that should not enter the reader](/static/example.png)
+
+upsilon
+`
 ---
 
 <html lang="en">
