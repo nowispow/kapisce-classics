@@ -12,51 +12,42 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
 
 <Layout class="max-w-3xl">
   <PageHead slot="head" title="Home" />
-  <section class="rounded-lg border">
-    <div class="flex flex-col space-y-1.5 p-6">
-      <h3 class="text-3xl leading-none font-medium">er·u·dite</h3>
-      <p class="text-muted-foreground text-sm">
-        /ˈer(y)əˌdīt/ &bull; <span class="font-medium">adjective</span>
+  <section class="grid grid-cols-1 gap-8 py-4 md:grid-cols-2 md:gap-12">
+    <div class="flex flex-col gap-y-4">
+      <h1 class="text-3xl font-semibold leading-tight">Classics, reopened.</h1>
+      <p class="text-muted-foreground">
+        Kapisce is an open-source reimagining of the literary canon — annotated,
+        illustrated, and built for modern readers who want to actually finish the
+        great books.
+      </p>
+      <p class="text-muted-foreground">
+        Plain-text editions are free forever. Enhanced editions add annotations,
+        scene illustrations, and reading tools for educators and book clubs.
       </p>
     </div>
-    <div class="p-6 pt-0">
-      <p class="text-muted-foreground mb-2 text-sm">
-        astro-erudite is an opinionated, unstyled static blogging template built
-        with <Link
-          href="https://astro.build"
-          class="text-foreground"
-          external
-          underline>Astro</Link
-        >, <Link
-          href="https://tailwindcss.com"
-          class="text-foreground"
-          external
-          underline>Tailwind</Link
-        >, and <Link
-          href="https://ui.shadcn.com"
-          class="text-foreground"
-          external
-          underline>shadcn/ui</Link
-        >. Extraordinarily loosely based on the <Link
-          href="https://astro-micro.vercel.app/"
-          class="text-foreground"
-          external
-          underline>Astro Micro</Link
-        > theme.
-      </p>
-      <p class="text-muted-foreground text-sm">
-        To use this template, check out the <Link
-          href="https://github.com/jktrn/astro-erudite"
-          class="text-foreground"
-          underline
-          external>GitHub</Link
-        > repository. To learn more about why this template exists, read this blog
-        post: <Link
-          href="/blog/the-state-of-static-blogs"
-          class="text-foreground"
-          underline>The State of Static Blogs in 2024</Link
-        >.
-      </p>
+    <div class="flex flex-col gap-y-6">
+      <div>
+        <p class="mb-1 text-sm font-medium">Open source, always.</p>
+        <p class="text-muted-foreground text-sm">
+          Source texts drawn from Project Gutenberg. The platform is
+          MIT-licensed; content editions are CC BY-NC 4.0.
+        </p>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Two ways to read.</p>
+        <p class="text-muted-foreground text-sm">
+          Read at your own pace or use the built-in speed reader. Enhanced
+          editions layer in callouts, footnotes, and AI-generated scene art on
+          top of the original text.
+        </p>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Made for groups.</p>
+        <p class="text-muted-foreground text-sm">
+          Available in 20+ languages, with reading-club prompts baked into
+          every enhanced edition.
+        </p>
+      </div>
     </div>
   </section>
   <section class="flex flex-col gap-y-4">
@@ -72,10 +63,10 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
     </ul>
     <div class="flex justify-center">
       <Link
-        href="/blog"
+        href="/novels"
         class={buttonVariants({ variant: 'ghost' }) + ' group'}
       >
-        See all posts <span
+        Browse novels <span
           class="ml-1.5 transition-transform group-hover:translate-x-1"
           >&rarr;</span
         >
